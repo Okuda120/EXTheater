@@ -108,7 +108,7 @@ Public Class LogicEXTA0101
         Try
             Cn.Open()
 
-            '予約制御データの削除処理
+            '　予約制御データの削除処理
             Tsx = Cn.BeginTransaction
             sqlEXTZ0202.deleteYoyakuCtl(Cmd, Cn, CommonDeclareEXT.SHISETU_KBN_BLANK)
             Cmd.ExecuteNonQuery()
