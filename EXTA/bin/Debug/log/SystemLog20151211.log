@@ -1,0 +1,5812 @@
+2015/12/11 20:30:01  TRACE> LogicEXTA0101.GetConfigrationFlg() START
+2015/12/11 20:30:01  TRACE> LogicEXTA0101.GetConfigrationFlg() END
+2015/12/11 20:30:01  TRACE> CommonLogicEXT.SetFormBackColor() START
+2015/12/11 20:30:01  TRACE> CommonLogicEXT.SetFormBackColor() END
+2015/12/11 20:30:07  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:30:07  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:30:08  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:30:08  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:30:08  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:30:08  TRACE> LogicEXTA0101.LoginInputCheck() START
+2015/12/11 20:30:08  TRACE> LogicEXTA0101.LoginInputCheck() END
+2015/12/11 20:30:08  TRACE> LogicEXTA0101.GetLoginData() START
+2015/12/11 20:30:08  TRACE> SqlEXTA0101.setSelectLoginData() START
+2015/12/11 20:30:08  TRACE> SqlEXTA0101.setSelectLoginData() END
+2015/12/11 20:30:08  DEBUG> LogicEXTA0101.GetLoginData() ƒƒOƒCƒ“î•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+USER_NM, 
+MAIL, 
+BUSHO_CD, 
+SHONIN_FLG, 
+MST_FLG 
+FROM 
+USER_MST 
+WHERE
+USER_CD = :UserId 
+and PW = :Password 
+and STS = '0' 
+   Parameters Data > 
+      [:UserId] USN001
+      [:Password] password
+2015/12/11 20:30:08  TRACE> LogicEXTA0101.GetLoginData() END
+2015/12/11 20:30:08  TRACE> LogicEXTA0101.DelYoyakuCtlData() START
+2015/12/11 20:30:08  DEBUG> LogicEXTA0101.DelYoyakuCtlData() Login Proc1
+¡SQL Data :
+   Sql Command > DELETE 
+FROM 
+YCTL_TBL 
+WHERE
+USER_CD = :UserId 
+   Parameters Data > 
+      [:UserId] USN001
+2015/12/11 20:30:08  DEBUG> LogicEXTA0101.DelYoyakuCtlData() Login Proc2
+¡SQL Data :
+   Sql Command > DELETE 
+FROM 
+CCTL_TBL 
+WHERE
+USER_CD = :UserId 
+   Parameters Data > 
+      [:UserId] USN001
+2015/12/11 20:30:08  TRACE> LogicEXTA0101.DelYoyakuCtlData() END
+2015/12/11 20:30:08  TRACE> LogicEXTA0101.SetSystemProperties() START
+2015/12/11 20:30:08  TRACE> SqlEXTA0101.setSelectSystemProperty() START
+2015/12/11 20:30:08  TRACE> SqlEXTA0101.setSelectSystemProperty() END
+2015/12/11 20:30:08  DEBUG> LogicEXTA0101.SetSystemProperties() ƒVƒXƒeƒ€ƒvƒƒpƒeƒBŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+TEIIN_A, 
+TEIIN_B, 
+KARI_JIZEN_TUTI 
+FROM 
+SYSTEM_MST 
+   Parameters Data > 
+2015/12/11 20:30:08  TRACE> LogicEXTA0101.SetSystemProperties() END
+2015/12/11 20:30:08  TRACE> EXTA0101.btnLogin_Click() LOGIN:USN001
+2015/12/11 20:30:08  TRACE> CommonLogicEXT.SetFormBackColor() START
+2015/12/11 20:30:08  TRACE> CommonLogicEXT.SetFormBackColor() END
+2015/12/11 20:30:11  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:30:11  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:30:12  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:30:12  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:30:12  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:30:12  TRACE> LogicEXTB0101.MakeSpread() START
+2015/12/11 20:30:12  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:30:12  TRACE> LogicEXTB0101.GetSpreadData() START
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectShukusaijitsu() START
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectShukusaijitsu() END
+2015/12/11 20:30:12  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+  HOLIDAY_DT
+from
+  HOLIDAY_MST 
+where
+  substr(HOLIDAY_DT,1,7) = :HOLIDAY_DT
+   Parameters Data > 
+      [:HOLIDAY_DT] 2015/12
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectYoyakuList() START
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectYoyakuList() END
+2015/12/11 20:30:12  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+   a.SHISETU_KBN
+  ,a.STUDIO_KBN
+  ,a.YOYAKU_DT
+  ,a.START_TIME
+  ,a.END_TIME
+  ,a.YOYAKU_NO
+  ,a.MITEI_FLG
+  ,b.STUDIO_KBN  
+  ,b.SAIJI_NM
+  ,b.SHUTSUEN_NM
+  ,b.YOYAKU_STS
+  ,a.RIYO_KEITAI
+  ,c.RIYO_NM
+from
+  YDT_TBL a
+left join YOYAKU_TBL b on(
+  a.YOYAKU_NO = b.YOYAKU_NO
+)
+left join RIYOSHA_MST c on(
+  b.RIYOSHA_CD = c.RIYOSHA_CD
+)
+where
+  a.SHISETU_KBN = '1'
+  and substr(a.YOYAKU_DT,1,7) = :YOYAKU_DT
+  and b.YOYAKU_STS IN ('1', '2', '3', '4')
+order by a.YOYAKU_DT, a.START_TIME
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/12
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() START
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() END
+2015/12/11 20:30:12  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  YCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/12
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:30:12  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and a.RIYO_DT_FLG = :RIYO_DT_FLG
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/12
+      [:RIYO_DT_FLG] 1
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:30:12  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/12
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() START
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() END
+2015/12/11 20:30:12  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  CCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/12
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:30:12  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/12
+      [:CANCEL_WAIT_STS] 3
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() START
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() END
+2015/12/11 20:30:12  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   RIYO_DT
+  ,START_TIME
+  ,END_TIME
+  ,RIYO_BASHO
+  ,RIYO_YOTO
+  ,RIYOSHA
+from
+  SONOTA_DT_TBL
+where
+  substr(RIYO_DT,1,7) = :RIYO_DT
+   Parameters Data > 
+      [:RIYO_DT] 2015/12
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectKyukanMainteList() START
+2015/12/11 20:30:12  TRACE> SqlEXTB0101.setSelectKyukanMainteList() END
+2015/12/11 20:30:12  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+  HOLMENT_DT
+  ,SHISETU_KBN
+  ,MNAIYO
+  ,HOLMENT_KBN
+from
+  HOLMENT_MST
+where
+  SHISETU_KBN = '1'
+  and substr(HOLMENT_DT,1,7) = :HOLMENT_DT
+   Parameters Data > 
+      [:HOLMENT_DT] 2015/12
+2015/12/11 20:30:12  TRACE> LogicEXTB0101.GetSpreadData() END
+2015/12/11 20:30:12  TRACE> LogicEXTB0101.ViewSpreadData() START
+2015/12/11 20:30:12  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:30:12  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:30:12  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:30:12  TRACE> CommonLogicEXT.SetFormBackColor() START
+2015/12/11 20:30:12  TRACE> CommonLogicEXT.SetFormBackColor() END
+2015/12/11 20:30:14  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:30:14  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:30:14  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:30:14  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:30:14  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:30:14  TRACE> LogicEXTB0101.MakeSpread() START
+2015/12/11 20:30:14  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:30:14  TRACE> LogicEXTB0101.GetSpreadData() START
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectShukusaijitsu() START
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectShukusaijitsu() END
+2015/12/11 20:30:14  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+  HOLIDAY_DT
+from
+  HOLIDAY_MST 
+where
+  substr(HOLIDAY_DT,1,7) = :HOLIDAY_DT
+   Parameters Data > 
+      [:HOLIDAY_DT] 2015/11
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectYoyakuList() START
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectYoyakuList() END
+2015/12/11 20:30:14  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+   a.SHISETU_KBN
+  ,a.STUDIO_KBN
+  ,a.YOYAKU_DT
+  ,a.START_TIME
+  ,a.END_TIME
+  ,a.YOYAKU_NO
+  ,a.MITEI_FLG
+  ,b.STUDIO_KBN  
+  ,b.SAIJI_NM
+  ,b.SHUTSUEN_NM
+  ,b.YOYAKU_STS
+  ,a.RIYO_KEITAI
+  ,c.RIYO_NM
+from
+  YDT_TBL a
+left join YOYAKU_TBL b on(
+  a.YOYAKU_NO = b.YOYAKU_NO
+)
+left join RIYOSHA_MST c on(
+  b.RIYOSHA_CD = c.RIYOSHA_CD
+)
+where
+  a.SHISETU_KBN = '1'
+  and substr(a.YOYAKU_DT,1,7) = :YOYAKU_DT
+  and b.YOYAKU_STS IN ('1', '2', '3', '4')
+order by a.YOYAKU_DT, a.START_TIME
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/11
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() START
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() END
+2015/12/11 20:30:14  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  YCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/11
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:30:14  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and a.RIYO_DT_FLG = :RIYO_DT_FLG
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/11
+      [:RIYO_DT_FLG] 1
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:30:14  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/11
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() START
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() END
+2015/12/11 20:30:14  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  CCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/11
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:30:14  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/11
+      [:CANCEL_WAIT_STS] 3
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() START
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() END
+2015/12/11 20:30:14  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   RIYO_DT
+  ,START_TIME
+  ,END_TIME
+  ,RIYO_BASHO
+  ,RIYO_YOTO
+  ,RIYOSHA
+from
+  SONOTA_DT_TBL
+where
+  substr(RIYO_DT,1,7) = :RIYO_DT
+   Parameters Data > 
+      [:RIYO_DT] 2015/11
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectKyukanMainteList() START
+2015/12/11 20:30:14  TRACE> SqlEXTB0101.setSelectKyukanMainteList() END
+2015/12/11 20:30:14  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+  HOLMENT_DT
+  ,SHISETU_KBN
+  ,MNAIYO
+  ,HOLMENT_KBN
+from
+  HOLMENT_MST
+where
+  SHISETU_KBN = '1'
+  and substr(HOLMENT_DT,1,7) = :HOLMENT_DT
+   Parameters Data > 
+      [:HOLMENT_DT] 2015/11
+2015/12/11 20:30:14  TRACE> LogicEXTB0101.GetSpreadData() END
+2015/12/11 20:30:14  TRACE> LogicEXTB0101.ViewSpreadData() START
+2015/12/11 20:30:14  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:30:14  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:30:14  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:30:15  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:30:15  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:30:15  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:30:15  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:30:15  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:30:15  TRACE> LogicEXTB0101.MakeSpread() START
+2015/12/11 20:30:15  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:30:15  TRACE> LogicEXTB0101.GetSpreadData() START
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectShukusaijitsu() START
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectShukusaijitsu() END
+2015/12/11 20:30:15  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+  HOLIDAY_DT
+from
+  HOLIDAY_MST 
+where
+  substr(HOLIDAY_DT,1,7) = :HOLIDAY_DT
+   Parameters Data > 
+      [:HOLIDAY_DT] 2015/10
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectYoyakuList() START
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectYoyakuList() END
+2015/12/11 20:30:15  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+   a.SHISETU_KBN
+  ,a.STUDIO_KBN
+  ,a.YOYAKU_DT
+  ,a.START_TIME
+  ,a.END_TIME
+  ,a.YOYAKU_NO
+  ,a.MITEI_FLG
+  ,b.STUDIO_KBN  
+  ,b.SAIJI_NM
+  ,b.SHUTSUEN_NM
+  ,b.YOYAKU_STS
+  ,a.RIYO_KEITAI
+  ,c.RIYO_NM
+from
+  YDT_TBL a
+left join YOYAKU_TBL b on(
+  a.YOYAKU_NO = b.YOYAKU_NO
+)
+left join RIYOSHA_MST c on(
+  b.RIYOSHA_CD = c.RIYOSHA_CD
+)
+where
+  a.SHISETU_KBN = '1'
+  and substr(a.YOYAKU_DT,1,7) = :YOYAKU_DT
+  and b.YOYAKU_STS IN ('1', '2', '3', '4')
+order by a.YOYAKU_DT, a.START_TIME
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/10
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() START
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() END
+2015/12/11 20:30:15  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  YCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/10
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:30:15  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and a.RIYO_DT_FLG = :RIYO_DT_FLG
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/10
+      [:RIYO_DT_FLG] 1
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:30:15  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/10
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() START
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() END
+2015/12/11 20:30:15  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  CCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/10
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:30:15  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/10
+      [:CANCEL_WAIT_STS] 3
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() START
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() END
+2015/12/11 20:30:15  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   RIYO_DT
+  ,START_TIME
+  ,END_TIME
+  ,RIYO_BASHO
+  ,RIYO_YOTO
+  ,RIYOSHA
+from
+  SONOTA_DT_TBL
+where
+  substr(RIYO_DT,1,7) = :RIYO_DT
+   Parameters Data > 
+      [:RIYO_DT] 2015/10
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectKyukanMainteList() START
+2015/12/11 20:30:15  TRACE> SqlEXTB0101.setSelectKyukanMainteList() END
+2015/12/11 20:30:15  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+  HOLMENT_DT
+  ,SHISETU_KBN
+  ,MNAIYO
+  ,HOLMENT_KBN
+from
+  HOLMENT_MST
+where
+  SHISETU_KBN = '1'
+  and substr(HOLMENT_DT,1,7) = :HOLMENT_DT
+   Parameters Data > 
+      [:HOLMENT_DT] 2015/10
+2015/12/11 20:30:15  TRACE> LogicEXTB0101.GetSpreadData() END
+2015/12/11 20:30:15  TRACE> LogicEXTB0101.ViewSpreadData() START
+2015/12/11 20:30:15  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:30:15  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:30:15  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:30:16  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:30:16  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:30:16  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:30:16  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:30:16  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:30:16  TRACE> LogicEXTB0101.MakeSpread() START
+2015/12/11 20:30:16  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:30:16  TRACE> LogicEXTB0101.GetSpreadData() START
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectShukusaijitsu() START
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectShukusaijitsu() END
+2015/12/11 20:30:16  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+  HOLIDAY_DT
+from
+  HOLIDAY_MST 
+where
+  substr(HOLIDAY_DT,1,7) = :HOLIDAY_DT
+   Parameters Data > 
+      [:HOLIDAY_DT] 2015/09
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectYoyakuList() START
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectYoyakuList() END
+2015/12/11 20:30:16  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+   a.SHISETU_KBN
+  ,a.STUDIO_KBN
+  ,a.YOYAKU_DT
+  ,a.START_TIME
+  ,a.END_TIME
+  ,a.YOYAKU_NO
+  ,a.MITEI_FLG
+  ,b.STUDIO_KBN  
+  ,b.SAIJI_NM
+  ,b.SHUTSUEN_NM
+  ,b.YOYAKU_STS
+  ,a.RIYO_KEITAI
+  ,c.RIYO_NM
+from
+  YDT_TBL a
+left join YOYAKU_TBL b on(
+  a.YOYAKU_NO = b.YOYAKU_NO
+)
+left join RIYOSHA_MST c on(
+  b.RIYOSHA_CD = c.RIYOSHA_CD
+)
+where
+  a.SHISETU_KBN = '1'
+  and substr(a.YOYAKU_DT,1,7) = :YOYAKU_DT
+  and b.YOYAKU_STS IN ('1', '2', '3', '4')
+order by a.YOYAKU_DT, a.START_TIME
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/09
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() START
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() END
+2015/12/11 20:30:16  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  YCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/09
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:30:16  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and a.RIYO_DT_FLG = :RIYO_DT_FLG
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/09
+      [:RIYO_DT_FLG] 1
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:30:16  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/09
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() START
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() END
+2015/12/11 20:30:16  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  CCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/09
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:30:16  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/09
+      [:CANCEL_WAIT_STS] 3
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() START
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() END
+2015/12/11 20:30:16  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   RIYO_DT
+  ,START_TIME
+  ,END_TIME
+  ,RIYO_BASHO
+  ,RIYO_YOTO
+  ,RIYOSHA
+from
+  SONOTA_DT_TBL
+where
+  substr(RIYO_DT,1,7) = :RIYO_DT
+   Parameters Data > 
+      [:RIYO_DT] 2015/09
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectKyukanMainteList() START
+2015/12/11 20:30:16  TRACE> SqlEXTB0101.setSelectKyukanMainteList() END
+2015/12/11 20:30:16  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+  HOLMENT_DT
+  ,SHISETU_KBN
+  ,MNAIYO
+  ,HOLMENT_KBN
+from
+  HOLMENT_MST
+where
+  SHISETU_KBN = '1'
+  and substr(HOLMENT_DT,1,7) = :HOLMENT_DT
+   Parameters Data > 
+      [:HOLMENT_DT] 2015/09
+2015/12/11 20:30:16  TRACE> LogicEXTB0101.GetSpreadData() END
+2015/12/11 20:30:16  TRACE> LogicEXTB0101.ViewSpreadData() START
+2015/12/11 20:30:16  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:30:16  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:30:16  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:30:18  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:30:18  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:30:18  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:30:18  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:30:18  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:30:18  TRACE> LogicEXTB0102.GetYoyakuData() START
+2015/12/11 20:30:18  TRACE> SqlEXTB0102.setSelectYoyakuData() START
+2015/12/11 20:30:18  TRACE> SqlEXTB0102.setSelectYoyakuData() END
+2015/12/11 20:30:18  DEBUG> LogicEXTB0102.GetYoyakuData() —\–ñî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+t1.yoyaku_no, 
+t1.kariuke_dt, 
+t1.kari_usercd, 
+t1.kakutei_dt, 
+t1.kaku_usercd, 
+t1.yoyaku_sts, 
+t1.shisetu_kbn, 
+t1.studio_kbn, 
+t1.saiji_nm, 
+t1.shutsuen_nm, 
+t1.kashi_kind, 
+t1.riyo_type, 
+t1.drink_flg, 
+t1.saiji_bunrui, 
+t1.teiin, 
+t1.onkyo_ope_flg, 
+t1.riyosha_cd, 
+t1.riyo_nm, 
+t1.riyo_kana, 
+t1.sekinin_busho_nm, 
+t1.sekinin_nm, 
+t1.sekinin_mail, 
+t1.daihyo_nm, 
+t1.riyo_tel11, 
+t1.riyo_tel12, 
+t1.riyo_tel13, 
+t1.riyo_tel21, 
+t1.riyo_tel22, 
+t1.riyo_tel23, 
+t1.riyo_naisen, 
+t1.riyo_fax11, 
+t1.riyo_fax12, 
+t1.riyo_fax13, 
+t1.riyo_yubin1, 
+t1.riyo_yubin2, 
+t1.riyo_todo, 
+t1.riyo_shiku, 
+t1.riyo_ban, 
+t1.riyo_build, 
+t1.riyo_lvl, 
+t1.aite_cd, 
+t1.onkyo_nm, 
+t1.onkyo_tanto_nm, 
+t1.onkyo_tel11, 
+t1.onkyo_tel12, 
+t1.onkyo_tel13, 
+t1.onkyo_naisen, 
+t1.onkyo_fax11, 
+t1.onkyo_fax12, 
+t1.onkyo_fax13, 
+t1.onkyo_mail, 
+t1.total_riyo_kin, 
+t1.send_kbn, 
+t1.send_sts, 
+t1.send_dt, 
+t1.henso_dt, 
+t1.biko, 
+t1.riyo_com, 
+t1.ticket_enter_kbn, 
+t1.ticket_drink_kbn, 
+t1.hp_keisai, 
+t1.joho_kokai_dt, 
+t1.joho_kokai_time, 
+t1.kokai_dt, 
+t1.kokai_time, 
+t1.finput_sts, 
+to_char(t1.add_dt,'YYYY/MM/DD HH:mm') as add_dt, 
+t1.add_user_cd, 
+m1.user_nm as add_user_nm,
+to_char(t1.up_dt,'YYYY/MM/DD HH:mm') as up_dt, 
+t1.up_user_cd, 
+m2.user_nm as up_user_nm, 
+m3.aite_nm as aite_nm 
+FROM 
+YOYAKU_TBL t1
+LEFT JOIN USER_MST m1
+ON t1.add_user_cd = m1.user_cd
+LEFT JOIN USER_MST m2
+ON t1.up_user_cd = m2.user_cd
+LEFT JOIN AITESAKI_MST m3
+ON t1.aite_cd = m3.aite_cd
+WHERE
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:30:18  TRACE> LogicEXTB0102.GetYoyakuData() START_2
+2015/12/11 20:30:18  TRACE> LogicEXTB0102.GetYoyakuData() END_2
+2015/12/11 20:30:18  TRACE> LogicEXTB0102.GetYoyakuData() END
+2015/12/11 20:30:18  TRACE> LogicEXTB0102.GetRiyobiData() START
+2015/12/11 20:30:18  TRACE> SqlEXTB0102.setSelectRiyobiData() START
+2015/12/11 20:30:18  TRACE> SqlEXTB0102.setSelectRiyobiData() END
+2015/12/11 20:30:18  DEBUG> LogicEXTB0102.GetRiyobiData() —\–ñ“úŽžî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+seq, 
+shisetu_kbn, 
+studio_kbn, 
+yoyaku_dt, 
+start_time, 
+end_time, 
+yoyaku_no, 
+riyo_keitai, 
+mitei_flg, 
+tanka, 
+bairitu, 
+su, 
+riyo_kin 
+FROM 
+YDT_TBL 
+WHERE
+yoyaku_no = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:30:18  TRACE> LogicEXTB0102.GetRiyobiData() END
+2015/12/11 20:30:18  TRACE> LogicEXTB0102.GetSekininshaList() START
+2015/12/11 20:30:18  TRACE> SqlEXTB0102.setSelectSekininName() START
+2015/12/11 20:30:18  TRACE> SqlEXTB0102.setSelectSekininName() END
+2015/12/11 20:30:18  TRACE> CommonLogicEXT.SetFormBackColor() START
+2015/12/11 20:30:18  TRACE> CommonLogicEXT.SetFormBackColor() END
+2015/12/11 20:30:21  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:30:21  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:30:21  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:30:21  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:30:21  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:30:21  TRACE> EXTB0102.inputCheckMain() Chk_START
+2015/12/11 20:30:21  TRACE> EXTB0102.inputCheckMain() Chk_END
+2015/12/11 20:30:21  TRACE> EXTB0102.inputCheckCondition() Chk_START
+2015/12/11 20:30:21  TRACE> LogicEXTZ0202.CheckRiyobiRegister() START
+2015/12/11 20:30:21  TRACE> SqlEXTZ0202.cntRiyobi() START
+2015/12/11 20:30:21  TRACE> SqlEXTZ0202.cntRiyobi() END
+2015/12/11 20:30:21  TRACE> LogicEXTZ0202.CheckRiyobiRegister() END
+2015/12/11 20:30:21  TRACE> EXTB0102.inputCheckCondition() Chk_END
+2015/12/11 20:30:22  TRACE> LogicEXTZ0202.DeleteYoyakuCtlShisetuData() START
+2015/12/11 20:30:22  TRACE> LogicEXTZ0202.DeleteYoyakuCtlShisetuData() END
+2015/12/11 20:30:22  TRACE> LogicEXTB0102.RegYoyakuInfo() START
+2015/12/11 20:30:22  TRACE> LogicEXTB0102.RegYoyakuInfo() Complate SQL
+¡SQL Data :
+   Sql Command > update YOYAKU_TBL 
+SET 
+KARIUKE_DT = :KariukeDt, 
+KARI_USERCD = :KariUsercd, 
+KAKUTEI_DT = :KakuteiDt, 
+KAKU_USERCD = :KakuUsercd, 
+YOYAKU_STS = :YoyakuSts, 
+SHISETU_KBN = :ShisetuKbn, 
+STUDIO_KBN = :StudioKbn, 
+SAIJI_NM = :SaijiNm, 
+SHUTSUEN_NM = :ShutsuenNm, 
+KASHI_KIND = :KashiKind, 
+RIYO_TYPE = :RiyoType, 
+DRINK_FLG = :DrinkFlg, 
+SAIJI_BUNRUI = :SaijiBunrui, 
+TEIIN = :Teiin, 
+ONKYO_OPE_FLG = :OnkyoOpeFlg, 
+RIYOSHA_CD = :RiyoshaCd, 
+RIYO_NM = :RiyoNm, 
+RIYO_KANA = :RiyoKana, 
+SEKININ_BUSHO_NM = :SekininBushoNm, 
+SEKININ_NM = :SekininNm, 
+SEKININ_MAIL = :SekininMail, 
+DAIHYO_NM = :DaihyoNm, 
+RIYO_TEL11 = :RiyoTel11, 
+RIYO_TEL12 = :RiyoTel12, 
+RIYO_TEL13 = :RiyoTel13, 
+RIYO_TEL21 = :RiyoTel21, 
+RIYO_TEL22 = :RiyoTel22, 
+RIYO_TEL23 = :RiyoTel23, 
+RIYO_NAISEN = :RiyoNaisen, 
+RIYO_FAX11 = :RiyoFax11, 
+RIYO_FAX12 = :RiyoFax12, 
+RIYO_FAX13 = :RiyoFax13, 
+RIYO_YUBIN1 = :RiyoYubin1, 
+RIYO_YUBIN2 = :RiyoYubin2, 
+RIYO_TODO = :RiyoTodo, 
+RIYO_SHIKU = :RiyoShiku, 
+RIYO_BAN = :RiyoBan, 
+RIYO_BUILD = :RiyoBuild, 
+RIYO_LVL = :RiyoLvl, 
+AITE_CD = :AiteCd, 
+ONKYO_NM = :OnkyoNm, 
+ONKYO_TANTO_NM = :OnkyoTantoNm, 
+ONKYO_TEL11 = :OnkyoTel11, 
+ONKYO_TEL12 = :OnkyoTel12, 
+ONKYO_TEL13 = :OnkyoTel13, 
+ONKYO_NAISEN = :OnkyoNaisen, 
+ONKYO_FAX11 = :OnkyoFax11, 
+ONKYO_FAX12 = :OnkyoFax12, 
+ONKYO_FAX13 = :OnkyoFax13, 
+ONKYO_MAIL = :OnkyoMail, 
+TOTAL_RIYO_KIN = :TotalRiyoKin, 
+SEND_KBN = :SendKbn, 
+SEND_STS = :SendSts, 
+SEND_DT = :SendDt, 
+HENSO_DT = :HensoDt, 
+BIKO = :Biko, 
+RIYO_COM = :RiyoCom, 
+TICKET_ENTER_KBN = :TicketEnterKbn, 
+TICKET_DRINK_KBN = :TicketDrinkKbn, 
+HP_KEISAI = :HpKeisai, 
+JOHO_KOKAI_DT = :JohoKokaiDt, 
+JOHO_KOKAI_TIME = :JohoKokaiTime, 
+KOKAI_DT = :KokaiDt, 
+KOKAI_TIME = :KokaiTime, 
+FINPUT_STS = :FinputSts, 
+UP_DT = current_timestamp, 
+UP_USER_CD = :UpUserCd 
+WHERE 
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:KariukeDt] 2015/10/30
+      [:KariUsercd] USN001
+      [:KakuteiDt] 
+      [:KakuUsercd] 
+      [:YoyakuSts] 2
+      [:ShisetuKbn] 1
+      [:StudioKbn] 0
+      [:SaijiNm] ‚ ‚ ‚ ‚ 
+      [:ShutsuenNm] ‚ ‚ ‚ ‚ ‚ ‚ 
+      [:KashiKind] 1
+      [:RiyoType] 1
+      [:DrinkFlg] 1
+      [:SaijiBunrui] 5
+      [:Teiin] 600
+      [:OnkyoOpeFlg] 
+      [:RiyoshaCd] C00076
+      [:RiyoNm] ‚ ‚ ‚ ‚ ‚ ‚ Ž––±Š
+      [:RiyoKana] ƒAƒAƒAƒAƒAƒAƒWƒ€ƒVƒ‡
+      [:SekininBushoNm] 
+      [:SekininNm] 
+      [:SekininMail] 
+      [:DaihyoNm] ‚ ‚¢‚¤@‚¦‚¨‚©
+      [:RiyoTel11] 03
+      [:RiyoTel12] 1111
+      [:RiyoTel13] 2121
+      [:RiyoTel21] 
+      [:RiyoTel22] 
+      [:RiyoTel23] 
+      [:RiyoNaisen] 
+      [:RiyoFax11] 
+      [:RiyoFax12] 
+      [:RiyoFax13] 
+      [:RiyoYubin1] 211
+      [:RiyoYubin2] 1111
+      [:RiyoTodo] ç—tŒ§
+      [:RiyoShiku] ç—tŽsç—t‹æ
+      [:RiyoBan] ‚P|‚P|‚P
+      [:RiyoBuild] ‚¿‚Îƒrƒ‹‚TŠK
+      [:RiyoLvl] 1
+      [:AiteCd] EXA024
+      [:OnkyoNm] 
+      [:OnkyoTantoNm] 
+      [:OnkyoTel11] 
+      [:OnkyoTel12] 
+      [:OnkyoTel13] 
+      [:OnkyoNaisen] 
+      [:OnkyoFax11] 
+      [:OnkyoFax12] 
+      [:OnkyoFax13] 
+      [:OnkyoMail] 
+      [:TotalRiyoKin] 
+      [:SendKbn] 1
+      [:SendSts] 1
+      [:SendDt] 
+      [:HensoDt] 
+      [:Biko] 
+      [:RiyoCom] 
+      [:TicketEnterKbn] 
+      [:TicketDrinkKbn] 
+      [:HpKeisai] 
+      [:JohoKokaiDt] 
+      [:JohoKokaiTime] 
+      [:KokaiDt] 
+      [:KokaiTime] 
+      [:FinputSts] 
+      [:AddUserCd] USN001
+      [:UpUserCd] USN001
+      [:YoyakuNo] T00022
+2015/12/11 20:30:22  TRACE> LogicEXTB0102.RegYoyakuInfo() “o˜^—\–ñ”Ô†:
+¡SQL Data :
+   Sql Command > update YOYAKU_TBL 
+SET 
+KARIUKE_DT = :KariukeDt, 
+KARI_USERCD = :KariUsercd, 
+KAKUTEI_DT = :KakuteiDt, 
+KAKU_USERCD = :KakuUsercd, 
+YOYAKU_STS = :YoyakuSts, 
+SHISETU_KBN = :ShisetuKbn, 
+STUDIO_KBN = :StudioKbn, 
+SAIJI_NM = :SaijiNm, 
+SHUTSUEN_NM = :ShutsuenNm, 
+KASHI_KIND = :KashiKind, 
+RIYO_TYPE = :RiyoType, 
+DRINK_FLG = :DrinkFlg, 
+SAIJI_BUNRUI = :SaijiBunrui, 
+TEIIN = :Teiin, 
+ONKYO_OPE_FLG = :OnkyoOpeFlg, 
+RIYOSHA_CD = :RiyoshaCd, 
+RIYO_NM = :RiyoNm, 
+RIYO_KANA = :RiyoKana, 
+SEKININ_BUSHO_NM = :SekininBushoNm, 
+SEKININ_NM = :SekininNm, 
+SEKININ_MAIL = :SekininMail, 
+DAIHYO_NM = :DaihyoNm, 
+RIYO_TEL11 = :RiyoTel11, 
+RIYO_TEL12 = :RiyoTel12, 
+RIYO_TEL13 = :RiyoTel13, 
+RIYO_TEL21 = :RiyoTel21, 
+RIYO_TEL22 = :RiyoTel22, 
+RIYO_TEL23 = :RiyoTel23, 
+RIYO_NAISEN = :RiyoNaisen, 
+RIYO_FAX11 = :RiyoFax11, 
+RIYO_FAX12 = :RiyoFax12, 
+RIYO_FAX13 = :RiyoFax13, 
+RIYO_YUBIN1 = :RiyoYubin1, 
+RIYO_YUBIN2 = :RiyoYubin2, 
+RIYO_TODO = :RiyoTodo, 
+RIYO_SHIKU = :RiyoShiku, 
+RIYO_BAN = :RiyoBan, 
+RIYO_BUILD = :RiyoBuild, 
+RIYO_LVL = :RiyoLvl, 
+AITE_CD = :AiteCd, 
+ONKYO_NM = :OnkyoNm, 
+ONKYO_TANTO_NM = :OnkyoTantoNm, 
+ONKYO_TEL11 = :OnkyoTel11, 
+ONKYO_TEL12 = :OnkyoTel12, 
+ONKYO_TEL13 = :OnkyoTel13, 
+ONKYO_NAISEN = :OnkyoNaisen, 
+ONKYO_FAX11 = :OnkyoFax11, 
+ONKYO_FAX12 = :OnkyoFax12, 
+ONKYO_FAX13 = :OnkyoFax13, 
+ONKYO_MAIL = :OnkyoMail, 
+TOTAL_RIYO_KIN = :TotalRiyoKin, 
+SEND_KBN = :SendKbn, 
+SEND_STS = :SendSts, 
+SEND_DT = :SendDt, 
+HENSO_DT = :HensoDt, 
+BIKO = :Biko, 
+RIYO_COM = :RiyoCom, 
+TICKET_ENTER_KBN = :TicketEnterKbn, 
+TICKET_DRINK_KBN = :TicketDrinkKbn, 
+HP_KEISAI = :HpKeisai, 
+JOHO_KOKAI_DT = :JohoKokaiDt, 
+JOHO_KOKAI_TIME = :JohoKokaiTime, 
+KOKAI_DT = :KokaiDt, 
+KOKAI_TIME = :KokaiTime, 
+FINPUT_STS = :FinputSts, 
+UP_DT = current_timestamp, 
+UP_USER_CD = :UpUserCd 
+WHERE 
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:KariukeDt] 2015/10/30
+      [:KariUsercd] USN001
+      [:KakuteiDt] 
+      [:KakuUsercd] 
+      [:YoyakuSts] 2
+      [:ShisetuKbn] 1
+      [:StudioKbn] 0
+      [:SaijiNm] ‚ ‚ ‚ ‚ 
+      [:ShutsuenNm] ‚ ‚ ‚ ‚ ‚ ‚ 
+      [:KashiKind] 1
+      [:RiyoType] 1
+      [:DrinkFlg] 1
+      [:SaijiBunrui] 5
+      [:Teiin] 600
+      [:OnkyoOpeFlg] 
+      [:RiyoshaCd] C00076
+      [:RiyoNm] ‚ ‚ ‚ ‚ ‚ ‚ Ž––±Š
+      [:RiyoKana] ƒAƒAƒAƒAƒAƒAƒWƒ€ƒVƒ‡
+      [:SekininBushoNm] 
+      [:SekininNm] 
+      [:SekininMail] 
+      [:DaihyoNm] ‚ ‚¢‚¤@‚¦‚¨‚©
+      [:RiyoTel11] 03
+      [:RiyoTel12] 1111
+      [:RiyoTel13] 2121
+      [:RiyoTel21] 
+      [:RiyoTel22] 
+      [:RiyoTel23] 
+      [:RiyoNaisen] 
+      [:RiyoFax11] 
+      [:RiyoFax12] 
+      [:RiyoFax13] 
+      [:RiyoYubin1] 211
+      [:RiyoYubin2] 1111
+      [:RiyoTodo] ç—tŒ§
+      [:RiyoShiku] ç—tŽsç—t‹æ
+      [:RiyoBan] ‚P|‚P|‚P
+      [:RiyoBuild] ‚¿‚Îƒrƒ‹‚TŠK
+      [:RiyoLvl] 1
+      [:AiteCd] EXA024
+      [:OnkyoNm] 
+      [:OnkyoTantoNm] 
+      [:OnkyoTel11] 
+      [:OnkyoTel12] 
+      [:OnkyoTel13] 
+      [:OnkyoNaisen] 
+      [:OnkyoFax11] 
+      [:OnkyoFax12] 
+      [:OnkyoFax13] 
+      [:OnkyoMail] 
+      [:TotalRiyoKin] 
+      [:SendKbn] 1
+      [:SendSts] 1
+      [:SendDt] 
+      [:HensoDt] 
+      [:Biko] 
+      [:RiyoCom] 
+      [:TicketEnterKbn] 
+      [:TicketDrinkKbn] 
+      [:HpKeisai] 
+      [:JohoKokaiDt] 
+      [:JohoKokaiTime] 
+      [:KokaiDt] 
+      [:KokaiTime] 
+      [:FinputSts] 
+      [:AddUserCd] USN001
+      [:UpUserCd] USN001
+      [:YoyakuNo] T00022
+2015/12/11 20:30:22  TRACE> LogicEXTB0102.RegYoyakuInfo() END
+2015/12/11 20:30:22  TRACE> LogicEXTB0102.DeleteYoyakuList() START
+2015/12/11 20:30:22  TRACE> LogicEXTB0102.DeleteYoyakuList() END
+¡SQL Data :
+   Sql Command > DELETE 
+FROM 
+YDT_TBL 
+WHERE
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:30:22  TRACE> LogicEXTB0102.InsertYoyakuList() START
+2015/12/11 20:30:22  TRACE> LogicEXTB0102.InsertYoyakuList() END
+2015/12/11 20:30:23  TRACE> LogicEXTZ0202.DeleteYoyakuCtlShisetuData() START
+2015/12/11 20:30:23  TRACE> LogicEXTZ0202.DeleteYoyakuCtlShisetuData() END
+2015/12/11 20:30:23  TRACE> LogicEXTB0102.GetYoyakuData() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0102.setSelectYoyakuData() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0102.setSelectYoyakuData() END
+2015/12/11 20:30:23  DEBUG> LogicEXTB0102.GetYoyakuData() —\–ñî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+t1.yoyaku_no, 
+t1.kariuke_dt, 
+t1.kari_usercd, 
+t1.kakutei_dt, 
+t1.kaku_usercd, 
+t1.yoyaku_sts, 
+t1.shisetu_kbn, 
+t1.studio_kbn, 
+t1.saiji_nm, 
+t1.shutsuen_nm, 
+t1.kashi_kind, 
+t1.riyo_type, 
+t1.drink_flg, 
+t1.saiji_bunrui, 
+t1.teiin, 
+t1.onkyo_ope_flg, 
+t1.riyosha_cd, 
+t1.riyo_nm, 
+t1.riyo_kana, 
+t1.sekinin_busho_nm, 
+t1.sekinin_nm, 
+t1.sekinin_mail, 
+t1.daihyo_nm, 
+t1.riyo_tel11, 
+t1.riyo_tel12, 
+t1.riyo_tel13, 
+t1.riyo_tel21, 
+t1.riyo_tel22, 
+t1.riyo_tel23, 
+t1.riyo_naisen, 
+t1.riyo_fax11, 
+t1.riyo_fax12, 
+t1.riyo_fax13, 
+t1.riyo_yubin1, 
+t1.riyo_yubin2, 
+t1.riyo_todo, 
+t1.riyo_shiku, 
+t1.riyo_ban, 
+t1.riyo_build, 
+t1.riyo_lvl, 
+t1.aite_cd, 
+t1.onkyo_nm, 
+t1.onkyo_tanto_nm, 
+t1.onkyo_tel11, 
+t1.onkyo_tel12, 
+t1.onkyo_tel13, 
+t1.onkyo_naisen, 
+t1.onkyo_fax11, 
+t1.onkyo_fax12, 
+t1.onkyo_fax13, 
+t1.onkyo_mail, 
+t1.total_riyo_kin, 
+t1.send_kbn, 
+t1.send_sts, 
+t1.send_dt, 
+t1.henso_dt, 
+t1.biko, 
+t1.riyo_com, 
+t1.ticket_enter_kbn, 
+t1.ticket_drink_kbn, 
+t1.hp_keisai, 
+t1.joho_kokai_dt, 
+t1.joho_kokai_time, 
+t1.kokai_dt, 
+t1.kokai_time, 
+t1.finput_sts, 
+to_char(t1.add_dt,'YYYY/MM/DD HH:mm') as add_dt, 
+t1.add_user_cd, 
+m1.user_nm as add_user_nm,
+to_char(t1.up_dt,'YYYY/MM/DD HH:mm') as up_dt, 
+t1.up_user_cd, 
+m2.user_nm as up_user_nm, 
+m3.aite_nm as aite_nm 
+FROM 
+YOYAKU_TBL t1
+LEFT JOIN USER_MST m1
+ON t1.add_user_cd = m1.user_cd
+LEFT JOIN USER_MST m2
+ON t1.up_user_cd = m2.user_cd
+LEFT JOIN AITESAKI_MST m3
+ON t1.aite_cd = m3.aite_cd
+WHERE
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:30:23  TRACE> LogicEXTB0102.GetYoyakuData() START_2
+2015/12/11 20:30:23  TRACE> LogicEXTB0102.GetYoyakuData() END_2
+2015/12/11 20:30:23  TRACE> LogicEXTB0102.GetYoyakuData() END
+2015/12/11 20:30:23  TRACE> LogicEXTB0102.GetRiyobiData() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0102.setSelectRiyobiData() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0102.setSelectRiyobiData() END
+2015/12/11 20:30:23  DEBUG> LogicEXTB0102.GetRiyobiData() —\–ñ“úŽžî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+seq, 
+shisetu_kbn, 
+studio_kbn, 
+yoyaku_dt, 
+start_time, 
+end_time, 
+yoyaku_no, 
+riyo_keitai, 
+mitei_flg, 
+tanka, 
+bairitu, 
+su, 
+riyo_kin 
+FROM 
+YDT_TBL 
+WHERE
+yoyaku_no = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:30:23  TRACE> LogicEXTB0102.GetRiyobiData() END
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.GetApproval() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectApprovalReq() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectApprovalReq() END
+2015/12/11 20:30:23  DEBUG> LogicEXTB0103.GetApproval() Šm”FˆË—Šî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    t1.yoyaku_no, 
+    t1.seq, 
+    to_char(t1.irai_dt, 'yyyy/mm/dd hh24:mi') as irai_dt, 
+    t1.com, 
+    t2.user_nm as user_nm 
+FROM 
+    irai_rireki_tbl t1 
+    LEFT JOIN 
+        user_mst t2 
+        ON  t1.irai_usercd = t2.user_cd 
+WHERE yoyaku_no = :YoyakuNo ORDER BY t1.seq 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectApprovalRes() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectApprovalRes() END
+2015/12/11 20:30:23  DEBUG> LogicEXTB0103.GetApproval() Šm”F‹L˜^î•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    t1.yoyaku_no, 
+    t1.seq, 
+    to_char(t1.check_dt, 'yyyy/mm/dd hh24:mi') as check_dt, 
+    t1.check_sts, 
+    t1.com, 
+    t2.user_nm as user_nm 
+FROM 
+    check_rireki_tbl t1 
+    LEFT JOIN 
+        user_mst t2 
+        ON  t1.check_usercd = t2.user_cd 
+WHERE t1.yoyaku_no = :YoyakuNo ORDER BY t1.seq 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.GetApproval() END
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.GetTimeSchedule() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectTimeSch() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectTimeSch() END
+2015/12/11 20:30:23  DEBUG> LogicEXTB0103.GetTimeSchedule() ƒ^ƒCƒ€ƒXƒPƒWƒ…[ƒ‹î•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    yoyaku_no, 
+    seq, 
+    shurui, 
+    time, 
+    biko 
+FROM 
+    time_schedule_tbl 
+WHERE yoyaku_no = :YoyakuNo 
+ORDER BY time 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.GetTimeSchedule() END
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.GetTicketInfo() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectTicket() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectTicket() END
+2015/12/11 20:30:23  DEBUG> LogicEXTB0103.GetTicketInfo() ƒ`ƒPƒbƒgî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    yoyaku_no, 
+    seq, 
+    ticket_nm, 
+    ticket_kin 
+FROM 
+    ticket_tbl 
+WHERE yoyaku_no = :YoyakuNo 
+ORDER BY add_dt 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.nextValSeikyuIraiNo() START
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.GetTicketInfo() END
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.GetFutai() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectFutaiHeadder() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectFutaiHeadder() END
+2015/12/11 20:30:23  DEBUG> LogicEXTB0103.GetFutai() •t‘Ñî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    '' as yoyaku_no, 
+    :Riyobi as yoyaku_dt,  
+    SUM(m1.tanka) as total_fuzoku_kin,  
+    ARRAY_TO_STRING(ARRAY_AGG(m1.futai_nm), '^') as fuzoku_nm 
+   ,CASE WHEN :SYANAI = '2' THEN  0
+                            ELSE  
+                              SUM( CASE WHEN m2.NOTAX_FLG = '0' THEN ROUND((m1.TANKA * m3.tax_ritu) /100 ,0)
+                                                                ELSE 0 
+                                    END ) 
+    END  AS TAX_KIN 
+FROM 
+    futai_mst m1
+           LEFT OUTER JOIN  FBUNRUI_MST m2 
+                       ON   m1.BUNRUI_CD = m2.BUNRUI_CD 
+                      AND   m1.SHISETU_KBN = m2.SHISETU_KBN 
+                      AND   :Riyobi BETWEEN m2.KIKAN_FROM AND m2.KIKAN_TO 
+           LEFT OUTER JOIN  TAX_MST m3 
+                       ON   :Riyobi BETWEEN m3.TAXS_DT AND m3.TAXE_DT 
+WHERE 
+    m1.def_flg = '1' 
+AND m1.sts = '0' 
+AND :Riyobi BETWEEN m1.kikan_from AND m1.kikan_to 
+AND m1.shisetu_kbn = :ShisetuKbn 
+group by 
+    m1.def_flg, 
+    m1.sts 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+      [:Riyobi] 2015/09/09
+      [:ShisetuKbn] 1
+      [:SYANAI] 1
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectFutaiDetail() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectFutaiDetail() END
+2015/12/11 20:30:23  DEBUG> LogicEXTB0103.GetFutai() •t‘Ñî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    '' as yoyaku_no,  
+    :Riyobi as yoyaku_dt,  
+    m1.bunrui_cd as futai_bunrui_cd, 
+    m1.futai_cd, 
+    m1.tanka as futai_tanka, 
+    1 as futai_su, 
+    m1.tanka as futai_shokei, 
+    0 as futai_chosei, 
+    m1.tanka as futai_kin, 
+    '' as futai_biko, 
+    m1.futai_nm, 
+    m1.tani as futai_tani, 
+    m2.bunrui_nm as futai_bunrui_nm, 
+    m2.shukei_grp, 
+    m2.kamoku_cd, 
+    m2.saimoku_cd, 
+    m2.uchi_cd, 
+    m2.shosai_cd, 
+    m2.karikamoku_cd, 
+    m2.kari_saimoku_cd, 
+    m2.kari_uchi_cd, 
+    m2.kari_shosai_cd, 
+    m2.notax_flg, 
+    m3.kamoku_nm, 
+    m3.saimoku_nm, 
+    m3.uchi_nm, 
+    m3.shosai_nm 
+   ,CASE WHEN :SYANAI = '2' THEN  0
+                            ELSE 
+                                      CASE WHEN m2.NOTAX_FLG = '0' THEN ROUND((m1.TANKA * m4.tax_ritu) /100 ,0)
+                                      ELSE 0 
+                               END 
+    END  AS TAX_KIN 
+FROM 
+    futai_mst m1 
+LEFT JOIN fbunrui_mst m2 
+    ON m1.bunrui_cd = m2.bunrui_cd 
+    AND m2.shisetu_kbn = :ShisetuKbn 
+    AND :Riyobi BETWEEN m2.kikan_from AND m2.kikan_to 
+    AND m2.sts = '0' 
+LEFT JOIN kamoku_mst m3 
+    ON m2.kamoku_cd = m3.kamoku_cd 
+    AND m2.saimoku_cd = m3.saimoku_cd 
+    AND m2.uchi_cd = m3.uchi_cd 
+    AND m2.shosai_cd = m3.shosai_cd 
+    AND m3.sts = '0' 
+LEFT OUTER JOIN  TAX_MST m4 
+    ON  :Riyobi BETWEEN m4.TAXS_DT AND m4.TAXE_DT 
+WHERE 
+    m1.def_flg = '1' 
+AND m1.sts = '0' 
+AND :Riyobi BETWEEN m1.kikan_from AND m1.kikan_to 
+AND m1.shisetu_kbn = :ShisetuKbn 
+ORDER BY 
+    m1.sort 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+      [:ShisetuKbn] 1
+      [:Riyobi] 2015/09/09
+      [:SYANAI] 1
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.GetFutai() END
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.GetTax() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectTax() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectTax() END
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.GetTax() TAX = 0.08
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.GetTax() END
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.GetBillReq() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectBillReq() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectBillReq() END
+2015/12/11 20:30:23  DEBUG> LogicEXTB0103.GetBillReq() ¿‹î•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    t1.yoyaku_no, 
+    t1.seq, 
+    t1.seikyu_irai_no, 
+    t1.seikyu_dt, 
+    t1.nyukin_yotei_dt, 
+    t1.kakutei_kin, 
+    t1.chosei_kin, 
+    t1.shokei, 
+    t1.tax_kin, 
+    t1.seikyu_kin, 
+    t1.seikyu_naiyo, 
+    CASE WHEN t1.seikyu_naiyo='1' THEN '—˜—p—¿' WHEN t1.seikyu_naiyo='2' THEN '•t‘ÑÝ”õ'
+         WHEN t1.seikyu_naiyo='3' THEN '—˜—p—¿+•t‘ÑÝ”õ' WHEN t1.seikyu_naiyo='4' THEN 'ŠÒ•t' ELSE '' END as seikyu_naiyo_nm, 
+    t1.aite_cd, 
+    m1.aite_nm, 
+    t1.nyukin_kbn, 
+    t1.seikyu_title1, 
+    t1.seikyu_title2, 
+    t1.nyukin_dt, 
+    t1.nyukin_kin, 
+    t1.seikyu_input_flg, 
+    t1.seikyu_irai_flg, 
+    t1.nyukin_input_flg, 
+    t1.nyukin_link_no
+FROM 
+    BILLPAY_TBL t1 
+LEFT JOIN AITESAKI_MST m1 
+    ON t1.aite_cd = m1.aite_cd 
+WHERE t1.yoyaku_no = :YoyakuNo 
+ORDER BY t1.seq 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.GetBillReq() END
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.WeekDayCheck() START
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.GetSelectHolidayMst() START
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.GetSelectHoliday() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.GetHolidayMst() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.GetHolidayMst() END
+2015/12/11 20:30:23  DEBUG> LogicEXTB0103.GetSelectHoliday() jÕ“ú
+¡SQL Data :
+   Sql Command > SELECT  COUNT(*) 
+FROM HOLIDAY_MST 
+WHERE HOLIDAY_DT = :HOLIDAY_DT 
+   Parameters Data > 
+      [HOLIDAY_DT] 2016/01/29
+2015/12/11 20:30:23  TRACE> LogicEXTB0103.GetExasRiyoryo() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selectExasRiyoryo() START
+2015/12/11 20:30:23  TRACE> SqlEXTB0103.selecContents() START
+2015/12/11 20:35:20  TRACE> LogicEXTA0101.GetConfigrationFlg() START
+2015/12/11 20:35:20  TRACE> LogicEXTA0101.GetConfigrationFlg() END
+2015/12/11 20:35:20  TRACE> CommonLogicEXT.SetFormBackColor() START
+2015/12/11 20:35:20  TRACE> CommonLogicEXT.SetFormBackColor() END
+2015/12/11 20:35:32  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:35:32  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:35:33  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:35:33  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:35:33  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:35:33  TRACE> LogicEXTA0101.LoginInputCheck() START
+2015/12/11 20:35:33  TRACE> LogicEXTA0101.LoginInputCheck() END
+2015/12/11 20:35:33  TRACE> LogicEXTA0101.GetLoginData() START
+2015/12/11 20:35:33  TRACE> SqlEXTA0101.setSelectLoginData() START
+2015/12/11 20:35:33  TRACE> SqlEXTA0101.setSelectLoginData() END
+2015/12/11 20:35:33  DEBUG> LogicEXTA0101.GetLoginData() ƒƒOƒCƒ“î•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+USER_NM, 
+MAIL, 
+BUSHO_CD, 
+SHONIN_FLG, 
+MST_FLG 
+FROM 
+USER_MST 
+WHERE
+USER_CD = :UserId 
+and PW = :Password 
+and STS = '0' 
+   Parameters Data > 
+      [:UserId] USN001
+      [:Password] password
+2015/12/11 20:35:33  TRACE> LogicEXTA0101.GetLoginData() END
+2015/12/11 20:35:33  TRACE> LogicEXTA0101.DelYoyakuCtlData() START
+2015/12/11 20:35:33  DEBUG> LogicEXTA0101.DelYoyakuCtlData() Login Proc1
+¡SQL Data :
+   Sql Command > DELETE 
+FROM 
+YCTL_TBL 
+WHERE
+USER_CD = :UserId 
+   Parameters Data > 
+      [:UserId] USN001
+2015/12/11 20:35:33  DEBUG> LogicEXTA0101.DelYoyakuCtlData() Login Proc2
+¡SQL Data :
+   Sql Command > DELETE 
+FROM 
+CCTL_TBL 
+WHERE
+USER_CD = :UserId 
+   Parameters Data > 
+      [:UserId] USN001
+2015/12/11 20:35:33  TRACE> LogicEXTA0101.DelYoyakuCtlData() END
+2015/12/11 20:35:33  TRACE> LogicEXTA0101.SetSystemProperties() START
+2015/12/11 20:35:33  TRACE> SqlEXTA0101.setSelectSystemProperty() START
+2015/12/11 20:35:33  TRACE> SqlEXTA0101.setSelectSystemProperty() END
+2015/12/11 20:35:33  DEBUG> LogicEXTA0101.SetSystemProperties() ƒVƒXƒeƒ€ƒvƒƒpƒeƒBŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+TEIIN_A, 
+TEIIN_B, 
+KARI_JIZEN_TUTI 
+FROM 
+SYSTEM_MST 
+   Parameters Data > 
+2015/12/11 20:35:33  TRACE> LogicEXTA0101.SetSystemProperties() END
+2015/12/11 20:35:33  TRACE> EXTA0101.btnLogin_Click() LOGIN:USN001
+2015/12/11 20:35:33  TRACE> CommonLogicEXT.SetFormBackColor() START
+2015/12/11 20:35:33  TRACE> CommonLogicEXT.SetFormBackColor() END
+2015/12/11 20:35:34  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:35:34  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:35:34  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:35:34  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:35:34  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:35:35  TRACE> LogicEXTB0101.MakeSpread() START
+2015/12/11 20:35:35  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:35:35  TRACE> LogicEXTB0101.GetSpreadData() START
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectShukusaijitsu() START
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectShukusaijitsu() END
+2015/12/11 20:35:35  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+  HOLIDAY_DT
+from
+  HOLIDAY_MST 
+where
+  substr(HOLIDAY_DT,1,7) = :HOLIDAY_DT
+   Parameters Data > 
+      [:HOLIDAY_DT] 2015/12
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectYoyakuList() START
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectYoyakuList() END
+2015/12/11 20:35:35  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+   a.SHISETU_KBN
+  ,a.STUDIO_KBN
+  ,a.YOYAKU_DT
+  ,a.START_TIME
+  ,a.END_TIME
+  ,a.YOYAKU_NO
+  ,a.MITEI_FLG
+  ,b.STUDIO_KBN  
+  ,b.SAIJI_NM
+  ,b.SHUTSUEN_NM
+  ,b.YOYAKU_STS
+  ,a.RIYO_KEITAI
+  ,c.RIYO_NM
+from
+  YDT_TBL a
+left join YOYAKU_TBL b on(
+  a.YOYAKU_NO = b.YOYAKU_NO
+)
+left join RIYOSHA_MST c on(
+  b.RIYOSHA_CD = c.RIYOSHA_CD
+)
+where
+  a.SHISETU_KBN = '1'
+  and substr(a.YOYAKU_DT,1,7) = :YOYAKU_DT
+  and b.YOYAKU_STS IN ('1', '2', '3', '4')
+order by a.YOYAKU_DT, a.START_TIME
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/12
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() START
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() END
+2015/12/11 20:35:35  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  YCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/12
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:35:35  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and a.RIYO_DT_FLG = :RIYO_DT_FLG
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/12
+      [:RIYO_DT_FLG] 1
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:35:35  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/12
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() START
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() END
+2015/12/11 20:35:35  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  CCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/12
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:35:35  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/12
+      [:CANCEL_WAIT_STS] 3
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() START
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() END
+2015/12/11 20:35:35  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   RIYO_DT
+  ,START_TIME
+  ,END_TIME
+  ,RIYO_BASHO
+  ,RIYO_YOTO
+  ,RIYOSHA
+from
+  SONOTA_DT_TBL
+where
+  substr(RIYO_DT,1,7) = :RIYO_DT
+   Parameters Data > 
+      [:RIYO_DT] 2015/12
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectKyukanMainteList() START
+2015/12/11 20:35:35  TRACE> SqlEXTB0101.setSelectKyukanMainteList() END
+2015/12/11 20:35:35  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+  HOLMENT_DT
+  ,SHISETU_KBN
+  ,MNAIYO
+  ,HOLMENT_KBN
+from
+  HOLMENT_MST
+where
+  SHISETU_KBN = '1'
+  and substr(HOLMENT_DT,1,7) = :HOLMENT_DT
+   Parameters Data > 
+      [:HOLMENT_DT] 2015/12
+2015/12/11 20:35:35  TRACE> LogicEXTB0101.GetSpreadData() END
+2015/12/11 20:35:35  TRACE> LogicEXTB0101.ViewSpreadData() START
+2015/12/11 20:35:35  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:35:35  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:35:35  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:35:35  TRACE> CommonLogicEXT.SetFormBackColor() START
+2015/12/11 20:35:35  TRACE> CommonLogicEXT.SetFormBackColor() END
+2015/12/11 20:35:38  TRACE> LogicEXTB0101.NengetuInputCheck() START
+2015/12/11 20:35:38  TRACE> LogicEXTB0101.NengetuInputCheck() END
+2015/12/11 20:35:38  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:35:38  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:35:38  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:35:38  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:35:38  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:35:38  TRACE> LogicEXTB0101.MakeSpread() START
+2015/12/11 20:35:38  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:35:38  TRACE> LogicEXTB0101.GetSpreadData() START
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectShukusaijitsu() START
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectShukusaijitsu() END
+2015/12/11 20:35:38  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+  HOLIDAY_DT
+from
+  HOLIDAY_MST 
+where
+  substr(HOLIDAY_DT,1,7) = :HOLIDAY_DT
+   Parameters Data > 
+      [:HOLIDAY_DT] 2015/09
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectYoyakuList() START
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectYoyakuList() END
+2015/12/11 20:35:38  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+   a.SHISETU_KBN
+  ,a.STUDIO_KBN
+  ,a.YOYAKU_DT
+  ,a.START_TIME
+  ,a.END_TIME
+  ,a.YOYAKU_NO
+  ,a.MITEI_FLG
+  ,b.STUDIO_KBN  
+  ,b.SAIJI_NM
+  ,b.SHUTSUEN_NM
+  ,b.YOYAKU_STS
+  ,a.RIYO_KEITAI
+  ,c.RIYO_NM
+from
+  YDT_TBL a
+left join YOYAKU_TBL b on(
+  a.YOYAKU_NO = b.YOYAKU_NO
+)
+left join RIYOSHA_MST c on(
+  b.RIYOSHA_CD = c.RIYOSHA_CD
+)
+where
+  a.SHISETU_KBN = '1'
+  and substr(a.YOYAKU_DT,1,7) = :YOYAKU_DT
+  and b.YOYAKU_STS IN ('1', '2', '3', '4')
+order by a.YOYAKU_DT, a.START_TIME
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/09
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() START
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() END
+2015/12/11 20:35:38  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  YCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/09
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:35:38  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and a.RIYO_DT_FLG = :RIYO_DT_FLG
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/09
+      [:RIYO_DT_FLG] 1
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:35:38  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/09
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() START
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() END
+2015/12/11 20:35:38  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  CCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/09
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:35:38  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/09
+      [:CANCEL_WAIT_STS] 3
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() START
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() END
+2015/12/11 20:35:38  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   RIYO_DT
+  ,START_TIME
+  ,END_TIME
+  ,RIYO_BASHO
+  ,RIYO_YOTO
+  ,RIYOSHA
+from
+  SONOTA_DT_TBL
+where
+  substr(RIYO_DT,1,7) = :RIYO_DT
+   Parameters Data > 
+      [:RIYO_DT] 2015/09
+2015/12/11 20:35:38  TRACE> SqlEXTB0101.setSelectKyukanMainteList() START
+2015/12/11 20:35:39  TRACE> SqlEXTB0101.setSelectKyukanMainteList() END
+2015/12/11 20:35:39  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+  HOLMENT_DT
+  ,SHISETU_KBN
+  ,MNAIYO
+  ,HOLMENT_KBN
+from
+  HOLMENT_MST
+where
+  SHISETU_KBN = '1'
+  and substr(HOLMENT_DT,1,7) = :HOLMENT_DT
+   Parameters Data > 
+      [:HOLMENT_DT] 2015/09
+2015/12/11 20:35:39  TRACE> LogicEXTB0101.GetSpreadData() END
+2015/12/11 20:35:39  TRACE> LogicEXTB0101.ViewSpreadData() START
+2015/12/11 20:35:39  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:35:39  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:35:39  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:35:39  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:35:39  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:35:39  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:35:39  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:35:39  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:35:40  TRACE> LogicEXTB0102.GetYoyakuData() START
+2015/12/11 20:35:40  TRACE> SqlEXTB0102.setSelectYoyakuData() START
+2015/12/11 20:35:40  TRACE> SqlEXTB0102.setSelectYoyakuData() END
+2015/12/11 20:35:40  DEBUG> LogicEXTB0102.GetYoyakuData() —\–ñî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+t1.yoyaku_no, 
+t1.kariuke_dt, 
+t1.kari_usercd, 
+t1.kakutei_dt, 
+t1.kaku_usercd, 
+t1.yoyaku_sts, 
+t1.shisetu_kbn, 
+t1.studio_kbn, 
+t1.saiji_nm, 
+t1.shutsuen_nm, 
+t1.kashi_kind, 
+t1.riyo_type, 
+t1.drink_flg, 
+t1.saiji_bunrui, 
+t1.teiin, 
+t1.onkyo_ope_flg, 
+t1.riyosha_cd, 
+t1.riyo_nm, 
+t1.riyo_kana, 
+t1.sekinin_busho_nm, 
+t1.sekinin_nm, 
+t1.sekinin_mail, 
+t1.daihyo_nm, 
+t1.riyo_tel11, 
+t1.riyo_tel12, 
+t1.riyo_tel13, 
+t1.riyo_tel21, 
+t1.riyo_tel22, 
+t1.riyo_tel23, 
+t1.riyo_naisen, 
+t1.riyo_fax11, 
+t1.riyo_fax12, 
+t1.riyo_fax13, 
+t1.riyo_yubin1, 
+t1.riyo_yubin2, 
+t1.riyo_todo, 
+t1.riyo_shiku, 
+t1.riyo_ban, 
+t1.riyo_build, 
+t1.riyo_lvl, 
+t1.aite_cd, 
+t1.onkyo_nm, 
+t1.onkyo_tanto_nm, 
+t1.onkyo_tel11, 
+t1.onkyo_tel12, 
+t1.onkyo_tel13, 
+t1.onkyo_naisen, 
+t1.onkyo_fax11, 
+t1.onkyo_fax12, 
+t1.onkyo_fax13, 
+t1.onkyo_mail, 
+t1.total_riyo_kin, 
+t1.send_kbn, 
+t1.send_sts, 
+t1.send_dt, 
+t1.henso_dt, 
+t1.biko, 
+t1.riyo_com, 
+t1.ticket_enter_kbn, 
+t1.ticket_drink_kbn, 
+t1.hp_keisai, 
+t1.joho_kokai_dt, 
+t1.joho_kokai_time, 
+t1.kokai_dt, 
+t1.kokai_time, 
+t1.finput_sts, 
+to_char(t1.add_dt,'YYYY/MM/DD HH:mm') as add_dt, 
+t1.add_user_cd, 
+m1.user_nm as add_user_nm,
+to_char(t1.up_dt,'YYYY/MM/DD HH:mm') as up_dt, 
+t1.up_user_cd, 
+m2.user_nm as up_user_nm, 
+m3.aite_nm as aite_nm 
+FROM 
+YOYAKU_TBL t1
+LEFT JOIN USER_MST m1
+ON t1.add_user_cd = m1.user_cd
+LEFT JOIN USER_MST m2
+ON t1.up_user_cd = m2.user_cd
+LEFT JOIN AITESAKI_MST m3
+ON t1.aite_cd = m3.aite_cd
+WHERE
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:35:40  TRACE> LogicEXTB0102.GetYoyakuData() START_2
+2015/12/11 20:35:40  TRACE> LogicEXTB0102.GetYoyakuData() END_2
+2015/12/11 20:35:40  TRACE> LogicEXTB0102.GetYoyakuData() END
+2015/12/11 20:35:40  TRACE> LogicEXTB0102.GetRiyobiData() START
+2015/12/11 20:35:40  TRACE> SqlEXTB0102.setSelectRiyobiData() START
+2015/12/11 20:35:40  TRACE> SqlEXTB0102.setSelectRiyobiData() END
+2015/12/11 20:35:40  DEBUG> LogicEXTB0102.GetRiyobiData() —\–ñ“úŽžî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+seq, 
+shisetu_kbn, 
+studio_kbn, 
+yoyaku_dt, 
+start_time, 
+end_time, 
+yoyaku_no, 
+riyo_keitai, 
+mitei_flg, 
+tanka, 
+bairitu, 
+su, 
+riyo_kin 
+FROM 
+YDT_TBL 
+WHERE
+yoyaku_no = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:35:40  TRACE> LogicEXTB0102.GetRiyobiData() END
+2015/12/11 20:35:40  TRACE> LogicEXTB0102.GetSekininshaList() START
+2015/12/11 20:35:40  TRACE> SqlEXTB0102.setSelectSekininName() START
+2015/12/11 20:35:40  TRACE> SqlEXTB0102.setSelectSekininName() END
+2015/12/11 20:35:40  TRACE> CommonLogicEXT.SetFormBackColor() START
+2015/12/11 20:35:40  TRACE> CommonLogicEXT.SetFormBackColor() END
+2015/12/11 20:35:41  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:35:41  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:35:41  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:35:41  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:35:41  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:35:41  TRACE> EXTB0102.inputCheckMain() Chk_START
+2015/12/11 20:35:41  TRACE> EXTB0102.inputCheckMain() Chk_END
+2015/12/11 20:35:41  TRACE> EXTB0102.inputCheckCondition() Chk_START
+2015/12/11 20:35:41  TRACE> LogicEXTZ0202.CheckRiyobiRegister() START
+2015/12/11 20:35:41  TRACE> SqlEXTZ0202.cntRiyobi() START
+2015/12/11 20:35:41  TRACE> SqlEXTZ0202.cntRiyobi() END
+2015/12/11 20:35:41  TRACE> LogicEXTZ0202.CheckRiyobiRegister() END
+2015/12/11 20:35:41  TRACE> EXTB0102.inputCheckCondition() Chk_END
+2015/12/11 20:35:42  TRACE> LogicEXTZ0202.DeleteYoyakuCtlShisetuData() START
+2015/12/11 20:35:42  TRACE> LogicEXTZ0202.DeleteYoyakuCtlShisetuData() END
+2015/12/11 20:35:42  TRACE> LogicEXTB0102.RegYoyakuInfo() START
+2015/12/11 20:35:42  TRACE> LogicEXTB0102.RegYoyakuInfo() Complate SQL
+¡SQL Data :
+   Sql Command > update YOYAKU_TBL 
+SET 
+KARIUKE_DT = :KariukeDt, 
+KARI_USERCD = :KariUsercd, 
+KAKUTEI_DT = :KakuteiDt, 
+KAKU_USERCD = :KakuUsercd, 
+YOYAKU_STS = :YoyakuSts, 
+SHISETU_KBN = :ShisetuKbn, 
+STUDIO_KBN = :StudioKbn, 
+SAIJI_NM = :SaijiNm, 
+SHUTSUEN_NM = :ShutsuenNm, 
+KASHI_KIND = :KashiKind, 
+RIYO_TYPE = :RiyoType, 
+DRINK_FLG = :DrinkFlg, 
+SAIJI_BUNRUI = :SaijiBunrui, 
+TEIIN = :Teiin, 
+ONKYO_OPE_FLG = :OnkyoOpeFlg, 
+RIYOSHA_CD = :RiyoshaCd, 
+RIYO_NM = :RiyoNm, 
+RIYO_KANA = :RiyoKana, 
+SEKININ_BUSHO_NM = :SekininBushoNm, 
+SEKININ_NM = :SekininNm, 
+SEKININ_MAIL = :SekininMail, 
+DAIHYO_NM = :DaihyoNm, 
+RIYO_TEL11 = :RiyoTel11, 
+RIYO_TEL12 = :RiyoTel12, 
+RIYO_TEL13 = :RiyoTel13, 
+RIYO_TEL21 = :RiyoTel21, 
+RIYO_TEL22 = :RiyoTel22, 
+RIYO_TEL23 = :RiyoTel23, 
+RIYO_NAISEN = :RiyoNaisen, 
+RIYO_FAX11 = :RiyoFax11, 
+RIYO_FAX12 = :RiyoFax12, 
+RIYO_FAX13 = :RiyoFax13, 
+RIYO_YUBIN1 = :RiyoYubin1, 
+RIYO_YUBIN2 = :RiyoYubin2, 
+RIYO_TODO = :RiyoTodo, 
+RIYO_SHIKU = :RiyoShiku, 
+RIYO_BAN = :RiyoBan, 
+RIYO_BUILD = :RiyoBuild, 
+RIYO_LVL = :RiyoLvl, 
+AITE_CD = :AiteCd, 
+ONKYO_NM = :OnkyoNm, 
+ONKYO_TANTO_NM = :OnkyoTantoNm, 
+ONKYO_TEL11 = :OnkyoTel11, 
+ONKYO_TEL12 = :OnkyoTel12, 
+ONKYO_TEL13 = :OnkyoTel13, 
+ONKYO_NAISEN = :OnkyoNaisen, 
+ONKYO_FAX11 = :OnkyoFax11, 
+ONKYO_FAX12 = :OnkyoFax12, 
+ONKYO_FAX13 = :OnkyoFax13, 
+ONKYO_MAIL = :OnkyoMail, 
+TOTAL_RIYO_KIN = :TotalRiyoKin, 
+SEND_KBN = :SendKbn, 
+SEND_STS = :SendSts, 
+SEND_DT = :SendDt, 
+HENSO_DT = :HensoDt, 
+BIKO = :Biko, 
+RIYO_COM = :RiyoCom, 
+TICKET_ENTER_KBN = :TicketEnterKbn, 
+TICKET_DRINK_KBN = :TicketDrinkKbn, 
+HP_KEISAI = :HpKeisai, 
+JOHO_KOKAI_DT = :JohoKokaiDt, 
+JOHO_KOKAI_TIME = :JohoKokaiTime, 
+KOKAI_DT = :KokaiDt, 
+KOKAI_TIME = :KokaiTime, 
+FINPUT_STS = :FinputSts, 
+UP_DT = current_timestamp, 
+UP_USER_CD = :UpUserCd 
+WHERE 
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:KariukeDt] 2015/10/30
+      [:KariUsercd] USN001
+      [:KakuteiDt] 
+      [:KakuUsercd] 
+      [:YoyakuSts] 2
+      [:ShisetuKbn] 1
+      [:StudioKbn] 0
+      [:SaijiNm] ‚ ‚ ‚ ‚ 
+      [:ShutsuenNm] ‚ ‚ ‚ ‚ ‚ ‚ 
+      [:KashiKind] 1
+      [:RiyoType] 1
+      [:DrinkFlg] 1
+      [:SaijiBunrui] 5
+      [:Teiin] 600
+      [:OnkyoOpeFlg] 
+      [:RiyoshaCd] C00076
+      [:RiyoNm] ‚ ‚ ‚ ‚ ‚ ‚ Ž––±Š
+      [:RiyoKana] ƒAƒAƒAƒAƒAƒAƒWƒ€ƒVƒ‡
+      [:SekininBushoNm] 
+      [:SekininNm] 
+      [:SekininMail] 
+      [:DaihyoNm] ‚ ‚¢‚¤@‚¦‚¨‚©
+      [:RiyoTel11] 03
+      [:RiyoTel12] 1111
+      [:RiyoTel13] 2121
+      [:RiyoTel21] 
+      [:RiyoTel22] 
+      [:RiyoTel23] 
+      [:RiyoNaisen] 
+      [:RiyoFax11] 
+      [:RiyoFax12] 
+      [:RiyoFax13] 
+      [:RiyoYubin1] 211
+      [:RiyoYubin2] 1111
+      [:RiyoTodo] ç—tŒ§
+      [:RiyoShiku] ç—tŽsç—t‹æ
+      [:RiyoBan] ‚P|‚P|‚P
+      [:RiyoBuild] ‚¿‚Îƒrƒ‹‚TŠK
+      [:RiyoLvl] 1
+      [:AiteCd] EXA024
+      [:OnkyoNm] 
+      [:OnkyoTantoNm] 
+      [:OnkyoTel11] 
+      [:OnkyoTel12] 
+      [:OnkyoTel13] 
+      [:OnkyoNaisen] 
+      [:OnkyoFax11] 
+      [:OnkyoFax12] 
+      [:OnkyoFax13] 
+      [:OnkyoMail] 
+      [:TotalRiyoKin] 
+      [:SendKbn] 1
+      [:SendSts] 1
+      [:SendDt] 
+      [:HensoDt] 
+      [:Biko] 
+      [:RiyoCom] 
+      [:TicketEnterKbn] 
+      [:TicketDrinkKbn] 
+      [:HpKeisai] 
+      [:JohoKokaiDt] 
+      [:JohoKokaiTime] 
+      [:KokaiDt] 
+      [:KokaiTime] 
+      [:FinputSts] 
+      [:AddUserCd] USN001
+      [:UpUserCd] USN001
+      [:YoyakuNo] T00022
+2015/12/11 20:35:42  TRACE> LogicEXTB0102.RegYoyakuInfo() “o˜^—\–ñ”Ô†:
+¡SQL Data :
+   Sql Command > update YOYAKU_TBL 
+SET 
+KARIUKE_DT = :KariukeDt, 
+KARI_USERCD = :KariUsercd, 
+KAKUTEI_DT = :KakuteiDt, 
+KAKU_USERCD = :KakuUsercd, 
+YOYAKU_STS = :YoyakuSts, 
+SHISETU_KBN = :ShisetuKbn, 
+STUDIO_KBN = :StudioKbn, 
+SAIJI_NM = :SaijiNm, 
+SHUTSUEN_NM = :ShutsuenNm, 
+KASHI_KIND = :KashiKind, 
+RIYO_TYPE = :RiyoType, 
+DRINK_FLG = :DrinkFlg, 
+SAIJI_BUNRUI = :SaijiBunrui, 
+TEIIN = :Teiin, 
+ONKYO_OPE_FLG = :OnkyoOpeFlg, 
+RIYOSHA_CD = :RiyoshaCd, 
+RIYO_NM = :RiyoNm, 
+RIYO_KANA = :RiyoKana, 
+SEKININ_BUSHO_NM = :SekininBushoNm, 
+SEKININ_NM = :SekininNm, 
+SEKININ_MAIL = :SekininMail, 
+DAIHYO_NM = :DaihyoNm, 
+RIYO_TEL11 = :RiyoTel11, 
+RIYO_TEL12 = :RiyoTel12, 
+RIYO_TEL13 = :RiyoTel13, 
+RIYO_TEL21 = :RiyoTel21, 
+RIYO_TEL22 = :RiyoTel22, 
+RIYO_TEL23 = :RiyoTel23, 
+RIYO_NAISEN = :RiyoNaisen, 
+RIYO_FAX11 = :RiyoFax11, 
+RIYO_FAX12 = :RiyoFax12, 
+RIYO_FAX13 = :RiyoFax13, 
+RIYO_YUBIN1 = :RiyoYubin1, 
+RIYO_YUBIN2 = :RiyoYubin2, 
+RIYO_TODO = :RiyoTodo, 
+RIYO_SHIKU = :RiyoShiku, 
+RIYO_BAN = :RiyoBan, 
+RIYO_BUILD = :RiyoBuild, 
+RIYO_LVL = :RiyoLvl, 
+AITE_CD = :AiteCd, 
+ONKYO_NM = :OnkyoNm, 
+ONKYO_TANTO_NM = :OnkyoTantoNm, 
+ONKYO_TEL11 = :OnkyoTel11, 
+ONKYO_TEL12 = :OnkyoTel12, 
+ONKYO_TEL13 = :OnkyoTel13, 
+ONKYO_NAISEN = :OnkyoNaisen, 
+ONKYO_FAX11 = :OnkyoFax11, 
+ONKYO_FAX12 = :OnkyoFax12, 
+ONKYO_FAX13 = :OnkyoFax13, 
+ONKYO_MAIL = :OnkyoMail, 
+TOTAL_RIYO_KIN = :TotalRiyoKin, 
+SEND_KBN = :SendKbn, 
+SEND_STS = :SendSts, 
+SEND_DT = :SendDt, 
+HENSO_DT = :HensoDt, 
+BIKO = :Biko, 
+RIYO_COM = :RiyoCom, 
+TICKET_ENTER_KBN = :TicketEnterKbn, 
+TICKET_DRINK_KBN = :TicketDrinkKbn, 
+HP_KEISAI = :HpKeisai, 
+JOHO_KOKAI_DT = :JohoKokaiDt, 
+JOHO_KOKAI_TIME = :JohoKokaiTime, 
+KOKAI_DT = :KokaiDt, 
+KOKAI_TIME = :KokaiTime, 
+FINPUT_STS = :FinputSts, 
+UP_DT = current_timestamp, 
+UP_USER_CD = :UpUserCd 
+WHERE 
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:KariukeDt] 2015/10/30
+      [:KariUsercd] USN001
+      [:KakuteiDt] 
+      [:KakuUsercd] 
+      [:YoyakuSts] 2
+      [:ShisetuKbn] 1
+      [:StudioKbn] 0
+      [:SaijiNm] ‚ ‚ ‚ ‚ 
+      [:ShutsuenNm] ‚ ‚ ‚ ‚ ‚ ‚ 
+      [:KashiKind] 1
+      [:RiyoType] 1
+      [:DrinkFlg] 1
+      [:SaijiBunrui] 5
+      [:Teiin] 600
+      [:OnkyoOpeFlg] 
+      [:RiyoshaCd] C00076
+      [:RiyoNm] ‚ ‚ ‚ ‚ ‚ ‚ Ž––±Š
+      [:RiyoKana] ƒAƒAƒAƒAƒAƒAƒWƒ€ƒVƒ‡
+      [:SekininBushoNm] 
+      [:SekininNm] 
+      [:SekininMail] 
+      [:DaihyoNm] ‚ ‚¢‚¤@‚¦‚¨‚©
+      [:RiyoTel11] 03
+      [:RiyoTel12] 1111
+      [:RiyoTel13] 2121
+      [:RiyoTel21] 
+      [:RiyoTel22] 
+      [:RiyoTel23] 
+      [:RiyoNaisen] 
+      [:RiyoFax11] 
+      [:RiyoFax12] 
+      [:RiyoFax13] 
+      [:RiyoYubin1] 211
+      [:RiyoYubin2] 1111
+      [:RiyoTodo] ç—tŒ§
+      [:RiyoShiku] ç—tŽsç—t‹æ
+      [:RiyoBan] ‚P|‚P|‚P
+      [:RiyoBuild] ‚¿‚Îƒrƒ‹‚TŠK
+      [:RiyoLvl] 1
+      [:AiteCd] EXA024
+      [:OnkyoNm] 
+      [:OnkyoTantoNm] 
+      [:OnkyoTel11] 
+      [:OnkyoTel12] 
+      [:OnkyoTel13] 
+      [:OnkyoNaisen] 
+      [:OnkyoFax11] 
+      [:OnkyoFax12] 
+      [:OnkyoFax13] 
+      [:OnkyoMail] 
+      [:TotalRiyoKin] 
+      [:SendKbn] 1
+      [:SendSts] 1
+      [:SendDt] 
+      [:HensoDt] 
+      [:Biko] 
+      [:RiyoCom] 
+      [:TicketEnterKbn] 
+      [:TicketDrinkKbn] 
+      [:HpKeisai] 
+      [:JohoKokaiDt] 
+      [:JohoKokaiTime] 
+      [:KokaiDt] 
+      [:KokaiTime] 
+      [:FinputSts] 
+      [:AddUserCd] USN001
+      [:UpUserCd] USN001
+      [:YoyakuNo] T00022
+2015/12/11 20:35:42  TRACE> LogicEXTB0102.RegYoyakuInfo() END
+2015/12/11 20:35:42  TRACE> LogicEXTB0102.DeleteYoyakuList() START
+2015/12/11 20:35:42  TRACE> LogicEXTB0102.DeleteYoyakuList() END
+¡SQL Data :
+   Sql Command > DELETE 
+FROM 
+YDT_TBL 
+WHERE
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:35:42  TRACE> LogicEXTB0102.InsertYoyakuList() START
+2015/12/11 20:35:42  TRACE> LogicEXTB0102.InsertYoyakuList() END
+2015/12/11 20:35:43  TRACE> LogicEXTZ0202.DeleteYoyakuCtlShisetuData() START
+2015/12/11 20:35:43  TRACE> LogicEXTZ0202.DeleteYoyakuCtlShisetuData() END
+2015/12/11 20:35:43  TRACE> LogicEXTB0102.GetYoyakuData() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0102.setSelectYoyakuData() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0102.setSelectYoyakuData() END
+2015/12/11 20:35:43  DEBUG> LogicEXTB0102.GetYoyakuData() —\–ñî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+t1.yoyaku_no, 
+t1.kariuke_dt, 
+t1.kari_usercd, 
+t1.kakutei_dt, 
+t1.kaku_usercd, 
+t1.yoyaku_sts, 
+t1.shisetu_kbn, 
+t1.studio_kbn, 
+t1.saiji_nm, 
+t1.shutsuen_nm, 
+t1.kashi_kind, 
+t1.riyo_type, 
+t1.drink_flg, 
+t1.saiji_bunrui, 
+t1.teiin, 
+t1.onkyo_ope_flg, 
+t1.riyosha_cd, 
+t1.riyo_nm, 
+t1.riyo_kana, 
+t1.sekinin_busho_nm, 
+t1.sekinin_nm, 
+t1.sekinin_mail, 
+t1.daihyo_nm, 
+t1.riyo_tel11, 
+t1.riyo_tel12, 
+t1.riyo_tel13, 
+t1.riyo_tel21, 
+t1.riyo_tel22, 
+t1.riyo_tel23, 
+t1.riyo_naisen, 
+t1.riyo_fax11, 
+t1.riyo_fax12, 
+t1.riyo_fax13, 
+t1.riyo_yubin1, 
+t1.riyo_yubin2, 
+t1.riyo_todo, 
+t1.riyo_shiku, 
+t1.riyo_ban, 
+t1.riyo_build, 
+t1.riyo_lvl, 
+t1.aite_cd, 
+t1.onkyo_nm, 
+t1.onkyo_tanto_nm, 
+t1.onkyo_tel11, 
+t1.onkyo_tel12, 
+t1.onkyo_tel13, 
+t1.onkyo_naisen, 
+t1.onkyo_fax11, 
+t1.onkyo_fax12, 
+t1.onkyo_fax13, 
+t1.onkyo_mail, 
+t1.total_riyo_kin, 
+t1.send_kbn, 
+t1.send_sts, 
+t1.send_dt, 
+t1.henso_dt, 
+t1.biko, 
+t1.riyo_com, 
+t1.ticket_enter_kbn, 
+t1.ticket_drink_kbn, 
+t1.hp_keisai, 
+t1.joho_kokai_dt, 
+t1.joho_kokai_time, 
+t1.kokai_dt, 
+t1.kokai_time, 
+t1.finput_sts, 
+to_char(t1.add_dt,'YYYY/MM/DD HH:mm') as add_dt, 
+t1.add_user_cd, 
+m1.user_nm as add_user_nm,
+to_char(t1.up_dt,'YYYY/MM/DD HH:mm') as up_dt, 
+t1.up_user_cd, 
+m2.user_nm as up_user_nm, 
+m3.aite_nm as aite_nm 
+FROM 
+YOYAKU_TBL t1
+LEFT JOIN USER_MST m1
+ON t1.add_user_cd = m1.user_cd
+LEFT JOIN USER_MST m2
+ON t1.up_user_cd = m2.user_cd
+LEFT JOIN AITESAKI_MST m3
+ON t1.aite_cd = m3.aite_cd
+WHERE
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:35:43  TRACE> LogicEXTB0102.GetYoyakuData() START_2
+2015/12/11 20:35:43  TRACE> LogicEXTB0102.GetYoyakuData() END_2
+2015/12/11 20:35:43  TRACE> LogicEXTB0102.GetYoyakuData() END
+2015/12/11 20:35:43  TRACE> LogicEXTB0102.GetRiyobiData() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0102.setSelectRiyobiData() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0102.setSelectRiyobiData() END
+2015/12/11 20:35:43  DEBUG> LogicEXTB0102.GetRiyobiData() —\–ñ“úŽžî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+seq, 
+shisetu_kbn, 
+studio_kbn, 
+yoyaku_dt, 
+start_time, 
+end_time, 
+yoyaku_no, 
+riyo_keitai, 
+mitei_flg, 
+tanka, 
+bairitu, 
+su, 
+riyo_kin 
+FROM 
+YDT_TBL 
+WHERE
+yoyaku_no = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:35:43  TRACE> LogicEXTB0102.GetRiyobiData() END
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.GetApproval() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectApprovalReq() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectApprovalReq() END
+2015/12/11 20:35:43  DEBUG> LogicEXTB0103.GetApproval() Šm”FˆË—Šî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    t1.yoyaku_no, 
+    t1.seq, 
+    to_char(t1.irai_dt, 'yyyy/mm/dd hh24:mi') as irai_dt, 
+    t1.com, 
+    t2.user_nm as user_nm 
+FROM 
+    irai_rireki_tbl t1 
+    LEFT JOIN 
+        user_mst t2 
+        ON  t1.irai_usercd = t2.user_cd 
+WHERE yoyaku_no = :YoyakuNo ORDER BY t1.seq 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectApprovalRes() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectApprovalRes() END
+2015/12/11 20:35:43  DEBUG> LogicEXTB0103.GetApproval() Šm”F‹L˜^î•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    t1.yoyaku_no, 
+    t1.seq, 
+    to_char(t1.check_dt, 'yyyy/mm/dd hh24:mi') as check_dt, 
+    t1.check_sts, 
+    t1.com, 
+    t2.user_nm as user_nm 
+FROM 
+    check_rireki_tbl t1 
+    LEFT JOIN 
+        user_mst t2 
+        ON  t1.check_usercd = t2.user_cd 
+WHERE t1.yoyaku_no = :YoyakuNo ORDER BY t1.seq 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.GetApproval() END
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.GetTimeSchedule() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectTimeSch() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectTimeSch() END
+2015/12/11 20:35:43  DEBUG> LogicEXTB0103.GetTimeSchedule() ƒ^ƒCƒ€ƒXƒPƒWƒ…[ƒ‹î•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    yoyaku_no, 
+    seq, 
+    shurui, 
+    time, 
+    biko 
+FROM 
+    time_schedule_tbl 
+WHERE yoyaku_no = :YoyakuNo 
+ORDER BY time 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.GetTimeSchedule() END
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.GetTicketInfo() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectTicket() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectTicket() END
+2015/12/11 20:35:43  DEBUG> LogicEXTB0103.GetTicketInfo() ƒ`ƒPƒbƒgî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    yoyaku_no, 
+    seq, 
+    ticket_nm, 
+    ticket_kin 
+FROM 
+    ticket_tbl 
+WHERE yoyaku_no = :YoyakuNo 
+ORDER BY add_dt 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.nextValSeikyuIraiNo() START
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.GetTicketInfo() END
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.GetFutai() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectFutaiHeadder() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectFutaiHeadder() END
+2015/12/11 20:35:43  DEBUG> LogicEXTB0103.GetFutai() •t‘Ñî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    '' as yoyaku_no, 
+    :Riyobi as yoyaku_dt,  
+    SUM(m1.tanka) as total_fuzoku_kin,  
+    ARRAY_TO_STRING(ARRAY_AGG(m1.futai_nm), '^') as fuzoku_nm 
+   ,CASE WHEN :SYANAI = '2' THEN  0
+                            ELSE  
+                              SUM( CASE WHEN m2.NOTAX_FLG = '0' THEN ROUND((m1.TANKA * m3.tax_ritu) /100 ,0)
+                                                                ELSE 0 
+                                    END ) 
+    END  AS TAX_KIN 
+FROM 
+    futai_mst m1
+           LEFT OUTER JOIN  FBUNRUI_MST m2 
+                       ON   m1.BUNRUI_CD = m2.BUNRUI_CD 
+                      AND   m1.SHISETU_KBN = m2.SHISETU_KBN 
+                      AND   :Riyobi BETWEEN m2.KIKAN_FROM AND m2.KIKAN_TO 
+           LEFT OUTER JOIN  TAX_MST m3 
+                       ON   :Riyobi BETWEEN m3.TAXS_DT AND m3.TAXE_DT 
+WHERE 
+    m1.def_flg = '1' 
+AND m1.sts = '0' 
+AND :Riyobi BETWEEN m1.kikan_from AND m1.kikan_to 
+AND m1.shisetu_kbn = :ShisetuKbn 
+group by 
+    m1.def_flg, 
+    m1.sts 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+      [:Riyobi] 2015/09/09
+      [:ShisetuKbn] 1
+      [:SYANAI] 1
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectFutaiDetail() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectFutaiDetail() END
+2015/12/11 20:35:43  DEBUG> LogicEXTB0103.GetFutai() •t‘Ñî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    '' as yoyaku_no,  
+    :Riyobi as yoyaku_dt,  
+    m1.bunrui_cd as futai_bunrui_cd, 
+    m1.futai_cd, 
+    m1.tanka as futai_tanka, 
+    1 as futai_su, 
+    m1.tanka as futai_shokei, 
+    0 as futai_chosei, 
+    m1.tanka as futai_kin, 
+    '' as futai_biko, 
+    m1.futai_nm, 
+    m1.tani as futai_tani, 
+    m2.bunrui_nm as futai_bunrui_nm, 
+    m2.shukei_grp, 
+    m2.kamoku_cd, 
+    m2.saimoku_cd, 
+    m2.uchi_cd, 
+    m2.shosai_cd, 
+    m2.karikamoku_cd, 
+    m2.kari_saimoku_cd, 
+    m2.kari_uchi_cd, 
+    m2.kari_shosai_cd, 
+    m2.notax_flg, 
+    m3.kamoku_nm, 
+    m3.saimoku_nm, 
+    m3.uchi_nm, 
+    m3.shosai_nm 
+   ,CASE WHEN :SYANAI = '2' THEN  0
+                            ELSE 
+                                      CASE WHEN m2.NOTAX_FLG = '0' THEN ROUND((m1.TANKA * m4.tax_ritu) /100 ,0)
+                                      ELSE 0 
+                               END 
+    END  AS TAX_KIN 
+FROM 
+    futai_mst m1 
+LEFT JOIN fbunrui_mst m2 
+    ON m1.bunrui_cd = m2.bunrui_cd 
+    AND m2.shisetu_kbn = :ShisetuKbn 
+    AND :Riyobi BETWEEN m2.kikan_from AND m2.kikan_to 
+    AND m2.sts = '0' 
+LEFT JOIN kamoku_mst m3 
+    ON m2.kamoku_cd = m3.kamoku_cd 
+    AND m2.saimoku_cd = m3.saimoku_cd 
+    AND m2.uchi_cd = m3.uchi_cd 
+    AND m2.shosai_cd = m3.shosai_cd 
+    AND m3.sts = '0' 
+LEFT OUTER JOIN  TAX_MST m4 
+    ON  :Riyobi BETWEEN m4.TAXS_DT AND m4.TAXE_DT 
+WHERE 
+    m1.def_flg = '1' 
+AND m1.sts = '0' 
+AND :Riyobi BETWEEN m1.kikan_from AND m1.kikan_to 
+AND m1.shisetu_kbn = :ShisetuKbn 
+ORDER BY 
+    m1.sort 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+      [:ShisetuKbn] 1
+      [:Riyobi] 2015/09/09
+      [:SYANAI] 1
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.GetFutai() END
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.GetTax() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectTax() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectTax() END
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.GetTax() TAX = 0.08
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.GetTax() END
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.GetBillReq() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectBillReq() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectBillReq() END
+2015/12/11 20:35:43  DEBUG> LogicEXTB0103.GetBillReq() ¿‹î•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    t1.yoyaku_no, 
+    t1.seq, 
+    t1.seikyu_irai_no, 
+    t1.seikyu_dt, 
+    t1.nyukin_yotei_dt, 
+    t1.kakutei_kin, 
+    t1.chosei_kin, 
+    t1.shokei, 
+    t1.tax_kin, 
+    t1.seikyu_kin, 
+    t1.seikyu_naiyo, 
+    CASE WHEN t1.seikyu_naiyo='1' THEN '—˜—p—¿' WHEN t1.seikyu_naiyo='2' THEN '•t‘ÑÝ”õ'
+         WHEN t1.seikyu_naiyo='3' THEN '—˜—p—¿+•t‘ÑÝ”õ' WHEN t1.seikyu_naiyo='4' THEN 'ŠÒ•t' ELSE '' END as seikyu_naiyo_nm, 
+    t1.aite_cd, 
+    m1.aite_nm, 
+    t1.nyukin_kbn, 
+    t1.seikyu_title1, 
+    t1.seikyu_title2, 
+    t1.nyukin_dt, 
+    t1.nyukin_kin, 
+    t1.seikyu_input_flg, 
+    t1.seikyu_irai_flg, 
+    t1.nyukin_input_flg, 
+    t1.nyukin_link_no
+FROM 
+    BILLPAY_TBL t1 
+LEFT JOIN AITESAKI_MST m1 
+    ON t1.aite_cd = m1.aite_cd 
+WHERE t1.yoyaku_no = :YoyakuNo 
+ORDER BY t1.seq 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.GetBillReq() END
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.WeekDayCheck() START
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.GetSelectHolidayMst() START
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.GetSelectHoliday() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.GetHolidayMst() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.GetHolidayMst() END
+2015/12/11 20:35:43  DEBUG> LogicEXTB0103.GetSelectHoliday() jÕ“ú
+¡SQL Data :
+   Sql Command > SELECT  COUNT(*) 
+FROM HOLIDAY_MST 
+WHERE HOLIDAY_DT = :HOLIDAY_DT 
+   Parameters Data > 
+      [HOLIDAY_DT] 2016/01/29
+2015/12/11 20:35:43  TRACE> LogicEXTB0103.GetExasRiyoryo() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selectExasRiyoryo() START
+2015/12/11 20:35:43  TRACE> SqlEXTB0103.selecContents() START
+2015/12/11 20:37:31  TRACE> LogicEXTA0101.GetConfigrationFlg() START
+2015/12/11 20:37:31  TRACE> LogicEXTA0101.GetConfigrationFlg() END
+2015/12/11 20:37:31  TRACE> CommonLogicEXT.SetFormBackColor() START
+2015/12/11 20:37:31  TRACE> CommonLogicEXT.SetFormBackColor() END
+2015/12/11 20:37:42  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:37:42  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:37:42  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:37:42  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:37:42  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:37:42  TRACE> LogicEXTA0101.LoginInputCheck() START
+2015/12/11 20:37:42  TRACE> LogicEXTA0101.LoginInputCheck() END
+2015/12/11 20:37:42  TRACE> LogicEXTA0101.GetLoginData() START
+2015/12/11 20:37:42  TRACE> SqlEXTA0101.setSelectLoginData() START
+2015/12/11 20:37:42  TRACE> SqlEXTA0101.setSelectLoginData() END
+2015/12/11 20:37:42  DEBUG> LogicEXTA0101.GetLoginData() ƒƒOƒCƒ“î•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+USER_NM, 
+MAIL, 
+BUSHO_CD, 
+SHONIN_FLG, 
+MST_FLG 
+FROM 
+USER_MST 
+WHERE
+USER_CD = :UserId 
+and PW = :Password 
+and STS = '0' 
+   Parameters Data > 
+      [:UserId] USN001
+      [:Password] USN001password
+2015/12/11 20:37:47  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:37:47  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:37:47  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:37:47  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:37:47  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:37:47  TRACE> LogicEXTA0101.LoginInputCheck() START
+2015/12/11 20:37:47  TRACE> LogicEXTA0101.LoginInputCheck() END
+2015/12/11 20:37:47  TRACE> LogicEXTA0101.GetLoginData() START
+2015/12/11 20:37:47  TRACE> SqlEXTA0101.setSelectLoginData() START
+2015/12/11 20:37:47  TRACE> SqlEXTA0101.setSelectLoginData() END
+2015/12/11 20:37:47  DEBUG> LogicEXTA0101.GetLoginData() ƒƒOƒCƒ“î•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+USER_NM, 
+MAIL, 
+BUSHO_CD, 
+SHONIN_FLG, 
+MST_FLG 
+FROM 
+USER_MST 
+WHERE
+USER_CD = :UserId 
+and PW = :Password 
+and STS = '0' 
+   Parameters Data > 
+      [:UserId] USN001
+      [:Password] password
+2015/12/11 20:37:47  TRACE> LogicEXTA0101.GetLoginData() END
+2015/12/11 20:37:47  TRACE> LogicEXTA0101.DelYoyakuCtlData() START
+2015/12/11 20:37:47  DEBUG> LogicEXTA0101.DelYoyakuCtlData() Login Proc1
+¡SQL Data :
+   Sql Command > DELETE 
+FROM 
+YCTL_TBL 
+WHERE
+USER_CD = :UserId 
+   Parameters Data > 
+      [:UserId] USN001
+2015/12/11 20:37:47  DEBUG> LogicEXTA0101.DelYoyakuCtlData() Login Proc2
+¡SQL Data :
+   Sql Command > DELETE 
+FROM 
+CCTL_TBL 
+WHERE
+USER_CD = :UserId 
+   Parameters Data > 
+      [:UserId] USN001
+2015/12/11 20:37:47  TRACE> LogicEXTA0101.DelYoyakuCtlData() END
+2015/12/11 20:37:47  TRACE> LogicEXTA0101.SetSystemProperties() START
+2015/12/11 20:37:47  TRACE> SqlEXTA0101.setSelectSystemProperty() START
+2015/12/11 20:37:47  TRACE> SqlEXTA0101.setSelectSystemProperty() END
+2015/12/11 20:37:47  DEBUG> LogicEXTA0101.SetSystemProperties() ƒVƒXƒeƒ€ƒvƒƒpƒeƒBŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+TEIIN_A, 
+TEIIN_B, 
+KARI_JIZEN_TUTI 
+FROM 
+SYSTEM_MST 
+   Parameters Data > 
+2015/12/11 20:37:47  TRACE> LogicEXTA0101.SetSystemProperties() END
+2015/12/11 20:37:47  TRACE> EXTA0101.btnLogin_Click() LOGIN:USN001
+2015/12/11 20:37:47  TRACE> CommonLogicEXT.SetFormBackColor() START
+2015/12/11 20:37:47  TRACE> CommonLogicEXT.SetFormBackColor() END
+2015/12/11 20:37:48  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:37:48  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:37:48  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:37:48  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:37:48  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:37:49  TRACE> LogicEXTB0101.MakeSpread() START
+2015/12/11 20:37:49  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:37:49  TRACE> LogicEXTB0101.GetSpreadData() START
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectShukusaijitsu() START
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectShukusaijitsu() END
+2015/12/11 20:37:49  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+  HOLIDAY_DT
+from
+  HOLIDAY_MST 
+where
+  substr(HOLIDAY_DT,1,7) = :HOLIDAY_DT
+   Parameters Data > 
+      [:HOLIDAY_DT] 2015/12
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectYoyakuList() START
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectYoyakuList() END
+2015/12/11 20:37:49  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+   a.SHISETU_KBN
+  ,a.STUDIO_KBN
+  ,a.YOYAKU_DT
+  ,a.START_TIME
+  ,a.END_TIME
+  ,a.YOYAKU_NO
+  ,a.MITEI_FLG
+  ,b.STUDIO_KBN  
+  ,b.SAIJI_NM
+  ,b.SHUTSUEN_NM
+  ,b.YOYAKU_STS
+  ,a.RIYO_KEITAI
+  ,c.RIYO_NM
+from
+  YDT_TBL a
+left join YOYAKU_TBL b on(
+  a.YOYAKU_NO = b.YOYAKU_NO
+)
+left join RIYOSHA_MST c on(
+  b.RIYOSHA_CD = c.RIYOSHA_CD
+)
+where
+  a.SHISETU_KBN = '1'
+  and substr(a.YOYAKU_DT,1,7) = :YOYAKU_DT
+  and b.YOYAKU_STS IN ('1', '2', '3', '4')
+order by a.YOYAKU_DT, a.START_TIME
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/12
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() START
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() END
+2015/12/11 20:37:49  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  YCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/12
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:37:49  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and a.RIYO_DT_FLG = :RIYO_DT_FLG
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/12
+      [:RIYO_DT_FLG] 1
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:37:49  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/12
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() START
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() END
+2015/12/11 20:37:49  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  CCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/12
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:37:49  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/12
+      [:CANCEL_WAIT_STS] 3
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() START
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() END
+2015/12/11 20:37:49  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   RIYO_DT
+  ,START_TIME
+  ,END_TIME
+  ,RIYO_BASHO
+  ,RIYO_YOTO
+  ,RIYOSHA
+from
+  SONOTA_DT_TBL
+where
+  substr(RIYO_DT,1,7) = :RIYO_DT
+   Parameters Data > 
+      [:RIYO_DT] 2015/12
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectKyukanMainteList() START
+2015/12/11 20:37:49  TRACE> SqlEXTB0101.setSelectKyukanMainteList() END
+2015/12/11 20:37:49  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+  HOLMENT_DT
+  ,SHISETU_KBN
+  ,MNAIYO
+  ,HOLMENT_KBN
+from
+  HOLMENT_MST
+where
+  SHISETU_KBN = '1'
+  and substr(HOLMENT_DT,1,7) = :HOLMENT_DT
+   Parameters Data > 
+      [:HOLMENT_DT] 2015/12
+2015/12/11 20:37:49  TRACE> LogicEXTB0101.GetSpreadData() END
+2015/12/11 20:37:49  TRACE> LogicEXTB0101.ViewSpreadData() START
+2015/12/11 20:37:49  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:37:49  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:37:49  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:37:49  TRACE> CommonLogicEXT.SetFormBackColor() START
+2015/12/11 20:37:49  TRACE> CommonLogicEXT.SetFormBackColor() END
+2015/12/11 20:37:52  TRACE> LogicEXTB0101.NengetuInputCheck() START
+2015/12/11 20:37:52  TRACE> LogicEXTB0101.NengetuInputCheck() END
+2015/12/11 20:37:52  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:37:52  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:37:52  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:37:52  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:37:52  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:37:52  TRACE> LogicEXTB0101.MakeSpread() START
+2015/12/11 20:37:52  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:37:52  TRACE> LogicEXTB0101.GetSpreadData() START
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectShukusaijitsu() START
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectShukusaijitsu() END
+2015/12/11 20:37:52  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+  HOLIDAY_DT
+from
+  HOLIDAY_MST 
+where
+  substr(HOLIDAY_DT,1,7) = :HOLIDAY_DT
+   Parameters Data > 
+      [:HOLIDAY_DT] 2015/09
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectYoyakuList() START
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectYoyakuList() END
+2015/12/11 20:37:52  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+   a.SHISETU_KBN
+  ,a.STUDIO_KBN
+  ,a.YOYAKU_DT
+  ,a.START_TIME
+  ,a.END_TIME
+  ,a.YOYAKU_NO
+  ,a.MITEI_FLG
+  ,b.STUDIO_KBN  
+  ,b.SAIJI_NM
+  ,b.SHUTSUEN_NM
+  ,b.YOYAKU_STS
+  ,a.RIYO_KEITAI
+  ,c.RIYO_NM
+from
+  YDT_TBL a
+left join YOYAKU_TBL b on(
+  a.YOYAKU_NO = b.YOYAKU_NO
+)
+left join RIYOSHA_MST c on(
+  b.RIYOSHA_CD = c.RIYOSHA_CD
+)
+where
+  a.SHISETU_KBN = '1'
+  and substr(a.YOYAKU_DT,1,7) = :YOYAKU_DT
+  and b.YOYAKU_STS IN ('1', '2', '3', '4')
+order by a.YOYAKU_DT, a.START_TIME
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/09
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() START
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() END
+2015/12/11 20:37:52  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  YCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/09
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:37:52  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and a.RIYO_DT_FLG = :RIYO_DT_FLG
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/09
+      [:RIYO_DT_FLG] 1
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:37:52  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/09
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() START
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() END
+2015/12/11 20:37:52  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  CCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/09
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:37:52  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/09
+      [:CANCEL_WAIT_STS] 3
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() START
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() END
+2015/12/11 20:37:52  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   RIYO_DT
+  ,START_TIME
+  ,END_TIME
+  ,RIYO_BASHO
+  ,RIYO_YOTO
+  ,RIYOSHA
+from
+  SONOTA_DT_TBL
+where
+  substr(RIYO_DT,1,7) = :RIYO_DT
+   Parameters Data > 
+      [:RIYO_DT] 2015/09
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectKyukanMainteList() START
+2015/12/11 20:37:52  TRACE> SqlEXTB0101.setSelectKyukanMainteList() END
+2015/12/11 20:37:52  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+  HOLMENT_DT
+  ,SHISETU_KBN
+  ,MNAIYO
+  ,HOLMENT_KBN
+from
+  HOLMENT_MST
+where
+  SHISETU_KBN = '1'
+  and substr(HOLMENT_DT,1,7) = :HOLMENT_DT
+   Parameters Data > 
+      [:HOLMENT_DT] 2015/09
+2015/12/11 20:37:52  TRACE> LogicEXTB0101.GetSpreadData() END
+2015/12/11 20:37:52  TRACE> LogicEXTB0101.ViewSpreadData() START
+2015/12/11 20:37:52  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:37:52  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:37:52  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:37:53  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:37:53  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:37:53  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:37:53  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:37:53  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:37:53  TRACE> LogicEXTB0102.GetYoyakuData() START
+2015/12/11 20:37:53  TRACE> SqlEXTB0102.setSelectYoyakuData() START
+2015/12/11 20:37:53  TRACE> SqlEXTB0102.setSelectYoyakuData() END
+2015/12/11 20:37:53  DEBUG> LogicEXTB0102.GetYoyakuData() —\–ñî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+t1.yoyaku_no, 
+t1.kariuke_dt, 
+t1.kari_usercd, 
+t1.kakutei_dt, 
+t1.kaku_usercd, 
+t1.yoyaku_sts, 
+t1.shisetu_kbn, 
+t1.studio_kbn, 
+t1.saiji_nm, 
+t1.shutsuen_nm, 
+t1.kashi_kind, 
+t1.riyo_type, 
+t1.drink_flg, 
+t1.saiji_bunrui, 
+t1.teiin, 
+t1.onkyo_ope_flg, 
+t1.riyosha_cd, 
+t1.riyo_nm, 
+t1.riyo_kana, 
+t1.sekinin_busho_nm, 
+t1.sekinin_nm, 
+t1.sekinin_mail, 
+t1.daihyo_nm, 
+t1.riyo_tel11, 
+t1.riyo_tel12, 
+t1.riyo_tel13, 
+t1.riyo_tel21, 
+t1.riyo_tel22, 
+t1.riyo_tel23, 
+t1.riyo_naisen, 
+t1.riyo_fax11, 
+t1.riyo_fax12, 
+t1.riyo_fax13, 
+t1.riyo_yubin1, 
+t1.riyo_yubin2, 
+t1.riyo_todo, 
+t1.riyo_shiku, 
+t1.riyo_ban, 
+t1.riyo_build, 
+t1.riyo_lvl, 
+t1.aite_cd, 
+t1.onkyo_nm, 
+t1.onkyo_tanto_nm, 
+t1.onkyo_tel11, 
+t1.onkyo_tel12, 
+t1.onkyo_tel13, 
+t1.onkyo_naisen, 
+t1.onkyo_fax11, 
+t1.onkyo_fax12, 
+t1.onkyo_fax13, 
+t1.onkyo_mail, 
+t1.total_riyo_kin, 
+t1.send_kbn, 
+t1.send_sts, 
+t1.send_dt, 
+t1.henso_dt, 
+t1.biko, 
+t1.riyo_com, 
+t1.ticket_enter_kbn, 
+t1.ticket_drink_kbn, 
+t1.hp_keisai, 
+t1.joho_kokai_dt, 
+t1.joho_kokai_time, 
+t1.kokai_dt, 
+t1.kokai_time, 
+t1.finput_sts, 
+to_char(t1.add_dt,'YYYY/MM/DD HH:mm') as add_dt, 
+t1.add_user_cd, 
+m1.user_nm as add_user_nm,
+to_char(t1.up_dt,'YYYY/MM/DD HH:mm') as up_dt, 
+t1.up_user_cd, 
+m2.user_nm as up_user_nm, 
+m3.aite_nm as aite_nm 
+FROM 
+YOYAKU_TBL t1
+LEFT JOIN USER_MST m1
+ON t1.add_user_cd = m1.user_cd
+LEFT JOIN USER_MST m2
+ON t1.up_user_cd = m2.user_cd
+LEFT JOIN AITESAKI_MST m3
+ON t1.aite_cd = m3.aite_cd
+WHERE
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:37:53  TRACE> LogicEXTB0102.GetYoyakuData() START_2
+2015/12/11 20:37:53  TRACE> LogicEXTB0102.GetYoyakuData() END_2
+2015/12/11 20:37:53  TRACE> LogicEXTB0102.GetYoyakuData() END
+2015/12/11 20:37:53  TRACE> LogicEXTB0102.GetRiyobiData() START
+2015/12/11 20:37:54  TRACE> SqlEXTB0102.setSelectRiyobiData() START
+2015/12/11 20:37:54  TRACE> SqlEXTB0102.setSelectRiyobiData() END
+2015/12/11 20:37:54  DEBUG> LogicEXTB0102.GetRiyobiData() —\–ñ“úŽžî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+seq, 
+shisetu_kbn, 
+studio_kbn, 
+yoyaku_dt, 
+start_time, 
+end_time, 
+yoyaku_no, 
+riyo_keitai, 
+mitei_flg, 
+tanka, 
+bairitu, 
+su, 
+riyo_kin 
+FROM 
+YDT_TBL 
+WHERE
+yoyaku_no = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:37:54  TRACE> LogicEXTB0102.GetRiyobiData() END
+2015/12/11 20:37:54  TRACE> LogicEXTB0102.GetSekininshaList() START
+2015/12/11 20:37:54  TRACE> SqlEXTB0102.setSelectSekininName() START
+2015/12/11 20:37:54  TRACE> SqlEXTB0102.setSelectSekininName() END
+2015/12/11 20:37:54  TRACE> CommonLogicEXT.SetFormBackColor() START
+2015/12/11 20:37:54  TRACE> CommonLogicEXT.SetFormBackColor() END
+2015/12/11 20:37:56  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:37:56  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:37:56  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:37:56  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:37:56  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:37:56  TRACE> EXTB0102.inputCheckMain() Chk_START
+2015/12/11 20:37:56  TRACE> EXTB0102.inputCheckMain() Chk_END
+2015/12/11 20:37:56  TRACE> EXTB0102.inputCheckCondition() Chk_START
+2015/12/11 20:37:56  TRACE> LogicEXTZ0202.CheckRiyobiRegister() START
+2015/12/11 20:37:56  TRACE> SqlEXTZ0202.cntRiyobi() START
+2015/12/11 20:37:56  TRACE> SqlEXTZ0202.cntRiyobi() END
+2015/12/11 20:37:56  TRACE> LogicEXTZ0202.CheckRiyobiRegister() END
+2015/12/11 20:37:56  TRACE> EXTB0102.inputCheckCondition() Chk_END
+2015/12/11 20:37:57  TRACE> LogicEXTZ0202.DeleteYoyakuCtlShisetuData() START
+2015/12/11 20:37:57  TRACE> LogicEXTZ0202.DeleteYoyakuCtlShisetuData() END
+2015/12/11 20:37:57  TRACE> LogicEXTB0102.RegYoyakuInfo() START
+2015/12/11 20:37:57  TRACE> LogicEXTB0102.RegYoyakuInfo() Complate SQL
+¡SQL Data :
+   Sql Command > update YOYAKU_TBL 
+SET 
+KARIUKE_DT = :KariukeDt, 
+KARI_USERCD = :KariUsercd, 
+KAKUTEI_DT = :KakuteiDt, 
+KAKU_USERCD = :KakuUsercd, 
+YOYAKU_STS = :YoyakuSts, 
+SHISETU_KBN = :ShisetuKbn, 
+STUDIO_KBN = :StudioKbn, 
+SAIJI_NM = :SaijiNm, 
+SHUTSUEN_NM = :ShutsuenNm, 
+KASHI_KIND = :KashiKind, 
+RIYO_TYPE = :RiyoType, 
+DRINK_FLG = :DrinkFlg, 
+SAIJI_BUNRUI = :SaijiBunrui, 
+TEIIN = :Teiin, 
+ONKYO_OPE_FLG = :OnkyoOpeFlg, 
+RIYOSHA_CD = :RiyoshaCd, 
+RIYO_NM = :RiyoNm, 
+RIYO_KANA = :RiyoKana, 
+SEKININ_BUSHO_NM = :SekininBushoNm, 
+SEKININ_NM = :SekininNm, 
+SEKININ_MAIL = :SekininMail, 
+DAIHYO_NM = :DaihyoNm, 
+RIYO_TEL11 = :RiyoTel11, 
+RIYO_TEL12 = :RiyoTel12, 
+RIYO_TEL13 = :RiyoTel13, 
+RIYO_TEL21 = :RiyoTel21, 
+RIYO_TEL22 = :RiyoTel22, 
+RIYO_TEL23 = :RiyoTel23, 
+RIYO_NAISEN = :RiyoNaisen, 
+RIYO_FAX11 = :RiyoFax11, 
+RIYO_FAX12 = :RiyoFax12, 
+RIYO_FAX13 = :RiyoFax13, 
+RIYO_YUBIN1 = :RiyoYubin1, 
+RIYO_YUBIN2 = :RiyoYubin2, 
+RIYO_TODO = :RiyoTodo, 
+RIYO_SHIKU = :RiyoShiku, 
+RIYO_BAN = :RiyoBan, 
+RIYO_BUILD = :RiyoBuild, 
+RIYO_LVL = :RiyoLvl, 
+AITE_CD = :AiteCd, 
+ONKYO_NM = :OnkyoNm, 
+ONKYO_TANTO_NM = :OnkyoTantoNm, 
+ONKYO_TEL11 = :OnkyoTel11, 
+ONKYO_TEL12 = :OnkyoTel12, 
+ONKYO_TEL13 = :OnkyoTel13, 
+ONKYO_NAISEN = :OnkyoNaisen, 
+ONKYO_FAX11 = :OnkyoFax11, 
+ONKYO_FAX12 = :OnkyoFax12, 
+ONKYO_FAX13 = :OnkyoFax13, 
+ONKYO_MAIL = :OnkyoMail, 
+TOTAL_RIYO_KIN = :TotalRiyoKin, 
+SEND_KBN = :SendKbn, 
+SEND_STS = :SendSts, 
+SEND_DT = :SendDt, 
+HENSO_DT = :HensoDt, 
+BIKO = :Biko, 
+RIYO_COM = :RiyoCom, 
+TICKET_ENTER_KBN = :TicketEnterKbn, 
+TICKET_DRINK_KBN = :TicketDrinkKbn, 
+HP_KEISAI = :HpKeisai, 
+JOHO_KOKAI_DT = :JohoKokaiDt, 
+JOHO_KOKAI_TIME = :JohoKokaiTime, 
+KOKAI_DT = :KokaiDt, 
+KOKAI_TIME = :KokaiTime, 
+FINPUT_STS = :FinputSts, 
+UP_DT = current_timestamp, 
+UP_USER_CD = :UpUserCd 
+WHERE 
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:KariukeDt] 2015/10/30
+      [:KariUsercd] USN001
+      [:KakuteiDt] 
+      [:KakuUsercd] 
+      [:YoyakuSts] 2
+      [:ShisetuKbn] 1
+      [:StudioKbn] 0
+      [:SaijiNm] ‚ ‚ ‚ ‚ 
+      [:ShutsuenNm] ‚ ‚ ‚ ‚ ‚ ‚ 
+      [:KashiKind] 1
+      [:RiyoType] 1
+      [:DrinkFlg] 1
+      [:SaijiBunrui] 5
+      [:Teiin] 600
+      [:OnkyoOpeFlg] 
+      [:RiyoshaCd] C00076
+      [:RiyoNm] ‚ ‚ ‚ ‚ ‚ ‚ Ž––±Š
+      [:RiyoKana] ƒAƒAƒAƒAƒAƒAƒWƒ€ƒVƒ‡
+      [:SekininBushoNm] 
+      [:SekininNm] 
+      [:SekininMail] 
+      [:DaihyoNm] ‚ ‚¢‚¤@‚¦‚¨‚©
+      [:RiyoTel11] 03
+      [:RiyoTel12] 1111
+      [:RiyoTel13] 2121
+      [:RiyoTel21] 
+      [:RiyoTel22] 
+      [:RiyoTel23] 
+      [:RiyoNaisen] 
+      [:RiyoFax11] 
+      [:RiyoFax12] 
+      [:RiyoFax13] 
+      [:RiyoYubin1] 211
+      [:RiyoYubin2] 1111
+      [:RiyoTodo] ç—tŒ§
+      [:RiyoShiku] ç—tŽsç—t‹æ
+      [:RiyoBan] ‚P|‚P|‚P
+      [:RiyoBuild] ‚¿‚Îƒrƒ‹‚TŠK
+      [:RiyoLvl] 1
+      [:AiteCd] EXA024
+      [:OnkyoNm] 
+      [:OnkyoTantoNm] 
+      [:OnkyoTel11] 
+      [:OnkyoTel12] 
+      [:OnkyoTel13] 
+      [:OnkyoNaisen] 
+      [:OnkyoFax11] 
+      [:OnkyoFax12] 
+      [:OnkyoFax13] 
+      [:OnkyoMail] 
+      [:TotalRiyoKin] 
+      [:SendKbn] 1
+      [:SendSts] 1
+      [:SendDt] 
+      [:HensoDt] 
+      [:Biko] 
+      [:RiyoCom] 
+      [:TicketEnterKbn] 
+      [:TicketDrinkKbn] 
+      [:HpKeisai] 
+      [:JohoKokaiDt] 
+      [:JohoKokaiTime] 
+      [:KokaiDt] 
+      [:KokaiTime] 
+      [:FinputSts] 
+      [:AddUserCd] USN001
+      [:UpUserCd] USN001
+      [:YoyakuNo] T00022
+2015/12/11 20:37:57  TRACE> LogicEXTB0102.RegYoyakuInfo() “o˜^—\–ñ”Ô†:
+¡SQL Data :
+   Sql Command > update YOYAKU_TBL 
+SET 
+KARIUKE_DT = :KariukeDt, 
+KARI_USERCD = :KariUsercd, 
+KAKUTEI_DT = :KakuteiDt, 
+KAKU_USERCD = :KakuUsercd, 
+YOYAKU_STS = :YoyakuSts, 
+SHISETU_KBN = :ShisetuKbn, 
+STUDIO_KBN = :StudioKbn, 
+SAIJI_NM = :SaijiNm, 
+SHUTSUEN_NM = :ShutsuenNm, 
+KASHI_KIND = :KashiKind, 
+RIYO_TYPE = :RiyoType, 
+DRINK_FLG = :DrinkFlg, 
+SAIJI_BUNRUI = :SaijiBunrui, 
+TEIIN = :Teiin, 
+ONKYO_OPE_FLG = :OnkyoOpeFlg, 
+RIYOSHA_CD = :RiyoshaCd, 
+RIYO_NM = :RiyoNm, 
+RIYO_KANA = :RiyoKana, 
+SEKININ_BUSHO_NM = :SekininBushoNm, 
+SEKININ_NM = :SekininNm, 
+SEKININ_MAIL = :SekininMail, 
+DAIHYO_NM = :DaihyoNm, 
+RIYO_TEL11 = :RiyoTel11, 
+RIYO_TEL12 = :RiyoTel12, 
+RIYO_TEL13 = :RiyoTel13, 
+RIYO_TEL21 = :RiyoTel21, 
+RIYO_TEL22 = :RiyoTel22, 
+RIYO_TEL23 = :RiyoTel23, 
+RIYO_NAISEN = :RiyoNaisen, 
+RIYO_FAX11 = :RiyoFax11, 
+RIYO_FAX12 = :RiyoFax12, 
+RIYO_FAX13 = :RiyoFax13, 
+RIYO_YUBIN1 = :RiyoYubin1, 
+RIYO_YUBIN2 = :RiyoYubin2, 
+RIYO_TODO = :RiyoTodo, 
+RIYO_SHIKU = :RiyoShiku, 
+RIYO_BAN = :RiyoBan, 
+RIYO_BUILD = :RiyoBuild, 
+RIYO_LVL = :RiyoLvl, 
+AITE_CD = :AiteCd, 
+ONKYO_NM = :OnkyoNm, 
+ONKYO_TANTO_NM = :OnkyoTantoNm, 
+ONKYO_TEL11 = :OnkyoTel11, 
+ONKYO_TEL12 = :OnkyoTel12, 
+ONKYO_TEL13 = :OnkyoTel13, 
+ONKYO_NAISEN = :OnkyoNaisen, 
+ONKYO_FAX11 = :OnkyoFax11, 
+ONKYO_FAX12 = :OnkyoFax12, 
+ONKYO_FAX13 = :OnkyoFax13, 
+ONKYO_MAIL = :OnkyoMail, 
+TOTAL_RIYO_KIN = :TotalRiyoKin, 
+SEND_KBN = :SendKbn, 
+SEND_STS = :SendSts, 
+SEND_DT = :SendDt, 
+HENSO_DT = :HensoDt, 
+BIKO = :Biko, 
+RIYO_COM = :RiyoCom, 
+TICKET_ENTER_KBN = :TicketEnterKbn, 
+TICKET_DRINK_KBN = :TicketDrinkKbn, 
+HP_KEISAI = :HpKeisai, 
+JOHO_KOKAI_DT = :JohoKokaiDt, 
+JOHO_KOKAI_TIME = :JohoKokaiTime, 
+KOKAI_DT = :KokaiDt, 
+KOKAI_TIME = :KokaiTime, 
+FINPUT_STS = :FinputSts, 
+UP_DT = current_timestamp, 
+UP_USER_CD = :UpUserCd 
+WHERE 
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:KariukeDt] 2015/10/30
+      [:KariUsercd] USN001
+      [:KakuteiDt] 
+      [:KakuUsercd] 
+      [:YoyakuSts] 2
+      [:ShisetuKbn] 1
+      [:StudioKbn] 0
+      [:SaijiNm] ‚ ‚ ‚ ‚ 
+      [:ShutsuenNm] ‚ ‚ ‚ ‚ ‚ ‚ 
+      [:KashiKind] 1
+      [:RiyoType] 1
+      [:DrinkFlg] 1
+      [:SaijiBunrui] 5
+      [:Teiin] 600
+      [:OnkyoOpeFlg] 
+      [:RiyoshaCd] C00076
+      [:RiyoNm] ‚ ‚ ‚ ‚ ‚ ‚ Ž––±Š
+      [:RiyoKana] ƒAƒAƒAƒAƒAƒAƒWƒ€ƒVƒ‡
+      [:SekininBushoNm] 
+      [:SekininNm] 
+      [:SekininMail] 
+      [:DaihyoNm] ‚ ‚¢‚¤@‚¦‚¨‚©
+      [:RiyoTel11] 03
+      [:RiyoTel12] 1111
+      [:RiyoTel13] 2121
+      [:RiyoTel21] 
+      [:RiyoTel22] 
+      [:RiyoTel23] 
+      [:RiyoNaisen] 
+      [:RiyoFax11] 
+      [:RiyoFax12] 
+      [:RiyoFax13] 
+      [:RiyoYubin1] 211
+      [:RiyoYubin2] 1111
+      [:RiyoTodo] ç—tŒ§
+      [:RiyoShiku] ç—tŽsç—t‹æ
+      [:RiyoBan] ‚P|‚P|‚P
+      [:RiyoBuild] ‚¿‚Îƒrƒ‹‚TŠK
+      [:RiyoLvl] 1
+      [:AiteCd] EXA024
+      [:OnkyoNm] 
+      [:OnkyoTantoNm] 
+      [:OnkyoTel11] 
+      [:OnkyoTel12] 
+      [:OnkyoTel13] 
+      [:OnkyoNaisen] 
+      [:OnkyoFax11] 
+      [:OnkyoFax12] 
+      [:OnkyoFax13] 
+      [:OnkyoMail] 
+      [:TotalRiyoKin] 
+      [:SendKbn] 1
+      [:SendSts] 1
+      [:SendDt] 
+      [:HensoDt] 
+      [:Biko] 
+      [:RiyoCom] 
+      [:TicketEnterKbn] 
+      [:TicketDrinkKbn] 
+      [:HpKeisai] 
+      [:JohoKokaiDt] 
+      [:JohoKokaiTime] 
+      [:KokaiDt] 
+      [:KokaiTime] 
+      [:FinputSts] 
+      [:AddUserCd] USN001
+      [:UpUserCd] USN001
+      [:YoyakuNo] T00022
+2015/12/11 20:37:57  TRACE> LogicEXTB0102.RegYoyakuInfo() END
+2015/12/11 20:37:57  TRACE> LogicEXTB0102.DeleteYoyakuList() START
+2015/12/11 20:37:57  TRACE> LogicEXTB0102.DeleteYoyakuList() END
+¡SQL Data :
+   Sql Command > DELETE 
+FROM 
+YDT_TBL 
+WHERE
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:37:57  TRACE> LogicEXTB0102.InsertYoyakuList() START
+2015/12/11 20:37:57  TRACE> LogicEXTB0102.InsertYoyakuList() END
+2015/12/11 20:39:47  TRACE> LogicEXTA0101.GetConfigrationFlg() START
+2015/12/11 20:39:47  TRACE> LogicEXTA0101.GetConfigrationFlg() END
+2015/12/11 20:39:47  TRACE> CommonLogicEXT.SetFormBackColor() START
+2015/12/11 20:39:47  TRACE> CommonLogicEXT.SetFormBackColor() END
+2015/12/11 20:39:52  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:39:52  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:39:53  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:39:53  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:39:53  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:39:53  TRACE> LogicEXTA0101.LoginInputCheck() START
+2015/12/11 20:39:53  TRACE> LogicEXTA0101.LoginInputCheck() END
+2015/12/11 20:39:53  TRACE> LogicEXTA0101.GetLoginData() START
+2015/12/11 20:39:53  TRACE> SqlEXTA0101.setSelectLoginData() START
+2015/12/11 20:39:53  TRACE> SqlEXTA0101.setSelectLoginData() END
+2015/12/11 20:39:53  DEBUG> LogicEXTA0101.GetLoginData() ƒƒOƒCƒ“î•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+USER_NM, 
+MAIL, 
+BUSHO_CD, 
+SHONIN_FLG, 
+MST_FLG 
+FROM 
+USER_MST 
+WHERE
+USER_CD = :UserId 
+and PW = :Password 
+and STS = '0' 
+   Parameters Data > 
+      [:UserId] USN001
+      [:Password] password
+2015/12/11 20:39:53  TRACE> LogicEXTA0101.GetLoginData() END
+2015/12/11 20:39:53  TRACE> LogicEXTA0101.DelYoyakuCtlData() START
+2015/12/11 20:39:53  DEBUG> LogicEXTA0101.DelYoyakuCtlData() Login Proc1
+¡SQL Data :
+   Sql Command > DELETE 
+FROM 
+YCTL_TBL 
+WHERE
+USER_CD = :UserId 
+   Parameters Data > 
+      [:UserId] USN001
+2015/12/11 20:39:53  DEBUG> LogicEXTA0101.DelYoyakuCtlData() Login Proc2
+¡SQL Data :
+   Sql Command > DELETE 
+FROM 
+CCTL_TBL 
+WHERE
+USER_CD = :UserId 
+   Parameters Data > 
+      [:UserId] USN001
+2015/12/11 20:39:53  TRACE> LogicEXTA0101.DelYoyakuCtlData() END
+2015/12/11 20:39:53  TRACE> LogicEXTA0101.SetSystemProperties() START
+2015/12/11 20:39:53  TRACE> SqlEXTA0101.setSelectSystemProperty() START
+2015/12/11 20:39:53  TRACE> SqlEXTA0101.setSelectSystemProperty() END
+2015/12/11 20:39:53  DEBUG> LogicEXTA0101.SetSystemProperties() ƒVƒXƒeƒ€ƒvƒƒpƒeƒBŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+TEIIN_A, 
+TEIIN_B, 
+KARI_JIZEN_TUTI 
+FROM 
+SYSTEM_MST 
+   Parameters Data > 
+2015/12/11 20:39:53  TRACE> LogicEXTA0101.SetSystemProperties() END
+2015/12/11 20:39:53  TRACE> EXTA0101.btnLogin_Click() LOGIN:USN001
+2015/12/11 20:39:53  TRACE> CommonLogicEXT.SetFormBackColor() START
+2015/12/11 20:39:53  TRACE> CommonLogicEXT.SetFormBackColor() END
+2015/12/11 20:39:54  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:39:54  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:39:54  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:39:54  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:39:54  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:39:55  TRACE> LogicEXTB0101.MakeSpread() START
+2015/12/11 20:39:55  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:39:55  TRACE> LogicEXTB0101.GetSpreadData() START
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectShukusaijitsu() START
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectShukusaijitsu() END
+2015/12/11 20:39:55  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+  HOLIDAY_DT
+from
+  HOLIDAY_MST 
+where
+  substr(HOLIDAY_DT,1,7) = :HOLIDAY_DT
+   Parameters Data > 
+      [:HOLIDAY_DT] 2015/12
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectYoyakuList() START
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectYoyakuList() END
+2015/12/11 20:39:55  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+   a.SHISETU_KBN
+  ,a.STUDIO_KBN
+  ,a.YOYAKU_DT
+  ,a.START_TIME
+  ,a.END_TIME
+  ,a.YOYAKU_NO
+  ,a.MITEI_FLG
+  ,b.STUDIO_KBN  
+  ,b.SAIJI_NM
+  ,b.SHUTSUEN_NM
+  ,b.YOYAKU_STS
+  ,a.RIYO_KEITAI
+  ,c.RIYO_NM
+from
+  YDT_TBL a
+left join YOYAKU_TBL b on(
+  a.YOYAKU_NO = b.YOYAKU_NO
+)
+left join RIYOSHA_MST c on(
+  b.RIYOSHA_CD = c.RIYOSHA_CD
+)
+where
+  a.SHISETU_KBN = '1'
+  and substr(a.YOYAKU_DT,1,7) = :YOYAKU_DT
+  and b.YOYAKU_STS IN ('1', '2', '3', '4')
+order by a.YOYAKU_DT, a.START_TIME
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/12
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() START
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() END
+2015/12/11 20:39:55  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  YCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/12
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:39:55  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and a.RIYO_DT_FLG = :RIYO_DT_FLG
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/12
+      [:RIYO_DT_FLG] 1
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:39:55  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/12
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() START
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() END
+2015/12/11 20:39:55  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  CCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/12
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:39:55  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/12
+      [:CANCEL_WAIT_STS] 3
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() START
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() END
+2015/12/11 20:39:55  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   RIYO_DT
+  ,START_TIME
+  ,END_TIME
+  ,RIYO_BASHO
+  ,RIYO_YOTO
+  ,RIYOSHA
+from
+  SONOTA_DT_TBL
+where
+  substr(RIYO_DT,1,7) = :RIYO_DT
+   Parameters Data > 
+      [:RIYO_DT] 2015/12
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectKyukanMainteList() START
+2015/12/11 20:39:55  TRACE> SqlEXTB0101.setSelectKyukanMainteList() END
+2015/12/11 20:39:55  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+  HOLMENT_DT
+  ,SHISETU_KBN
+  ,MNAIYO
+  ,HOLMENT_KBN
+from
+  HOLMENT_MST
+where
+  SHISETU_KBN = '1'
+  and substr(HOLMENT_DT,1,7) = :HOLMENT_DT
+   Parameters Data > 
+      [:HOLMENT_DT] 2015/12
+2015/12/11 20:39:55  TRACE> LogicEXTB0101.GetSpreadData() END
+2015/12/11 20:39:55  TRACE> LogicEXTB0101.ViewSpreadData() START
+2015/12/11 20:39:55  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:39:55  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:39:55  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:39:55  TRACE> CommonLogicEXT.SetFormBackColor() START
+2015/12/11 20:39:55  TRACE> CommonLogicEXT.SetFormBackColor() END
+2015/12/11 20:39:56  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:39:56  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:39:56  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:39:56  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:39:56  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:39:56  TRACE> LogicEXTB0101.MakeSpread() START
+2015/12/11 20:39:56  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:39:56  TRACE> LogicEXTB0101.GetSpreadData() START
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectShukusaijitsu() START
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectShukusaijitsu() END
+2015/12/11 20:39:56  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+  HOLIDAY_DT
+from
+  HOLIDAY_MST 
+where
+  substr(HOLIDAY_DT,1,7) = :HOLIDAY_DT
+   Parameters Data > 
+      [:HOLIDAY_DT] 2015/11
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectYoyakuList() START
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectYoyakuList() END
+2015/12/11 20:39:56  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+   a.SHISETU_KBN
+  ,a.STUDIO_KBN
+  ,a.YOYAKU_DT
+  ,a.START_TIME
+  ,a.END_TIME
+  ,a.YOYAKU_NO
+  ,a.MITEI_FLG
+  ,b.STUDIO_KBN  
+  ,b.SAIJI_NM
+  ,b.SHUTSUEN_NM
+  ,b.YOYAKU_STS
+  ,a.RIYO_KEITAI
+  ,c.RIYO_NM
+from
+  YDT_TBL a
+left join YOYAKU_TBL b on(
+  a.YOYAKU_NO = b.YOYAKU_NO
+)
+left join RIYOSHA_MST c on(
+  b.RIYOSHA_CD = c.RIYOSHA_CD
+)
+where
+  a.SHISETU_KBN = '1'
+  and substr(a.YOYAKU_DT,1,7) = :YOYAKU_DT
+  and b.YOYAKU_STS IN ('1', '2', '3', '4')
+order by a.YOYAKU_DT, a.START_TIME
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/11
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() START
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() END
+2015/12/11 20:39:56  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  YCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/11
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:39:56  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and a.RIYO_DT_FLG = :RIYO_DT_FLG
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/11
+      [:RIYO_DT_FLG] 1
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:39:56  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/11
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() START
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() END
+2015/12/11 20:39:56  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  CCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/11
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:39:56  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/11
+      [:CANCEL_WAIT_STS] 3
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() START
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() END
+2015/12/11 20:39:56  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   RIYO_DT
+  ,START_TIME
+  ,END_TIME
+  ,RIYO_BASHO
+  ,RIYO_YOTO
+  ,RIYOSHA
+from
+  SONOTA_DT_TBL
+where
+  substr(RIYO_DT,1,7) = :RIYO_DT
+   Parameters Data > 
+      [:RIYO_DT] 2015/11
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectKyukanMainteList() START
+2015/12/11 20:39:56  TRACE> SqlEXTB0101.setSelectKyukanMainteList() END
+2015/12/11 20:39:56  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+  HOLMENT_DT
+  ,SHISETU_KBN
+  ,MNAIYO
+  ,HOLMENT_KBN
+from
+  HOLMENT_MST
+where
+  SHISETU_KBN = '1'
+  and substr(HOLMENT_DT,1,7) = :HOLMENT_DT
+   Parameters Data > 
+      [:HOLMENT_DT] 2015/11
+2015/12/11 20:39:56  TRACE> LogicEXTB0101.GetSpreadData() END
+2015/12/11 20:39:56  TRACE> LogicEXTB0101.ViewSpreadData() START
+2015/12/11 20:39:56  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:39:56  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:39:56  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:39:57  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:39:57  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:39:57  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:39:57  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:39:57  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:39:57  TRACE> LogicEXTB0101.MakeSpread() START
+2015/12/11 20:39:57  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:39:57  TRACE> LogicEXTB0101.GetSpreadData() START
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectShukusaijitsu() START
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectShukusaijitsu() END
+2015/12/11 20:39:57  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+  HOLIDAY_DT
+from
+  HOLIDAY_MST 
+where
+  substr(HOLIDAY_DT,1,7) = :HOLIDAY_DT
+   Parameters Data > 
+      [:HOLIDAY_DT] 2015/10
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectYoyakuList() START
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectYoyakuList() END
+2015/12/11 20:39:57  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+   a.SHISETU_KBN
+  ,a.STUDIO_KBN
+  ,a.YOYAKU_DT
+  ,a.START_TIME
+  ,a.END_TIME
+  ,a.YOYAKU_NO
+  ,a.MITEI_FLG
+  ,b.STUDIO_KBN  
+  ,b.SAIJI_NM
+  ,b.SHUTSUEN_NM
+  ,b.YOYAKU_STS
+  ,a.RIYO_KEITAI
+  ,c.RIYO_NM
+from
+  YDT_TBL a
+left join YOYAKU_TBL b on(
+  a.YOYAKU_NO = b.YOYAKU_NO
+)
+left join RIYOSHA_MST c on(
+  b.RIYOSHA_CD = c.RIYOSHA_CD
+)
+where
+  a.SHISETU_KBN = '1'
+  and substr(a.YOYAKU_DT,1,7) = :YOYAKU_DT
+  and b.YOYAKU_STS IN ('1', '2', '3', '4')
+order by a.YOYAKU_DT, a.START_TIME
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/10
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() START
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() END
+2015/12/11 20:39:57  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  YCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/10
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:39:57  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and a.RIYO_DT_FLG = :RIYO_DT_FLG
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/10
+      [:RIYO_DT_FLG] 1
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:39:57  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/10
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() START
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() END
+2015/12/11 20:39:57  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  CCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/10
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:39:57  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/10
+      [:CANCEL_WAIT_STS] 3
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() START
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() END
+2015/12/11 20:39:57  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   RIYO_DT
+  ,START_TIME
+  ,END_TIME
+  ,RIYO_BASHO
+  ,RIYO_YOTO
+  ,RIYOSHA
+from
+  SONOTA_DT_TBL
+where
+  substr(RIYO_DT,1,7) = :RIYO_DT
+   Parameters Data > 
+      [:RIYO_DT] 2015/10
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectKyukanMainteList() START
+2015/12/11 20:39:57  TRACE> SqlEXTB0101.setSelectKyukanMainteList() END
+2015/12/11 20:39:57  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+  HOLMENT_DT
+  ,SHISETU_KBN
+  ,MNAIYO
+  ,HOLMENT_KBN
+from
+  HOLMENT_MST
+where
+  SHISETU_KBN = '1'
+  and substr(HOLMENT_DT,1,7) = :HOLMENT_DT
+   Parameters Data > 
+      [:HOLMENT_DT] 2015/10
+2015/12/11 20:39:57  TRACE> LogicEXTB0101.GetSpreadData() END
+2015/12/11 20:39:57  TRACE> LogicEXTB0101.ViewSpreadData() START
+2015/12/11 20:39:57  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:39:57  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:39:57  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:39:58  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:39:58  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:39:58  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:39:58  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:39:58  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:39:58  TRACE> LogicEXTB0101.MakeSpread() START
+2015/12/11 20:39:58  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:39:58  TRACE> LogicEXTB0101.GetSpreadData() START
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectShukusaijitsu() START
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectShukusaijitsu() END
+2015/12/11 20:39:58  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+  HOLIDAY_DT
+from
+  HOLIDAY_MST 
+where
+  substr(HOLIDAY_DT,1,7) = :HOLIDAY_DT
+   Parameters Data > 
+      [:HOLIDAY_DT] 2015/09
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectYoyakuList() START
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectYoyakuList() END
+2015/12/11 20:39:58  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select 
+   a.SHISETU_KBN
+  ,a.STUDIO_KBN
+  ,a.YOYAKU_DT
+  ,a.START_TIME
+  ,a.END_TIME
+  ,a.YOYAKU_NO
+  ,a.MITEI_FLG
+  ,b.STUDIO_KBN  
+  ,b.SAIJI_NM
+  ,b.SHUTSUEN_NM
+  ,b.YOYAKU_STS
+  ,a.RIYO_KEITAI
+  ,c.RIYO_NM
+from
+  YDT_TBL a
+left join YOYAKU_TBL b on(
+  a.YOYAKU_NO = b.YOYAKU_NO
+)
+left join RIYOSHA_MST c on(
+  b.RIYOSHA_CD = c.RIYOSHA_CD
+)
+where
+  a.SHISETU_KBN = '1'
+  and substr(a.YOYAKU_DT,1,7) = :YOYAKU_DT
+  and b.YOYAKU_STS IN ('1', '2', '3', '4')
+order by a.YOYAKU_DT, a.START_TIME
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/09
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() START
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectMikakuYoyakuList() END
+2015/12/11 20:39:58  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  YCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/09
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:39:58  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and a.RIYO_DT_FLG = :RIYO_DT_FLG
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/09
+      [:RIYO_DT_FLG] 1
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:39:58  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/09
+      [:CANCEL_WAIT_STS] 1
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() START
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectMikakuCancelWaitList() END
+2015/12/11 20:39:58  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   USER_CD
+  ,SHISETU_KBN
+  ,STUDIO_KBN
+  ,YOYAKU_DT
+from
+  CCTL_TBL
+where
+  SHISETU_KBN = '1'
+  and substr(YOYAKU_DT,1,7) = :YOYAKU_DT
+   Parameters Data > 
+      [:YOYAKU_DT] 2015/09
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectCancelList() START
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectCancelList() END
+2015/12/11 20:39:58  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+a.SHISETU_KBN
+,a.STUDIO_KBN
+,a.RIYO_DT_FLG
+,a.RIYO_YM
+,a.RIYO_DT
+,a.CANCEL_WAIT_NO
+,a.START_TIME
+,a.END_TIME
+,a.RIYO_MEMO
+,a.WAKU_NO
+  ,a.MITEI_FLG
+,b.SAIJI_NM
+,b.RIYO_NM
+from
+CANCEL_WAIT_DT_TBL a
+inner join CANCEL_WAIT_TBL b on(
+a.CANCEL_WAIT_NO = b.CANCEL_WAIT_NO
+)
+where
+a.RIYO_YM = :RIYO_YM
+and a.SHISETU_KBN = '1'
+and b.CANCEL_WAIT_STS = :CANCEL_WAIT_STS
+order by 
+a.RIYO_DT, a.WAKU_NO
+   Parameters Data > 
+      [:RIYO_YM] 2015/09
+      [:CANCEL_WAIT_STS] 3
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() START
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectEtcUsedYoyakuList() END
+2015/12/11 20:39:58  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+   RIYO_DT
+  ,START_TIME
+  ,END_TIME
+  ,RIYO_BASHO
+  ,RIYO_YOTO
+  ,RIYOSHA
+from
+  SONOTA_DT_TBL
+where
+  substr(RIYO_DT,1,7) = :RIYO_DT
+   Parameters Data > 
+      [:RIYO_DT] 2015/09
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectKyukanMainteList() START
+2015/12/11 20:39:58  TRACE> SqlEXTB0101.setSelectKyukanMainteList() END
+2015/12/11 20:39:58  DEBUG> LogicEXTB0101.GetSpreadData() 
+¡SQL Data :
+   Sql Command > select
+  HOLMENT_DT
+  ,SHISETU_KBN
+  ,MNAIYO
+  ,HOLMENT_KBN
+from
+  HOLMENT_MST
+where
+  SHISETU_KBN = '1'
+  and substr(HOLMENT_DT,1,7) = :HOLMENT_DT
+   Parameters Data > 
+      [:HOLMENT_DT] 2015/09
+2015/12/11 20:39:58  TRACE> LogicEXTB0101.GetSpreadData() END
+2015/12/11 20:39:58  TRACE> LogicEXTB0101.ViewSpreadData() START
+2015/12/11 20:39:58  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:39:58  TRACE> LogicEXTB0101.ViewSpreadData() END
+2015/12/11 20:39:58  TRACE> LogicEXTB0101.MakeSpread() END
+2015/12/11 20:39:59  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:39:59  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:39:59  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:39:59  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:39:59  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:39:59  TRACE> LogicEXTB0102.GetYoyakuData() START
+2015/12/11 20:39:59  TRACE> SqlEXTB0102.setSelectYoyakuData() START
+2015/12/11 20:39:59  TRACE> SqlEXTB0102.setSelectYoyakuData() END
+2015/12/11 20:39:59  DEBUG> LogicEXTB0102.GetYoyakuData() —\–ñî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+t1.yoyaku_no, 
+t1.kariuke_dt, 
+t1.kari_usercd, 
+t1.kakutei_dt, 
+t1.kaku_usercd, 
+t1.yoyaku_sts, 
+t1.shisetu_kbn, 
+t1.studio_kbn, 
+t1.saiji_nm, 
+t1.shutsuen_nm, 
+t1.kashi_kind, 
+t1.riyo_type, 
+t1.drink_flg, 
+t1.saiji_bunrui, 
+t1.teiin, 
+t1.onkyo_ope_flg, 
+t1.riyosha_cd, 
+t1.riyo_nm, 
+t1.riyo_kana, 
+t1.sekinin_busho_nm, 
+t1.sekinin_nm, 
+t1.sekinin_mail, 
+t1.daihyo_nm, 
+t1.riyo_tel11, 
+t1.riyo_tel12, 
+t1.riyo_tel13, 
+t1.riyo_tel21, 
+t1.riyo_tel22, 
+t1.riyo_tel23, 
+t1.riyo_naisen, 
+t1.riyo_fax11, 
+t1.riyo_fax12, 
+t1.riyo_fax13, 
+t1.riyo_yubin1, 
+t1.riyo_yubin2, 
+t1.riyo_todo, 
+t1.riyo_shiku, 
+t1.riyo_ban, 
+t1.riyo_build, 
+t1.riyo_lvl, 
+t1.aite_cd, 
+t1.onkyo_nm, 
+t1.onkyo_tanto_nm, 
+t1.onkyo_tel11, 
+t1.onkyo_tel12, 
+t1.onkyo_tel13, 
+t1.onkyo_naisen, 
+t1.onkyo_fax11, 
+t1.onkyo_fax12, 
+t1.onkyo_fax13, 
+t1.onkyo_mail, 
+t1.total_riyo_kin, 
+t1.send_kbn, 
+t1.send_sts, 
+t1.send_dt, 
+t1.henso_dt, 
+t1.biko, 
+t1.riyo_com, 
+t1.ticket_enter_kbn, 
+t1.ticket_drink_kbn, 
+t1.hp_keisai, 
+t1.joho_kokai_dt, 
+t1.joho_kokai_time, 
+t1.kokai_dt, 
+t1.kokai_time, 
+t1.finput_sts, 
+to_char(t1.add_dt,'YYYY/MM/DD HH:mm') as add_dt, 
+t1.add_user_cd, 
+m1.user_nm as add_user_nm,
+to_char(t1.up_dt,'YYYY/MM/DD HH:mm') as up_dt, 
+t1.up_user_cd, 
+m2.user_nm as up_user_nm, 
+m3.aite_nm as aite_nm 
+FROM 
+YOYAKU_TBL t1
+LEFT JOIN USER_MST m1
+ON t1.add_user_cd = m1.user_cd
+LEFT JOIN USER_MST m2
+ON t1.up_user_cd = m2.user_cd
+LEFT JOIN AITESAKI_MST m3
+ON t1.aite_cd = m3.aite_cd
+WHERE
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:39:59  TRACE> LogicEXTB0102.GetYoyakuData() START_2
+2015/12/11 20:39:59  TRACE> LogicEXTB0102.GetYoyakuData() END_2
+2015/12/11 20:39:59  TRACE> LogicEXTB0102.GetYoyakuData() END
+2015/12/11 20:39:59  TRACE> LogicEXTB0102.GetRiyobiData() START
+2015/12/11 20:39:59  TRACE> SqlEXTB0102.setSelectRiyobiData() START
+2015/12/11 20:39:59  TRACE> SqlEXTB0102.setSelectRiyobiData() END
+2015/12/11 20:39:59  DEBUG> LogicEXTB0102.GetRiyobiData() —\–ñ“úŽžî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+seq, 
+shisetu_kbn, 
+studio_kbn, 
+yoyaku_dt, 
+start_time, 
+end_time, 
+yoyaku_no, 
+riyo_keitai, 
+mitei_flg, 
+tanka, 
+bairitu, 
+su, 
+riyo_kin 
+FROM 
+YDT_TBL 
+WHERE
+yoyaku_no = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:39:59  TRACE> LogicEXTB0102.GetRiyobiData() END
+2015/12/11 20:39:59  TRACE> LogicEXTB0102.GetSekininshaList() START
+2015/12/11 20:39:59  TRACE> SqlEXTB0102.setSelectSekininName() START
+2015/12/11 20:39:59  TRACE> SqlEXTB0102.setSelectSekininName() END
+2015/12/11 20:39:59  TRACE> CommonLogicEXT.SetFormBackColor() START
+2015/12/11 20:39:59  TRACE> CommonLogicEXT.SetFormBackColor() END
+2015/12/11 20:40:01  TRACE> CommonLogicEXT.CheckDBCondition() START
+2015/12/11 20:40:01  TRACE> CommonLogicEXT.NetUseConect() START
+2015/12/11 20:40:01  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:40:01  TRACE> CommonLogicEXT.NetUseConectDel() START
+2015/12/11 20:40:01  TRACE> CommonLogicEXT.CheckDBCondition() END
+2015/12/11 20:40:01  TRACE> EXTB0102.inputCheckMain() Chk_START
+2015/12/11 20:40:01  TRACE> EXTB0102.inputCheckMain() Chk_END
+2015/12/11 20:40:01  TRACE> EXTB0102.inputCheckCondition() Chk_START
+2015/12/11 20:40:01  TRACE> LogicEXTZ0202.CheckRiyobiRegister() START
+2015/12/11 20:40:01  TRACE> SqlEXTZ0202.cntRiyobi() START
+2015/12/11 20:40:01  TRACE> SqlEXTZ0202.cntRiyobi() END
+2015/12/11 20:40:01  TRACE> LogicEXTZ0202.CheckRiyobiRegister() END
+2015/12/11 20:40:01  TRACE> EXTB0102.inputCheckCondition() Chk_END
+2015/12/11 20:40:02  TRACE> LogicEXTZ0202.DeleteYoyakuCtlShisetuData() START
+2015/12/11 20:40:02  TRACE> LogicEXTZ0202.DeleteYoyakuCtlShisetuData() END
+2015/12/11 20:40:02  TRACE> LogicEXTB0102.RegYoyakuInfo() START
+2015/12/11 20:40:02  TRACE> LogicEXTB0102.RegYoyakuInfo() Complate SQL
+¡SQL Data :
+   Sql Command > update YOYAKU_TBL 
+SET 
+KARIUKE_DT = :KariukeDt, 
+KARI_USERCD = :KariUsercd, 
+KAKUTEI_DT = :KakuteiDt, 
+KAKU_USERCD = :KakuUsercd, 
+YOYAKU_STS = :YoyakuSts, 
+SHISETU_KBN = :ShisetuKbn, 
+STUDIO_KBN = :StudioKbn, 
+SAIJI_NM = :SaijiNm, 
+SHUTSUEN_NM = :ShutsuenNm, 
+KASHI_KIND = :KashiKind, 
+RIYO_TYPE = :RiyoType, 
+DRINK_FLG = :DrinkFlg, 
+SAIJI_BUNRUI = :SaijiBunrui, 
+TEIIN = :Teiin, 
+ONKYO_OPE_FLG = :OnkyoOpeFlg, 
+RIYOSHA_CD = :RiyoshaCd, 
+RIYO_NM = :RiyoNm, 
+RIYO_KANA = :RiyoKana, 
+SEKININ_BUSHO_NM = :SekininBushoNm, 
+SEKININ_NM = :SekininNm, 
+SEKININ_MAIL = :SekininMail, 
+DAIHYO_NM = :DaihyoNm, 
+RIYO_TEL11 = :RiyoTel11, 
+RIYO_TEL12 = :RiyoTel12, 
+RIYO_TEL13 = :RiyoTel13, 
+RIYO_TEL21 = :RiyoTel21, 
+RIYO_TEL22 = :RiyoTel22, 
+RIYO_TEL23 = :RiyoTel23, 
+RIYO_NAISEN = :RiyoNaisen, 
+RIYO_FAX11 = :RiyoFax11, 
+RIYO_FAX12 = :RiyoFax12, 
+RIYO_FAX13 = :RiyoFax13, 
+RIYO_YUBIN1 = :RiyoYubin1, 
+RIYO_YUBIN2 = :RiyoYubin2, 
+RIYO_TODO = :RiyoTodo, 
+RIYO_SHIKU = :RiyoShiku, 
+RIYO_BAN = :RiyoBan, 
+RIYO_BUILD = :RiyoBuild, 
+RIYO_LVL = :RiyoLvl, 
+AITE_CD = :AiteCd, 
+ONKYO_NM = :OnkyoNm, 
+ONKYO_TANTO_NM = :OnkyoTantoNm, 
+ONKYO_TEL11 = :OnkyoTel11, 
+ONKYO_TEL12 = :OnkyoTel12, 
+ONKYO_TEL13 = :OnkyoTel13, 
+ONKYO_NAISEN = :OnkyoNaisen, 
+ONKYO_FAX11 = :OnkyoFax11, 
+ONKYO_FAX12 = :OnkyoFax12, 
+ONKYO_FAX13 = :OnkyoFax13, 
+ONKYO_MAIL = :OnkyoMail, 
+TOTAL_RIYO_KIN = :TotalRiyoKin, 
+SEND_KBN = :SendKbn, 
+SEND_STS = :SendSts, 
+SEND_DT = :SendDt, 
+HENSO_DT = :HensoDt, 
+BIKO = :Biko, 
+RIYO_COM = :RiyoCom, 
+TICKET_ENTER_KBN = :TicketEnterKbn, 
+TICKET_DRINK_KBN = :TicketDrinkKbn, 
+HP_KEISAI = :HpKeisai, 
+JOHO_KOKAI_DT = :JohoKokaiDt, 
+JOHO_KOKAI_TIME = :JohoKokaiTime, 
+KOKAI_DT = :KokaiDt, 
+KOKAI_TIME = :KokaiTime, 
+FINPUT_STS = :FinputSts, 
+UP_DT = current_timestamp, 
+UP_USER_CD = :UpUserCd 
+WHERE 
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:KariukeDt] 2015/10/30
+      [:KariUsercd] USN001
+      [:KakuteiDt] 
+      [:KakuUsercd] 
+      [:YoyakuSts] 2
+      [:ShisetuKbn] 1
+      [:StudioKbn] 0
+      [:SaijiNm] ‚ ‚ ‚ ‚ 
+      [:ShutsuenNm] ‚ ‚ ‚ ‚ ‚ ‚ 
+      [:KashiKind] 1
+      [:RiyoType] 1
+      [:DrinkFlg] 1
+      [:SaijiBunrui] 5
+      [:Teiin] 600
+      [:OnkyoOpeFlg] 
+      [:RiyoshaCd] C00076
+      [:RiyoNm] ‚ ‚ ‚ ‚ ‚ ‚ Ž––±Š
+      [:RiyoKana] ƒAƒAƒAƒAƒAƒAƒWƒ€ƒVƒ‡
+      [:SekininBushoNm] 
+      [:SekininNm] 
+      [:SekininMail] 
+      [:DaihyoNm] ‚ ‚¢‚¤@‚¦‚¨‚©
+      [:RiyoTel11] 03
+      [:RiyoTel12] 1111
+      [:RiyoTel13] 2121
+      [:RiyoTel21] 
+      [:RiyoTel22] 
+      [:RiyoTel23] 
+      [:RiyoNaisen] 
+      [:RiyoFax11] 
+      [:RiyoFax12] 
+      [:RiyoFax13] 
+      [:RiyoYubin1] 211
+      [:RiyoYubin2] 1111
+      [:RiyoTodo] ç—tŒ§
+      [:RiyoShiku] ç—tŽsç—t‹æ
+      [:RiyoBan] ‚P|‚P|‚P
+      [:RiyoBuild] ‚¿‚Îƒrƒ‹‚TŠK
+      [:RiyoLvl] 1
+      [:AiteCd] EXA024
+      [:OnkyoNm] 
+      [:OnkyoTantoNm] 
+      [:OnkyoTel11] 
+      [:OnkyoTel12] 
+      [:OnkyoTel13] 
+      [:OnkyoNaisen] 
+      [:OnkyoFax11] 
+      [:OnkyoFax12] 
+      [:OnkyoFax13] 
+      [:OnkyoMail] 
+      [:TotalRiyoKin] 
+      [:SendKbn] 1
+      [:SendSts] 1
+      [:SendDt] 
+      [:HensoDt] 
+      [:Biko] 
+      [:RiyoCom] 
+      [:TicketEnterKbn] 
+      [:TicketDrinkKbn] 
+      [:HpKeisai] 
+      [:JohoKokaiDt] 
+      [:JohoKokaiTime] 
+      [:KokaiDt] 
+      [:KokaiTime] 
+      [:FinputSts] 
+      [:AddUserCd] USN001
+      [:UpUserCd] USN001
+      [:YoyakuNo] T00022
+2015/12/11 20:40:02  TRACE> LogicEXTB0102.RegYoyakuInfo() “o˜^—\–ñ”Ô†:
+¡SQL Data :
+   Sql Command > update YOYAKU_TBL 
+SET 
+KARIUKE_DT = :KariukeDt, 
+KARI_USERCD = :KariUsercd, 
+KAKUTEI_DT = :KakuteiDt, 
+KAKU_USERCD = :KakuUsercd, 
+YOYAKU_STS = :YoyakuSts, 
+SHISETU_KBN = :ShisetuKbn, 
+STUDIO_KBN = :StudioKbn, 
+SAIJI_NM = :SaijiNm, 
+SHUTSUEN_NM = :ShutsuenNm, 
+KASHI_KIND = :KashiKind, 
+RIYO_TYPE = :RiyoType, 
+DRINK_FLG = :DrinkFlg, 
+SAIJI_BUNRUI = :SaijiBunrui, 
+TEIIN = :Teiin, 
+ONKYO_OPE_FLG = :OnkyoOpeFlg, 
+RIYOSHA_CD = :RiyoshaCd, 
+RIYO_NM = :RiyoNm, 
+RIYO_KANA = :RiyoKana, 
+SEKININ_BUSHO_NM = :SekininBushoNm, 
+SEKININ_NM = :SekininNm, 
+SEKININ_MAIL = :SekininMail, 
+DAIHYO_NM = :DaihyoNm, 
+RIYO_TEL11 = :RiyoTel11, 
+RIYO_TEL12 = :RiyoTel12, 
+RIYO_TEL13 = :RiyoTel13, 
+RIYO_TEL21 = :RiyoTel21, 
+RIYO_TEL22 = :RiyoTel22, 
+RIYO_TEL23 = :RiyoTel23, 
+RIYO_NAISEN = :RiyoNaisen, 
+RIYO_FAX11 = :RiyoFax11, 
+RIYO_FAX12 = :RiyoFax12, 
+RIYO_FAX13 = :RiyoFax13, 
+RIYO_YUBIN1 = :RiyoYubin1, 
+RIYO_YUBIN2 = :RiyoYubin2, 
+RIYO_TODO = :RiyoTodo, 
+RIYO_SHIKU = :RiyoShiku, 
+RIYO_BAN = :RiyoBan, 
+RIYO_BUILD = :RiyoBuild, 
+RIYO_LVL = :RiyoLvl, 
+AITE_CD = :AiteCd, 
+ONKYO_NM = :OnkyoNm, 
+ONKYO_TANTO_NM = :OnkyoTantoNm, 
+ONKYO_TEL11 = :OnkyoTel11, 
+ONKYO_TEL12 = :OnkyoTel12, 
+ONKYO_TEL13 = :OnkyoTel13, 
+ONKYO_NAISEN = :OnkyoNaisen, 
+ONKYO_FAX11 = :OnkyoFax11, 
+ONKYO_FAX12 = :OnkyoFax12, 
+ONKYO_FAX13 = :OnkyoFax13, 
+ONKYO_MAIL = :OnkyoMail, 
+TOTAL_RIYO_KIN = :TotalRiyoKin, 
+SEND_KBN = :SendKbn, 
+SEND_STS = :SendSts, 
+SEND_DT = :SendDt, 
+HENSO_DT = :HensoDt, 
+BIKO = :Biko, 
+RIYO_COM = :RiyoCom, 
+TICKET_ENTER_KBN = :TicketEnterKbn, 
+TICKET_DRINK_KBN = :TicketDrinkKbn, 
+HP_KEISAI = :HpKeisai, 
+JOHO_KOKAI_DT = :JohoKokaiDt, 
+JOHO_KOKAI_TIME = :JohoKokaiTime, 
+KOKAI_DT = :KokaiDt, 
+KOKAI_TIME = :KokaiTime, 
+FINPUT_STS = :FinputSts, 
+UP_DT = current_timestamp, 
+UP_USER_CD = :UpUserCd 
+WHERE 
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:KariukeDt] 2015/10/30
+      [:KariUsercd] USN001
+      [:KakuteiDt] 
+      [:KakuUsercd] 
+      [:YoyakuSts] 2
+      [:ShisetuKbn] 1
+      [:StudioKbn] 0
+      [:SaijiNm] ‚ ‚ ‚ ‚ 
+      [:ShutsuenNm] ‚ ‚ ‚ ‚ ‚ ‚ 
+      [:KashiKind] 1
+      [:RiyoType] 1
+      [:DrinkFlg] 1
+      [:SaijiBunrui] 5
+      [:Teiin] 600
+      [:OnkyoOpeFlg] 
+      [:RiyoshaCd] C00076
+      [:RiyoNm] ‚ ‚ ‚ ‚ ‚ ‚ Ž––±Š
+      [:RiyoKana] ƒAƒAƒAƒAƒAƒAƒWƒ€ƒVƒ‡
+      [:SekininBushoNm] 
+      [:SekininNm] 
+      [:SekininMail] 
+      [:DaihyoNm] ‚ ‚¢‚¤@‚¦‚¨‚©
+      [:RiyoTel11] 03
+      [:RiyoTel12] 1111
+      [:RiyoTel13] 2121
+      [:RiyoTel21] 
+      [:RiyoTel22] 
+      [:RiyoTel23] 
+      [:RiyoNaisen] 
+      [:RiyoFax11] 
+      [:RiyoFax12] 
+      [:RiyoFax13] 
+      [:RiyoYubin1] 211
+      [:RiyoYubin2] 1111
+      [:RiyoTodo] ç—tŒ§
+      [:RiyoShiku] ç—tŽsç—t‹æ
+      [:RiyoBan] ‚P|‚P|‚P
+      [:RiyoBuild] ‚¿‚Îƒrƒ‹‚TŠK
+      [:RiyoLvl] 1
+      [:AiteCd] EXA024
+      [:OnkyoNm] 
+      [:OnkyoTantoNm] 
+      [:OnkyoTel11] 
+      [:OnkyoTel12] 
+      [:OnkyoTel13] 
+      [:OnkyoNaisen] 
+      [:OnkyoFax11] 
+      [:OnkyoFax12] 
+      [:OnkyoFax13] 
+      [:OnkyoMail] 
+      [:TotalRiyoKin] 
+      [:SendKbn] 1
+      [:SendSts] 1
+      [:SendDt] 
+      [:HensoDt] 
+      [:Biko] 
+      [:RiyoCom] 
+      [:TicketEnterKbn] 
+      [:TicketDrinkKbn] 
+      [:HpKeisai] 
+      [:JohoKokaiDt] 
+      [:JohoKokaiTime] 
+      [:KokaiDt] 
+      [:KokaiTime] 
+      [:FinputSts] 
+      [:AddUserCd] USN001
+      [:UpUserCd] USN001
+      [:YoyakuNo] T00022
+2015/12/11 20:40:02  TRACE> LogicEXTB0102.RegYoyakuInfo() END
+2015/12/11 20:40:02  TRACE> LogicEXTB0102.DeleteYoyakuList() START
+2015/12/11 20:40:02  TRACE> LogicEXTB0102.DeleteYoyakuList() END
+¡SQL Data :
+   Sql Command > DELETE 
+FROM 
+YDT_TBL 
+WHERE
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:40:02  TRACE> LogicEXTB0102.InsertYoyakuList() START
+2015/12/11 20:40:02  TRACE> LogicEXTB0102.InsertYoyakuList() END
+2015/12/11 20:40:02  TRACE> LogicEXTZ0202.DeleteYoyakuCtlShisetuData() START
+2015/12/11 20:40:02  TRACE> LogicEXTZ0202.DeleteYoyakuCtlShisetuData() END
+2015/12/11 20:40:02  TRACE> LogicEXTB0102.GetYoyakuData() START
+2015/12/11 20:40:02  TRACE> SqlEXTB0102.setSelectYoyakuData() START
+2015/12/11 20:40:02  TRACE> SqlEXTB0102.setSelectYoyakuData() END
+2015/12/11 20:40:02  DEBUG> LogicEXTB0102.GetYoyakuData() —\–ñî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+t1.yoyaku_no, 
+t1.kariuke_dt, 
+t1.kari_usercd, 
+t1.kakutei_dt, 
+t1.kaku_usercd, 
+t1.yoyaku_sts, 
+t1.shisetu_kbn, 
+t1.studio_kbn, 
+t1.saiji_nm, 
+t1.shutsuen_nm, 
+t1.kashi_kind, 
+t1.riyo_type, 
+t1.drink_flg, 
+t1.saiji_bunrui, 
+t1.teiin, 
+t1.onkyo_ope_flg, 
+t1.riyosha_cd, 
+t1.riyo_nm, 
+t1.riyo_kana, 
+t1.sekinin_busho_nm, 
+t1.sekinin_nm, 
+t1.sekinin_mail, 
+t1.daihyo_nm, 
+t1.riyo_tel11, 
+t1.riyo_tel12, 
+t1.riyo_tel13, 
+t1.riyo_tel21, 
+t1.riyo_tel22, 
+t1.riyo_tel23, 
+t1.riyo_naisen, 
+t1.riyo_fax11, 
+t1.riyo_fax12, 
+t1.riyo_fax13, 
+t1.riyo_yubin1, 
+t1.riyo_yubin2, 
+t1.riyo_todo, 
+t1.riyo_shiku, 
+t1.riyo_ban, 
+t1.riyo_build, 
+t1.riyo_lvl, 
+t1.aite_cd, 
+t1.onkyo_nm, 
+t1.onkyo_tanto_nm, 
+t1.onkyo_tel11, 
+t1.onkyo_tel12, 
+t1.onkyo_tel13, 
+t1.onkyo_naisen, 
+t1.onkyo_fax11, 
+t1.onkyo_fax12, 
+t1.onkyo_fax13, 
+t1.onkyo_mail, 
+t1.total_riyo_kin, 
+t1.send_kbn, 
+t1.send_sts, 
+t1.send_dt, 
+t1.henso_dt, 
+t1.biko, 
+t1.riyo_com, 
+t1.ticket_enter_kbn, 
+t1.ticket_drink_kbn, 
+t1.hp_keisai, 
+t1.joho_kokai_dt, 
+t1.joho_kokai_time, 
+t1.kokai_dt, 
+t1.kokai_time, 
+t1.finput_sts, 
+to_char(t1.add_dt,'YYYY/MM/DD HH:mm') as add_dt, 
+t1.add_user_cd, 
+m1.user_nm as add_user_nm,
+to_char(t1.up_dt,'YYYY/MM/DD HH:mm') as up_dt, 
+t1.up_user_cd, 
+m2.user_nm as up_user_nm, 
+m3.aite_nm as aite_nm 
+FROM 
+YOYAKU_TBL t1
+LEFT JOIN USER_MST m1
+ON t1.add_user_cd = m1.user_cd
+LEFT JOIN USER_MST m2
+ON t1.up_user_cd = m2.user_cd
+LEFT JOIN AITESAKI_MST m3
+ON t1.aite_cd = m3.aite_cd
+WHERE
+YOYAKU_NO = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:40:02  TRACE> LogicEXTB0102.GetYoyakuData() START_2
+2015/12/11 20:40:02  TRACE> LogicEXTB0102.GetYoyakuData() END_2
+2015/12/11 20:40:02  TRACE> LogicEXTB0102.GetYoyakuData() END
+2015/12/11 20:40:02  TRACE> LogicEXTB0102.GetRiyobiData() START
+2015/12/11 20:40:02  TRACE> SqlEXTB0102.setSelectRiyobiData() START
+2015/12/11 20:40:02  TRACE> SqlEXTB0102.setSelectRiyobiData() END
+2015/12/11 20:40:02  DEBUG> LogicEXTB0102.GetRiyobiData() —\–ñ“úŽžî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+seq, 
+shisetu_kbn, 
+studio_kbn, 
+yoyaku_dt, 
+start_time, 
+end_time, 
+yoyaku_no, 
+riyo_keitai, 
+mitei_flg, 
+tanka, 
+bairitu, 
+su, 
+riyo_kin 
+FROM 
+YDT_TBL 
+WHERE
+yoyaku_no = :YoyakuNo 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:40:02  TRACE> LogicEXTB0102.GetRiyobiData() END
+2015/12/11 20:40:02  TRACE> LogicEXTB0103.GetApproval() START
+2015/12/11 20:40:02  TRACE> SqlEXTB0103.selectApprovalReq() START
+2015/12/11 20:40:02  TRACE> SqlEXTB0103.selectApprovalReq() END
+2015/12/11 20:40:02  DEBUG> LogicEXTB0103.GetApproval() Šm”FˆË—Šî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    t1.yoyaku_no, 
+    t1.seq, 
+    to_char(t1.irai_dt, 'yyyy/mm/dd hh24:mi') as irai_dt, 
+    t1.com, 
+    t2.user_nm as user_nm 
+FROM 
+    irai_rireki_tbl t1 
+    LEFT JOIN 
+        user_mst t2 
+        ON  t1.irai_usercd = t2.user_cd 
+WHERE yoyaku_no = :YoyakuNo ORDER BY t1.seq 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:40:02  TRACE> SqlEXTB0103.selectApprovalRes() START
+2015/12/11 20:40:02  TRACE> SqlEXTB0103.selectApprovalRes() END
+2015/12/11 20:40:02  DEBUG> LogicEXTB0103.GetApproval() Šm”F‹L˜^î•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    t1.yoyaku_no, 
+    t1.seq, 
+    to_char(t1.check_dt, 'yyyy/mm/dd hh24:mi') as check_dt, 
+    t1.check_sts, 
+    t1.com, 
+    t2.user_nm as user_nm 
+FROM 
+    check_rireki_tbl t1 
+    LEFT JOIN 
+        user_mst t2 
+        ON  t1.check_usercd = t2.user_cd 
+WHERE t1.yoyaku_no = :YoyakuNo ORDER BY t1.seq 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:40:02  TRACE> LogicEXTB0103.GetApproval() END
+2015/12/11 20:40:02  TRACE> LogicEXTB0103.GetTimeSchedule() START
+2015/12/11 20:40:02  TRACE> SqlEXTB0103.selectTimeSch() START
+2015/12/11 20:40:02  TRACE> SqlEXTB0103.selectTimeSch() END
+2015/12/11 20:40:02  DEBUG> LogicEXTB0103.GetTimeSchedule() ƒ^ƒCƒ€ƒXƒPƒWƒ…[ƒ‹î•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    yoyaku_no, 
+    seq, 
+    shurui, 
+    time, 
+    biko 
+FROM 
+    time_schedule_tbl 
+WHERE yoyaku_no = :YoyakuNo 
+ORDER BY time 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:40:02  TRACE> LogicEXTB0103.GetTimeSchedule() END
+2015/12/11 20:40:02  TRACE> LogicEXTB0103.GetTicketInfo() START
+2015/12/11 20:40:02  TRACE> SqlEXTB0103.selectTicket() START
+2015/12/11 20:40:02  TRACE> SqlEXTB0103.selectTicket() END
+2015/12/11 20:40:02  DEBUG> LogicEXTB0103.GetTicketInfo() ƒ`ƒPƒbƒgî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    yoyaku_no, 
+    seq, 
+    ticket_nm, 
+    ticket_kin 
+FROM 
+    ticket_tbl 
+WHERE yoyaku_no = :YoyakuNo 
+ORDER BY add_dt 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:40:02  TRACE> SqlEXTB0103.nextValSeikyuIraiNo() START
+2015/12/11 20:40:02  TRACE> LogicEXTB0103.GetTicketInfo() END
+2015/12/11 20:40:02  TRACE> LogicEXTB0103.GetFutai() START
+2015/12/11 20:40:02  TRACE> SqlEXTB0103.selectFutaiHeadder() START
+2015/12/11 20:40:02  TRACE> SqlEXTB0103.selectFutaiHeadder() END
+2015/12/11 20:40:02  DEBUG> LogicEXTB0103.GetFutai() •t‘Ñî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    '' as yoyaku_no, 
+    :Riyobi as yoyaku_dt,  
+    SUM(m1.tanka) as total_fuzoku_kin,  
+    ARRAY_TO_STRING(ARRAY_AGG(m1.futai_nm), '^') as fuzoku_nm 
+   ,CASE WHEN :SYANAI = '2' THEN  0
+                            ELSE  
+                              SUM( CASE WHEN m2.NOTAX_FLG = '0' THEN ROUND((m1.TANKA * m3.tax_ritu) /100 ,0)
+                                                                ELSE 0 
+                                    END ) 
+    END  AS TAX_KIN 
+FROM 
+    futai_mst m1
+           LEFT OUTER JOIN  FBUNRUI_MST m2 
+                       ON   m1.BUNRUI_CD = m2.BUNRUI_CD 
+                      AND   m1.SHISETU_KBN = m2.SHISETU_KBN 
+                      AND   :Riyobi BETWEEN m2.KIKAN_FROM AND m2.KIKAN_TO 
+           LEFT OUTER JOIN  TAX_MST m3 
+                       ON   :Riyobi BETWEEN m3.TAXS_DT AND m3.TAXE_DT 
+WHERE 
+    m1.def_flg = '1' 
+AND m1.sts = '0' 
+AND :Riyobi BETWEEN m1.kikan_from AND m1.kikan_to 
+AND m1.shisetu_kbn = :ShisetuKbn 
+group by 
+    m1.def_flg, 
+    m1.sts 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+      [:Riyobi] 2015/09/09
+      [:ShisetuKbn] 1
+      [:SYANAI] 1
+2015/12/11 20:40:02  TRACE> SqlEXTB0103.selectFutaiDetail() START
+2015/12/11 20:40:03  TRACE> SqlEXTB0103.selectFutaiDetail() END
+2015/12/11 20:40:03  DEBUG> LogicEXTB0103.GetFutai() •t‘Ñî•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    '' as yoyaku_no,  
+    :Riyobi as yoyaku_dt,  
+    m1.bunrui_cd as futai_bunrui_cd, 
+    m1.futai_cd, 
+    m1.tanka as futai_tanka, 
+    1 as futai_su, 
+    m1.tanka as futai_shokei, 
+    0 as futai_chosei, 
+    m1.tanka as futai_kin, 
+    '' as futai_biko, 
+    m1.futai_nm, 
+    m1.tani as futai_tani, 
+    m2.bunrui_nm as futai_bunrui_nm, 
+    m2.shukei_grp, 
+    m2.kamoku_cd, 
+    m2.saimoku_cd, 
+    m2.uchi_cd, 
+    m2.shosai_cd, 
+    m2.karikamoku_cd, 
+    m2.kari_saimoku_cd, 
+    m2.kari_uchi_cd, 
+    m2.kari_shosai_cd, 
+    m2.notax_flg, 
+    m3.kamoku_nm, 
+    m3.saimoku_nm, 
+    m3.uchi_nm, 
+    m3.shosai_nm 
+   ,CASE WHEN :SYANAI = '2' THEN  0
+                            ELSE 
+                                      CASE WHEN m2.NOTAX_FLG = '0' THEN ROUND((m1.TANKA * m4.tax_ritu) /100 ,0)
+                                      ELSE 0 
+                               END 
+    END  AS TAX_KIN 
+FROM 
+    futai_mst m1 
+LEFT JOIN fbunrui_mst m2 
+    ON m1.bunrui_cd = m2.bunrui_cd 
+    AND m2.shisetu_kbn = :ShisetuKbn 
+    AND :Riyobi BETWEEN m2.kikan_from AND m2.kikan_to 
+    AND m2.sts = '0' 
+LEFT JOIN kamoku_mst m3 
+    ON m2.kamoku_cd = m3.kamoku_cd 
+    AND m2.saimoku_cd = m3.saimoku_cd 
+    AND m2.uchi_cd = m3.uchi_cd 
+    AND m2.shosai_cd = m3.shosai_cd 
+    AND m3.sts = '0' 
+LEFT OUTER JOIN  TAX_MST m4 
+    ON  :Riyobi BETWEEN m4.TAXS_DT AND m4.TAXE_DT 
+WHERE 
+    m1.def_flg = '1' 
+AND m1.sts = '0' 
+AND :Riyobi BETWEEN m1.kikan_from AND m1.kikan_to 
+AND m1.shisetu_kbn = :ShisetuKbn 
+ORDER BY 
+    m1.sort 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+      [:ShisetuKbn] 1
+      [:Riyobi] 2015/09/09
+      [:SYANAI] 1
+2015/12/11 20:40:03  TRACE> LogicEXTB0103.GetFutai() END
+2015/12/11 20:40:03  TRACE> LogicEXTB0103.GetTax() START
+2015/12/11 20:40:03  TRACE> SqlEXTB0103.selectTax() START
+2015/12/11 20:40:03  TRACE> SqlEXTB0103.selectTax() END
+2015/12/11 20:40:03  TRACE> LogicEXTB0103.GetTax() TAX = 0.08
+2015/12/11 20:40:03  TRACE> LogicEXTB0103.GetTax() END
+2015/12/11 20:40:03  TRACE> LogicEXTB0103.GetBillReq() START
+2015/12/11 20:40:03  TRACE> SqlEXTB0103.selectBillReq() START
+2015/12/11 20:40:03  TRACE> SqlEXTB0103.selectBillReq() END
+2015/12/11 20:40:03  DEBUG> LogicEXTB0103.GetBillReq() ¿‹î•ñŽæ“¾
+¡SQL Data :
+   Sql Command > SELECT 
+    t1.yoyaku_no, 
+    t1.seq, 
+    t1.seikyu_irai_no, 
+    t1.seikyu_dt, 
+    t1.nyukin_yotei_dt, 
+    t1.kakutei_kin, 
+    t1.chosei_kin, 
+    t1.shokei, 
+    t1.tax_kin, 
+    t1.seikyu_kin, 
+    t1.seikyu_naiyo, 
+    CASE WHEN t1.seikyu_naiyo='1' THEN '—˜—p—¿' WHEN t1.seikyu_naiyo='2' THEN '•t‘ÑÝ”õ'
+         WHEN t1.seikyu_naiyo='3' THEN '—˜—p—¿+•t‘ÑÝ”õ' WHEN t1.seikyu_naiyo='4' THEN 'ŠÒ•t' ELSE '' END as seikyu_naiyo_nm, 
+    t1.aite_cd, 
+    m1.aite_nm, 
+    t1.nyukin_kbn, 
+    t1.seikyu_title1, 
+    t1.seikyu_title2, 
+    t1.nyukin_dt, 
+    t1.nyukin_kin, 
+    t1.seikyu_input_flg, 
+    t1.seikyu_irai_flg, 
+    t1.nyukin_input_flg, 
+    t1.nyukin_link_no
+FROM 
+    BILLPAY_TBL t1 
+LEFT JOIN AITESAKI_MST m1 
+    ON t1.aite_cd = m1.aite_cd 
+WHERE t1.yoyaku_no = :YoyakuNo 
+ORDER BY t1.seq 
+   Parameters Data > 
+      [:YoyakuNo] T00022
+2015/12/11 20:40:03  TRACE> LogicEXTB0103.GetBillReq() END
+2015/12/11 20:40:03  TRACE> LogicEXTB0103.WeekDayCheck() START
+2015/12/11 20:40:03  TRACE> LogicEXTB0103.GetSelectHolidayMst() START
+2015/12/11 20:40:03  TRACE> LogicEXTB0103.GetSelectHoliday() START
+2015/12/11 20:40:03  TRACE> SqlEXTB0103.GetHolidayMst() START
+2015/12/11 20:40:03  TRACE> SqlEXTB0103.GetHolidayMst() END
+2015/12/11 20:40:03  DEBUG> LogicEXTB0103.GetSelectHoliday() jÕ“ú
+¡SQL Data :
+   Sql Command > SELECT  COUNT(*) 
+FROM HOLIDAY_MST 
+WHERE HOLIDAY_DT = :HOLIDAY_DT 
+   Parameters Data > 
+      [HOLIDAY_DT] 2016/01/29
+2015/12/11 20:40:03  TRACE> LogicEXTB0103.GetExasRiyoryo() START
+2015/12/11 20:40:03  TRACE> SqlEXTB0103.selectExasRiyoryo() START
+2015/12/11 20:40:03  TRACE> SqlEXTB0103.selecContents() START

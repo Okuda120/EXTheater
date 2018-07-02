@@ -1,0 +1,427 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EXTA
+</name>
+</assembly>
+<members>
+<member name="M:EXTA.LogicEXTA0101.GetLoginData(EXTA.DataEXTA0101@)">
+	<summary>
+ ログインデータ取得処理
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>検索条件をもとにログインデータを取得する
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTA.LogicEXTA0101.DelYoyakuCtlData(EXTA.DataEXTA0101@)">
+	<summary>
+ ログイン成功時処理
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約制御情報の削除
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTA.LogicEXTA0101.LoginInputCheck(EXTA.DataEXTA0101)">
+	<summary>
+ 入力チェック
+ </summary>
+	<returns>boolean エラーコード　true 正常終了　false 異常終了</returns>
+	<remarks>入力・桁数の入力チェックを行う
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTA.LogicEXTA0101.SetSystemProperties">
+	<summary>
+ ログイン成功時処理
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>SYSTEM PROPERTY
+ <para>作成情報：2015/08/12 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTA.LogicEXTA0101.GetConfigrationFlg(System.Object)">
+	<summary>
+ 環境設定フラグ取得
+ </summary>
+	<returns>boolean エラーコード　true 正常終了　false 異常終了</returns>
+	<remarks>入力・桁数の入力チェックを行う
+ <para>作成情報：2015.11.18 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTA.LogicEXTA0101.SetOpLog">
+	<summary>
+ ログ出力設定（操作ログ）
+ </summary>
+	<returns>boolean エラーコード　true 正常終了　false 異常終了</returns>
+	<remarks>ログの出力パスとファイル名の設定、及び、出力先パスへの接続を行う
+ <para>作成情報：2015.12.10 e.okamura
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTA.LogicEXTA0101.OpenCaptureDir">
+	<summary>
+ キャプチャフォルダ表示処理
+ </summary>
+	<returns>boolean エラーコード　true 正常終了　false 異常終了</returns>
+	<remarks>キャプチャフォルダをエクスプローラで表示する
+ <para>作成情報：2015.12.15 e.okamura
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTA.DataEXTA0101.PropTxtUserId">
+	<summary>
+ プロパティセット【ユーザーID】
+ </summary>
+	<value></value>
+	<returns>ppTxtUserId</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTA.DataEXTA0101.PropTxtPassword">
+	<summary>
+ プロパティセット【パスワード】
+ </summary>
+	<value></value>
+	<returns>ppTxtPassword</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTA.DataEXTA0101.PropStrUserName">
+	<summary>
+ プロパティセット【ユーザー名】
+ </summary>
+	<value></value>
+	<returns>ppStrUserName</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTA.DataEXTA0101.PropStrMailAddr">
+	<summary>
+ プロパティセット【メールアドレス】
+ </summary>
+	<value></value>
+	<returns>ppStrMailAddr</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTA.DataEXTA0101.PropStrCode_BUSHO">
+	<summary>
+ プロパティセット【部署コード】
+ </summary>
+	<value></value>
+	<returns>ppStrCode_BUSHO</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTA.DataEXTA0101.PropStrFlg_SHOHIN">
+	<summary>
+ プロパティセット【承認フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrFlg_SHONIN</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTA.DataEXTA0101.PropStrFlg_MST">
+	<summary>
+ プロパティセット【マスタフラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrFlg_MST</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0101.EKJA0101_Load(System.Object,System.EventArgs)">
+	<summary>
+ 「ログイン画面」ロード時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>初期化処理を行う
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0101.btnLogin_Click(System.Object,System.EventArgs)">
+	<summary>
+ ログインボタンクリック処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>ログイン処理
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0101.btnExit_Click(System.Object,System.EventArgs)">
+	<summary>
+ EXITボタンクリック処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>閉じる処理
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0101.EXTA0101_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ 閉じるButton処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTA.EXTA0101.btnCapture_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「！」Button処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:EXTA.CommonDeclareEXTA">
+	<summary>
+ EXTAプロジェクトの共通定数
+ </summary>
+	<remarks>
+ EXTAプロジェクト内で共通で使用する定数を定義する。
+ <para>作成情報：2015/08/04 k.machida</para>
+		<p>改訂情報:</p>
+	</remarks>
+</member><member name="M:EXTA.EXTA0102.EXTA0102_Load(System.Object,System.EventArgs)">
+	<summary>
+ 「メニュー画面」ロード時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>ログイン情報を基にユーザが行える機能を表示する
+ <para>作成情報：2015/08/04 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.btnCalendarTheater_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「予約カレンダー（シアター）」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/04 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.btnCalendarStudio_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「予約カレンダー（スタジオ）」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/04 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.btnYoyakuList_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「予約一覧」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/04 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.btnSeikyuList_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「請求一覧」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/04 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.btnExasPayList_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「EXAS入金一覧」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/04 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.btnAlsokPayManage_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「ALSOK入金管理」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/04 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.btnExasSeikyuRequest_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「EXAS請求依頼」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/04 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.btnUserList_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「利用者一覧」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/04 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.btnAitesakiList_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「EXAS相手先一覧」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/04 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.btnHibetsuUriageList_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「日別売上一覧」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/06 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.btnRiyoJokyoList_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「利用状況一覧」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/06 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.btnUserMaster_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「ユーザマスタ」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/04 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.btnFutaiSetsubiMaster_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「付帯設備マスタ押下」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/04 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.btnRyokinMaster_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「料金マスタ押下」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/04 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.btnExciseTaxMaster_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「消費税マスタ」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/04 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.btnEnd_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「終了」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/04 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.EXTA0102.EXTA0102_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ 閉じるButton処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:EXTA.EXTA0102">
+	<summary>
+ EXTA0102
+ </summary>
+	<remarks>メニュー画面
+ <para>作成情報：2015/08/04 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTA.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:EXTA.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="P:EXTA.My.Resources.Resources.title">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTA.My.Resources.Resources.ロゴ">
+	<summary>
+  (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTA.My.Resources.Resources.ロゴ1">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTA.My.Resources.Resources.背景">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="T:EXTA.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:EXTA.SqlEXTA0101.setSelectLoginData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTA.DataEXTA0101)">
+	<summary>
+ ＳＱＬ文作成(SELECT)
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTA0101"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTA.SqlEXTA0101.setSelectSystemProperty(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@)">
+	<summary>
+ システムプロパティ取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>システムプロパティ
+ <para>作成情報：2015/08/12 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member>
+</members>
+</doc>

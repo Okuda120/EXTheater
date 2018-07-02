@@ -1,0 +1,2900 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EXTZ
+</name>
+</assembly>
+<members>
+<member name="M:EXTZ.EXTZ0203.EXTZ0203_Load(System.Object,System.EventArgs)">
+	<summary>
+ 初期処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0203.txtChoseiKin_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+ 調整金額変更時の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0203.calc">
+	<summary>
+ 計算処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0203.btnExasPrj_Click(System.Object,System.EventArgs)">
+	<summary>
+ EXAS一覧へボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0203.btnComplate_Click(System.Object,System.EventArgs)">
+	<summary>
+ 完了ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0203.inputCheckMain">
+	<summary>
+ 入力チェック
+ </summary>
+	<returns>boolean エラーコード　true 正常終了　false 異常終了</returns>
+	<remarks>入力・桁数の入力チェックを行う
+ <para>作成情報：2015/08/28 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0203.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0104.EXTZ0104_Load(System.Object,System.EventArgs)">
+	<summary>
+ 「使用状況一覧画面」ロード時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「使用状況一覧画面」ロード時の処理を行う 
+ <para>作成情報：2015/09/24 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0104.btnSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「表示」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「表示」ボタン押下時の処理を行う 
+ <para>作成情報：2015/09/24 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0104.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「戻る」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「戻る」ボタン押下時の処理を行う 
+ <para>作成情報：2015/09/24 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0104.rdoTheatre_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 検索対象ラジオボタンのチェック状態が変わった場合の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>表示する一覧を切り替える 
+ <para>作成情報：2015/09/24 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTZ.EXTZ0104">
+	<summary>
+ EXTZ0104
+ </summary>
+	<remarks>使用状況一覧画面
+ <para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0204.EXTZ0204_Load(System.Object,System.EventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0204.btnRiyoryo_Click(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+	<summary>
+ スプレッド利用料のボタンイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0204.btnFutai_Click(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+	<summary>
+ スプレッド利用料のボタンイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0204.txtRiyoryo_Change(System.Object,FarPoint.Win.Spread.ChangeEventArgs)">
+	<summary>
+ 利用料セルOnchange処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0204.txtFutairyo_Change(System.Object,FarPoint.Win.Spread.ChangeEventArgs)">
+	<summary>
+ 付帯設備セルOnchange処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0204.calcSagaku">
+	<summary>
+ 差額計算処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0204.btnComplate_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入力完了処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0204.inputCheckMain">
+	<summary>
+ 入力チェック
+ </summary>
+	<returns>boolean エラーコード　true 正常終了　false 異常終了</returns>
+	<remarks>入力・桁数の入力チェックを行う
+ <para>作成情報：2015/08/28 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0204.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:EXTZ.EXTZ0204">
+	<summary>
+ EXTZ0204
+ </summary>
+	<remarks>EXASプロジェクト設定
+ <para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0201.PropStrHolmentDt">
+	<summary>
+ プロパティセット【対象日】
+ </summary>
+	<value></value>
+	<returns>ppStrHolmentDt</returns>
+	<remarks><para>作成情報：2015/08/21 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0201.PropStrShisetuKbn">
+	<summary>
+ プロパティセット【施設区分】
+ </summary>
+	<value></value>
+	<returns>ppStrShisetuKbn</returns>
+	<remarks><para>作成情報：2015/08/21 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0201.PropStrStudioKbn">
+	<summary>
+ プロパティセット【スタジオ区分】
+ </summary>
+	<value></value>
+	<returns>ppStrStudioKbn</returns>
+	<remarks><para>作成情報：2015/08/28 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0201.PropStrMnaiyo">
+	<summary>
+ プロパティセット【メンテナンス内容】
+ </summary>
+	<value></value>
+	<returns>ppStrMnaiyo</returns>
+	<remarks><para>作成情報：2015/08/28 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0201.PropHolmentKbn">
+	<summary>
+ プロパティセット【メンテナンス区分】
+ </summary>
+	<value></value>
+	<returns>ppStrHolmentKbn</returns>
+	<remarks><para>作成情報：2015/08/28 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0201.PropIntDataCnt">
+	<summary>
+ プロパティセット【データ件数】
+ </summary>
+	<value></value>
+	<returns>ppIntDataCnt</returns>
+	<remarks><para>作成情報：2015/08/28 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0212.PropStrSelectRiyobi">
+	<summary>
+ プロパティセット【参照ボタン押下行の利用日】
+ </summary>
+	<value></value>
+	<returns>ppStrSelectRiyobi</returns>
+</member><member name="P:EXTZ.DataEXTZ0212.PropLstRiyobi">
+	<summary>
+ プロパティセット【利用日一覧】
+ </summary>
+	<value></value>
+	<returns>ppLstRiyobi</returns>
+</member><member name="P:EXTZ.DataEXTZ0212.PropDsTanakaBairitu">
+	<summary>
+ プロパティセット【利用分類/料金/倍率】
+ </summary>
+	<value></value>
+	<returns>ppDsTanakaBairitu</returns>
+</member><member name="P:EXTZ.DataEXTZ0212.PropStrShisetu">
+	<summary>
+ プロパティセット【施設区分】
+ </summary>
+	<value></value>
+	<returns>ppDsBairitu</returns>
+</member><member name="P:EXTZ.DataEXTZ0212.PropBlnChangeFlg">
+	<summary>
+ プロパティセット【変更フラグ】
+ </summary>
+	<value></value>
+	<returns>ppDsBairitu</returns>
+</member><member name="M:EXTZ.EXTZ0205.EXTZ0205_Load(System.Object,System.EventArgs)">
+	<summary>
+ 初期処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0205.btnSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ 検索処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0205.btnKakutei_Click(System.Object,System.EventArgs)">
+	<summary>
+ 確定ボタン押下
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0205.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン押下
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:EXTZ.EXTZ0205">
+	<summary>
+ EXTZ0205
+ </summary>
+	<remarks>プロジェクト一覧
+ <para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0103.PropStrShisetsuKbn">
+	<summary>
+ プロパティセット【施設区分】
+ </summary>
+	<value></value>
+	<returns>ppStrShisetsuKbn</returns>
+	<remarks><para>作成情報：2015/09/16 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0103.PropStrShiyoNenFrom">
+	<summary>
+ プロパティセット【使用年（From）】
+ </summary>
+	<value></value>
+	<returns>ppStrShiyoNenFrom</returns>
+	<remarks><para>作成情報：2015/09/16 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0103.PropStrShiyoTsukiFrom">
+	<summary>
+ プロパティセット【使用月（From）】
+ </summary>
+	<value></value>
+	<returns>ppStrShiyoTsukiFrom</returns>
+	<remarks><para>作成情報：2015/09/16 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0103.PropStrShiyoNenTo">
+	<summary>
+ プロパティセット【使用年（To）】
+ </summary>
+	<value></value>
+	<returns>ppStrShiyoNenTo</returns>
+	<remarks><para>作成情報：2015/09/16 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0103.PropStrShiyoTsukiTo">
+	<summary>
+ プロパティセット【使用月（To）】
+ </summary>
+	<value></value>
+	<returns>ppStrShiyoTsukiTo</returns>
+	<remarks><para>作成情報：2015/09/16 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0103.PropStrRiyoNm">
+	<summary>
+ プロパティセット【利用者名】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoNm</returns>
+	<remarks><para>作成情報：2015/09/16 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0103.PropStrRiyoNmKana">
+	<summary>
+ プロパティセット【利用者名カナ】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoNmKana</returns>
+	<remarks><para>作成情報：2015/09/16 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0103.PropvwDayUriageTheatre">
+	<summary>
+ プロパティセット【日別売上一覧（シアター）】
+ </summary>
+	<value></value>
+	<returns>ppvwDayUriageTheatre</returns>
+	<remarks><para>作成情報：2015/09/16 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0103.PropvwDayUriageStudio">
+	<summary>
+ プロパティセット【日別売上一覧（スタジオ）】
+ </summary>
+	<value></value>
+	<returns>ppvwDayUriageStudio</returns>
+	<remarks><para>作成情報：2015/09/16 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0103.PropvwSeikyuChoseiTheatre">
+	<summary>
+ プロパティセット【請求時調整額（シアター）】
+ </summary>
+	<value></value>
+	<returns>ppvwSeikyuChoseiTheatre</returns>
+	<remarks><para>作成情報：2015/09/16 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0103.PropvwSeikyuChoseiStudio">
+	<summary>
+ プロパティセット【請求時調整額（スタジオ）】
+ </summary>
+	<value></value>
+	<returns>ppvwSeikyuChoseiStudio</returns>
+	<remarks><para>作成情報：2015/09/16 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0103.PropDtDayUriage">
+	<summary>
+ プロパティセット【日別売上データ】
+ </summary>
+	<value></value>
+	<returns>ppDtDayUriage</returns>
+	<remarks><para>作成情報：2015/09/16 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0103.PropDtSeikyuChosei">
+	<summary>
+ プロパティセット【請求調整データ】
+ </summary>
+	<value></value>
+	<returns>ppDtSeikyuChosei</returns>
+	<remarks><para>作成情報：2015/09/16 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0202.PropTxtRiyobiFrom">
+	<summary>
+ プロパティセット【利用日From】
+ </summary>
+	<value></value>
+	<returns>ppTxtRiyobiFrom</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0202.PropTxtRiyobiTo">
+	<summary>
+ プロパティセット【利用日To】
+ </summary>
+	<value></value>
+	<returns>ppTxtRiyobiTo</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0202.PropStrShisetsuKbn">
+	<summary>
+ プロパティセット【施設区分】
+ </summary>
+	<value></value>
+	<returns>ppStrShisetsuKbn</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0202.PropStrStudioKbn">
+	<summary>
+ プロパティセット【スタジオ区分】
+ </summary>
+	<value></value>
+	<returns>ppStrStudioKbn</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0202.PropStrTourokuKbn">
+	<summary>
+ プロパティセット【登録区分】
+ </summary>
+	<value></value>
+	<returns>ppStrTourokuKbn</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0202.PropStrRegistFlg">
+	<summary>
+ プロパティセット【登録済フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrRegistFlg</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0202.PropListRiyobi">
+	<summary>
+ プロパティセット【利用日リスト】
+ </summary>
+	<value></value>
+	<returns>ppListRiyobi</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0206.EXTZ0206_Load(System.Object,System.EventArgs)">
+	<summary>
+ 初期処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0206.calc">
+	<summary>
+ 分割割合による計算処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0206.btnCalc_Click(System.Object,System.EventArgs)">
+	<summary>
+ 再表示ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0206.ChangeEventHandler(System.Object,FarPoint.Win.Spread.ChangeEventArgs)">
+	<summary>
+ 分割差額の自動計算
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0206.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0206.btnComplate_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入力完了処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:EXTZ.EXTZ0206">
+	<summary>
+ EXTZ0206
+ </summary>
+	<remarks>
+		<para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropStrShisetsuKbn">
+	<summary>
+ プロパティセット【施設区分】
+ </summary>
+	<value></value>
+	<returns>ppStrShisetsuKbn</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropStrKikanNen">
+	<summary>
+ プロパティセット【期間年】
+ </summary>
+	<value></value>
+	<returns>ppStrKikanNen</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropStrKikanTsuki">
+	<summary>
+ プロパティセット【期間月】
+ </summary>
+	<value></value>
+	<returns>ppStrKikanTsuki</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropvwRiyoJokyoTheatre">
+	<summary>
+ プロパティセット【利用状況一覧（シアター）】
+ </summary>
+	<value></value>
+	<returns>ppvwRiyoJokyoTheatre</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropvwRiyoJokyoStudio">
+	<summary>
+ プロパティセット【利用状況一覧（スタジオ）】
+ </summary>
+	<value></value>
+	<returns>ppvwRiyoJokyoStudio</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropDtRiyoJokyo1">
+	<summary>
+ プロパティセット【利用状況データ１】
+ </summary>
+	<value></value>
+	<returns>ppDtRiyoJokyo1</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropDtRiyoJokyo2">
+	<summary>
+ プロパティセット【利用状況データ２】
+ </summary>
+	<value></value>
+	<returns>ppDtRiyoJokyo2</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropDtRiyoJokyo3">
+	<summary>
+ プロパティセット【利用状況データ３】
+ </summary>
+	<value></value>
+	<returns>ppDtRiyoJokyo3</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropDtRiyoJokyo4">
+	<summary>
+ プロパティセット【利用状況データ４】
+ </summary>
+	<value></value>
+	<returns>ppDtRiyoJokyo4</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropDtRiyoJokyo5">
+	<summary>
+ プロパティセット【利用状況データ５】
+ </summary>
+	<value></value>
+	<returns>ppDtRiyoJokyo5</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropDtRiyoJokyo6">
+	<summary>
+ プロパティセット【利用状況データ６】
+ </summary>
+	<value></value>
+	<returns>ppDtRiyoJokyo6</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropDtRiyoJokyo7">
+	<summary>
+ プロパティセット【利用状況データ７】
+ </summary>
+	<value></value>
+	<returns>ppDtRiyoJokyo7</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropDtRiyoJokyo8">
+	<summary>
+ プロパティセット【利用状況データ８】
+ </summary>
+	<value></value>
+	<returns>ppDtRiyoJokyo8</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropDtRiyoJokyo9">
+	<summary>
+ プロパティセット【利用状況データ９】
+ </summary>
+	<value></value>
+	<returns>ppDtRiyoJokyo9</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropDtRiyoJokyo10">
+	<summary>
+ プロパティセット【利用状況データ１０】
+ </summary>
+	<value></value>
+	<returns>ppDtRiyoJokyo10</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropDtRiyoJokyo11">
+	<summary>
+ プロパティセット【利用状況データ１１】
+ </summary>
+	<value></value>
+	<returns>ppDtRiyoJokyo11</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0104.PropDtRiyoJokyo12">
+	<summary>
+ プロパティセット【利用状況データ１２】
+ </summary>
+	<value></value>
+	<returns>ppDtRiyoJokyo12</returns>
+	<remarks><para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrYoyakuNo">
+	<summary>
+ プロパティセット【予約NO】
+ </summary>
+	<value></value>
+	<returns>ppStrYoyakuNo</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrSeq">
+	<summary>
+ プロパティセット【SEQ】
+ </summary>
+	<value></value>
+	<returns>ppStrSeq</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrSeikyuIraiNo">
+	<summary>
+ プロパティセット【請求依頼番号】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuIraiNo</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrSeikyuDt">
+	<summary>
+ プロパティセット【請求日】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuDt</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrNyukinYoteiDt">
+	<summary>
+ プロパティセット【入金予定日】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinYoteiDt</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrKakuteiKin">
+	<summary>
+ プロパティセット【確定額】
+ </summary>
+	<value></value>
+	<returns>ppStrKakuteiKin</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrChoseiKin">
+	<summary>
+ プロパティセット【調整額】
+ </summary>
+	<value></value>
+	<returns>ppStrChoseiKin</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrShokei">
+	<summary>
+ プロパティセット【小計】
+ </summary>
+	<value></value>
+	<returns>ppStrShokei</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrTaxKin">
+	<summary>
+ プロパティセット【消費税額】
+ </summary>
+	<value></value>
+	<returns>ppStrTaxKin</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrSeikyuKin">
+	<summary>
+ プロパティセット【請求金額】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuKin</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrSeikyuNaiyo">
+	<summary>
+ プロパティセット【請求内容コード】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuNaiyo</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrSeikyuNaiyoNm">
+	<summary>
+ プロパティセット【請求内容】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuNaiyoNm</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrAiteCd">
+	<summary>
+ プロパティセット【相手先コード】
+ </summary>
+	<value></value>
+	<returns>ppStrAiteCd</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrAiteNm">
+	<summary>
+ プロパティセット【相手先名】
+ </summary>
+	<value></value>
+	<returns>ppStrAiteNm</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrNyukinKbn">
+	<summary>
+ プロパティセット【入金種別】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinKbn</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrSeikyuTitle1">
+	<summary>
+ プロパティセット【請求書タイトル１】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuTitle1</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrSeikyuTitle2">
+	<summary>
+ プロパティセット【請求書タイトル２】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuTitle2</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrNyukinDt">
+	<summary>
+ プロパティセット【入金日】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinDt</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrNyukinKin">
+	<summary>
+ プロパティセット【入金額】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinKin</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrSeikyuInputFlg">
+	<summary>
+ プロパティセット【請求入力済フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuInputFlg</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrSeikyuIraiFlg">
+	<summary>
+ プロパティセット【EXAS請求依頼済フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuIraiFlg</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrNyukinInputFlg">
+	<summary>
+ プロパティセット【入金入力済フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinInputFlg</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propStrNyukinLinkNo">
+	<summary>
+ プロパティセット【EXAS入金リンク番号】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinLinkNo</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propDblTax">
+	<summary>
+ プロパティセット【消費税】
+ </summary>
+	<value></value>
+	<returns>ppDblTax</returns>
+	<remarks><para>作成情報：2015/08/28 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.propIntEditLine">
+	<summary>
+ プロパティセット【選択行】
+ </summary>
+	<value></value>
+	<returns>ppIntEditLine</returns>
+	<remarks><para>作成情報：2015/08/28 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.PropDsBillReq">
+	<summary>
+ プロパティセット【データセット:請求】
+ </summary>
+	<value></value>
+	<returns>ppDsBillReq</returns>
+	<remarks><para>作成情報：2015/08/25 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.PropDtExasRiyoryo">
+	<summary>
+ プロパティセット【データテーブル:EXAS利用料】
+ </summary>
+	<value></value>
+	<returns>ppDtExasRiyoryo</returns>
+	<remarks><para>作成情報：2015/08/25 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0203.PropDtExasFutai">
+	<summary>
+ プロパティセット【データテーブル:EXAS付帯】
+ </summary>
+	<value></value>
+	<returns>ppDtExasFutai</returns>
+	<remarks><para>作成情報：2015/08/25 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0207.inputCheckMain">
+	<summary>
+ 入力チェック
+ </summary>
+	<returns>boolean エラーコード　true 正常終了　false 異常終了</returns>
+	<remarks>入力・桁数の入力チェックを行う
+ <para>作成情報：2015/08/17 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0207.fbNyukin_ButtonClick(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+	<summary>
+ 入金一覧ボタンクリック
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:EXTZ.DataEXTZ0204.PropBlnChangeFlg">
+	<summary>
+ プロパティセット【変更フラグ】
+ </summary>
+	<value></value>
+	<returns>ppBlnChangeFlg</returns>
+	<remarks><para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0204.PropDblTax">
+	<summary>
+ プロパティセット【消費税】
+ </summary>
+	<value></value>
+	<returns>ppDblTax</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0204.PropDrBillReq">
+	<summary>
+ プロパティセット【データ行:請求】
+ </summary>
+	<value></value>
+	<returns>ppDrBillReq</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0204.PropDtExasRiyoryo">
+	<summary>
+ プロパティセット【データテーブル:EXAS利用料】
+ </summary>
+	<value></value>
+	<returns>ppDtExasRiyoryo</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0204.PropDtExasFutai">
+	<summary>
+ プロパティセット【データテーブル:EXAS付帯】
+ </summary>
+	<value></value>
+	<returns>ppDtExasFutai</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0204.propStrTitle1">
+	<summary>
+ プロパティセット【タイトル１】
+ </summary>
+	<value></value>
+	<returns>ppStrTitle1</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0204.propStrTitle2">
+	<summary>
+ プロパティセット【タイトル２】
+ </summary>
+	<value></value>
+	<returns>ppStrTitle2</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0204.propStrSeikyuInputFlg">
+	<summary>
+ プロパティセット【請求入力済フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuInputFlg</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0208.EXTZ0208_Load(System.Object,System.EventArgs)">
+	<summary>
+ 初期処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0208.btnKakutei_Click(System.Object,System.EventArgs)">
+	<summary>
+ 確定ボタン押下
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0208.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン押下
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:EXTZ.EXTZ0208">
+	<summary>
+ EXTZ0208
+ </summary>
+	<remarks>EXAS入金情報一覧
+ <para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0205.PropBlnChangeFlg">
+	<summary>
+ プロパティセット【変更フラグ】
+ </summary>
+	<value></value>
+	<returns>ppBlnChangeFlg</returns>
+	<remarks><para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0205.PropStrPrjCd">
+	<summary>
+ プロパティセット【検索キー】
+ </summary>
+	<value></value>
+	<returns>ppStrPrjCd</returns>
+	<remarks><para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0205.PropStrPrjNm">
+	<summary>
+ プロパティセット【検索キー】
+ </summary>
+	<value></value>
+	<returns>ppStrPrjNm</returns>
+	<remarks><para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0205.PropUchiCd">
+	<summary>
+ プロパティセット【検索キー】
+ </summary>
+	<value></value>
+	<returns>ppUchiCd</returns>
+	<remarks><para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0205.PropUchiNm">
+	<summary>
+ プロパティセット【検索キー】
+ </summary>
+	<value></value>
+	<returns>ppUchiNm</returns>
+	<remarks><para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0205.PropStrRiyobi">
+	<summary>
+ プロパティセット【検索キー】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyobi</returns>
+	<remarks><para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0205.PropDtResult">
+	<summary>
+ プロパティセット【検索結果】
+ </summary>
+	<value></value>
+	<returns>ppDtResult</returns>
+	<remarks><para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0205.PropStrResPrjCd">
+	<summary>
+ プロパティセット【選択値】
+ </summary>
+	<value></value>
+	<returns>ppStrResPrjCd</returns>
+	<remarks><para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0205.PropStrResPrjNm">
+	<summary>
+ プロパティセット【選択値】
+ </summary>
+	<value></value>
+	<returns>ppStrResPrjNm</returns>
+	<remarks><para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0205.PropStrResUchiCd">
+	<summary>
+ プロパティセット【選択値】
+ </summary>
+	<value></value>
+	<returns>ppStrResUchiCd</returns>
+	<remarks><para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0205.PropStrResUchiNm">
+	<summary>
+ プロパティセット【選択値】
+ </summary>
+	<value></value>
+	<returns>ppStrResUchiNm</returns>
+	<remarks><para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0209.EXTZ0209_Load(System.Object,System.EventArgs)">
+	<summary>
+ 初期処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0209.setDetailToSpread">
+	<summary>
+ 明細情報をスプレッドに表示する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0209.selectBunrui(System.String)">
+	<summary>
+ 分類マスタのデータセットに対してセレクトを行う
+ </summary>
+	<param name="strBunruiCd"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0209.cmbBunrui_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 分類選択時の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0209.copyrow(System.Int32)">
+	<summary>
+ 行コピー
+ </summary>
+	<param name="activeRow"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0209.removerow(System.Int32)">
+	<summary>
+ 業削除
+ </summary>
+	<param name="activeRow"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0209.ChangeFutaiKin(System.Object,FarPoint.Win.Spread.ChangeEventArgs)">
+	<summary>
+ 料金自動計算
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0209.btnAdd_Click(System.Object,System.EventArgs)">
+	<summary>
+ ＞ボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0209.btnAddAll_Click(System.Object,System.EventArgs)">
+	<summary>
+ ＞＞ボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0209.btnDel_Click(System.Object,System.EventArgs)">
+	<summary>
+ ＜ボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0209.btnDelAll_Click(System.Object,System.EventArgs)">
+	<summary>
+ ＜＜ボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0209.updateTotal">
+	<summary>
+ 合計の再計算
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0209.btnComplate_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入力完了処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0209.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻る処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:EXTZ.EXTZ0209.PropBlnChangeFlg">
+	<summary>
+ プロパティセット【変更フラグ】
+ </summary>
+	<value></value>
+	<returns>ppDsApproval</returns>
+	<remarks><para>作成情報：2015/08/25 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="T:EXTZ.EXTZ0209">
+	<summary>
+ EXTZ0209
+ </summary>
+	<remarks>付帯設備登録／詳細
+ <para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0201.GetHolmentInfo(EXTZ.DataEXTZ0201@)">
+	<summary>
+ 休館メンテ情報取得処理
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>休館メンテ情報を取得する。
+ <para>作成情報：2015/08/28 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0201.UpdateHolmentInfo(EXTZ.DataEXTZ0201@)">
+	<summary>
+ 休館メンテ情報更新処理
+ </summary>
+	<param name="dataEXTZ0201">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>休館メンテ情報更新処理
+ <para>作成情報：2015/08/27 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0201.DelInsHolmentInfo(EXTZ.DataEXTZ0201@)">
+	<summary>
+ 休館メンテ情報更新処理（複数スタジオの場合）
+ </summary>
+	<param name="dataEXTZ0201">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>休館メンテ情報更新処理（複数スタジオの場合）
+ <para>作成情報：2015/08/27 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="T:EXTZ.LogicEXTZ0201">
+	<summary>
+ LogicEXTZ0201
+ </summary>
+	<remarks>メンテ日登録画面で発生する情報の取得・更新処理等を行う
+ <para>作成情報：2015/08/28 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0212.GetBunrui(EXTZ.DataEXTZ0212@)">
+	<summary>
+ 分類取得
+ </summary>
+	<param name="dataEXTZ0212"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0212.GetRyokin(EXTZ.DataEXTZ0212@,System.String)">
+	<summary>
+ 利用料金取得
+ </summary>
+	<param name="dataEXTZ0212"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0212.GetBairitu(EXTZ.DataEXTZ0212@)">
+	<summary>
+ 倍率取得
+ </summary>
+	<param name="dataEXTZ0212"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EXTZ.DataEXTZ0206.PropBlnChangeFlg">
+	<summary>
+ プロパティセット【変更フラグ】
+ </summary>
+	<value></value>
+	<returns>ppBlnChangeFlg</returns>
+	<remarks><para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0206.PropStrFromName">
+	<summary>
+ プロパティセット【分割元:相手先名】
+ </summary>
+	<value></value>
+	<returns>ppStrFromName</returns>
+</member><member name="P:EXTZ.DataEXTZ0206.PropIntFromKakutei">
+	<summary>
+ プロパティセット【分割元:確定額】
+ </summary>
+	<value></value>
+	<returns>ppIntFromKakutei</returns>
+</member><member name="P:EXTZ.DataEXTZ0206.PropStrFromNaiyo">
+	<summary>
+ プロパティセット【分割元:請求内容】
+ </summary>
+	<value></value>
+	<returns>ppStrFromNaiyo</returns>
+</member><member name="P:EXTZ.DataEXTZ0206.PropStrToName1">
+	<summary>
+ プロパティセット【先1:相手先名】
+ </summary>
+	<value></value>
+	<returns>ppStrToName1</returns>
+</member><member name="P:EXTZ.DataEXTZ0206.PropIntToKakutei1">
+	<summary>
+ プロパティセット【先1:確定額】
+ </summary>
+	<value></value>
+	<returns>ppIntToKakutei1</returns>
+</member><member name="P:EXTZ.DataEXTZ0206.PropStrToNaiyo1">
+	<summary>
+ プロパティセット【先1:請求内容】
+ </summary>
+	<value></value>
+	<returns>ppStrToNaiyo1</returns>
+</member><member name="P:EXTZ.DataEXTZ0206.PropStrToName2">
+	<summary>
+ プロパティセット【先2:相手先名】
+ </summary>
+	<value></value>
+	<returns>ppStrToName2</returns>
+</member><member name="P:EXTZ.DataEXTZ0206.PropIntToKakutei2">
+	<summary>
+ プロパティセット【先2:確定額】
+ </summary>
+	<value></value>
+	<returns>ppIntToKakutei2</returns>
+</member><member name="P:EXTZ.DataEXTZ0206.PropStrToNaiyo2">
+	<summary>
+ プロパティセット【先2:請求内容】
+ </summary>
+	<value></value>
+	<returns>ppStrToNaiyo2</returns>
+</member><member name="P:EXTZ.DataEXTZ0206.PropIntWariai1">
+	<summary>
+ プロパティセット【分配率１】
+ </summary>
+	<value></value>
+	<returns>ppIntWariai1</returns>
+</member><member name="P:EXTZ.DataEXTZ0206.PropIntWariai2">
+	<summary>
+ プロパティセット【分配率２】
+ </summary>
+	<value></value>
+	<returns>ppIntWariai2</returns>
+</member><member name="P:EXTZ.DataEXTZ0206.PropIntSagaku">
+	<summary>
+ プロパティセット【差額】
+ </summary>
+	<value></value>
+	<returns>ppIntSagaku</returns>
+</member><member name="M:EXTZ.LogicEXTZ0103.MakeSpread(EXTZ.DataEXTZ0103@)">
+	<summary>
+ スプレッドの作成
+ </summary>
+	<param name="dataEXTZ0103">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>スプレッドを作成する。
+ <para>作成情報：2015/09/17 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0103.GetSpreadData(EXTZ.DataEXTZ0103@)">
+	<summary>
+ スプレッドへのデータ取得
+ </summary>
+	<param name="dataEXTZ0103">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>スプレッドへのデータを取得する。
+ <para>作成情報：2015/09/17 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="T:EXTZ.LogicEXTZ0103">
+	<summary>
+ LogicEXTZ0103
+ </summary>
+	<remarks>日別請求一覧画面で発生する情報の取得処理等を行う
+ <para>作成情報：2015/09/16 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0202.CheckRiyobi(System.String,CommonEXT.CommonDataRiyobi,System.Collections.ArrayList@)">
+	<summary>
+ 予約受付制御登録チェック
+ </summary>
+	<param name="strTorokuKbn"></param>
+	<param name="dataRiyobi"></param>
+	<param name="lstRiyobi"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0202.CheckRiyobiRegister(System.String,CommonEXT.CommonDataRiyobi)">
+	<summary>
+ 予約受付制御登録チェック
+ </summary>
+	<param name="strTorokuKbn"></param>
+	<param name="dataRiyobi"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0202.DeleteYoyakuCtlData">
+	<summary>
+ 予約受付制御削除(施設区分指定なし)
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約制御情報の全削除
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0202.DeleteYoyakuCtlShisetuData(System.String)">
+	<summary>
+ 予約受付制御削除(施設区分指定)
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約制御情報の全削除
+ <para>作成情報：2015/08/17 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0202.InsertYoyakuCtlData(System.Collections.ArrayList)">
+	<summary>
+ 予約受付制御登録
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約制御情報の削除
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0202.DeleteYoyakuCtlData(CommonEXT.CommonDataRiyobi@)">
+	<summary>
+ 予約受付制御情報単体削除
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約受付制御情報単体削除
+ <para>作成情報：2015/08/12 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0202.CheckCancelWait(System.String,CommonEXT.CommonDataCancel,System.Collections.ArrayList@)">
+	<summary>
+ キャンセル待ち受付制御登録チェック
+ </summary>
+	<param name="strTorokuKbn"></param>
+	<param name="dataRiyobi"></param>
+	<param name="lstRiyobi"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0202.CheckCancelWaitRegister(System.String,CommonEXT.CommonDataCancel)">
+	<summary>
+ キャンセル待ち受付制御登録チェック
+ </summary>
+	<param name="strTorokuKbn"></param>
+	<param name="dataRiyobi"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0202.DeleteCancelCtlData">
+	<summary>
+ キャンセル待ち受付制御削除(施設区分指定なし)
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約制御情報の全削除
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0202.DeleteCancelCtlShisetuData(System.String)">
+	<summary>
+ キャンセル待ち受付制御削除(施設区分指定)
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約制御情報の全削除
+ <para>作成情報：2015/08/17 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0202.InsertCancelCtlData(System.Collections.ArrayList)">
+	<summary>
+ キャンセル待ち受付制御登録
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約制御情報の削除
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0202.DeleteCancelCtlData(CommonEXT.CommonDataCancel@)">
+	<summary>
+ キャンセル待ち受付制御情報単体削除
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>キャンセル待ち受付制御情報単体削除
+ <para>作成情報：2015/08/12 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0201.setSelectHolmentInfo(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTZ.DataEXTZ0201)">
+	<summary>
+ 休館メンテ情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTZ0201"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>休館メンテ情報を取得するSQLの作成
+ <para>作成情報：2015/08/28 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0201.setUpdateHolmentInfo(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,EXTZ.DataEXTZ0201)">
+	<summary>
+ 休館メンテ情報更新
+ </summary>
+	<param name="cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTZ0201">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>休館メンテ情報更新を行うSQLの作成
+ <para>作成情報：2015/08/28 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0201.setDeleteHolmentInfo(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,EXTZ.DataEXTZ0201)">
+	<summary>
+ 休館メンテ情報削除
+ </summary>
+	<param name="cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTZ0201">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>休館メンテ情報削除を行うSQLの作成
+ <para>作成情報：2015/08/28 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0201.setInsertHolmentInfo(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,EXTZ.DataEXTZ0201)">
+	<summary>
+ 休館メンテ情報登録
+ </summary>
+	<param name="cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTZ0201">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>休館メンテ情報登録を行うSQLの作成
+ <para>作成情報：2015/08/28 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTZ.SqlEXTZ0201">
+	<summary>
+ メンテ日登録で使用する情報取得・更新SQL作成
+ </summary>
+	<remarks>メンテ日登録で使用する情報取得・更新のSQLを作成する
+ <para>作成情報：2015/08/28 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0212.selectBunrui(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTZ.DataEXTZ0212@)">
+	<summary>
+ 予約日時情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTZ0212"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0212.selectRyokin(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTZ.DataEXTZ0212@,System.String)">
+	<summary>
+ 予約日時情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTZ0212"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0212.selectBairitu(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTZ.DataEXTZ0212@)">
+	<summary>
+ 予約日時情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTZ0212"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrYoyakuNo">
+	<summary>
+ プロパティセット【予約NO】
+ </summary>
+	<value></value>
+	<returns>ppStrYoyakuNo</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrSeq">
+	<summary>
+ プロパティセット【SEQ】
+ </summary>
+	<value></value>
+	<returns>ppStrSeq</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrSeikyuIraiNo">
+	<summary>
+ プロパティセット【請求依頼番号】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuIraiNo</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrSeikyuDt">
+	<summary>
+ プロパティセット【請求日】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuDt</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrNyukinYoteiDt">
+	<summary>
+ プロパティセット【入金予定日】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinYoteiDt</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrKakuteiKin">
+	<summary>
+ プロパティセット【確定額】
+ </summary>
+	<value></value>
+	<returns>ppStrKakuteiKin</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrChoseiKin">
+	<summary>
+ プロパティセット【調整額】
+ </summary>
+	<value></value>
+	<returns>ppStrChoseiKin</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrShokei">
+	<summary>
+ プロパティセット【小計】
+ </summary>
+	<value></value>
+	<returns>ppStrShokei</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrTaxKin">
+	<summary>
+ プロパティセット【消費税額】
+ </summary>
+	<value></value>
+	<returns>ppStrTaxKin</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrSeikyuKin">
+	<summary>
+ プロパティセット【請求金額】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuKin</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrSeikyuNaiyo">
+	<summary>
+ プロパティセット【請求内容コード】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuNaiyo</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrSeikyuNaiyoNm">
+	<summary>
+ プロパティセット【請求内容】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuNaiyoNm</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrAiteCd">
+	<summary>
+ プロパティセット【相手先コード】
+ </summary>
+	<value></value>
+	<returns>ppStrAiteCd</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrAiteNm">
+	<summary>
+ プロパティセット【相手先名】
+ </summary>
+	<value></value>
+	<returns>ppStrAiteNm</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrNyukinKbn">
+	<summary>
+ プロパティセット【入金種別】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinKbn</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrSeikyuTitle1">
+	<summary>
+ プロパティセット【請求書タイトル１】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuTitle1</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrSeikyuTitle2">
+	<summary>
+ プロパティセット【請求書タイトル２】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuTitle2</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrNyukinDt">
+	<summary>
+ プロパティセット【入金日】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinDt</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrNyukinKin">
+	<summary>
+ プロパティセット【入金額】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinKin</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrSeikyuInputFlg">
+	<summary>
+ プロパティセット【請求入力済フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuInputFlg</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrSeikyuIraiFlg">
+	<summary>
+ プロパティセット【EXAS請求依頼済フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuIraiFlg</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrNyukinInputFlg">
+	<summary>
+ プロパティセット【入金入力済フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinInputFlg</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propStrNyukinLinkNo">
+	<summary>
+ プロパティセット【EXAS入金リンク番号】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinLinkNo</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propDblTax">
+	<summary>
+ プロパティセット【消費税】
+ </summary>
+	<value></value>
+	<returns>ppDblTax</returns>
+	<remarks><para>作成情報：2015/08/28 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.propIntEditLine">
+	<summary>
+ プロパティセット【選択行】
+ </summary>
+	<value></value>
+	<returns>ppIntEditLine</returns>
+	<remarks><para>作成情報：2015/08/28 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.PropDsBillReq">
+	<summary>
+ プロパティセット【データセット:請求】
+ </summary>
+	<value></value>
+	<returns>ppDsBillReq</returns>
+	<remarks><para>作成情報：2015/08/25 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.PropRowNyukin">
+	<summary>
+ プロパティセット【データ行:入金】
+ </summary>
+	<value></value>
+	<returns>ppRowNyukin</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0207.PropBlnChangeFlg">
+	<summary>
+ プロパティセット【変更フラグ】
+ </summary>
+	<value></value>
+	<returns>ppBlnChangeFlg</returns>
+	<remarks><para>作成情報：2015/09/03 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0104.MakeSpread(EXTZ.DataEXTZ0104@)">
+	<summary>
+ スプレッドの作成
+ </summary>
+	<param name="dataEXTZ0104">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>スプレッドを作成する。
+ <para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:2015/10/20 m.hayabuchi</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0104.GetSpreadData(EXTZ.DataEXTZ0104@)">
+	<summary>
+ スプレッドへのデータ取得
+ </summary>
+	<param name="dataEXTZ0104">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>スプレッドへのデータを取得する。
+ <para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="T:EXTZ.LogicEXTZ0104">
+	<summary>
+ LogicEXTZ0104
+ </summary>
+	<remarks>使用状況一覧画面で発生する情報の取得処理等を行う
+ <para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0203.WeekDayCheck(System.String@)">
+	<summary>
+ 入金予定日の曜日判定
+ </summary>
+	<param name="CehckDay">[IN/OUT]算出元日付</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>請求日から自動算出した入金予定日が土日祝祭日の場合前営業日にする
+ <para>作成情報：2015.10.24 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0203.GetSelectHolidayMst(System.String@)">
+	<summary>
+ 祝祭日マスタの取得準備
+ <paramref name="CehckDay">対象日付</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>サーバ日時取得
+ <para>作成情報：2015.10.24 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0203.GetSelectHoliday(Npgsql.NpgsqlConnection,System.String@)">
+	<summary>
+ 祝祭日マスタの取得
+ </summary>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="CehckDay">[IN/OUT]判定対象日付</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>祝祭日を取得する
+ <para>作成情報：2015.10.24 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0103.setSelectDayUriage(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTZ.DataEXTZ0103)">
+	<summary>
+ 日別売上一覧取得
+ </summary>
+	<param name="Adapter">アダプタ</param>
+	<param name="Cn">コネクション</param>
+	<param name="dataEXTZ0103">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>日別売上一覧を取得するSQLの作成
+ <para>作成情報：2015/09/16 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0103.setSeikyuChosei(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTZ.DataEXTZ0103)">
+	<summary>
+ 請求時の調整額取得
+ </summary>
+	<param name="Adapter">アダプタ</param>
+	<param name="Cn">コネクション</param>
+	<param name="dataEXTZ0103">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>請求時の調整額を取得するSQLの作成
+ <para>作成情報：2015/09/16 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTZ.SqlEXTZ0103">
+	<summary>
+ 日別売上一覧で使用する情報取得SQL作成
+ </summary>
+	<remarks>日別売上一覧で使用する情報取得のSQLを作成する
+ <para>作成情報：2015/09/16 h.endo
+ <p>改訂情報:2015/10/20 m.hayabuchi</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0202.cntRiyobi(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,CommonEXT.CommonDataRiyobi)">
+	<summary>
+ 予約日時情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataRiyobi"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0202.deleteYoyakuCtl(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ 予約受付制御テーブルのデータ削除
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/05 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0202.deleteCancelCtl(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@)">
+	<summary>
+ キャンセル待ち登録制御テーブルのデータ削除
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/05 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0202.insertYoyakuCtl(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,CommonEXT.CommonDataRiyobi)">
+	<summary>
+ 予約受付制御テーブルの登録
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataRiyobi"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/05 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0202.deleteLineYoyakuCtl(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.String,System.String)">
+	<summary>
+ 予約受付制御テーブルの行削除
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="StrUserId"></param>
+	<param name="StrYoyakuDt"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/12 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0202.cntCancelWait(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,CommonEXT.CommonDataCancel)">
+	<summary>
+ キャンセル待ち日時情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataRiyobi"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0202.deleteCancelCtl(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ キャンセル待ち受付制御テーブルのデータ削除
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/05 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0202.insertCancelCtl(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,CommonEXT.CommonDataCancel)">
+	<summary>
+ キャンセル待ち受付制御テーブルの登録
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataRiyobi"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/05 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0202.deleteLineCancelCtl(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.String,System.String)">
+	<summary>
+ キャンセル待ち受付制御テーブルの行削除
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="StrUserId"></param>
+	<param name="StrYoyakuDt"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/12 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropStrAiteCd">
+	<summary>
+ プロパティセット【検索キー：相手CD】
+ </summary>
+	<value></value>
+	<returns>ppStrAiteCd</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropStrAiteNm">
+	<summary>
+ プロパティセット【検索キー：相手名称】
+ </summary>
+	<value></value>
+	<returns>ppStrAiteNm</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropStrNyukinYoteiFrom">
+	<summary>
+ プロパティセット【検索キー：入金予定日FROM】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinYoteiFrom</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropStrNyukinYoteiTo">
+	<summary>
+ プロパティセット【検索キー：入金予定日TO】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinYoteiTo</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropStrNyukinFrom">
+	<summary>
+ プロパティセット【検索キー：入金日FROM】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinFrom</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropStrNyukinTo">
+	<summary>
+ プロパティセット【検索キー：入金日TO】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinTo</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropStrSeikyuNo">
+	<summary>
+ プロパティセット【検索キー：請求NO】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuNo</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropStrSeikyuIraiNo">
+	<summary>
+ プロパティセット【検索キー：請求依頼番号】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuIraiNo</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropDtResult">
+	<summary>
+ プロパティセット【検索結果】
+ </summary>
+	<value></value>
+	<returns>ppDtResult</returns>
+	<remarks><para>作成情報：2015/09/01 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropStrResAiteCd">
+	<summary>
+ プロパティセット【選択行：相手CD】
+ </summary>
+	<value></value>
+	<returns>ppStrResAiteCd</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropStrResAiteNm">
+	<summary>
+ プロパティセット【選択行：相手名称】
+ </summary>
+	<value></value>
+	<returns>ppStrResAiteNm</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropStrResNyukinYoteiDt">
+	<summary>
+ プロパティセット【選択行：入金予定日】
+ </summary>
+	<value></value>
+	<returns>ppStrResNyukinYoteiDt</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropStrResNyukinDt">
+	<summary>
+ プロパティセット【選択行：入金日】
+ </summary>
+	<value></value>
+	<returns>ppStrResNyukinDt</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropIntResNyukinKin">
+	<summary>
+ プロパティセット【選択行：入金額(請求金)】
+ </summary>
+	<value></value>
+	<returns>ppIntResNyukinKin</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropStrResSeikyuDt">
+	<summary>
+ プロパティセット【選択行：請求日】
+ </summary>
+	<value></value>
+	<returns>ppStrResSeikyuDt</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropStrResInputDt">
+	<summary>
+ プロパティセット【選択行：入力日】
+ </summary>
+	<value></value>
+	<returns>ppStrResInputDt</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropStrResSeikyuNo">
+	<summary>
+ プロパティセット【選択行：請求NO】
+ </summary>
+	<value></value>
+	<returns>ppStrResSekikyuNo</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropStrResSeikyuIraiNo">
+	<summary>
+ プロパティセット【選択行：請求依頼番号】
+ </summary>
+	<value></value>
+	<returns>ppStrResSeikyuIraiNo</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropBlnChangeFlg">
+	<summary>
+ プロパティセット【変更フラグ】
+ </summary>
+	<value></value>
+	<returns>ppBlnChangeFlg</returns>
+	<remarks><para>作成情報：2015/09/03 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropIntResNyukinLink">
+	<summary>
+ プロパティセット【選択行：入金LINKNO】
+ </summary>
+	<value></value>
+	<returns>ppIntResNyukinLink</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.propStrNyukinInputFlg">
+	<summary>
+ プロパティセット【入金入力済フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinInputFlg</returns>
+	<remarks><para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0208.PropDrBillReq">
+	<summary>
+ プロパティセット【データ行:請求】
+ </summary>
+	<value></value>
+	<returns>ppDrBillReq</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0104.setSelectRiyoJokyo(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,System.String,System.String,System.String)">
+	<summary>
+ 利用状況一覧取得
+ </summary>
+	<param name="Adapter">アダプタ</param>
+	<param name="Cn">コネクション</param>
+	<param name="ShisetuKbn">施設区分</param>
+	<param name="HyojiNen">表示年</param>
+	<param name="HyojiTsuki">表示月</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>利用状況一覧を取得するSQLの作成
+ <para>作成情報：2015/09/24 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTZ.SqlEXTZ0104">
+	<summary>
+ 利用状況一覧で使用する情報取得SQL作成
+ </summary>
+	<remarks>利用状況一覧で使用する情報取得のSQLを作成する
+ <para>作成情報：2015/09/24 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0203.GetHolidayMst(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,System.String)">
+	<summary>
+ 祝祭日マスタを取得するSQLの作成・設定処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="CehckDay">[IN]取得対象日付</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>祝祭日マスタ取得用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.10.24 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0209.PropStrYoyakuNo">
+	<summary>
+ プロパティセット【予約No】
+ </summary>
+	<value></value>
+	<returns>ppStrYoyakuNo</returns>
+	<remarks><para>作成情報：2015/08/10 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0209.PropStrSaijiNm">
+	<summary>
+ プロパティセット【催事名】
+ </summary>
+	<value></value>
+	<returns>ppStrSaijiNm</returns>ppStrStudioKbn
+
+</member><member name="P:EXTZ.DataEXTZ0209.PropStrShisetu">
+	<summary>
+ プロパティセット【施設区分】
+ </summary>
+	<value></value>
+	<returns>ppStrShisetu</returns>
+	<remarks><para>作成情報：2015/08/30 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0209.PropStrRiyobi">
+	<summary>
+ プロパティセット【利用日】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyobi</returns>
+	<remarks><para>作成情報：2015/08/30 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0209.PropStrRiyobiDisp">
+	<summary>
+ プロパティセット【利用日】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyobiDisp</returns>
+	<remarks><para>作成情報：2015/08/30 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0209.PropIntTotal">
+	<summary>
+ プロパティセット【Total】
+ </summary>
+	<value></value>
+	<returns>ppIntTotal</returns>
+	<remarks><para>作成情報：2015/08/30 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0209.PropStrFutaiTotalNm">
+	<summary>
+ プロパティセット【付帯設備名称(結合)】
+ </summary>
+	<value></value>
+	<returns>ppStrFutaiTotalNm</returns>
+	<remarks><para>作成情報：2015/08/31 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0209.PropFutaiDetailTable">
+	<summary>
+ プロパティセット【付帯設備明細】
+ </summary>
+	<value></value>
+	<returns>ppFutaiDetailTable</returns>
+	<remarks><para>作成情報：2015/08/30 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0209.PropFutaiBunruiTable">
+	<summary>
+ プロパティセット【付帯設備分類】
+ </summary>
+	<value></value>
+	<returns>ppFutaiBunruiTable</returns>
+	<remarks><para>作成情報：2015/08/30 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0209.PropFutaiMstTable">
+	<summary>
+ プロパティセット【付帯設備マスタ情報】
+ </summary>
+	<value></value>
+	<returns>ppFutaiMstTable</returns>
+	<remarks><para>作成情報：2015/08/30 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.DataEXTZ0209.PropIntTotalTax">
+	<summary>
+ プロパティセット【Total】
+ </summary>
+	<value></value>
+	<returns>ppIntTotalTax</returns>
+	<remarks><para>作成情報：2015.11.13 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0205.GetProject(EXTZ.DataEXTZ0205@)">
+	<summary>
+ プロジェクト検索
+ </summary>
+	<param name="dataEXTZ0205"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EXTZ.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:EXTZ.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="P:EXTZ.My.Resources.Resources.calendar">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTZ.My.Resources.Resources.マスタ検索">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTZ.My.Resources.Resources.ロゴ">
+	<summary>
+  (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTZ.My.Resources.Resources.ロゴ1">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTZ.My.Resources.Resources.背景">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTZ.My.Resources.Resources.背景_検証用">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="T:EXTZ.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:EXTZ.SqlEXTZ0205.searchProject(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTZ.DataEXTZ0205)">
+	<summary>
+ プロジェクト情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTZ0205"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/09/01 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0210.EXTZ0210_Load(System.Object,System.EventArgs)">
+	<summary>
+ 初期処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0210.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0210.btnComplate_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入力完了処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:EXTZ.EXTZ0210.PropStrSelectedDate">
+	<summary>
+ プロパティセット【コピー元の曜日】
+ </summary>
+	<value></value>
+	<returns>ppStrSelectedDate</returns>
+	<remarks><para>作成情報：2015/08/31 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.EXTZ0210.PropStrSelectedDateDisp">
+	<summary>
+ プロパティセット【コピー元の曜日】
+ </summary>
+	<value></value>
+	<returns>ppStrSelectedDateDisp</returns>
+	<remarks><para>作成情報：2015/08/31 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.EXTZ0210.PropAryRiyobi">
+	<summary>
+ プロパティセット【利用日一覧】
+ </summary>
+	<value></value>
+	<returns>ppAryRiyobi</returns>
+	<remarks><para>作成情報：2015/08/31 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.EXTZ0210.PropLstSelectedRiyobi">
+	<summary>
+ プロパティセット【選択した利用日一覧】
+ </summary>
+	<value></value>
+	<returns>ppLstSelectedRiyobi</returns>
+	<remarks><para>作成情報：2015/08/31 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.EXTZ0210.PropBlnChangeFlg">
+	<summary>
+ プロパティセット【変更フラグ】
+ </summary>
+	<value></value>
+	<returns>ppDsApproval</returns>
+	<remarks><para>作成情報：2015/08/31 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="T:EXTZ.EXTZ0210">
+	<summary>
+ EXTZ0209
+ </summary>
+	<remarks>付帯設備コピー
+ <para>作成情報：2015/08/31 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0208.GetEXASNyukin(EXTZ.DataEXTZ0208@)">
+	<summary>
+ プロジェクト検索
+ </summary>
+	<param name="dataEXTZ0208"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0211.EXTZ0211_Load(System.Object,System.EventArgs)">
+	<summary>
+ 「キャンセル画面」ロード時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「利用日画面」ロード時の処理を行う 
+ <para>作成情報： 2015.11.18 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0211.btnRegister_Click(System.Object,System.EventArgs)">
+	<summary>
+ 確定ボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0211.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:EXTZ.EXTZ0211.PropStrDeleteKbn">
+	<summary>
+ プロパティセット【取消区分】
+ </summary>
+	<value></value>
+	<returns>ppStrShisetsuKbn</returns>
+	<remarks><para>作成情報：2015/08/17 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0209.GetBunrui(EXTZ.DataEXTZ0209@)">
+	<summary>
+ 分類取得
+ </summary>
+	<param name="dataEXTZ0209"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0209.GetFutai(EXTZ.DataEXTZ0209@)">
+	<summary>
+ 分類取得
+ </summary>
+	<param name="dataEXTZ0209"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTZ.LogicEXTZ0209.GetTax(System.String)">
+	<summary>
+ 消費税取得処理
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>SYSTEM PROPERTY
+ <para>作成情報：2015.11.13 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.SqlEXTZ0208.searchEXASNyukin(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTZ.DataEXTZ0208)">
+	<summary>
+ EXAS入金情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTZ0208"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/09/01 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTZ.CommonDeclareEXTZ">
+	<summary>
+ EXTZプロジェクトの共通定数
+ </summary>
+	<remarks>
+ EXTZプロジェクト内で共通で使用する定数を定義する。
+ <para>作成情報：2015/08/28 h.endo</para>
+		<p>改訂情報:</p>
+	</remarks>
+</member><member name="M:EXTZ.EXTZ0201.EXTB0201_Load(System.Object,System.EventArgs)">
+	<summary>
+ 「メンテ日登録画面」ロード時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「メンテ日登録画面」ロード時の処理を行う 
+ <para>作成情報：2015/08/28 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0201.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「戻る」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「戻る」ボタン押下時の処理を行う 
+ <para>作成情報：2015/08/28 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0201.btnRegist_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「登録」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「登録」ボタン押下時の処理を行う 
+ <para>作成情報：2015/08/28 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTZ.EXTZ0201">
+	<summary>
+ EXTZ0201
+ </summary>
+	<remarks>メンテ日登録画面
+ <para>作成情報：2015/08/28 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0212.EXTZ0212_Load(System.Object,System.EventArgs)">
+	<summary>
+ 初期処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0212.SetSpreadBunrui">
+	<summary>
+ 【画面表示用】分類一覧をSPREADに設定する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0212.SetSpreadRyokin">
+	<summary>
+ 【画面表示用】料金一覧をSPREADに設定する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0212.SetSpreadBairitsu">
+	<summary>
+ 【画面表示用】倍率一覧をSPREADに設定する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0212.SetSpreadRiyobi">
+	<summary>
+ 【画面表示用】利用日時一覧をSPREADに設定する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0212.fbBunrui_CellClick(System.Object,FarPoint.Win.Spread.CellClickEventArgs)">
+	<summary>
+ 分類クリックイベント(マウスクリック)
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0212.fbBunrui_LeaveCell(System.Object,FarPoint.Win.Spread.LeaveCellEventArgs)">
+	<summary>
+ 分類選択イベント(キーで選択)
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0212.btnKakutei_Click(System.Object,System.EventArgs)">
+	<summary>
+ 確定ボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0212.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.sqlEXTZ0209.selectBunrui(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTZ.DataEXTZ0209@)">
+	<summary>
+ 予約日時情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTZ0209"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/08/30 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.sqlEXTZ0209.selectFutaiMst(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTZ.DataEXTZ0209@)">
+	<summary>
+ 予約日時情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTZ0209"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/08/30 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.sqlEXTZ0209.selectTax(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ 消費税取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>システムプロパティ
+ <para>作成情報：2015.11.13 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0202.EXTZ0202_Load(System.Object,System.EventArgs)">
+	<summary>
+ 「利用日画面」ロード時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「利用日画面」ロード時の処理を行う 
+ <para>作成情報： 2015.11.18 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0202.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:EXTZ.EXTZ0202.PropStrTorokuKbn">
+	<summary>
+ プロパティセット【登録区分】
+ </summary>
+	<value></value>
+	<returns>ppStrTorokuKbn</returns>
+</member><member name="P:EXTZ.EXTZ0202.PropStrYoyakuNo">
+	<summary>
+ プロパティセット【登録区分】
+ </summary>
+	<value></value>
+	<returns>ppStrYoyakuNo</returns>
+</member><member name="P:EXTZ.EXTZ0202.PropStrShisetuKbn">
+	<summary>
+ プロパティセット【登録区分】
+ </summary>
+	<value></value>
+	<returns>ppStrShisetuKbn</returns>
+</member><member name="P:EXTZ.EXTZ0202.PropStrStudioKbn">
+	<summary>
+ プロパティセット【登録区分】
+ </summary>
+	<value></value>
+	<returns>ppStrStudioKbn</returns>
+</member><member name="P:EXTZ.EXTZ0202.PropLstRiyobi">
+	<summary>
+ プロパティセット【利用日】
+ </summary>
+	<value></value>
+	<returns>ppLstRiyobi</returns>
+</member><member name="M:EXTZ.EXTZ0103.EXTZ0103_Load(System.Object,System.EventArgs)">
+	<summary>
+ 「日別売上一覧画面」ロード時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「日別売上一覧画面」ロード時の処理を行う 
+ <para>作成情報：2015/09/16 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0103.btnRiyoshaSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「利用者検索」ボタン押下時処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>利用者名カナの取得を行う</remarks>
+</member><member name="M:EXTZ.EXTZ0103.btnSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「検索」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「戻る」ボタン押下時の処理を行う 
+ <para>作成情報：2015/09/09 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0103.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「戻る」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「戻る」ボタン押下時の処理を行う 
+ <para>作成情報：2015/09/09 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0103.rdoTheatre_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 検索対象ラジオボタンのチェック状態が変わった場合の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>表示する一覧を切り替える 
+ <para>作成情報：2015/09/16 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTZ.EXTZ0103">
+	<summary>
+ EXTZ0103
+ </summary>
+	<remarks>日別売上一覧画面
+ <para>作成情報：2015/09/16 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTZ.EXTZ0213.EXTZ0213_Load(System.Object,System.EventArgs)">
+	<summary>
+ 初期処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0213.btnComplate_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入力完了処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0213.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTZ.EXTZ0213.inputCheckMain">
+	<summary>
+ 入力チェック
+ </summary>
+	<returns>boolean エラーコード　true 正常終了　false 異常終了</returns>
+	<remarks>入力・桁数の入力チェックを行う
+ <para>作成情報：2015/08/25 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.EXTZ0213.PropStrIraiOrKiroku">
+	<summary>
+ プロパティセット【承認依頼記録判定フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrIraiOrKiroku</returns>
+	<remarks><para>作成情報：2015/08/25 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.EXTZ0213.PropDsApproval">
+	<summary>
+ プロパティセット【データセット:承認依頼／記録】
+ </summary>
+	<value></value>
+	<returns>ppDsApproval</returns>
+	<remarks><para>作成情報：2015/08/25 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTZ.EXTZ0213.PropBlnChangeFlg">
+	<summary>
+ プロパティセット【変更フラグ】
+ </summary>
+	<value></value>
+	<returns>ppDsApproval</returns>
+	<remarks><para>作成情報：2015/08/25 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member>
+</members>
+</doc>

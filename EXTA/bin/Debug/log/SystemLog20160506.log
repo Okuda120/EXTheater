@@ -1,0 +1,902 @@
+2016/05/06 17:53:28  TRACE> LogicEXTA0101.GetConfigrationFlg() START
+2016/05/06 17:53:28  TRACE> LogicEXTA0101.GetConfigrationFlg() END
+2016/05/06 17:53:28  TRACE> CommonLogicEXT.SetFormBackColor() START
+2016/05/06 17:53:28  TRACE> CommonLogicEXT.SetFormBackColor() END
+2016/05/06 17:53:35  TRACE> CommonLogicEXT.CheckDBCondition() START
+2016/05/06 17:53:35  TRACE> CommonLogicEXT.NetUseConect() START
+2016/05/06 17:53:36  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/05/06 17:53:36  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/05/06 17:53:36  TRACE> CommonLogicEXT.CheckDBCondition() END
+2016/05/06 17:53:36  TRACE> LogicEXTA0101.LoginInputCheck() START
+2016/05/06 17:53:36  TRACE> LogicEXTA0101.LoginInputCheck() END
+2016/05/06 17:53:36  TRACE> LogicEXTA0101.GetLoginData() START
+2016/05/06 17:53:36  TRACE> SqlEXTA0101.setSelectLoginData() START
+2016/05/06 17:53:36  TRACE> SqlEXTA0101.setSelectLoginData() END
+2016/05/06 17:53:36  DEBUG> LogicEXTA0101.GetLoginData() ログイン情報取得
+■SQL Data :
+   Sql Command > select 
+USER_NM, 
+MAIL, 
+BUSHO_CD, 
+SHONIN_FLG, 
+MST_FLG 
+FROM 
+USER_MST 
+WHERE
+USER_CD = :UserId 
+and PW = :Password 
+and STS = '0' 
+   Parameters Data > 
+      [:UserId] USN001
+      [:Password] password
+2016/05/06 17:53:36  TRACE> LogicEXTA0101.GetLoginData() END
+2016/05/06 17:53:36  TRACE> LogicEXTA0101.DelYoyakuCtlData() START
+2016/05/06 17:53:36  DEBUG> LogicEXTA0101.DelYoyakuCtlData() Login Proc1
+■SQL Data :
+   Sql Command > DELETE 
+FROM 
+YCTL_TBL 
+WHERE
+USER_CD = :UserId 
+   Parameters Data > 
+      [:UserId] USN001
+2016/05/06 17:53:36  DEBUG> LogicEXTA0101.DelYoyakuCtlData() Login Proc2
+■SQL Data :
+   Sql Command > DELETE 
+FROM 
+CCTL_TBL 
+WHERE
+USER_CD = :UserId 
+   Parameters Data > 
+      [:UserId] USN001
+2016/05/06 17:53:36  TRACE> LogicEXTA0101.DelYoyakuCtlData() END
+2016/05/06 17:53:36  TRACE> LogicEXTA0101.SetSystemProperties() START
+2016/05/06 17:53:36  TRACE> SqlEXTA0101.setSelectSystemProperty() START
+2016/05/06 17:53:36  TRACE> SqlEXTA0101.setSelectSystemProperty() END
+2016/05/06 17:53:36  DEBUG> LogicEXTA0101.SetSystemProperties() システムプロパティ取得
+■SQL Data :
+   Sql Command > select 
+TEIIN_A, 
+TEIIN_B, 
+KARI_JIZEN_TUTI, 
+GROUP_SEIKYU 
+FROM 
+SYSTEM_MST 
+   Parameters Data > 
+2016/05/06 17:53:36  TRACE> LogicEXTA0101.SetSystemProperties() END
+2016/05/06 17:53:36  TRACE> EXTA0101.btnLogin_Click() LOGIN:USN001
+2016/05/06 17:53:36  TRACE> CommonLogicEXT.SetFormBackColor() START
+2016/05/06 17:53:36  TRACE> CommonLogicEXT.SetFormBackColor() END
+2016/05/06 17:54:38  TRACE> CommonLogicEXT.CheckDBCondition() START
+2016/05/06 17:54:38  TRACE> CommonLogicEXT.NetUseConect() START
+2016/05/06 17:54:38  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/05/06 17:54:38  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/05/06 17:54:38  TRACE> CommonLogicEXT.CheckDBCondition() END
+2016/05/06 17:54:39  TRACE> LogicEXTM0102.InitBunrui() START
+2016/05/06 17:54:39  TRACE> CommonLogicEXT.CheckDBCondition() START
+2016/05/06 17:54:39  TRACE> CommonLogicEXT.NetUseConect() START
+2016/05/06 17:54:39  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/05/06 17:54:39  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/05/06 17:54:39  TRACE> CommonLogicEXT.CheckDBCondition() END
+2016/05/06 17:54:39  TRACE> SqlEXTM0102.SetSelectIniData() START
+2016/05/06 17:54:39  TRACE> SqlEXTM0102.SetSelectIniData() END
+2016/05/06 17:54:39  DEBUG> LogicEXTM0102.InitBunrui() システム管理情報
+■SQL Data :
+   Sql Command > SELECT t1.kikan_from ||t1.kikan_to                                           対象期間,SUBSTRING(t1.kikan_from, 1, 4)                        From_Year,SUBSTRING(t1.kikan_from, 6, 2)                        From_Month,SUBSTRING(t1.kikan_to, 1, 4)                          To_Year,SUBSTRING(t1.kikan_to, 6, 2)                          To_Month,t1.shisetu_kbn                                        施設区分, t1.bunrui_cd                                          分類CD,t1.bunrui_nm                                          分類名,t1.shukei_grp                                         集計グループ,t1.notax_flg                                          税無フラグ,t1.sort                                               並び順,t1.kamoku_cd                                          勘定科目CD,t1.saimoku_cd                                         細目CD,t1.uchi_cd                                            内訳CD,t1.shosai_cd                                          詳細CD,t1.karikamoku_cd                                      借方勘定科目CD,t1.kari_saimoku_cd                                    借方細目CD,t1.kari_uchi_cd                                       借方内訳CD,t1.kari_shosai_cd                                     借方詳細CD,t1.sts                                                ステータス,t1.RIYORYO_FLG                                        付帯利用料フラグ FROM fbunrui_mst t1  WHERE t1.shisetu_kbn = '1'  AND '2016/05/06' BETWEEN t1.kikan_from AND t1.kikan_to ORDER BY t1.sort asc
+   Parameters Data > 
+2016/05/06 17:54:39  TRACE> LogicEXTM0102.CmbFinishedFromTo() START
+2016/05/06 17:54:39  TRACE> SqlEXTM0102.SetFinishedFromToData() START
+2016/05/06 17:54:39  TRACE> SqlEXTM0102.SetFinishedFromToData() END
+2016/05/06 17:54:39  DEBUG> LogicEXTM0102.CmbFinishedFromTo() システム管理情報
+■SQL Data :
+   Sql Command > SELECT  DISTINCT  kikan_from || kikan_to  対象期間コード,kikan_from || '-'  || kikan_to           対象期間 FROM  fbunrui_mst  WHERE shisetu_kbn = '1'  ORDER BY 対象期間コード
+   Parameters Data > 
+2016/05/06 17:54:39  TRACE> LogicEXTM0102.CmbFinishedFromTo() END
+2016/05/06 17:54:39  DEBUG> LogicEXTM0102.InitBunrui() システム管理情報
+■SQL Data :
+   Sql Command > SELECT t1.kikan_from ||t1.kikan_to                                           対象期間,SUBSTRING(t1.kikan_from, 1, 4)                        From_Year,SUBSTRING(t1.kikan_from, 6, 2)                        From_Month,SUBSTRING(t1.kikan_to, 1, 4)                          To_Year,SUBSTRING(t1.kikan_to, 6, 2)                          To_Month,t1.shisetu_kbn                                        施設区分, t1.bunrui_cd                                          分類CD,t1.bunrui_nm                                          分類名,t1.shukei_grp                                         集計グループ,t1.notax_flg                                          税無フラグ,t1.sort                                               並び順,t1.kamoku_cd                                          勘定科目CD,t1.saimoku_cd                                         細目CD,t1.uchi_cd                                            内訳CD,t1.shosai_cd                                          詳細CD,t1.karikamoku_cd                                      借方勘定科目CD,t1.kari_saimoku_cd                                    借方細目CD,t1.kari_uchi_cd                                       借方内訳CD,t1.kari_shosai_cd                                     借方詳細CD,t1.sts                                                ステータス,t1.RIYORYO_FLG                                        付帯利用料フラグ FROM fbunrui_mst t1  WHERE t1.shisetu_kbn = '1'  AND '2016/05/06' BETWEEN t1.kikan_from AND t1.kikan_to ORDER BY t1.sort asc
+   Parameters Data > 
+2016/05/06 17:54:39  DEBUG> LogicEXTM0102.InitBunrui() システム管理情報
+■SQL Data :
+   Sql Command > SELECT t1.kikan_from ||t1.kikan_to                                           対象期間,SUBSTRING(t1.kikan_from, 1, 4)                        From_Year,SUBSTRING(t1.kikan_from, 6, 2)                        From_Month,SUBSTRING(t1.kikan_to, 1, 4)                          To_Year,SUBSTRING(t1.kikan_to, 6, 2)                          To_Month,t1.shisetu_kbn                                        施設区分, t1.bunrui_cd                                          分類CD,t1.bunrui_nm                                          分類名,t1.shukei_grp                                         集計グループ,t1.notax_flg                                          税無フラグ,t1.sort                                               並び順,t1.kamoku_cd                                          勘定科目CD,t1.saimoku_cd                                         細目CD,t1.uchi_cd                                            内訳CD,t1.shosai_cd                                          詳細CD,t1.karikamoku_cd                                      借方勘定科目CD,t1.kari_saimoku_cd                                    借方細目CD,t1.kari_uchi_cd                                       借方内訳CD,t1.kari_shosai_cd                                     借方詳細CD,t1.sts                                                ステータス,t1.RIYORYO_FLG                                        付帯利用料フラグ FROM fbunrui_mst t1  WHERE t1.shisetu_kbn = '1'  AND '2016/05/06' BETWEEN t1.kikan_from AND t1.kikan_to ORDER BY t1.sort asc
+   Parameters Data > 
+2016/05/06 17:54:39  TRACE> LogicEXTM0102.CmbKamokuSet() START
+2016/05/06 17:54:39  TRACE> SqlEXTM0102.CmbKanzyoCdSet() START
+2016/05/06 17:54:39  TRACE> SqlEXTM0102.CmbKanzyoCdSet() END
+2016/05/06 17:54:39  DEBUG> LogicEXTM0102.CmbKamokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT kamoku_cd,kamoku_nm FROM kamoku_mst ORDER BY kamoku_cd
+   Parameters Data > 
+2016/05/06 17:54:39  TRACE> LogicEXTM0102.CmbKamokuSet() END
+2016/05/06 17:54:39  DEBUG> LogicEXTM0102.InitBunrui() システム管理情報
+■SQL Data :
+   Sql Command > SELECT t1.kikan_from ||t1.kikan_to                                           対象期間,SUBSTRING(t1.kikan_from, 1, 4)                        From_Year,SUBSTRING(t1.kikan_from, 6, 2)                        From_Month,SUBSTRING(t1.kikan_to, 1, 4)                          To_Year,SUBSTRING(t1.kikan_to, 6, 2)                          To_Month,t1.shisetu_kbn                                        施設区分, t1.bunrui_cd                                          分類CD,t1.bunrui_nm                                          分類名,t1.shukei_grp                                         集計グループ,t1.notax_flg                                          税無フラグ,t1.sort                                               並び順,t1.kamoku_cd                                          勘定科目CD,t1.saimoku_cd                                         細目CD,t1.uchi_cd                                            内訳CD,t1.shosai_cd                                          詳細CD,t1.karikamoku_cd                                      借方勘定科目CD,t1.kari_saimoku_cd                                    借方細目CD,t1.kari_uchi_cd                                       借方内訳CD,t1.kari_shosai_cd                                     借方詳細CD,t1.sts                                                ステータス,t1.RIYORYO_FLG                                        付帯利用料フラグ FROM fbunrui_mst t1  WHERE t1.shisetu_kbn = '1'  AND '2016/05/06' BETWEEN t1.kikan_from AND t1.kikan_to ORDER BY t1.sort asc
+   Parameters Data > 
+2016/05/06 17:54:39  TRACE> LogicEXTM0102.SetBunruiData() START
+2016/05/06 17:54:39  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:39  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:39  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:39  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:39  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:39  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:39  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:39  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:39  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:39  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:39  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:39  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1010
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1020
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1020
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1020
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1020
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1020
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1040
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1020
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1020
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1020
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1020
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1020
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1030
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1020
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1020
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1010
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1020
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1050
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1010
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbSaimouCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbSaimokuSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT  saimoku_cd, saimoku_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd ORDER BY saimoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSaimokuCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbUchiwakeCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbUchiwakeSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT DISTINCT uchi_cd,uchi_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd ORDER BY uchi_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiwakeSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbUchiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.CmbShosaiCdSet() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.CmbShosaiSet() システム管理情報
+■SQL Data :
+   Sql Command > SELECT shosai_cd,shosai_nm FROM kamoku_mst WHERE kamoku_cd = :kamokuCd AND saimoku_cd = :saimokuCd AND uchi_cd = :uchiCd ORDER BY kamoku_cd
+   Parameters Data > 
+      [kamokuCd] 420100
+      [saimokuCd] 110
+      [uchiCd] 1010
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbShosaiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbSyosaiCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.CmbKamokuCdCreate() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.SetBunruiData() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.InitBunrui() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.InitFutai() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.SetSelectIniFutaiData() START
+2016/05/06 17:54:40  TRACE> SqlEXTM0102.SetSelectIniFutaiData() END
+2016/05/06 17:54:40  DEBUG> LogicEXTM0102.InitFutai() システム管理情報
+■SQL Data :
+   Sql Command > SELECT  futai_cd, futai_nm, tanka, tani, def_flg, sort, sts, 0, bunrui_cd,'0' FROM futai_mst WHERE shisetu_kbn = '1'  AND :item = kikan_from || kikan_to ORDER BY bunrui_cd, sort
+   Parameters Data > 
+      [item] 2016/02/012019/12/31
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.InitFutaiBunruiSet() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.InitFutaiBunruiSet() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.InitFutai() END
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.SetFutaiData() START
+2016/05/06 17:54:40  TRACE> LogicEXTM0102.SetFutaiData() END
+2016/05/06 17:54:40  TRACE> CommonLogicEXT.SetFormBackColor() START
+2016/05/06 17:54:40  TRACE> CommonLogicEXT.SetFormBackColor() END

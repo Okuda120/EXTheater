@@ -1,0 +1,295 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EXTC
+</name>
+</assembly>
+<members>
+<member name="M:EXTC.LogicEXTC0103.OutputUseDetailsMain(EXTC.DataEXTC0103)">
+	<summary>
+ 付帯設備利用明細書出力メイン処理
+ </summary>
+	<param name="dataEXTC0103">[IN]正式予約登録／詳細(スタジオ)画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付帯設備利用明細書を出力する
+ <para>作成情報：2015/09/02 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.OutputUseDetails(EXTC.DataEXTC0103)">
+	<summary>
+ 付帯設備利用明細書出力処理
+ </summary>
+	<param name="dataEXTC0103">[IN]正式予約登録／詳細(スタジオ)画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付帯設備利用明細書を出力する
+ <para>作成情報：2015/09/02 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.SetUseDetailsDataAll(EXTC.DataEXTC0103,FarPoint.Win.Spread.SheetView@)">
+	<summary>
+ 付帯設備利用明細書（合算）作成処理
+ </summary>
+	<param name="dataEXTC0103">[IN]正式予約登録／詳細(スタジオ)画面Dataクラス</param>
+	<param name="vwOutputSheet">[IN/OUT]付帯設備利用明細書スプレッドシート</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付帯設備利用明細書（合算）を作成する
+ <para>作成情報：2015/09/02 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.SetUseDetailsDataOneDay(EXTC.DataEXTC0103,FarPoint.Win.Spread.SheetView@)">
+	<summary>
+ 付帯設備利用明細書（日別）作成処理
+ </summary>
+	<param name="dataEXTC0103">[IN]正式予約登録／詳細(スタジオ)画面Dataクラス</param>
+	<param name="vwOutputSheet">[IN/OUT]付帯設備利用明細書スプレッドシート</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付帯設備利用明細書（日別）を作成する
+ <para>作成情報：2015/09/02 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetUseDetailsAll(EXTC.DataEXTC0103@)">
+	<summary>
+ 付帯設備利用明細（合算）取得処理
+ </summary>
+	<param name="dataEXTC0103">[IN/OUT]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>ＤＢより付帯設備利用明細（合算）を取得する
+ <para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetUseDetailsOneDay(EXTC.DataEXTC0103@)">
+	<summary>
+ 付帯設備利用明細（日別）取得処理
+ </summary>
+	<param name="dataEXTC0103">[IN/OUT]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>ＤＢより付帯設備利用明細（日別）を取得する
+ <para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.OutputStudioData(EXTC.DataEXTC0103@)">
+	<summary>
+ 利用確認書取得処理予定地
+ </summary>
+	<param name="dataEXTC0103">[IN/OUT]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>ＤＢより利用確認書を取得する予定
+ <para>作成情報：2015/08/31 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.SetSqlSelectData(EXTC.DataEXTC0103@)">
+	<summary>
+ 利用確認書取得SQL作成
+ </summary>
+	<param name="dataEXTC0103">[IN/OUT]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>情報を取得するSQLを作成する。
+ <para>作成情報：2015/08/31 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.SetPrintData(EXTC.DataEXTC0103)">
+	<summary>
+ 利用確認書出力処理
+ </summary>
+	<param name="dataEXTC0103">[IN]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>利用確認書を編集し、印刷する
+ <para>作成情報：2015/08/10 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.SetSelectCertificateSql(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103)">
+	<summary>
+ 付帯設備利用明細（合算）取得処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTC0103">[IN]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付帯設備利用明細（合算）取得用SQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.SetSelectUseDetailsAllSql(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103)">
+	<summary>
+ 付帯設備利用明細（合算）取得処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTC0103">[IN]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付帯設備利用明細（合算）取得用SQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.SetSelectUseDetailsOneDaySql(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103)">
+	<summary>
+ 付帯設備利用明細（日別）取得処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTC0103">[IN]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付帯設備利用明細（日別）取得用SQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.SetSelectStudioData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103)">
+	<summary>
+ スタジオ利用確認書SQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>各テーブルから、スタジオ利用確認書のデータを取得する。
+ <para>作成情報：2015/08/11 yu.satoh 
+ </para></remarks>
+</member><member name="P:EXTC.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:EXTC.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="P:EXTC.My.Resources.Resources.calendar">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTC.My.Resources.Resources.マスタ検索">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTC.My.Resources.Resources.ロゴ">
+	<summary>
+  (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTC.My.Resources.Resources.ロゴ1">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTC.My.Resources.Resources.背景">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTC.My.Resources.Resources.背景_検証用">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="T:EXTC.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="P:EXTC.DataEXTC0103.PropStrReserveNo">
+	<summary>
+ プロパティセット【帳票：承認番号(予約番号)】
+ </summary>
+	<value></value>
+	<returns>ppStrReserveNo</returns>
+	<remarks><para>作成情報：2015/08/10 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropDtReportData">
+	<summary>
+ プロパティセット【ppDtReportData】
+ </summary>
+	<value></value>
+	<returns>ppDtReportData</returns>
+	<remarks><para>作成情報：2015/08/31 yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropDtUseDetails_Output">
+	<summary>
+ プロパティセット【帳票：利用明細データテーブル】
+ </summary>
+	<value></value>
+	<returns>ppDtUseDetails_Output</returns>
+	<remarks><para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropDtUseDetailsNoTax_Output">
+	<summary>
+ プロパティセット【帳票：利用明細（税込分）データテーブル】
+ </summary>
+	<value></value>
+	<returns>ppDtUseDetailsNoTax_Output</returns>
+	<remarks><para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropBlnSumFlg">
+	<summary>
+ プロパティセット【合算フラグ】
+ </summary>
+	<value></value>
+	<returns>ppBlnSumFlg</returns>
+	<remarks><para>作成情報：2015/08/17 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropStrClickedIncident">
+	<summary>
+ プロパティセット【付帯設備スプレッドシートにてボタンがクリックされた行の日付】
+ </summary>
+	<value></value>
+	<returns>ppStrClickedIncident</returns>
+	<remarks><para>作成情報：2015/08/18 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropBlnGeneralFlg">
+	<summary>
+ プロパティセット【社内社外フラグ】
+ </summary>
+	<value></value>
+	<returns>ppBlnGeneralFlg</returns>
+	<remarks><para>作成情報：2015/09/01 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropBlnNoTaxFlg">
+	<summary>
+ プロパティセット【税無フラグ】
+ </summary>
+	<value></value>
+	<returns>ppBlnNoTaxFlg</returns>
+	<remarks><para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropIntTax">
+	<summary>
+ プロパティセット【消費税】
+ </summary>
+	<value></value>
+	<returns>ppIntTax</returns>
+	<remarks><para>作成情報：2015/09/02 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropLblYoyakuNo">
+	<summary>
+ プロパティセット【ppLblYoyakuNo】
+ </summary>
+	<value></value>
+	<returns>ppLblYoyakuNo</returns>
+	<remarks><para>作成情報：2015/09/01 yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropVwStudioSheet">
+	<summary>
+ プロパティセット【ppVwStudioSheet】
+ </summary>
+	<value></value>
+	<returns>ppVwStudioSheet</returns>
+	<remarks><para>作成情報：2015/09/01 yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropLoginUser">
+	<summary>
+ プロパティセット【ppLoginUser】
+ </summary>
+	<value></value>
+	<returns>ppLoginUser</returns>
+	<remarks><para>作成情報：2015/09/03 yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member>
+</members>
+</doc>

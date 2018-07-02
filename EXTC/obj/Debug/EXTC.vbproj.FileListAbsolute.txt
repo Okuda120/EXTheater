@@ -1,0 +1,186 @@
+C:\dev\VB_Source\EXTC\bin\Debug\EXTC.exe
+C:\dev\VB_Source\EXTC\bin\Debug\EXTC.pdb
+C:\dev\VB_Source\EXTC\bin\Debug\EXTC.xml
+C:\dev\VB_Source\EXTC\bin\Debug\Common.dll
+C:\dev\VB_Source\EXTC\bin\Debug\CommonEXT.dll
+C:\dev\VB_Source\EXTC\bin\Debug\Mono.Security.dll
+C:\dev\VB_Source\EXTC\bin\Debug\Npgsql.dll
+C:\dev\VB_Source\EXTC\bin\Debug\CommonEXT.pdb
+C:\dev\VB_Source\EXTC\bin\Debug\CommonEXT.xml
+C:\dev\VB_Source\EXTC\obj\Debug\EXTC.vbprojResolveAssemblyReference.cache
+C:\dev\VB_Source\EXTC\obj\Debug\EXTC.EXTC0101.resources
+C:\dev\VB_Source\EXTC\obj\Debug\EXTC.EXTC0104.resources
+C:\dev\VB_Source\EXTC\obj\Debug\EXTC.EXTC0103.resources
+C:\dev\VB_Source\EXTC\obj\Debug\EXTC.EXTC0102.resources
+C:\dev\VB_Source\EXTC\obj\Debug\EXTC.Resources.resources
+C:\dev\VB_Source\EXTC\obj\Debug\EXTC.vbproj.GenerateResource.Cache
+C:\dev\VB_Source\EXTC\obj\Debug\EXTC.exe.licenses
+C:\dev\VB_Source\EXTC\obj\Debug\EXTC.exe
+C:\dev\VB_Source\EXTC\obj\Debug\EXTC.xml
+C:\dev\VB_Source\EXTC\obj\Debug\EXTC.pdb
+C:\dev\VB_Source\EXTC\bin\Debug\EXTM.exe
+C:\dev\VB_Source\EXTC\bin\Debug\EXTZ.exe
+C:\dev\VB_Source\EXTC\bin\Debug\EXTM.pdb
+C:\dev\VB_Source\EXTC\bin\Debug\EXTM.xml
+C:\dev\VB_Source\EXTC\bin\Debug\EXTZ.pdb
+C:\dev\VB_Source\EXTC\bin\Debug\EXTZ.xml
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\EXTC.exe
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\EXTC.pdb
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\EXTC.xml
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\Common.dll
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\CommonEXT.dll
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\EXTM.exe
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\EXTZ.exe
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\FarPoint.CalcEngine.dll
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\FarPoint.Excel.dll
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\FarPoint.PDF.dll
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\FarPoint.Win.Chart.dll
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\FarPoint.Win.dll
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\FarPoint.Win.SpreadJ.dll
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\GrapeCity.Win.PluginInputMan.dll
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\Mono.Security.dll
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\Npgsql.dll
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\CommonEXT.pdb
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\CommonEXT.xml
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\EXTM.pdb
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\EXTM.xml
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\EXTZ.pdb
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\EXTZ.xml
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\FarPoint.CalcEngine.xml
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\FarPoint.Excel.xml
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\FarPoint.Win.xml
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\FarPoint.Win.Chart.xml
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\FarPoint.Win.SpreadJ.xml
+C:\dev\VB_Source\EXT\EXTC\bin\Debug\GrapeCity.Win.PluginInputMan.xml
+C:\dev\VB_Source\EXT\EXTC\obj\Debug\EXTC.vbprojResolveAssemblyReference.cache
+C:\dev\VB_Source\EXT\EXTC\obj\Debug\EXTC.EXTC0101.resources
+C:\dev\VB_Source\EXT\EXTC\obj\Debug\EXTC.EXTC0104.resources
+C:\dev\VB_Source\EXT\EXTC\obj\Debug\EXTC.EXTC0103.resources
+C:\dev\VB_Source\EXT\EXTC\obj\Debug\EXTC.EXTC0102.resources
+C:\dev\VB_Source\EXT\EXTC\obj\Debug\EXTC.Resources.resources
+C:\dev\VB_Source\EXT\EXTC\obj\Debug\EXTC.vbproj.GenerateResource.Cache
+C:\dev\VB_Source\EXT\EXTC\obj\Debug\EXTC.exe.licenses
+C:\dev\VB_Source\EXT\EXTC\obj\Debug\EXTC.exe
+C:\dev\VB_Source\EXT\EXTC\obj\Debug\EXTC.xml
+C:\dev\VB_Source\EXT\EXTC\obj\Debug\EXTC.pdb
+C:\dev\EXT\EXTC\bin\Debug\EXTC.exe
+C:\dev\EXT\EXTC\bin\Debug\EXTC.pdb
+C:\dev\EXT\EXTC\bin\Debug\EXTC.xml
+C:\dev\EXT\EXTC\bin\Debug\Common.dll
+C:\dev\EXT\EXTC\bin\Debug\CommonEXT.dll
+C:\dev\EXT\EXTC\bin\Debug\EXTM.exe
+C:\dev\EXT\EXTC\bin\Debug\EXTZ.exe
+C:\dev\EXT\EXTC\bin\Debug\FarPoint.CalcEngine.dll
+C:\dev\EXT\EXTC\bin\Debug\FarPoint.Excel.dll
+C:\dev\EXT\EXTC\bin\Debug\FarPoint.PDF.dll
+C:\dev\EXT\EXTC\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+C:\dev\EXT\EXTC\bin\Debug\FarPoint.Win.Chart.dll
+C:\dev\EXT\EXTC\bin\Debug\FarPoint.Win.dll
+C:\dev\EXT\EXTC\bin\Debug\FarPoint.Win.SpreadJ.dll
+C:\dev\EXT\EXTC\bin\Debug\GrapeCity.Win.PluginInputMan.dll
+C:\dev\EXT\EXTC\bin\Debug\Mono.Security.dll
+C:\dev\EXT\EXTC\bin\Debug\Npgsql.dll
+C:\dev\EXT\EXTC\bin\Debug\CommonEXT.pdb
+C:\dev\EXT\EXTC\bin\Debug\CommonEXT.xml
+C:\dev\EXT\EXTC\bin\Debug\EXTM.pdb
+C:\dev\EXT\EXTC\bin\Debug\EXTM.xml
+C:\dev\EXT\EXTC\bin\Debug\EXTZ.pdb
+C:\dev\EXT\EXTC\bin\Debug\EXTZ.xml
+C:\dev\EXT\EXTC\bin\Debug\FarPoint.CalcEngine.xml
+C:\dev\EXT\EXTC\bin\Debug\FarPoint.Excel.xml
+C:\dev\EXT\EXTC\bin\Debug\FarPoint.Win.xml
+C:\dev\EXT\EXTC\bin\Debug\FarPoint.Win.Chart.xml
+C:\dev\EXT\EXTC\bin\Debug\FarPoint.Win.SpreadJ.xml
+C:\dev\EXT\EXTC\bin\Debug\GrapeCity.Win.PluginInputMan.xml
+C:\dev\EXT\EXTC\obj\Debug\EXTC.vbprojResolveAssemblyReference.cache
+C:\dev\EXT\EXTC\obj\Debug\EXTC.EXTC0101.resources
+C:\dev\EXT\EXTC\obj\Debug\EXTC.EXTC0104.resources
+C:\dev\EXT\EXTC\obj\Debug\EXTC.EXTC0103.resources
+C:\dev\EXT\EXTC\obj\Debug\EXTC.EXTC0102.resources
+C:\dev\EXT\EXTC\obj\Debug\EXTC.Resources.resources
+C:\dev\EXT\EXTC\obj\Debug\EXTC.vbproj.GenerateResource.Cache
+C:\dev\EXT\EXTC\obj\Debug\EXTC.exe.licenses
+C:\dev\EXT\EXTC\obj\Debug\EXTC.exe
+C:\dev\EXT\EXTC\obj\Debug\EXTC.xml
+C:\dev\EXT\EXTC\obj\Debug\EXTC.pdb
+C:\dev\VB Source\EXT\EXTC\bin\Debug\EXTC.exe
+C:\dev\VB Source\EXT\EXTC\bin\Debug\EXTC.pdb
+C:\dev\VB Source\EXT\EXTC\bin\Debug\EXTC.xml
+C:\dev\VB Source\EXT\EXTC\bin\Debug\Common.dll
+C:\dev\VB Source\EXT\EXTC\bin\Debug\CommonEXT.dll
+C:\dev\VB Source\EXT\EXTC\bin\Debug\EXTM.exe
+C:\dev\VB Source\EXT\EXTC\bin\Debug\EXTZ.exe
+C:\dev\VB Source\EXT\EXTC\bin\Debug\FarPoint.CalcEngine.dll
+C:\dev\VB Source\EXT\EXTC\bin\Debug\FarPoint.Excel.dll
+C:\dev\VB Source\EXT\EXTC\bin\Debug\FarPoint.PDF.dll
+C:\dev\VB Source\EXT\EXTC\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+C:\dev\VB Source\EXT\EXTC\bin\Debug\FarPoint.Win.Chart.dll
+C:\dev\VB Source\EXT\EXTC\bin\Debug\FarPoint.Win.dll
+C:\dev\VB Source\EXT\EXTC\bin\Debug\FarPoint.Win.SpreadJ.dll
+C:\dev\VB Source\EXT\EXTC\bin\Debug\GrapeCity.Win.PluginInputMan.dll
+C:\dev\VB Source\EXT\EXTC\bin\Debug\Mono.Security.dll
+C:\dev\VB Source\EXT\EXTC\bin\Debug\Npgsql.dll
+C:\dev\VB Source\EXT\EXTC\bin\Debug\CommonEXT.pdb
+C:\dev\VB Source\EXT\EXTC\bin\Debug\CommonEXT.xml
+C:\dev\VB Source\EXT\EXTC\bin\Debug\EXTM.pdb
+C:\dev\VB Source\EXT\EXTC\bin\Debug\EXTM.xml
+C:\dev\VB Source\EXT\EXTC\bin\Debug\EXTZ.pdb
+C:\dev\VB Source\EXT\EXTC\bin\Debug\EXTZ.xml
+C:\dev\VB Source\EXT\EXTC\bin\Debug\FarPoint.CalcEngine.xml
+C:\dev\VB Source\EXT\EXTC\bin\Debug\FarPoint.Excel.xml
+C:\dev\VB Source\EXT\EXTC\bin\Debug\FarPoint.Win.xml
+C:\dev\VB Source\EXT\EXTC\bin\Debug\FarPoint.Win.Chart.xml
+C:\dev\VB Source\EXT\EXTC\bin\Debug\FarPoint.Win.SpreadJ.xml
+C:\dev\VB Source\EXT\EXTC\bin\Debug\GrapeCity.Win.PluginInputMan.xml
+C:\dev\VB Source\EXT\EXTC\obj\Debug\EXTC.vbprojResolveAssemblyReference.cache
+C:\dev\VB Source\EXT\EXTC\obj\Debug\EXTC.EXTC0101.resources
+C:\dev\VB Source\EXT\EXTC\obj\Debug\EXTC.EXTC0104.resources
+C:\dev\VB Source\EXT\EXTC\obj\Debug\EXTC.EXTC0103.resources
+C:\dev\VB Source\EXT\EXTC\obj\Debug\EXTC.EXTC0102.resources
+C:\dev\VB Source\EXT\EXTC\obj\Debug\EXTC.Resources.resources
+C:\dev\VB Source\EXT\EXTC\obj\Debug\EXTC.vbproj.GenerateResource.Cache
+C:\dev\VB Source\EXT\EXTC\obj\Debug\EXTC.exe.licenses
+C:\dev\VB Source\EXT\EXTC\obj\Debug\EXTC.exe
+C:\dev\VB Source\EXT\EXTC\obj\Debug\EXTC.xml
+C:\dev\VB Source\EXT\EXTC\obj\Debug\EXTC.pdb
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\EXTC.exe
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\EXTC.pdb
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\EXTC.xml
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\Common.dll
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\CommonEXT.dll
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\EXTM.exe
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\EXTZ.exe
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\FarPoint.CalcEngine.dll
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\FarPoint.Excel.dll
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\FarPoint.PDF.dll
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\FarPoint.Win.Chart.dll
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\FarPoint.Win.dll
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\FarPoint.Win.SpreadJ.dll
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\GrapeCity.Win.PluginInputMan.dll
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\Mono.Security.dll
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\Npgsql.dll
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\CommonEXT.pdb
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\CommonEXT.xml
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\EXTM.pdb
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\EXTM.xml
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\EXTZ.pdb
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\EXTZ.xml
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\FarPoint.CalcEngine.xml
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\FarPoint.Excel.xml
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\FarPoint.Win.xml
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\FarPoint.Win.Chart.xml
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\FarPoint.Win.SpreadJ.xml
+C:\dev\VB Source\EX\EXT\EXTC\bin\Debug\GrapeCity.Win.PluginInputMan.xml
+C:\dev\VB Source\EX\EXT\EXTC\obj\Debug\EXTC.vbprojResolveAssemblyReference.cache
+C:\dev\VB Source\EX\EXT\EXTC\obj\Debug\EXTC.EXTC0101.resources
+C:\dev\VB Source\EX\EXT\EXTC\obj\Debug\EXTC.EXTC0104.resources
+C:\dev\VB Source\EX\EXT\EXTC\obj\Debug\EXTC.EXTC0103.resources
+C:\dev\VB Source\EX\EXT\EXTC\obj\Debug\EXTC.EXTC0102.resources
+C:\dev\VB Source\EX\EXT\EXTC\obj\Debug\EXTC.Resources.resources
+C:\dev\VB Source\EX\EXT\EXTC\obj\Debug\EXTC.vbproj.GenerateResource.Cache
+C:\dev\VB Source\EX\EXT\EXTC\obj\Debug\EXTC.exe.licenses
+C:\dev\VB Source\EX\EXT\EXTC\obj\Debug\EXTC.exe
+C:\dev\VB Source\EX\EXT\EXTC\obj\Debug\EXTC.xml
+C:\dev\VB Source\EX\EXT\EXTC\obj\Debug\EXTC.pdb

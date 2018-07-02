@@ -1,0 +1,2092 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EXTY
+</name>
+</assembly>
+<members>
+<member name="M:EXTY.LogicEXTY0101.InitDisplayMain(EXTY.DataEXTY0101@)">
+	<summary>
+ EXAS請求依頼データ作成画面表示メイン処理
+ </summary>
+	<param name="dataEXTY0101">[IN/OUT]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>EXAS請求依頼データ作成画面の表示を行う
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0101.OutputCsvMain(EXTY.DataEXTY0101)">
+	<summary>
+ EXAS請求依頼データCSVファイル作成メイン処理
+ </summary>
+	<param name="dataEXTY0101">[IN]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>EXAS請求依頼データCSVファイルの作成を行う
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0101.GetExasRequestData(EXTY.DataEXTY0101@)">
+	<summary>
+ EXAS請求依頼情報取得処理
+ </summary>
+	<param name="dataEXTY0101">[IN/OUT]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>EXAS請求依頼情報を取得する
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0101.SetDisplayControl(EXTY.DataEXTY0101@)">
+	<summary>
+ スプレッドシート表示設定処理
+ </summary>
+	<param name="dataEXTY0101">[IN/OUT]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>スプレッドシートの表示設定を行う
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0101.InputCheck(EXTY.DataEXTY0101)">
+	<summary>
+ 入力チェック処理
+ </summary>
+	<param name="dataEXTY0101">[IN]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>CSV作成前の入力チェック処理を行う
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0101.GetSearchConition(EXTY.DataEXTY0101@)">
+	<summary>
+ 検索条件取得処理
+ </summary>
+	<param name="dataEXTY0101">[IN/OUT]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>スプレッドシートから検索条件となる項目を取得する
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0101.OutputCsvData(EXTY.DataEXTY0101)">
+	<summary>
+ CSV出力処理
+ </summary>
+	<param name="dataEXTY0101">[IN]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>EXAS請求依頼データのCSV出力を行う
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0101.UpdateFlg(EXTY.DataEXTY0101)">
+	<summary>
+ EXAS請求依頼フラグ更新処理
+ </summary>
+	<param name="dataEXTY0101">[IN]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>EXAS請求依頼フラグ更新処理を行う
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0101.GetExasRequestTheater(EXTY.DataEXTY0101@)">
+	<summary>
+ EXAS請求依頼情報（シアター）取得処理
+ </summary>
+	<param name="dataEXTY0101">[IN/OUT]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>EXAS請求依頼情報（シアター）取得処理を行う
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0101.GetExasRequestStudio(EXTY.DataEXTY0101@)">
+	<summary>
+ EXAS請求依頼情報（スタジオ）取得処理
+ </summary>
+	<param name="dataEXTY0101">[IN/OUT]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>EXAS請求依頼情報（スタジオ）取得処理を行う
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0101.GetOutputCsvData(EXTY.DataEXTY0101@)">
+	<summary>
+ CSV出力用EXAS請求依頼情報取得処理
+ </summary>
+	<param name="dataEXTY0101">[IN/OUT]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>CSV出力用EXAS請求依頼情報取得処理を行う
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0101.UpdateSeikyuIraiFlg(Npgsql.NpgsqlConnection,EXTY.DataEXTY0101)">
+	<summary>
+ EXAS請求依頼フラグ更新処理
+ </summary>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0101">[IN]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>EXAS請求依頼フラグ更新処理を行う
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0101.WriteCsvFile(System.IO.StreamWriter@,System.Data.DataRow,EXTY.DataEXTY0101)">
+	<summary>
+ CSVファイル書込み処理
+ </summary>
+	<param name="sw">[IN/OUT]CSV出力用StreamWriterクラス</param>
+	<param name="dr">[IN]EXAS請求依頼情報DataRowクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>CSVファイルへの書込み処理を行う
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0101.ClickVwCellMain(EXTY.DataEXTY0101@)">
+	<summary>
+ 一覧セルクリック時メイン処理
+ </summary>
+	<param name="dataEXTY0101">[IN/OUT]セット選択画面データクラス</param>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>一覧のチェックボックス状態を制御する
+ <para>作成情報：2015/12/01 y.ozawa
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0101.SetCheckAsRadio(EXTY.DataEXTY0101@)">
+	<summary>
+ チェックボックス疑似ラジオボタン制御処理
+ <paramref name="dataEXTY0101">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>既にチェックの入っている行のチェックを外し、選択行のチェックをつける
+ <para>作成情報：2015/12/01 y.ozawa
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0101.CheckAitesaki(EXTY.DataEXTY0101)">
+	<summary>
+ グループ請求チェックボックス非活性処理
+ </summary>
+	<param name="dataEXTY0101">[IN]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>グループ請求チェックボックス非活性処理を行う
+ <para>作成情報：2016/01/22 y.morooka 
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTZ0101.setSelectYoyaku(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTY.DataEXTZ0101)">
+	<summary>
+ 予約一覧取得
+ </summary>
+	<param name="Adapter">アダプタ</param>
+	<param name="Cn">コネクション</param>
+	<param name="dataEXTZ0101">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>予約一覧を取得するSQLの作成
+ <para>作成情報：2015/09/09 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTY.SqlEXTZ0101">
+	<summary>
+ 予約一覧で使用する情報取得SQL作成
+ </summary>
+	<remarks>予約一覧で使用する情報取得のSQLを作成する
+ <para>作成情報：2015/09/09 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTZ0101.EXTZ0101_Load(System.Object,System.EventArgs)">
+	<summary>
+ 「予約一覧画面」ロード時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「予約一覧画面」ロード時の処理を行う 
+ <para>作成情報：2015/09/09 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTZ0101.btnRiyoshaSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「利用者検索」ボタン押下時処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>利用者名カナの取得を行う</remarks>
+</member><member name="M:EXTY.EXTZ0101.btnSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「検索」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「戻る」ボタン押下時の処理を行う 
+ <para>作成情報：2015/09/09 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTZ0101.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「戻る」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「戻る」ボタン押下時の処理を行う 
+ <para>作成情報：2015/09/09 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTZ0101.btnDecision_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「選択確定」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「選択確定」ボタン押下時の処理を行う 
+ <para>作成情報：2015/09/21 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTZ0101.rdoTheatre_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 検索対象ラジオボタンのチェック状態が変わった場合の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>表示する一覧を切り替える 
+ <para>作成情報：2015/09/09 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTZ0101.vwYoyakuTheatre_ButtonClicked(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+	<summary>
+ 予約一覧（シアター）のボタンをクリックした場合
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>予約一覧（シアター）のボタンをクリックした場合の処理を行う
+ <para>作成情報：2015/09/10 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTZ0101.vwYoyakuStudio_ButtonClicked(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+	<summary>
+ 予約一覧（スタジオ）のボタンをクリックした場合
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>予約一覧（スタジオ）のボタンをクリックした場合の処理を行う
+ <para>作成情報：2015/09/10 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTY.EXTZ0101">
+	<summary>
+ EXTZ0101
+ </summary>
+	<remarks>予約一覧画面
+ <para>作成情報：2015/09/09 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.GetCmbInf(EXTY.DataEXTY0102@)">
+	<summary>
+ 電子マネー用コンボ情報取得処理
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>電子マネー用のコンボボックス（レジ・店舗）の情報を取得する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.InitForm(EXTY.DataEXTY0102@)">
+	<summary>
+ フォーム情報の初期化
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>フォームの情報を初期化する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.DspDialog(EXTY.DataEXTY0102@)">
+	<summary>
+ ダイアログ表示
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>ファイルダイアログを表示し取り込むＣＳＶファイルを選択する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.CsvInputCheck(EXTY.DataEXTY0102@)">
+	<summary>
+ ファイルパス＆ＣＳＶファイルのチェック
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>ダイアログ指定 または 入力されたＣＳＶファイルの存在チェック
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.GetVwAlsokData(EXTY.DataEXTY0102@)">
+	<summary>
+ ＣＳＶファイル取り込み処理
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>指定されたＣＳＶファイルをスプレッドに編集する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.DepositSeqDupCheck(EXTY.DataEXTY0102@)">
+	<summary>
+ 重複チェック処理
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>ＣＳＶファイルで取り込んだデータの重複チェックを行う
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.GetAlsokdataCellData(EXTY.DataEXTY0102@,System.String)">
+	<summary>
+ 電子マネー分入金情報編集処理
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>スプレッド上に入金情報表から取得した情報を編集する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.DspInputCheck(EXTY.DataEXTY0102@)">
+	<summary>
+ 既存情報読み込みチェック処理
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>検索条件のチェックを行う
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.GetVwInf(EXTY.DataEXTY0102@)">
+	<summary>
+ 既存情報読み込み処理
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>検索条件に合致する情報を取得する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.InsertInputCheck(EXTY.DataEXTY0102@)">
+	<summary>
+ 入力チェック処理
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>スプレッド上の選択および値入力のチェックを行う
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.SetAlsokDeposit(EXTY.DataEXTY0102@)">
+	<summary>
+ ＣＳＶ取り込み分入金情報編集処理
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>スプレッド上に入金情報表から取得した情報を編集する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.SetDegitalCash(EXTY.DataEXTY0102@)">
+	<summary>
+ 電子マネー分入金情報編集処理
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>スプレッド上に入金情報表から取得した情報を編集する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.VwDipositCmbCre(EXTY.DataEXTY0102@)">
+	<summary>
+ 電子マネー用Spread上のコンボ編集
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>電子マネー用のコンボボックス（レジ・店舗）を作成する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.InsUpdDB(EXTY.DataEXTY0102@)">
+	<summary>
+ 登録処理
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>新規取り込み時のＤＢ登録
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.InsertDb(EXTY.DataEXTY0102@)">
+	<summary>
+ 登録処理
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>新規取り込み時のＤＢ登録
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.UpdateDb(EXTY.DataEXTY0102@)">
+	<summary>
+ 更新処理
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>既存表示時のＤＢ更新
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.GetCashYoyaku(EXTY.DataEXTY0102@)">
+	<summary>
+ 電子マネー分入金情報編集処理
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>スプレッド上に入金情報表から取得した情報を編集する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.SetAlsokNukin(EXTY.DataEXTY0102@)">
+	<summary>
+ ＣＳＶ取り込み入金情報：合算金額再設定処理
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>スプレッド上に入金情報表から取得した情報を編集する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.GetMastaALSOKRegister(Npgsql.NpgsqlDataAdapter,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102@)">
+	<summary>
+ レジ情報取得
+ </summary>
+	<param name="Adapter">[IN]NpgsqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN/OUT]インシデント登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>レジ情報を取得する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.GetMastaTenpo(Npgsql.NpgsqlDataAdapter,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102@)">
+	<summary>
+ 店舗情報取得
+ </summary>
+	<param name="Adapter">[IN]NpgsqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN/OUT]インシデント登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>店舗情報を取得する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.GetAlsokDeposit(Npgsql.NpgsqlDataAdapter,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102@)">
+	<summary>
+ ALSOK入金データ取得取得
+ </summary>
+	<param name="Adapter">[IN]NpgsqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN/OUT]インシデント登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>ALSOK入金情報表からＣＳＶ取り込みで登録した情報を取得しデータクラスに格納
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.GetDegitalCash(Npgsql.NpgsqlDataAdapter,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102@)">
+	<summary>
+ ALSOK入金データ取得取得（電子マネー登録分）
+ </summary>
+	<param name="Adapter">[IN]NpgsqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN/OUT]インシデント登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>ALSOK入金情報表から電子マネー登録分で登録した情報を取得しデータクラスに格納
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.SelectSysDate(Npgsql.NpgsqlConnection,EXTY.DataEXTY0102@)">
+	<summary>
+ サーバ日時取得
+ </summary>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN/OUT]インシデント登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>サーバ日時を取得する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.GetDupData(Npgsql.NpgsqlDataAdapter,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102@)">
+	<summary>
+ ALSOK入金情報表取得：重複チェック用
+ </summary>
+	<param name="Adapter">[IN]NpgsqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN/OUT]インシデント登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>ＣＳＶファイルで取り込んだ情報が存在するか件数取得を行う
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.GetYoyakudata(Npgsql.NpgsqlDataAdapter,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102@)">
+	<summary>
+ 予約情報取得：ＣＳＶデータ取り込み時用
+ </summary>
+	<param name="Adapter">[IN]NpgsqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN/OUT]インシデント登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>ＣＳＶファイルで取り込んだ情報に対応する予約情報を取得する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.GetRegisterNm(Npgsql.NpgsqlDataAdapter,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102@)">
+	<summary>
+ レジ名取得：ＣＳＶデータ取り込み時用
+ </summary>
+	<param name="Adapter">[IN]NpgsqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN/OUT]インシデント登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>ＣＳＶファイルで取り込んだ情報のレジ名を取得する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.GetTenpoNm(Npgsql.NpgsqlDataAdapter,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102@)">
+	<summary>
+ 店舗名取得：ＣＳＶデータ取り込み時用
+ </summary>
+	<param name="Adapter">[IN]NpgsqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN/OUT]インシデント登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>ＣＳＶファイルで取り込んだ情報の店舗名を取得する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.InsertAlsokdata(Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ ＣＳＶ取り込み分 ALSOK入金情報表登録
+ </summary>
+	<param name="Tsx">[IN/OUT]NpgsqlTransaction</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN/OUT]インシデント登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks> ALSOK入金情報表にＣＳＶで取り込んだデータを登録する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.InsertDegitalCash(Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ 電子マネー入力分 ALSOK入金情報表登録
+ </summary>
+	<param name="Tsx">[IN/OUT]NpgsqlTransaction</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN/OUT]インシデント登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks> ALSOK入金情報表に電子マネー入力データを登録する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.UpdateAlsokdata(Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ ＣＳＶ取り込み分 ALSOK入金情報表 更新・削除
+ </summary>
+	<param name="Tsx">[IN/OUT]NpgsqlTransaction</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN/OUT]インシデント登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks> ALSOK入金情報表にＣＳＶで取り込んだデータを更新・削除する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.UpdateDegitalCash(Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ 電子マネー入力分 ALSOK入金情報表 更新・削除
+ </summary>
+	<param name="Tsx">[IN/OUT]NpgsqlTransaction</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN/OUT]インシデント登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks> ALSOK入金情報表に電子マネー入力データを 更新・削除する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.GetRejiShisetuKbn(EXTY.DataEXTY0102@)">
+	<summary>
+ レジ番号からの施設区分取得処理
+ <paramref name="dataEXTY0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>スプレッド上選択されたレジ番号の施設区分を取得する
+ <para>作成情報：2015.12.09 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTY0102.GetRejiShisetuKbndata(Npgsql.NpgsqlDataAdapter,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102@)">
+	<summary>
+ レジ番号からの施設区分取得処理
+ </summary>
+	<param name="Adapter">[IN]NpgsqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN/OUT]インシデント登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>スプレッド上選択されたレジ番号の施設区分を取得する
+ <para>作成情報：2015.12.09 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTZ0102.setSelectSeikyu(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTY.DataEXTZ0102)">
+	<summary>
+ 請求一覧取得
+ </summary>
+	<param name="Adapter">アダプタ</param>
+	<param name="Cn">コネクション</param>
+	<param name="dataEXTZ0102">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>請求一覧を取得するSQLの作成
+ <para>作成情報：2015/09/15 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTY.SqlEXTZ0102">
+	<summary>
+ 請求一覧で使用する情報取得SQL作成
+ </summary>
+	<remarks>請求一覧で使用する情報取得のSQLを作成する
+ <para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0101.PropRdoTheater">
+	<summary>
+ プロパティセット【ラジオボタン（シアター）】
+ </summary>
+	<value></value>
+	<returns>ppRdoTheater</returns>
+	<remarks><para>作成情報：2015/08/20 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0101.PropRdoStudio">
+	<summary>
+ プロパティセット【ラジオボタン（スタジオ）】
+ </summary>
+	<value></value>
+	<returns>ppRdoStudio</returns>
+	<remarks><para>作成情報：2015/08/20 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0101.PropVwBillpay">
+	<summary>
+ プロパティセット【EXAS請求依頼スプレッドシート】
+ </summary>
+	<value></value>
+	<returns>ppVwBillpay</returns>
+	<remarks><para>作成情報：2015/08/21 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0101.PropDtExasRequestData">
+	<summary>
+ プロパティセット【EXAS請求依頼情報】
+ </summary>
+	<value></value>
+	<returns>ppDtExasRequestData</returns>
+	<remarks><para>作成情報：2015/08/21 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0101.PropStrBillNo_Search">
+	<summary>
+ プロパティセット【検索条件：請求依頼番号】
+ </summary>
+	<value></value>
+	<returns>ppStrBillNo_Search</returns>
+	<remarks><para>作成情報：2015/08/24 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0101.PropstrReserveNo_Search">
+	<summary>
+ プロパティセット【検索条件：予約NO】
+ </summary>
+	<value></value>
+	<returns>ppstrReserveNo_Search</returns>
+	<remarks><para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0101.PropStrSeq_Search">
+	<summary>
+ プロパティセット【検索条件：予約NOシーケンス】
+ </summary>
+	<value></value>
+	<returns>ppStrSeq_Search</returns>
+	<remarks><para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0101.PropArySearchConditionList">
+	<summary>
+ プロパティセット【検索条件格納用ArrayList】
+ </summary>
+	<value></value>
+	<returns>ppArySearchConditionList</returns>
+	<remarks><para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0101.PropDtOutputCsvData">
+	<summary>
+ プロパティセット【EXAS請求依頼連携CSVデータ用データテーブル】
+ </summary>
+	<value></value>
+	<returns>ppDtOutputCsvData</returns>
+	<remarks><para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0101.PropBlnCsvOutputFlg">
+	<summary>
+ プロパティセット【CSV出力フラグ】
+ </summary>
+	<value></value>
+	<returns>ppBlnCsvOutputFlg</returns>
+	<remarks><para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0101.PropIntCheckRow">
+	<summary>
+ プロパティセット【チェックされた行番号】
+ </summary>
+	<value></value>
+	<returns>ppIntCheckRow</returns>
+	<remarks><para>作成情報：2015/12/01 y.ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0101.PropStrTantoNm">
+	<summary>
+ プロパティセット【担当者名】
+ </summary>
+	<value></value>
+	<returns>ppStrTantoNm</returns>
+	<remarks><para>作成情報：2016/08/12 m.hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0101.PropStrTantoBusho">
+	<summary>
+ プロパティセット【所属部署名】
+ </summary>
+	<value></value>
+	<returns>ppStrTantoBusho</returns>
+	<remarks><para>作成情報：2016/08/12 m.hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTZ0102.EXTZ0102_Load(System.Object,System.EventArgs)">
+	<summary>
+ 「予約一覧画面」ロード時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「予約一覧画面」ロード時の処理を行う 
+ <para>作成情報：2015/09/15 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTZ0102.btnAitesaakiSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「相手先検索」ボタン押下時処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>相手先名カナの取得を行う
+ <para>作成情報：2015/09/15 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTZ0102.btnSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「検索」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「戻る」ボタン押下時の処理を行う 
+ <para>作成情報：2015/09/15 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTZ0102.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「戻る」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「戻る」ボタン押下時の処理を行う 
+ <para>作成情報：2015/09/15 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTZ0102.rdoTheatre_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 検索対象ラジオボタンのチェック状態が変わった場合の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>表示する一覧を切り替える 
+ <para>作成情報：2015/09/15 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTZ0102.vwSeikyuTheatre_ButtonClicked(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+	<summary>
+ 請求一覧（シアター）のボタンをクリックした場合
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>請求一覧（シアター）のボタンをクリックした場合の処理を行う
+ <para>作成情報：2015/09/15 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTZ0102.vwSeikyuStudio_ButtonClicked(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+	<summary>
+ 請求一覧（スタジオ）のボタンをクリックした場合
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>請求一覧（スタジオ）のボタンをクリックした場合の処理を行う
+ <para>作成情報：2015/09/15 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTY.EXTZ0102">
+	<summary>
+ EXTZ0102
+ </summary>
+	<remarks>請求一覧画面
+ <para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropRdoProcNew">
+	<summary>
+ プロパティセット【処理区分：新規取り込み】
+ </summary>
+	<value></value>
+	<returns>ppRdoProcNew</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropRdoProcUpd">
+	<summary>
+ プロパティセット【処理区分：既存データ表示】
+ </summary>
+	<value></value>
+	<returns>ppRdoProcNew</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropTxtFilePath">
+	<summary>
+ プロパティセット【新規取り込み：ファイルパス表示】
+ </summary>
+	<value></value>
+	<returns>ppTxtFilePath</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropBtnRef">
+	<summary>
+ プロパティセット【新規取り込み：ダイアログ表示ボタン】
+ </summary>
+	<value></value>
+	<returns> ppBtnRef</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropBtnCsvInsert">
+	<summary>
+ プロパティセット【新規取り込み：ＣＳＶ取り込み表示ボタン】
+ </summary>
+	<value></value>
+	<returns> ppBtnCsvInsert</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropDtpDspFrom">
+	<summary>
+ プロパティセット【既存データ表示：表示期間（自）】
+ </summary>
+	<value></value>
+	<returns>ppDtpDspFrom</returns>
+	<remarks><para>作成情報：2012/06/19 kuga
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropDtpDspTo">
+	<summary>
+ プロパティセット【既存データ表示：表示期間（至）】
+ </summary>
+	<value></value>
+	<returns>ppDtpDspTo</returns>
+	<remarks><para>作成情報：2012/06/19 kuga
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropBtnDataDsp">
+	<summary>
+ プロパティセット【既存データ表示：データ表示ボタン】
+ </summary>
+	<value></value>
+	<returns> ppBtnDataDsp</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropVwAlsokData">
+	<summary>
+ プロパティセット【ALSOK入金データSpread】
+ </summary>
+	<value></value>
+	<returns>ppVwAlsokData</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropVwDegitalCashData">
+	<summary>
+ プロパティセット【電子マネー入金データSpread】
+ </summary>
+	<value></value>
+	<returns>ppVwDegitalCashData</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropBtnAdd">
+	<summary>
+ プロパティセット【電子マネー入力行追加ボタン】
+ </summary>
+	<value></value>
+	<returns> ppBtnAdd</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropBtnBack">
+	<summary>
+ プロパティセット【戻るボタン】
+ </summary>
+	<value></value>
+	<returns> ppBtnBack</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropBtnUpdate">
+	<summary>
+ プロパティセット【更新ボタン】
+ </summary>
+	<value></value>
+	<returns> ppBtnUpdate</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropDtRejiMasta">
+	<summary>
+ プロパティセット【レジマスタデータ】
+ </summary>
+	<value></value>
+	<returns>ppDtRejiMasta</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropDtTenpoMasta">
+	<summary>
+ プロパティセット【店舗マスタデータ】
+ </summary>
+	<value></value>
+	<returns>ppDtTenpoMasta</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropDtAlsokData">
+	<summary>
+ プロパティセット【ALSOK入金データ取得分】
+ </summary>
+	<value></value>
+	<returns>ppDtAlsokData</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropDtDegitalCashData">
+	<summary>
+ プロパティセット【電子マネー入金取得分】
+ </summary>
+	<value></value>
+	<returns>ppDtDegitalCashData</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropDtYoyakuData">
+	<summary>
+ プロパティセット【店舗マスタデータ】
+ </summary>
+	<value></value>
+	<returns>ppDtYoyakuData</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropRowReg">
+	<summary>
+ プロパティセット【データ登録／更新用：登録／更新行】
+ </summary>
+	<value></value>
+	<returns>ppRowReg</returns>
+	<remarks><para>作成情報：2012/07/19 r.hoshino
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropDtSysDate">
+	<summary>
+ プロパティセット【サーバ日時】
+ </summary>
+	<value></value>
+	<returns>ppDtAddDate</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropStrUserId">
+	<summary>
+ プロパティセット【ログインユーザ】
+ </summary>
+	<value></value>
+	<returns>ppStrUserId</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropDtAlsokDataSet">
+	<summary>
+ プロパティセット【ＣＳＶ取り込みSpread】
+ </summary>
+	<value></value>
+	<returns>ppDtAlsokDataSet</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropDtDegitalCashDataSet">
+	<summary>
+ プロパティセット【電子マネーSpread】
+ </summary>
+	<value></value>
+	<returns>ppDtDegitalCashDataSet</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropCmbReji">
+	<summary>
+ プロパティセット【レジ情報】
+ </summary>
+	<value></value>
+	<returns> ppCbReji</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara 
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropCmbTenpo">
+	<summary>
+ プロパティセット【店舗情報】
+ </summary>
+	<value></value>
+	<returns> ppCbTenpo</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara 
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropCmbSaiji">
+	<summary>
+ プロパティセット【予約情報コンボ】
+ </summary>
+	<value></value>
+	<returns> ppCbSaiji</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara 
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropIntDupCnt">
+	<summary>
+ プロパティセット【重複件数】
+ </summary>
+	<value></value>
+	<returns>ppIntDupCnt</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropAryDupData">
+	<summary>
+ プロパティセット【重複件数】
+ </summary>
+	<value></value>
+	<returns>ppAryDupData</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropStrDepositCd">
+	<summary>
+ プロパティセット【重複チェック：入金機コード】
+ </summary>
+	<value></value>
+	<returns>ppStrDepositCd</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropStrSeq">
+	<summary>
+ プロパティセット【重複チェック：連番】
+ </summary>
+	<value></value>
+	<returns>ppStrSeq</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropStrDepositDt">
+	<summary>
+ プロパティセット【予約情報取得用：利用日】
+ </summary>
+	<value></value>
+	<returns>ppStrDepositDt</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropStrRegisterCd">
+	<summary>
+ プロパティセット【予約情報取得用：レジコード】
+ </summary>
+	<value></value>
+	<returns>ppStrRegisterCd</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropStrTenpoCd">
+	<summary>
+ プロパティセット【予約情報取得用：店舗コード】
+ </summary>
+	<value></value>
+	<returns>ppStrTenpoCd</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropStrRegisterNm">
+	<summary>
+ プロパティセット【予約情報取得用：レジ名】
+ </summary>
+	<value></value>
+	<returns>ppStrRegisterNm</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropStrTenpoNm">
+	<summary>
+ プロパティセット【予約情報取得用：店舗名】
+ </summary>
+	<value></value>
+	<returns>ppStrTenpoNm</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropStrSaiji">
+	<summary>
+ プロパティセット【予約情報取得用：催事名】
+ </summary>
+	<value></value>
+	<returns>ppStrSaiji</returns>
+	<remarks><para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropStrYoyakuNo">
+	<summary>
+ プロパティセット【予約情報取得用：予約番号】
+ </summary>
+	<value></value>
+	<returns>ppStrYoyakuNo</returns>
+	<remarks><para>作成情報：2015.12.04 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropStrUnionFlg">
+	<summary>
+ プロパティセット【予約情報取得用：予約情報取得フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrUnionFlg</returns>
+	<remarks><para>作成情報：2015.12.04 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropBtnErrDiep">
+	<summary>
+ プロパティセット【新規取り込み：エラー内容表示ボタン】
+ </summary>
+	<value></value>
+	<returns> ppBtnErrDiep</returns>
+	<remarks><para>作成情報：2015.12.09 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropStrErrFileNm">
+	<summary>
+ プロパティセット【新規取り込み：最新出力エラーファイル名】
+ </summary>
+	<value></value>
+	<returns>ppStrErrFileNm</returns>
+	<remarks><para>作成情報：2015.12.09 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropStrShisetuKbn">
+	<summary>
+ プロパティセット【レジ取得：施設区分】
+ </summary>
+	<value></value>
+	<returns>ppStrShisetuKbn</returns>
+	<remarks><para>作成情報：2015.12.09 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTY0102.PropStrProc">
+	<summary>
+ プロパティセット【予約情報取得：施設区分】
+ </summary>
+	<value></value>
+	<returns>ppStrProc</returns>
+	<remarks><para>作成情報：2015.12.18 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="T:EXTY.DataEXTY0102">
+	<summary>
+ ALSOK現金入金機データ登録Dataクラス
+ </summary>
+	<remarks>ALSOK現金入金機データ登録画面で使用するのプロパティセットを行う
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0101.SetExasRequestTheaterSql(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0101)">
+	<summary>
+ EXAS請求依頼データ（シアター）取得SQLの作成・設定処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0101">[IN]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>EXAS請求依頼データ（シアター）取得SQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0101.SetExasRequestStudioSql(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0101)">
+	<summary>
+ EXAS請求依頼データ（スタジオ）取得SQLの作成・設定処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0101">[IN]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>EXAS請求依頼データ（スタジオ）取得SQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0101.SetOutputCsvDataSql(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0101)">
+	<summary>
+ CSV出力用EXAS請求依頼データ取得SQLの作成・設定処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0101">[IN]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>CSV出力用EXAS請求依頼データ取得SQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0101.SetUpdateSeikyuIraiFlgSql(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0101)">
+	<summary>
+ EXAS請求依頼済フラグ更新SQLの作成・設定処理
+ </summary>
+	<param name="Cmd">[IN/OUT]NpgSqlCommandクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0101">[IN]EXAS請求依頼データ作成画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>EXAS請求依頼済フラグ更新SQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/25 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0101.EXTY0101_Load(System.Object,System.EventArgs)">
+	<summary>
+ 初期表示処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>EXAS請求依頼データ作成画面初期表示処理を行う
+ <para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0101.btnDisplay_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「表示」ボタン押下時処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>選択されたラジオボタンに紐付く表示処理を行う
+ <para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0101.btnOutput_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「請求依頼データ出力」ボタン押下時処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>EXAS請求依頼データの出力処理を行う
+ <para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0101.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「戻る」ボタン押下時処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「戻る」ボタン押下時の処理を行う
+ <para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.GetCmbRejiMstData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ マスタデータ取得：ALSOKレジマスタ
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ALSOKレジマスタコンボボックス取得用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.GetCmbTenpMstData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ マスタデータ取得：店舗情報
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>店舗情報コンボボックス取得用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.GetAlsokDepositInf(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ 入金情報取得：ALSOK入金情報（ＣＳＶ取り込み分）
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ＣＳＶ取り込みで登録した入金情報取得用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.GetDegitalCashInf(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ 入金情報取得：ALSOK入金情報（電子マネー用）
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>電子マネー分で登録した入金情報取得用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.GeSqlYoyakudata(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ 予約情報取得：コンボ情報の取得
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>コンボに設定する予約情報取得用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.GetDupDataCnt(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ ALSOK入金情報表取得：重複チェック用
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ＣＳＶファイルで取り込んだ情報が存在するか件数取得を行うSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.GetSqlRegisterNm(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ レジ名取得：ＣＳＶデータ取り込み時用
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ＣＳＶファイルで取り込んだ情報が存在するか件数取得を行うSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.GetSqlTenpoNm(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ 店舗名取得：ＣＳＶデータ取り込み時用
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ＣＳＶファイルで取り込んだ情報の店舗名を取得するSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.SetInsertAlsokDepositInf(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ ALSOK入金情報表登録：ＣＳＶ取り込み用
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ＣＳＶ取り込みした情報をALSOK入金情報表に登録するSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.SetUpdateAlsokDepositInf(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ ALSOK入金情報表変更：ＣＳＶ取り込み用
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ＣＳＶ取り込みした情報を変更するSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.SetDeleteAlsokDepositInf(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ ALSOK入金情報表削除：ＣＳＶ取り込み用
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ＣＳＶ取り込みした情報を削除するSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.SetInsertDegitalCashInf(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ ALSOK入金情報表登録：電子マネー用
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>電子マネー情報をALSOK入金情報表に登録するSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.SetUpdateDegitalCashInf(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ ALSOK入金情情報変更：電子マネー用
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>電子マネー情報を変更するSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.SetDeleteDegitalCashInf(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ ALSOK入金情報表削除：電子マネー用
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>電子マネー入力情報を削除するSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.GetSysDate(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ サーバ日時取得
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>サーバ日時取得のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.GeSqRejiShisetuKbn(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ レジ施設区分取得：電子マネーレジ変更時取得用
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>レジに設定されている施設区分を取得
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTY.SqlEXTY0102.GeSqlYoyakudata2(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTY.DataEXTY0102)">
+	<summary>
+ 予約情報取得：コンボ情報の取得（施設区分）
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTY0102">[IN]ALSOK現金入金機データ登録画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>コンボに設定する予約情報取得用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.12.18 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTY.SqlEXTY0102">
+	<summary>
+ ALSOK現金入金機データ登録画面Sqlクラス
+ </summary>
+	<remarks>ALSOK現金入金機データ登録画面のSQLの作成・設定を行う
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0102.EXTY0102_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォームロード時の処理
+ </summary>
+	<param name="sender">[IN]</param>
+	<param name="e">[IN]</param>
+	<remarks>画面の初期設定を行う
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0102.btnRef_Click(System.Object,System.EventArgs)">
+	<summary>
+ ファイル選択処理（ダイアログ表示）
+ </summary>
+	<param name="sender">[IN]</param>
+	<param name="e">[IN]</param>
+	<remarks>取り込み対象のCSVファイルを選択する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0102.btnCsvInsert_Click(System.Object,System.EventArgs)">
+	<summary>
+ ＣＳＶファイル取り込み処理
+ </summary>
+	<param name="sender">[IN]</param>
+	<param name="e">[IN]</param>
+	<remarks>指定されたＣＳＶファイルを取り込み一覧表示する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0102.btnDataDsp_Click(System.Object,System.EventArgs)">
+	<summary>
+ 既存情報表示処理
+ </summary>
+	<param name="sender">[IN]</param>
+	<param name="e">[IN]</param>
+	<remarks>紐付け済の入金データを一覧表示する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0102.btnAdd_Click(System.Object,System.EventArgs)">
+	<summary>
+ 電子マネー入力行追加処理
+ </summary>
+	<param name="sender">[IN]</param>
+	<param name="e">[IN]</param>
+	<remarks>電子マネー情報を入力する行を追加する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0102.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻り処理
+ </summary>
+	<param name="sender">[IN]</param>
+	<param name="e">[IN]</param>
+	<remarks>自画面を閉じてメニュー画面に戻る
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0102.btnUpdate_Click(System.Object,System.EventArgs)">
+	<summary>
+ 登録更新処理
+ </summary>
+	<param name="sender">[IN]</param>
+	<param name="e">[IN]</param>
+	<remarks>一覧に設定された内容をＤＢに反映する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0102.rdoProcNew_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 処理区分による入力制御処理１
+ </summary>
+	<param name="sender">[IN]</param>
+	<param name="e">[IN]</param>
+	<remarks>新規取り込み選択時、日付範囲設定＆ボタンを非活性化する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0102.rdoProcUpd_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 処理区分による入力制御処理２
+ </summary>
+	<param name="sender">[IN]</param>
+	<param name="e">[IN]</param>
+	<remarks>既存データ表示選択時、日付範囲設定＆ボタンを活性化する ＆ 新規取り込みの各ボタンを非活性化する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0102.vwAlsokData_ButtonClicked(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+	<summary>
+ スプレッド上の選択ボタンクリック時の処理
+ </summary>
+	<param name="sender">[IN]</param>
+	<param name="e">[IN]</param>
+	<remarks>スプレッドＡＬＳＯＫ入金情報の選択ボタンクリック時の画面表示＆戻り値取得
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0102.vwDegitalCashData_ButtonClicked(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+	<summary>
+ スプレッド上の選択ボタンクリック時の処理
+ </summary>
+	<param name="sender">[IN]</param>
+	<param name="e">[IN]</param>
+	<remarks>スプレッド電子マネー入金情報の選択ボタンクリック時の画面表示＆戻り値取得
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0102.vwDegitalCashData_Changed(System.Object,FarPoint.Win.Spread.ChangeEventArgs)">
+	<summary>
+ スプレッド上の値変更時の処理
+ </summary>
+	<param name="sender">[IN]</param>
+	<param name="e">[IN]</param>
+	<remarks>スプレッド電子マネー入金情報の値変更時の処理
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.EXTY0102.btnErrDisp_Click(System.Object,System.EventArgs)">
+	<summary>
+ エラー内容表示処理
+ </summary>
+	<param name="sender">[IN]</param>
+	<param name="e">[IN]</param>
+	<remarks>取り込み時に重複エラーとなった情報を表示する
+ <para>作成情報：2015.12.09 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="T:EXTY.EXTY0102">
+	<summary>
+ ALSOK現金入金機データ登録Interfaceクラス
+ </summary>
+	<remarks>入金データと予約情報の紐付け 及び 電子マネー入金情報と予約情報の紐付けを行う
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTZ0101.MakeSpread(EXTY.DataEXTZ0101@)">
+	<summary>
+ スプレッドの作成
+ </summary>
+	<param name="dataEXTZ0101">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>スプレッドを作成する。
+ <para>作成情報：2015/09/09 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTZ0101.GetSpreadData(EXTY.DataEXTZ0101@)">
+	<summary>
+ スプレッドへのデータ取得
+ </summary>
+	<param name="dataEXTZ0101">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>スプレッドへのデータを取得する。
+ <para>作成情報：2015/09/10 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTZ0101.ClickVwCellMain(EXTY.DataEXTZ0101@)">
+	<summary>
+ 一覧セルクリック時メイン処理
+ </summary>
+	<param name="dataEXTZ0101">[IN/OUT]セット選択画面データクラス</param>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>一覧のチェックボックス状態を制御する
+ <para>作成情報：2015/12/01 y.ozawa
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTZ0101.SetCheckAsRadio(EXTY.DataEXTZ0101@)">
+	<summary>
+ チェックボックス疑似ラジオボタン制御処理
+ <paramref name="DataEXTZ0101">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>既にチェックの入っている行のチェックを外し、選択行のチェックをつける
+ <para>作成情報：2015/12/01 y.ozawa
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="T:EXTY.LogicEXTZ0101">
+	<summary>
+ LogicEXTZ0101
+ </summary>
+	<remarks>予約一覧画面で発生する情報の取得処理等を行う
+ <para>作成情報：2015/09/09 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:EXTY.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="P:EXTY.My.Resources.Resources.calendar">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTY.My.Resources.Resources.マスタ検索">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTY.My.Resources.Resources.ロゴ">
+	<summary>
+  (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTY.My.Resources.Resources.ロゴ1">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTY.My.Resources.Resources.背景">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTY.My.Resources.Resources.背景_検証用">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="T:EXTY.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:EXTY.LogicEXTZ0102.MakeSpread(EXTY.DataEXTZ0102@)">
+	<summary>
+ スプレッドの作成
+ </summary>
+	<param name="dataEXTZ0102">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>スプレッドを作成する。
+ <para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTY.LogicEXTZ0102.GetSpreadData(EXTY.DataEXTZ0102@)">
+	<summary>
+ スプレッドへのデータ取得
+ </summary>
+	<param name="dataEXTZ0102">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>スプレッドへのデータを取得する。
+ <para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="T:EXTY.LogicEXTZ0102">
+	<summary>
+ LogicEXTZ0102
+ </summary>
+	<remarks>請求一覧画面で発生する情報の取得処理等を行う
+ <para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropStrShisetsuKbn">
+	<summary>
+ プロパティセット【施設区分】
+ </summary>
+	<value></value>
+	<returns>ppStrShisetsuKbn</returns>
+	<remarks><para>作成情報：2015/09/10 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropStrRiyoDtFrom">
+	<summary>
+ プロパティセット【利用日（From）】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoDtFrom</returns>
+	<remarks><para>作成情報：2015/09/09 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropStrRiyoDtTo">
+	<summary>
+ プロパティセット【利用日（To）】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoDtTo</returns>
+	<remarks><para>作成情報：2015/09/09 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropStrRiyoNm">
+	<summary>
+ プロパティセット【利用者名】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoNm</returns>
+	<remarks><para>作成情報：2015/09/09 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropStrRiyokana">
+	<summary>
+ プロパティセット【利用者名カナ】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyokana</returns>
+	<remarks><para>作成情報：2015/09/09 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropStrSaijiNm">
+	<summary>
+ プロパティセット【催事名】
+ </summary>
+	<value></value>
+	<returns>ppStrSaijiNm</returns>
+	<remarks><para>作成情報：2015/09/09 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropStrYoyakuNo">
+	<summary>
+ プロパティセット【予約NO】
+ </summary>
+	<value></value>
+	<returns>ppStrYoyakuNo</returns>
+	<remarks><para>作成情報：2015/09/09 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropBlnMikanryo">
+	<summary>
+ プロパティセット【未完了フラグ】
+ </summary>
+	<value></value>
+	<returns>ppBlnMikanryo</returns>
+	<remarks><para>作成情報：2015/09/09 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropvwYoyakuTheatre">
+	<summary>
+ プロパティセット【予約一覧（シアター）】
+ </summary>
+	<value></value>
+	<returns>ppvwYoyakuTheatre</returns>
+	<remarks><para>作成情報：2015/09/09 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropvwYoyakuStudio">
+	<summary>
+ プロパティセット【予約一覧（スタジオ）】
+ </summary>
+	<value></value>
+	<returns>ppvwYoyakuStudio</returns>
+	<remarks><para>作成情報：2015/09/09 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropDtYoyaku">
+	<summary>
+ プロパティセット【予約データ】
+ </summary>
+	<value></value>
+	<returns>ppDtYoyaku</returns>
+	<remarks><para>作成情報：2015/09/10 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropBtnDecision">
+	<summary>
+ プロパティセット【選択確定ボタン】
+ </summary>
+	<value></value>
+	<returns>ppBtnDecision</returns>
+	<remarks><para>作成情報：2015/09/21 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropFrmYoyaku">
+	<summary>
+ プロパティセット【予約一覧フォーム】
+ </summary>
+	<value></value>
+	<returns>ppFrmYoyaku</returns>
+	<remarks><para>作成情報：2015/09/21 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropStrSelectMode">
+	<summary>
+ プロパティセット【選択モード】
+ </summary>
+	<value></value>
+	<returns>ppStrSelectMode</returns>
+	<remarks><para>作成情報：2015/09/28 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropStrRtnYoyakuNo">
+	<summary>
+ プロパティセット【遷移元戻し予約NO】
+ </summary>
+	<value></value>
+	<returns>ppStrRtnYoyakuNo</returns>
+	<remarks><para>作成情報：2015/09/28 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropStrRtnSaijiNm">
+	<summary>
+ プロパティセット【遷移元戻し催事名】
+ </summary>
+	<value></value>
+	<returns>ppStrRtnSaijiNm</returns>
+	<remarks><para>作成情報：2015/09/28 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropIntCheckRow">
+	<summary>
+ プロパティセット【チェックされた行番号】
+ </summary>
+	<value></value>
+	<returns>ppIntCheckRow</returns>
+	<remarks><para>作成情報：2015/12/01 y.ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0101.PropStrSelectShisetu">
+	<summary>
+ プロパティセット【選択モード(施設区分) 】
+ </summary>
+	<value></value>
+	<returns>ppStrSelectShisetu</returns>
+	<remarks><para>作成情報：2015.12.15 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0102.PropStrShisetsuKbn">
+	<summary>
+ プロパティセット【施設区分】
+ </summary>
+	<value></value>
+	<returns>ppStrShisetsuKbn</returns>
+	<remarks><para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0102.PropStrSeikyuDtFrom">
+	<summary>
+ プロパティセット【請求日（From）】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuDtFrom</returns>
+	<remarks><para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0102.PropStrSeikyuDtTo">
+	<summary>
+ プロパティセット【請求日（To）】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuDtTo</returns>
+	<remarks><para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0102.PropStrNyukinYoteiDtFrom">
+	<summary>
+ プロパティセット【入金予定日（From）】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinYoteiDtFrom</returns>
+	<remarks><para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0102.PropStrNyukinYoteiDtTo">
+	<summary>
+ プロパティセット【入金予定日（To）】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuDtTo</returns>
+	<remarks><para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0102.PropStrNyukinDtFrom">
+	<summary>
+ プロパティセット【入金日（From）】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinDtFrom</returns>
+	<remarks><para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0102.PropStrNyukinDtTo">
+	<summary>
+ プロパティセット【入金日（To）】
+ </summary>
+	<value></value>
+	<returns>ppStrNyukinDtTo</returns>
+	<remarks><para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0102.PropStrAiteNm">
+	<summary>
+ プロパティセット【相手先名】
+ </summary>
+	<value></value>
+	<returns>ppStrAiteNm</returns>
+	<remarks><para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0102.PropStrAiteNmKana">
+	<summary>
+ プロパティセット【相手先カナ】
+ </summary>
+	<value></value>
+	<returns>ppStrAiteNmKana</returns>
+	<remarks><para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0102.PropStrRiyoNm">
+	<summary>
+ プロパティセット【利用者名】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoNm</returns>
+	<remarks><para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0102.PropStrSaijiNm">
+	<summary>
+ プロパティセット【催事名】
+ </summary>
+	<value></value>
+	<returns>ppStrSaijiNm</returns>
+	<remarks><para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0102.PropStrSeikyuIraiNo">
+	<summary>
+ プロパティセット【請求依頼番号】
+ </summary>
+	<value></value>
+	<returns>ppStrSeikyuIraiNo</returns>
+	<remarks><para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0102.PropBlnMinyukin">
+	<summary>
+ プロパティセット【未入金フラグ】
+ </summary>
+	<value></value>
+	<returns>ppBlnMinyukin</returns>
+	<remarks><para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0102.PropvwSeikyuTheatre">
+	<summary>
+ プロパティセット【請求一覧（シアター）】
+ </summary>
+	<value></value>
+	<returns>ppvwSeikyuTheatre</returns>
+	<remarks><para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0102.PropvwSeikyuStudio">
+	<summary>
+ プロパティセット【請求一覧（スタジオ）】
+ </summary>
+	<value></value>
+	<returns>ppvwSeikyuStudio</returns>
+	<remarks><para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTY.DataEXTZ0102.PropDtSeikyu">
+	<summary>
+ プロパティセット【請求データ】
+ </summary>
+	<value></value>
+	<returns>ppDtSeikyu</returns>
+	<remarks><para>作成情報：2015/09/15 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member>
+</members>
+</doc>

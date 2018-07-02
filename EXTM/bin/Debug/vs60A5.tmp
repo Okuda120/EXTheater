@@ -1,0 +1,3936 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EXTM
+</name>
+</assembly>
+<members>
+<member name="P:EXTM.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:EXTM.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="P:EXTM.My.Resources.Resources.calendar">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTM.My.Resources.Resources.マスタ検索">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTM.My.Resources.Resources.ロゴ">
+	<summary>
+  (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTM.My.Resources.Resources.ロゴ1">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTM.My.Resources.Resources.背景">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTM.My.Resources.Resources.背景_検証用">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="T:EXTM.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:EXTM.LogicEXTM0101.InitForm(EXTM.DataEXTM0101@)">
+	<summary>
+ フォーム情報の初期化
+ <paramref name="dataEXTM0101">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>フォームの情報を初期化する
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0101.GetComboBusho(EXTM.DataEXTM0101@)">
+	<summary>
+ 部署名情報取得
+ <paramref name="dataEXTM0101">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>部署名情報の取得を行う
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0101.ComboBushoSet(EXTM.DataEXTM0101@)">
+	<summary>
+ 部署名コンボボックスをフォームオブジェクトに設定
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>コンボボックスの内容を取得する
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0101.InitSearch(EXTM.DataEXTM0101@)">
+	<summary>
+ ユーザーの取得
+ <paramref name="dataEXTM0101">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean 終了状況    True:正常  False:異常</returns>
+	<remarks>初期表示時検索を行う
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0101.CreateBushoCmbBox(EXTM.DataEXTM0101,FarPoint.Win.Spread.CellType.ComboBoxCellType@,System.Data.DataTable)">
+	<summary>
+ 初期表示時検索（コンボボックス取得）
+ <paramref name="dataEXTM0101">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean 終了状況    True:正常  False:異常</returns>
+	<remarks>初期表示時検索（コンボボックス取得）を行う
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0101.SetSheet(EXTM.DataEXTM0101@)">
+	<summary>
+ 画面表示
+ <paramref name="dataEXTM0101">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>シートに情報をセットする
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0101.Search(EXTM.DataEXTM0101@)">
+	<summary>
+ 検索
+ <paramref name="dataEXTM0101">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean 終了状況    True:正常  False:異常</returns>
+	<remarks>フォームから取得した値をもとに検索を行う
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0101.CheckInputSheet(EXTM.DataEXTM0101@)">
+	<summary>
+ 入力チェック
+ <paramref name="dataEXTM0101">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean 終了状況    true  正常  false  異常</returns>
+	<remarks>シート内入力項目の入力チェックを行う
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0101.SelectCountSameUserData(EXTM.DataEXTM0101@)">
+	<summary>
+ ユーザー名の重複チェック
+ </summary>
+	<param name="dataEXTM0101">[IN/OUT]ユーザーマスタメンテDataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>スプレッドシート登録項目が重複していないかチェックする
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0101.RegUsermstData(EXTM.DataEXTM0101@)">
+	<summary>
+ 登録処理
+ <paramref name="dataEXTM0101">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean 終了状況    true  正常  false  異常</returns>
+	<remarks>シート内入力項目の登録処理を行う
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0101.Update(EXTM.DataEXTM0101@,System.Int32@,Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection@)">
+	<summary>
+ 更新
+ <paramref name="dataEXTM0101">[IN/OUT]データクラス</paramref>
+		<param name="j">[IN]行番号</param>
+		<param name="Tsx">[IN]トランザクション</param>
+		<param name="Cn">[IN]コネクション</param>
+	</summary>
+	<returns>boolean 終了状況    true  正常  false  異常</returns>
+	<remarks>シート内入力項目の登録処理を行う
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0101.Insert(EXTM.DataEXTM0101@,System.Int32@,Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection@)">
+	<summary>
+ 新規登録
+ <paramref name="dataEXTM0101">[IN/OUT]データクラス</paramref>
+		<param name="j">[IN]行番号</param>
+		<param name="Tsx">[IN]トランザクション</param>
+		<param name="Cn">[IN]コネクション</param>
+	</summary>
+	<returns>boolean 終了状況    true  正常  false  異常</returns>
+	<remarks>シート内入力項目の登録処理を行う
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="T:EXTM.LogicEXTM0101">
+	<summary>
+ EXシアターユーザーマスタメンテ画面Logicクラス
+ </summary>
+	<remarks>EXシアターユーザー検索画面のロジックを定義する
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.InitBunrui(EXTM.DataEXTM0102@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean  取得合否　True:取得成功 Flase:取得失敗</returns>
+	<remarks>init 分類マスタより、データを取得
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.SetBunruiData(EXTM.DataEXTM0102@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean  取得合否　True:取得成功 Flase:取得失敗</returns>
+	<remarks>init 分類マスタより、値を入れる
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.InitFutai(EXTM.DataEXTM0102@,System.Int32@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean  取得合否　True:取得成功 Flase:取得失敗</returns>
+	<remarks>init 分類マスタより、データを取得
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.SetFutaiData(EXTM.DataEXTM0102@,System.Int32@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean  取得合否　True:取得成功 Flase:取得失敗</returns>
+	<remarks>init 付帯設備マスタより、値を入れる
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.PushNewEntryBtn(EXTM.DataEXTM0102@)">
+	<summary>
+ 付帯設備マスタメンテ、表示内容を元に新規登録ボタン押下時処理
+ </summary>
+	<remarks>既に登録された内容を元に、新規登録を行う。
+ 新規に料金を設定するがチェックされ、対象期間コンボボックスが活性化。
+ 期間From、期間Toがそれぞれクリアされる。
+ <para>作成情報：2015/08/10 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CheckNewBtn(EXTM.DataEXTM0102@)">
+	<summary>
+ 付帯設備マスタメンテ、新規に値段を設定ボタンチェック時
+ </summary>
+	<remarks>新規に料金を設定する
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CheckFinishedBtn(EXTM.DataEXTM0102@)">
+	<summary>
+ 付帯設備マスタメンテ、設定済みの料金を設定するラジオボタンチェック時処理
+ </summary>
+	<remarks>設定済みの料金を設定する
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbFinishedFromTo(EXTM.DataEXTM0102@)">
+	<summary>
+ 編集済みコンボボックス取得処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean  取得合否　True:取得成功 Flase:取得失敗</returns>
+	<remarks> 分類マスタより、データを取得
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbKamokuSet(EXTM.DataEXTM0102@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示科目マスタよりコードのコンボボックス生成処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean  取得合否　True:取得成功 Flase:取得失敗</returns>
+	<remarks>科目マスタより、データを取得
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbSaimokuSet(EXTM.DataEXTM0102@,System.String@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示科目マスタより細目コードのコンボボックス生成処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean  取得合否　True:取得成功 Flase:取得失敗</returns>
+	<remarks>科目マスタより、データを取得
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbSaimokuCreate(EXTM.DataEXTM0102@,FarPoint.Win.Spread.CellType.ComboBoxCellType@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示科目マスタより細目コードのコンボボックス生成処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>科目マスタより、データを取得し、表示する
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbUchiCreate(EXTM.DataEXTM0102@,FarPoint.Win.Spread.CellType.ComboBoxCellType@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示科目マスタより内訳コードのコンボボックス生成処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>科目マスタより、データを取得し、表示する
+ <para>作成情報：2015/08/24 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbSyosaiCreate(EXTM.DataEXTM0102@,FarPoint.Win.Spread.CellType.ComboBoxCellType@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示科目マスタより詳細コードのコンボボックス生成処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>科目マスタより、データを取得し、表示する
+ <para>作成情報：2015/08/24 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbKarisaimokuCreate(EXTM.DataEXTM0102@,FarPoint.Win.Spread.CellType.ComboBoxCellType@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示科目マスタより借方細目コードのコンボボックス生成処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>科目マスタより、データを取得し、表示する
+ <para>作成情報：2015/08/24 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbKariuchiCreate(EXTM.DataEXTM0102@,FarPoint.Win.Spread.CellType.ComboBoxCellType@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示科目マスタより借方内訳コードのコンボボックス生成処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>科目マスタより、データを取得し、表示する
+ <para>作成情報：2015/08/24 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbKarishosaiCreate(EXTM.DataEXTM0102@,FarPoint.Win.Spread.CellType.ComboBoxCellType@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示科目マスタより借方詳細コードのコンボボックス生成処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>科目マスタより、データを取得し、表示する
+ <para>作成情報：2015/08/24 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbUchiwakeSet(EXTM.DataEXTM0102@,System.String@,System.String@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示科目マスタより内訳コードのコンボボックス生成処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean  取得合否　True:取得成功 Flase:取得失敗</returns>
+	<remarks>科目マスタより、データを取得
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbShosaiSet(EXTM.DataEXTM0102@,System.String@,System.String@,System.String@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示科目マスタより詳細コードのコンボボックス生成処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean  取得合否　True:取得成功 Flase:取得失敗</returns>
+	<remarks>科目マスタより、データを取得
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbKarikamokuSet(EXTM.DataEXTM0102@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示科目マスタより借方科目コードのコンボボックス生成処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean  取得合否　True:取得成功 Flase:取得失敗</returns>
+	<remarks>科目マスタより、データを取得
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbKarikamokuCreate(EXTM.DataEXTM0102@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示科目マスタより借方科目コードのコンボボックス生成処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>科目マスタより、データを取得しコンボボックス作成
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbKariSaimokuSet(EXTM.DataEXTM0102@,System.String@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示科目マスタより借方細目コードのコンボボックス生成処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean  取得合否　True:取得成功 Flase:取得失敗</returns>
+	<remarks>科目マスタより、データを取得
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbKariUchiSet(EXTM.DataEXTM0102@,System.String@,System.String@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示科目マスタより借方内訳コードのコンボボックス生成処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean  取得合否　True:取得成功 Flase:取得失敗</returns>
+	<remarks>科目マスタより、データを取得
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbKariShosaiSet(EXTM.DataEXTM0102@,System.String@,System.String@,System.String@)">
+	<summary>
+ 付帯設備マスタメンテ初期表示科目マスタより借方詳細コードのコンボボックス生成処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean  取得合否　True:取得成功 Flase:取得失敗</returns>
+	<remarks>科目マスタより、データを取得
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.ChangeGroupingInsartRow(EXTM.DataEXTM0102@)">
+	<summary>
+ 付帯設備マスタメンテ、分類表のデータが増減した際、表示行数を再設定
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>データのある行を確認し、その行+5行だけ表に表示
+ <para>作成情報：2015/08/17 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.ChangeFutaiInsartRow(EXTM.DataEXTM0102@)">
+	<summary>
+ 付帯設備マスタメンテ、付帯設備表のデータが増減した際、表示行数を再設定
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>データのある行を確認し、その行+5行だけ表に表示
+ <para>作成情報：2015/08/17 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CmbKamokuCdCreate(EXTM.DataEXTM0102)">
+	<summary>
+ 付帯設備マスタメンテ、科目コードコンボボックス作成
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>コンボボックス作成
+ <para>作成情報：2015/08/17 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.ChangeCmbKamokuCd(System.Int32@,EXTM.DataEXTM0102)">
+	<summary>
+ 付帯設備マスタメンテ、科目コードが変更された場合、細目コードを活性化し、コンボボックス作成
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>細目コード活性化、コンボボックス作成
+ <para>作成情報：2015/08/17 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.ChangeCmbSaimokuCd(System.Int32@,EXTM.DataEXTM0102)">
+	<summary>
+ 付帯設備マスタメンテ、細目コードが変更された場合、内訳コードを活性化し、コンボボックス作成
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>内訳コード活性化、コンボボックス作成
+ <para>作成情報：2015/08/17 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.ChangeCmbUchiwakeCd(System.Int32@,EXTM.DataEXTM0102)">
+	<summary>
+ 付帯設備マスタメンテ、内訳コードが変更された場合、詳細コードを活性化し、コンボボックス作成
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>詳細コード活性化、コンボボックス作成
+ <para>作成情報：2015/08/17 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.ChangeCmbKarikamokuCd(System.Int32@,EXTM.DataEXTM0102)">
+	<summary>
+ 付帯設備マスタメンテ、借方科目コードが変更された場合、借方細目コードを活性化し、コンボボックス作成
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>借方細目コード活性化、コンボボックス作成
+ <para>作成情報：2015/08/17 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.ChangeCmbKarisaimokuCd(System.Int32@,EXTM.DataEXTM0102)">
+	<summary>
+ 付帯設備マスタメンテ、借方細目コードが変更された場合、借方内訳コードを活性化し、コンボボックス作成
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>借方内訳コード活性化、コンボボックス作成
+ <para>作成情報：2015/08/17 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.ChangeCmbKariuchiwakeCd(System.Int32@,EXTM.DataEXTM0102)">
+	<summary>
+ 付帯設備マスタメンテ、借方内訳コードが変更された場合、借方詳細コードを活性化し、コンボボックス作成
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>借方詳細コード活性化、コンボボックス作成
+ <para>作成情報：2015/08/17 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.EntryBunrui(System.Int32@,EXTM.DataEXTM0102,System.Int32@,Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection)">
+	<summary>
+ 付帯設備マスタメンテ、登録ボタン処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>登録ボタン押下時、分類表の項目をインサート、もしくはアップデート処理
+ <para>作成情報：2015/08/18 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.EntryFutai(EXTM.DataEXTM0102,Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection)">
+	<summary>
+ 付帯設備マスタメンテ、登録ボタン処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>登録ボタン押下時、付帯設備表の項目をインサート、もしくはアップデート処理
+ <para>作成情報：2015/08/18 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CheckErrerKikan(EXTM.DataEXTM0102)">
+	<summary>
+ 付帯設備マスタメンテ、期間入力チェック
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>登録ボタン押下時必須入力項目未記入、及びフォーマットに合わない場合にエラーメッセージ表示
+ <para>作成情報：2015/08/18 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CheckErrerBunrui(EXTM.DataEXTM0102)">
+	<summary>
+ 付帯設備マスタメンテ、分類表入力チェック
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>登録ボタン押下時必須入力項目未記入、及びフォーマットに合わない場合にエラーメッセージ表示
+ <para>作成情報：2015/08/18 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.CheckErrerFutai(EXTM.DataEXTM0102)">
+	<summary>
+ 付帯設備マスタメンテ、付帯設備表入力チェック
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<remarks>登録ボタン押下時必須入力項目未記入、及びフォーマットに合わない場合にエラーメッセージ表示
+ <para>作成情報：2015/08/18 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.GetBunruicd(EXTM.DataEXTM0102@)">
+	<summary>
+ 編集済みコンボボックス取得処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean  取得合否　True:取得成功 Flase:取得失敗</returns>
+	<remarks> 分類マスタより、データを取得
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.GetFutaiBunruicd(EXTM.DataEXTM0102@)">
+	<summary>
+ 編集済みコンボボックス取得処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean  取得合否　True:取得成功 Flase:取得失敗</returns>
+	<remarks> 分類マスタより、データを取得
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.InsertUpdateDB(EXTM.DataEXTM0102@)">
+	<summary>
+ ＤＢ更新処理
+ <paramref name="dataEXTM0102">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean  取得合否　True:取得成功 Flase:取得失敗</returns>
+	<remarks> ＤＢ更新を行う
+ <para>作成情報：2015/08/13 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.RyokinInfSet(EXTM.DataEXTM0102@)">
+	<summary>
+ 料金データ再セット
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>SPREAD上に表示している情報と退避した情報をマージする
+ <para>作成情報：2015.10.23 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0102.InitFutaiBunruiSet(EXTM.DataEXTM0102@)">
+	<summary>
+ 料金データ再セット
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>SPREAD上に表示している情報と退避した情報をマージする
+ <para>作成情報：2015.10.23 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0201.InitView(EXTM.DataEXTM0201@)">
+	<summary>初期表示時、スプレッドシート列表示処理
+ </summary>
+	<param name="dataEXTM0201">DataEXTM0201型オブジェクト</param>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>スプレッドシートに表示する列、行を制御する
+ <para>作成情報：2015/08/10 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.LogicEXTM0201.InitSearch(EXTM.DataEXTM0201@)">
+	<summary>初期検索を行う
+ </summary>
+	<param name="dataEXTM0201"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/10 ozawa
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0201.Search(EXTM.DataEXTM0201@)">
+	<summary>検索処理
+ </summary>
+	<remarks>検索ボタン押下時、データ取得SQLを作成しデータを取得
+ <para>作成情報：2015/08/10 ozawa
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0201.ViewRow(EXTM.DataEXTM0201@)">
+	<summary>検索結果表示
+ </summary>
+	<param name="dataEXTM0201"></param>
+	<returns></returns>
+	<remarks>検索結果を表示する
+ <para>作成情報：2015/08/10 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.LogicEXTM0201.ClickVwCellMain(EXTM.DataEXTM0201@)">
+	<summary>
+ 一覧セルクリック時メイン処理
+ </summary>
+	<param name="dataEXTM0201">[IN/OUT]セット選択画面データクラス</param>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>一覧のチェックボックス状態を制御する
+ <para>作成情報：2015/11/30 y.ozawa
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0201.SetCheckAsRadio(EXTM.DataEXTM0201@)">
+	<summary>
+ チェックボックス疑似ラジオボタン制御処理
+ <paramref name="dataHBKC0701">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>既にチェックの入っている行のチェックを外し、選択行のチェックをつける
+ <para>作成情報：2015/11/30 y.ozawa
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0201.ClearSpreadRow(EXTM.DataEXTM0201@)">
+	<summary>
+ スプレッドシートのすべての行を削除する
+ </summary>
+	<param name="dataEXTM0201">DataEXTM0201型オブジェクト</param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/10 ozawa
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTM.LogicEXTM0201">
+	<summary>利用者一覧画面Logicクラス
+ </summary>
+	<remarks>利用者一覧画面のロジックを定義する
+ <para>作成情報：2015/08/10 ozawa
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0103.InitSearch(EXTM.DataEXTM0103@)">
+	<summary>
+ 一覧データの取得
+ <paramref name="dataEXTM0103">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean 終了状況    True:正常  False:異常</returns>
+	<remarks>初期表示時検索を行う
+ <para>作成情報：2015/08/26 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0103.SetSheet(EXTM.DataEXTM0103@)">
+	<summary>
+ 画面表示
+ <paramref name="dataEXTM0103">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>シートに情報をセットする
+ <para>作成情報：2015/08/26 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0103.CheckInputSheet(EXTM.DataEXTM0103@)">
+	<summary>
+ 入力チェック
+ <paramref name="dataEXTM0103">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean 終了状況    true  正常  false  異常</returns>
+	<remarks>シート内入力項目の入力チェックを行う
+ <para>作成情報：2015/08/26 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0103.ChkTaxmstData(EXTM.DataEXTM0103@)">
+	<summary>
+ 追加・更新チェック
+ </summary>
+	<param name="dataEXTM0103">[IN/OUT]消費税マスタメンテDataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>隠し列（＝更新区分）によって条件分岐処理を行う
+ <para>作成情報：2015/08/26 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0103.Update(EXTM.DataEXTM0103@,System.Int32,Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection@)">
+	<summary>
+ 更新
+ <paramref name="dataEXTM0103">[IN/OUT]データクラス</paramref>
+		<param name="j">[IN]行番号</param>
+		<param name="Tsx">[IN]トランザクション</param>
+		<param name="Cn">[IN]コネクション</param>
+	</summary>
+	<returns>boolean 終了状況    true  正常  false  異常</returns>
+	<remarks>シート内入力項目の登録処理を行う
+ <para>作成情報：2015/08/26 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0103.UpdateTaxeDt(EXTM.DataEXTM0103@,System.Int32@,Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection@)">
+	<summary>
+ 終了日更新
+ <paramref name="dataEXTM0103">[IN/OUT]データクラス</paramref>
+		<param name="j">[IN]行番号</param>
+		<param name="Tsx">[IN]トランザクション</param>
+		<param name="Cn">[IN]コネクション</param>
+	</summary>
+	<returns>boolean 終了状況    true  正常  false  異常</returns>
+	<remarks>ある行の開始日が修正・または更新された際、前行の終了日に開始日-1日を上書きセットする
+ <para>作成情報：2015/08/26 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0103.Insert(EXTM.DataEXTM0103@,System.Int32,Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection@)">
+	<summary>
+ 新規登録
+ <paramref name="dataEXTM0103">[IN/OUT]データクラス</paramref>
+		<param name="j">[IN]行番号</param>
+		<param name="Tsx">[IN]トランザクション</param>
+		<param name="Cn">[IN]コネクション</param>
+	</summary>
+	<returns>boolean 終了状況    true  正常  false  異常</returns>
+	<remarks>シート内入力項目の登録処理を行う
+ <para>作成情報：2015/08/26 hayabuchi
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0103.DeleteDB(EXTM.DataEXTM0103@,System.Int32,Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection@)">
+	<summary>
+ 削除
+ <paramref name="dataEXTM0103">[IN/OUT]データクラス</paramref>
+		<param name="j">[IN]行番号</param>
+		<param name="Tsx">[IN]トランザクション</param>
+		<param name="Cn">[IN]コネクション</param>
+	</summary>
+	<returns>boolean 終了状況    true  正常  false  異常</returns>
+	<remarks>シート内入力項目の削除処理を行う
+ <para>作成情報： 2015.12.08 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0202.GetRiyoshaData(EXTM.DataEXTM0202@)">
+	<summary>初期表示時、利用者情報を取得する
+ </summary>
+	<param name="dataEXTM0202"></param>
+	<returns></returns>
+	<remarks>条件に応じて利用者情報を取得する
+ <para>作成情報：2015/08/25 ozawa]
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0202.GetComment(EXTM.DataEXTM0202@)">
+	<summary>初期表示時、利用コメントを取得する
+ </summary>
+	<param name="dataEXTM0202"></param>
+	<returns></returns>
+	<remarks>条件に応じて利用コメントを取得する
+ <para>作成情報：2015/08/25 ozawa]
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0202.CheckInputValueMain(EXTM.DataEXTM0202@)">
+	<summary>
+ 入力チェックメイン処理
+ </summary>
+	<param name="dataEXTM0202"></param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>登録項目の入力チェックを行う
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0202.CheckInputValue(EXTM.DataEXTM0202@)">
+	<summary>
+ 入力チェック処理
+ </summary>
+	<param name="dataEXTM0202"></param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>登録項目の入力チェックを行う
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0202.UpdatetNewData(EXTM.DataEXTM0202)">
+	<summary>データ更新処理
+ </summary>
+	<param name="dataEXTM0202"></param>
+	<returns>&gt;Boolean True:正常終了 False:異常終了</returns>
+	<remarks>入力内容をDBに反映（UPDATE）する
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.LogicEXTM0202.InsertNewData(EXTM.DataEXTM0202)">
+	<summary>データ新規登録処理
+ </summary>
+	<param name="dataEXTM0202"></param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>入力内容をDBに新規登録（INSERT）する
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0202.SelectSysdate(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0202)">
+	<summary>サーバー日付取得処理
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTM0202"></param>
+	<returns></returns>
+	<remarks>サーバー日付を取得する
+ <para>作成情報：20015/08/25 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.LogicEXTM0202.UpdateNewRiyoshaData(Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0202@)">
+	<summary>利用者情報更新用SQL作成処理
+ </summary>
+	<returns></returns>
+	<remarks>入力内容を利用者マスタに反映する
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.LogicEXTM0202.GetNewRiyoshaCd(Npgsql.NpgsqlConnection,EXTM.DataEXTM0202@)">
+	<summary>新規利用者番号、システム日付取得
+ </summary>
+	<param name="Cn"></param>
+	<param name="dataEXTM0202"></param>
+	<returns></returns>
+	<remarks>新規利用者番号、システム日付を取得する
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.LogicEXTM0202.InsertNewRiyoshaData(Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0202)">
+	<summary>利用者情報新規登録SQL作成処理
+ </summary>
+	<returns></returns>
+	<remarks>入力内容を利用者マスタに新規登録する
+ <para>作成情報：2015/08/25 ozawa
+ <p>作成情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.LogicEXTM0202.IsFullKana(System.String)">
+	<summary>
+ 全角カナチェック
+ </summary>
+	<param name="argTxt">[IN]チェック対象文字列</param>
+	<returns>Boolean  チェック結果    true  ＯＫ  false  ＮＧ</returns>
+	<remarks>対象文字列が半角カナ文字のみかチェックする
+ <para>作成情報：2015/08/25 ozawa
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="T:EXTM.LogicEXTM0202">
+	<summary>利用者情報登録/詳細画面Logicクラス
+ </summary>
+	<remarks>利用者情報登録/詳細画面Logicクラスを定義する
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.LogicEXTM0104.InitForm(EXTM.DataEXTM0104@)">
+	<summary>
+ 初期表示
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>初期表示を作成
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.GetBunruiData(EXTM.DataEXTM0104@)">
+	<summary>
+ 分類取得
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>分類データをDBから取得
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.SetBunruiData(EXTM.DataEXTM0104@)">
+	<summary>
+ 分類データセット
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>DBから取得分類データを画面にセット
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.GetKikanData(EXTM.DataEXTM0104@)">
+	<summary>
+ 期間取得
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>期間データをDBから取得
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.SetKikanData(EXTM.DataEXTM0104@)">
+	<summary>
+ 期間データセット
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>DBから取得期間データを利用料マスタメンテ画面にセットする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.GetRyokinData(EXTM.DataEXTM0104@,System.Int32)">
+	<summary>
+ 料金取得
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>料金データをDBから取得
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.SetRyokinData(EXTM.DataEXTM0104@)">
+	<summary>
+ 料金データセット
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>DBから取得料金データを利用料マスタメンテ画面にセットする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.GetBairituData(EXTM.DataEXTM0104@)">
+	<summary>
+ 倍率取得
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>倍率データをDBから取得
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.SetBairituData(EXTM.DataEXTM0104@)">
+	<summary>
+ 倍率データセット
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>DBから取得倍率データを利用料マスタメンテ画面にセットする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.BtClickBunrui(EXTM.DataEXTM0104@)">
+	<summary>
+ 分類の登録/更新の分岐処理
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>入力された値を登録/更新用の変数に代入し、登録するか更新するかの分岐を行う
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.BtClickRyokin(EXTM.DataEXTM0104@)">
+	<summary>
+ 料金の登録/更新の分岐処理
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>入力された値を登録/更新用の変数に代入し、登録するか更新するかの分岐を行う
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.BtClickBairitu(EXTM.DataEXTM0104@)">
+	<summary>
+ 倍率の登録/更新の分岐処理
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>入力された値を登録/更新用の変数に代入し、登録するか更新するかの分岐を行う
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.UpdataBunrui(EXTM.DataEXTM0104@,Npgsql.NpgsqlConnection)">
+	<summary>
+ 分類の更新処理
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>入力された値をもとに分類の更新処理を行う
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.InsertBunrui(EXTM.DataEXTM0104@,Npgsql.NpgsqlConnection)">
+	<summary>
+ 分類の登録処理
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>入力された値をもとに分類の登録処理を行う
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.InsertRyokin(EXTM.DataEXTM0104@,Npgsql.NpgsqlConnection)">
+	<summary>
+ 料金の登録処理
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>入力された値をもとに料金の登録処理を行う
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.UpdataRyokin(EXTM.DataEXTM0104@,Npgsql.NpgsqlConnection)">
+	<summary>
+ 料金の更新処理
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>入力された値をもとに料金の更新処理を行う
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.InsertBairitu(EXTM.DataEXTM0104@,Npgsql.NpgsqlConnection)">
+	<summary>
+ 倍率の登録処理
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>入力された値をもとに倍率の登録処理を行う
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.UpdataBairitu(EXTM.DataEXTM0104@,Npgsql.NpgsqlConnection)">
+	<summary>
+ 倍率の更新処理
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>入力された値をもとに倍率の更新処理を行う
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.KikanInputCheck(EXTM.DataEXTM0104@)">
+	<summary>
+ 期間入力チェック
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>利用料マスタメンテ画面で入力された期間(FROM)年、期間(FROM)月、期間(TO)年、期間(TO)月の入力チェックを行う
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.BunruiInputCheck(EXTM.DataEXTM0104@)">
+	<summary>
+ 分類入力チェック
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>利用料マスタメンテ画面で入力された分類ビューの値の入力チェックを行う
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.RyokinInputCheck(EXTM.DataEXTM0104@)">
+	<summary>
+ 料金入力チェック
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>利用料マスタメンテ画面で入力された料金ビューの値の入力チェックを行う
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.BairituInputCheck(EXTM.DataEXTM0104@)">
+	<summary>
+ 料金入力チェック
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>利用料マスタメンテ画面で入力された料金ビューの値の入力チェックを行う
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.ClearVwBunrui(EXTM.DataEXTM0104@)">
+	<summary>
+ 分類ビューをクリアする
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>分類ビューのすべての値をクリアする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.ClearVwRyokin(EXTM.DataEXTM0104@)">
+	<summary>
+ 料金ビューをクリアする
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>料金ビューのすべての値をクリアする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.ClearVwBairitu(EXTM.DataEXTM0104@)">
+	<summary>
+ 倍率ビューをクリアする
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>倍率ビューの値をすべてクリアする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.TxtChangeKikanFromMonth(EXTM.DataEXTM0104@)">
+	<summary>
+ 期間FROM月のtextchange
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>期間FROM月の1桁の数字が入力されたら前に0を追加する
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.TxtChangeKikanToMonth(EXTM.DataEXTM0104@)">
+	<summary>
+ 期間TO月のtextchange
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>期間TO月の1桁の数字が入力されたら前に0を追加する
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.SetTxtKikan(EXTM.DataEXTM0104@)">
+	<summary>
+ 期間セット
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>期間(FROM)年、期間(FROM)月、期間(TO)年、期間(TO)月をセットする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.GetSelectSysDate(EXTM.DataEXTM0104@)">
+	<summary>
+ サーバ日時取得
+ <paramref name="dataEXTM0104">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>サーバ日時取得
+ <para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.SelectSysDate(Npgsql.NpgsqlConnection,EXTM.DataEXTM0104@)">
+	<summary>
+ サーバ日時取得
+ </summary>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="DataEXTM0104">[IN/OUT]インシデント登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>サーバ日時を取得する
+ <para>作成情報：2015.08.14 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0104.RyokinInfSet(EXTM.DataEXTM0104@)">
+	<summary>
+ 料金データ再セット
+ </summary>
+	<returns>boolean  エラーコード    true  正常終了  false  異常終了</returns>
+	<remarks>SPREAD上に表示している情報と退避した情報をマージする
+ <para>作成情報：2015.10.23 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="T:EXTM.LogicEXTM0104">
+	<summary>
+ 利用料金マスタメンテ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTM.LogicEXTM0203.ExasSearchMain(EXTM.DataEXTM0203@)">
+	<summary>
+ EXAS相手先情報検索メイン処理
+ </summary>
+	<param name="dataEXTM0203">[IN/OUT]EXAS相手先一覧画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>EXAS相手先情報検索処理を行う
+ <para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0203.SetDisplay(EXTM.DataEXTM0203@)">
+	<summary>
+ スプレッドシート表示設定
+ </summary>
+	<param name="dataEXTM0203">[IN/OUT]EXAS相手先一覧画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>スプレッドシート表示設定を行う
+ <para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0203.InputCheck(EXTM.DataEXTM0203@)">
+	<summary>
+ 入力チェック処理
+ </summary>
+	<param name="dataEXTM0203">[IN/OUT]EXAS相手先一覧画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>入力チェック処理を行う
+ <para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0203.GetExasTheOtherData(EXTM.DataEXTM0203@)">
+	<summary>
+ EXAS相手先情報取得処理
+ </summary>
+	<param name="dataEXTM0203">[IN/OUT]EXAS相手先一覧画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>EXAS相手先情報取得処理を行う
+ <para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0203.ClickVwCellMain(EXTM.DataEXTM0203@)">
+	<summary>
+ 一覧セルクリック時メイン処理
+ </summary>
+	<param name="dataEXTM0203">[IN/OUT]セット選択画面データクラス</param>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>一覧のチェックボックス状態を制御する
+ <para>作成情報：2015/12/01 y.ozawa
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0203.SetCheckAsRadio(EXTM.DataEXTM0203@)">
+	<summary>
+ チェックボックス疑似ラジオボタン制御処理
+ <paramref name="dataHEXTM0203">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>既にチェックの入っている行のチェックを外し、選択行のチェックをつける
+ <para>作成情報：2015/12/01 y.ozawa
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.LogicEXTM0203.SearchInputCheck(EXTM.DataEXTM0203@)">
+	<summary>
+ 入力チェック処理
+ </summary>
+	<param name="dataEXTM0203">[IN/OUT]EXAS相手先一覧画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>検索時入力チェック処理を行う
+ <para>作成情報： 2015.12.03 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.SqlEXTM0101.SetSelectInitEXTUserSearchSql(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0101)">
+	<summary>
+ 初期表示用検索のSQLの設定
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKZ0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>EXシアターユーザーマスターから、初期表示時検索を行うSQL
+ <para>作成情報：2015/08/11 hayabuchi 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0101.SetSelectBushoSql(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0101)">
+	<summary>
+ 部署名コンボボックス取得用のSQLの設定
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKZ0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>部署名リストにセットするデータの取得を行うSQL
+ <para>作成情報：2015/08/11 hayabuchi 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0101.SetSelectEXTUserSearchSql(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0101)">
+	<summary>
+ 検索のSQLの設定
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKZ0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>EXシアターユーザーマスタから、フォームから渡される値をもとに検索を行うSQL
+ <para>作成情報：2015/08/11 hayabuchi
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0101.SetSelectCountSameUserSql(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,System.Int32@,EXTM.DataEXTM0101)">
+	<summary>
+ 【共通】同じユーザー名のデータ有無取得用SQLの作成・設定処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTM0101">[IN]ユーザーマスタメンテ画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>同じユーザー名のデータ有無取得用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.SqlEXTM0101.SetInsertUsermstSql(Npgsql.NpgsqlConnection,Npgsql.NpgsqlCommand@,System.Int32@,EXTM.DataEXTM0101)">
+	<summary>
+ 新規登録のSQLの設定
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKZ0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>EXシアターユーザーマスタにスプレッドシート内の値の新規登録を行うSQL
+ <para>作成情報：2015/08/11 hayabuchi
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0101.SetUpdateUsermstSql(Npgsql.NpgsqlConnection,Npgsql.NpgsqlCommand@,System.Int32@,EXTM.DataEXTM0101)">
+	<summary>
+ 更新のSQLの設定
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKZ0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>EXシアターユーザーマスタにスプレッドシート内の値の更新を行うSQL
+ <para>作成情報：2015/08/11 hayabuchi
+ </para></remarks>
+</member><member name="T:EXTM.SqlEXTM0101">
+	<summary>
+ EXシアターユーザー検索画面Sqlクラス
+ </summary>
+	<remarks>EXシアターユーザー検索画面のSQLの作成・設定を行う
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.SetSelectIniData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102)">
+	<summary>
+ 初期表示用SQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>付帯設備分類マスタから、情報を取得し、値をセットする（今はセットしていない）
+ <para>作成情報：2015/08/11 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.SetSelectIniFutaiData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102,System.Int32@)">
+	<summary>
+ 初期表示用SQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>付帯設備マスタから、情報を取得
+ <para>作成情報：2015/08/11 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.SetFinishedFromToData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102)">
+	<summary>
+ 対象期間コンボボックスSQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>付帯設備マスタから対象期間を取得
+ <para>作成情報：2015/08/14 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.CmbKanzyoCdSet(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102)">
+	<summary>
+ 勘定科目コンボボックス作成SQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>勘定科目マスタから勘定科目のコンボボックスをセットする
+ <para>作成情報：2015/08/11 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.CmbSaimouCdSet(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102,System.String)">
+	<summary>
+ 細目コンボボックス作成SQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>勘定科目マスタから細目のコンボボックスをセットする
+ <para>作成情報：2015/08/11 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.CmbUchiwakeCdSet(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102,System.String,System.String)">
+	<summary>
+ 内訳コンボボックス作成SQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>勘定科目マスタから内訳のコンボボックスをセットする
+ <para>作成情報：2015/08/11 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.CmbShosaiCdSet(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102,System.String,System.String,System.String)">
+	<summary>
+ 詳細コンボボックス作成SQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>勘定科目マスタから内詳細のコンボボックスをセットする
+ <para>作成情報：2015/08/11 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.CmbKariKamokuSet(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102)">
+	<summary>
+ 借方科目コンボボックス作成SQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>勘定科目マスタから借方科目のコンボボックスをセットする
+ <para>作成情報：2015/08/11 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.CmbKariSaimoku(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102,System.String)">
+	<summary>
+ 借方細目コンボボックス作成SQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>勘定科目マスタから借方細目のコンボボックスをセットする
+ <para>作成情報：2015/08/11 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.CmbKariUchi(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102,System.String,System.String)">
+	<summary>
+ 借方内訳コンボボックス作成SQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>勘定科目マスタから借方内訳のコンボボックスをセットする
+ <para>作成情報：2015/08/14 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.CmbKariShosai(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102,System.String,System.String,System.String)">
+	<summary>
+ 借方詳細コンボボックス作成SQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>勘定科目マスタから借方詳細のコンボボックスをセットする
+ <para>作成情報：2015/08/14 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.InsertBunrui(System.Int32@,Npgsql.NpgsqlCommand@,Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102)">
+	<summary>
+ 分類表インサートSQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>画面の値を、付帯設備分類マスタに登録する。
+ <para>作成情報：2015/08/14 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.UpdateBunrui(System.Int32@,Npgsql.NpgsqlCommand@,Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102)">
+	<summary>
+ 分類表アップデートSQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>画面の値を、付帯設備分類マスタに登録する。（更新）
+ <para>作成情報：2015/08/14 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.InsertFutai(System.Int32@,Npgsql.NpgsqlCommand@,Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102)">
+	<summary>
+ 付帯表インサートSQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>画面の値を、付帯設備マスタに登録する。
+ <para>作成情報：2015/08/14 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.UpdateFutai(System.Int32@,Npgsql.NpgsqlCommand@,Npgsql.NpgsqlTransaction@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102)">
+	<summary>
+ 付帯設備表アップデートSQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>画面の値を、付帯設備マスタに登録する。（更新）
+ <para>作成情報：2015/08/14 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.SelectBunruiCD(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102)">
+	<summary>
+ 付属設備品分類マスタの最大分類コード取得SQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataEXTM0102">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>付属設備品分類マスタから最大分類コードを取得する
+ <para>作成情報：2015/08/11 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0102.SelectFutaiBunruiCD(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0102)">
+	<summary>
+ 付属設備品分類マスタの最大分類コード取得SQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataEXTM0102">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>付属設備品分類マスタから最大分類コードを取得する
+ <para>作成情報：2015/08/11 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0201.SetSelectInit(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0201)">
+	<summary>
+ 初期表示用SQL作成
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTM0201"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTM.SqlEXTM0201.SetSelectRiyosha(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0201)">
+	<summary>
+ 利用者一覧取得SQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataEXTM0201">[IN]データクラス</param>
+	</summary>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/11 ozawa
+ </para></remarks>
+</member><member name="T:EXTM.SqlEXTM0201">
+	<summary>利用者一覧画面Sqlクラス
+ </summary>
+	<remarks>利用者一覧画面のSql作成・設定を行う
+ <para>作成情報：2015/08/10 ozawa
+ <p>改訂情報</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0101.EXTM0101_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム読み込み時の処理
+ </summary>
+	<remarks>フォームを読み込んだ際に行われる処理
+ <para>作成情報：2015/08/11 hayabuchi
+ </para></remarks>
+</member><member name="M:EXTM.EXTM0101.BtnSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ 検索ボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>検索ボタン押下処理
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0101.BtnReg_Click(System.Object,System.EventArgs)">
+	<summary>
+ 登録ボタン押下時処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>登録ボタン押下時処理
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0101.BtnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン押下時の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>前画面へ遷移する
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="T:EXTM.EXTM0101">
+	<summary>
+ EXシアターユーザーマスタメンテ画面Interfaceクラス
+ </summary>
+	<remarks>EXシアターユーザーマスタメンテ画面の設定を行う
+ <para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTM.SqlEXTM0103.SetSelectInitTaxSearchSql(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0103)">
+	<summary>
+ 初期表示用検索のSQLの設定
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKZ0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>EXシアター消費税マスタから、初期表示時検索を行うSQL
+ <para>作成情報：2015/08/26 hayabuchi 
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0103.SetInsertTaxmstSql(Npgsql.NpgsqlConnection,Npgsql.NpgsqlCommand@,System.Int32@,EXTM.DataEXTM0103)">
+	<summary>
+ 登録のSQLの設定
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKZ0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>EXシアター消費税マスタメンテフォームから渡される値をもとに消費税マスタへの登録を行うSQL
+ <para>作成情報：2015/08/26 hayabuchi
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0103.SetUpdateTaxeDtSql(Npgsql.NpgsqlConnection,Npgsql.NpgsqlCommand@,System.Int32@,EXTM.DataEXTM0103)">
+	<summary>
+ 終了日自動修正のSQLの設定
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKZ0103">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>EXシアター消費税マスタに終了日の修正を行うSQL
+ <para>作成情報：2015/08/26 hayabuchi
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0103.SetUpdateTaxmstSql(Npgsql.NpgsqlConnection,Npgsql.NpgsqlCommand@,System.Int32@,EXTM.DataEXTM0103)">
+	<summary>
+ 更新のSQLの設定
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKZ0103">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>EXシアターユーザーマスタにスプレッドシート内の値の更新を行うSQL
+ <para>作成情報：2015/08/26 hayabuchi
+ </para></remarks>
+</member><member name="M:EXTM.SqlEXTM0103.SetDeleteTaxmstSql(Npgsql.NpgsqlConnection,Npgsql.NpgsqlCommand@,System.Int32@,EXTM.DataEXTM0103)">
+	<summary>
+ 削除のSQLの設定
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKZ0103">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>EXシアター消費税マスタから指定の消費税データ削除を行うSQL
+ <para>作成情報：2015/08/26 hayabuchi
+ </para></remarks>
+</member><member name="T:EXTM.SqlEXTM0103">
+	<summary>
+ EXシアター消費税マスタメンテSqlクラス
+ </summary>
+	<remarks>EXシアター消費税マスタメンテのSQLの作成・設定を行う
+ <para>作成情報：2015/08/26 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTM.SqlEXTM0202.GetRiyoshaData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0202)">
+	<summary>
+ 利用者情報取得用SQL
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTM0202"></param>
+	<returns></returns>
+	<remarks>利用者情報取得用SQL
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.SqlEXTM0202.GetComment(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0202)">
+	<summary>
+ 利用コメント取得用SQL
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTM0202"></param>
+	<returns></returns>
+	<remarks>利用コメント取得用SQL
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.SqlEXTM0202.SelectSysdate(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0202)">
+	<summary>サーバー日付取得用SQL
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTM0202"></param>
+	<returns>サーバー日付取得用SQLを定義する
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</returns>
+	<remarks></remarks>
+</member><member name="M:EXTM.SqlEXTM0202.UpdateRiyoshaData(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0202)">
+	<summary>利用者情報更新用SQL
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTM0202"></param>
+	<returns></returns>
+	<remarks>利用者情報更新用SQLを定義する
+ <para>作成情報：2015/08/25　ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.SqlEXTM0202.GetNewRiyoCd(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0202)">
+	<summary>新規利用者番号採番
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTM0202"></param>
+	<returns></returns>
+	<remarks>新規利用者番号採番用SQLを定義する
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.SqlEXTM0202.InsertRiyoshaData(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0202)">
+	<summary> 利用者情報新規登録SQL
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTM0202"></param>
+	<returns></returns>
+	<remarks>利用者情報新規登録SQLを定義する
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="T:EXTM.SqlEXTM0202">
+	<summary>
+ 利用者情報登録/詳細画面SQLクラス
+ </summary>
+	<remarks>利用者情報登録/詳細画面のSQLを定義する
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="P:EXTM.DataEXTM0101.PropTxtSearchUserID">
+	<summary>
+ プロパティセット【検索ユーザID】
+ </summary>
+	<value></value>
+	<returns> ppTxtSearchUserId</returns>
+	<remarks><para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0101.PropTxtSearchKanjiName">
+	<summary>
+ プロパティセット【検索漢字氏名】
+ </summary>
+	<value></value>
+	<returns> ppTxtSearchKanjiName</returns>
+	<remarks><para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0101.PropTxtSearchMail">
+	<summary>
+ プロパティセット【検索メールアドレス】
+ </summary>
+	<value></value>
+	<returns> ppTxtSearchMail</returns>
+	<remarks><para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0101.PropCmbSearchBushoName">
+	<summary>
+ プロパティセット【検索部署名】
+ </summary>
+	<value></value>
+	<returns> ppCmbSearchBushoName</returns>
+	<remarks><para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0101.PropChkShoninFlg">
+	<summary>
+ プロパティセット【検索承認者権限フラグ】
+ </summary>
+	<value></value>
+	<returns> ppChkShoninFlg</returns>
+	<remarks><para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0101.PropChkMstFlg">
+	<summary>
+ プロパティセット【検索マスタ操作権限】
+ </summary>
+	<value></value>
+	<returns> ppChkMstFlg</returns>
+	<remarks><para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0101.PropChkStsFlg">
+	<summary>
+ プロパティセット【無効フラグ】
+ </summary>
+	<value></value>
+	<returns> ppChkStsFlg</returns>
+	<remarks><para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0101.PropDtExtUsrMasta">
+	<summary>
+ プロパティセット【データテーブル】
+ </summary>
+	<value></value>
+	<returns>ppDtExtUsrMasta</returns>
+	<remarks><para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0101.PropBtnSearch">
+	<summary>
+ プロパティセット【検索ボタン】
+ </summary>
+	<value></value>
+	<returns>ppBtnSearch</returns>
+	<remarks><para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0101.PropVwList">
+	<summary>
+ プロパティセット【一覧シート】
+ </summary>
+	<value></value>
+	<returns>ppVwList</returns>
+	<remarks><para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0101.PropDtExtBushoMasta">
+	<summary>
+ プロパティセット【部署名を格納するデータテーブル】
+ </summary>
+	<value></value>
+	<returns>ppDtExtBushoMasta</returns>
+	<remarks><para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0101.PropBtnReg">
+	<summary>
+ プロパティセット【フッタ：登録ボタン】
+ </summary>
+	<value></value>
+	<returns>ppBtnReg</returns>
+	<remarks><para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0101.PropBtnBack">
+	<summary>
+ プロパティセット【フッタ：戻るボタン】
+ </summary>
+	<value></value>
+	<returns>ppBtnBack</returns>
+	<remarks><para>作成情報：2015/08/11 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0102.EXTM0102_Load(System.Object,System.EventArgs)">
+	<summary>
+ 付帯設備マスタメンテ、初期表示処理
+ </summary>
+	<remarks>現在の日付が含まれる期間をコンボボックスに表示。
+ その期間に対応する分類、付帯設備の表を取得し、表示する。
+ <para>作成情報：2015/08/10 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0102.txtMonthFrom_LostFocus(System.Object,System.EventArgs)">
+	<summary>
+ 付帯設備マスタメンテ、fromテキストロストフォーカス
+ </summary>
+	<remarks>入力終了時、１桁のみの場合、頭に0を付ける
+ <para>作成情報：2015/08/10 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0102.txtMonthTo_LostFocus(System.Object,System.EventArgs)">
+	<summary>
+ 付帯設備マスタメンテ、Toテキストロストフォーカス時
+ </summary>
+	<remarks>入力終了時、１桁のみの場合、頭に0を付ける
+ <para>作成情報：2015/08/10 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0102.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 付帯設備マスタメンテ、戻るボタン押下時処理
+ </summary>
+	<remarks>前画面に遷移する。
+ <para>作成情報：2015/08/10 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0102.btnNewEntry_Click(System.Object,System.EventArgs)">
+	<summary>
+ 付帯設備マスタメンテ、表示内容を元に新規登録ボタン押下時処理
+ </summary>
+	<remarks>既に登録された内容を元に、新規登録を行う。
+ 新規に料金を設定するがチェックされ、対象期間コンボボックスが活性化。
+ 期間From、期間Toがそれぞれクリアされる。
+ <para>作成情報：2015/08/10 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0102.btnEntry_Click(System.Object,System.EventArgs)">
+	<summary>
+ 付帯設備マスタメンテ、登録ボタン押下時処理
+ </summary>
+	<remarks>入力されたデータを元に、登録処理を行う。
+ <para>作成情報：2015/08/10 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0102.cmbBoxFnishedFromTo_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 付帯設備マスタメンテ、対象期間選択処理
+ </summary>
+	<remarks>既に登録された期間を選択し、それを元に分類、付帯設備の表を取得する。
+ 表には、登録情報+５件の登録可能枠を表示
+ <para>作成情報：2015/08/10 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0102.cmbBoxFnishedFromTo_TextChange(System.Object,System.EventArgs)">
+	<summary>
+ 付帯設備マスタメンテ、対象期間選択処理
+ </summary>
+	<remarks>既に登録された期間を選手入力時、それを元に分類、付帯設備の表を取得する。
+ 表には、登録情報+５件の登録可能枠を表示
+ <para>作成情報：2015/08/10 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0102.rdoBtnNew_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 付帯設備マスタメンテ、新規に料金を設定するラジオボタン押下時処理
+ </summary>
+	<remarks>分類、付帯設備、期間をクリアし、対象期間と表示内容を元に新規登録ボタンを非活性にする。
+ 分類、付帯設備の表には、５件の登録可能枠を表示
+ <para>作成情報：2015/08/10 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0102.rdoBtnFinished_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 付帯設備マスタメンテ、設定済みの料金を設定するラジオボタンチェック時処理
+ </summary>
+	<remarks>対象期間、表示内容を元に新規登録ボタンを活性化する。
+ <para>作成情報：2015/08/10 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0102.rdoBtnTheater_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 付帯設備マスタメンテ、施設（シアター）ラジオボタンチェック時処理
+ </summary>
+	<remarks>対象期間、施設をキーに、ＳＱＬを発行し、返す値に対応する分類、付帯設備の表を表示する。
+ 表示された表には、登録件数＋５行の登録枠を表示する。
+ <para>作成情報：2015/08/10 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0102.vwGrouping_CellClick(System.Object,FarPoint.Win.Spread.CellClickEventArgs)">
+	<summary>
+ 付帯設備マスタメンテ、分類表クリック時処理
+ </summary>
+	<remarks>クリックしたセルの分類コードをキーに、付帯設備の表を表示
+ <para>作成情報：2015/08/10 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0102.vwGroupingSheet_Change(System.Object,FarPoint.Win.Spread.ChangeEventArgs)">
+	<summary>
+ 付帯設備マスタメンテ、分類表チェンジ時処理
+ </summary>
+	<remarks>データが入力された場合、行数を１追加,データ行数が減った場合、行数を１減らす
+ <para>作成情報：2015/08/17 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0102.vwFutaiSheet_Change(System.Object,FarPoint.Win.Spread.ChangeEventArgs)">
+	<summary>
+ 付帯設備マスタメンテ、付帯設備表チェンジ時処理
+ </summary>
+	<remarks>データが入力された場合、行数を１追加,減った場合、行数を１減らす
+ <para>作成情報：2015/08/17 yu.satoh
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0201.EXTM0201_Load(System.Object,System.EventArgs)">
+	<summary>
+ 初期処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>読み込み時に行われる処理
+ <para>作成情報：2015/08/10
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0201.EXTM0201_Shown(System.Object,System.EventArgs)">
+	<summary>
+ 初期検索を行う
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+		<para>作成情報：2015/08/10 ozawa
+ <p>改訂情報</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0201.Btn_Kensaku_Click(System.Object,System.EventArgs)">
+	<summary>検索ボタン押下時処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>検索ボタン押下時、SQLを発行し結果を表示する
+ <para>作成情報：2015/08/10 ozawa
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0201.Btn_Touroku_Click(System.Object,System.EventArgs)">
+	<summary>新規登録ボタン押下時処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>新規登録ボタン押下時、画面遷移する
+ <para>作成情報：2015/08/10 ozawa
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0201.FpSpread1_ButtonClicked(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+	<summary>確認・編集ボタン ／スプレッドシートクリック時
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>確認・編集ボタン押下時、利用者番号を詳細画面に引き渡す／チェックボックスの制御を行う
+ <para>作成情報：2015/08/10 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0201.Btn_Kakutei_Click(System.Object,System.EventArgs)">
+	<summary>選択確定ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>選択確定ボタン押下時、利用者情報を引渡し呼び出し元画面へ遷移する
+ <para>作成情報：2015/08/10 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0201.Btn_Modoru_Click(System.Object,System.EventArgs)">
+	<summary>戻るボタン押下時処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>戻るボタン押下時
+ <para>作成情報：2015/08/10 ozawa
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0201.SpreadConfig">
+	<summary>画面プロパティ関数
+ </summary>
+	<remarks>画面のプロパティーを再設定する
+ <para>作成情報：2015/08/10 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0201.GetCheckRowIndex(FarPoint.Win.Spread.FpSpread)">
+	<summary>チェックされた行インデックスを取得する
+ </summary>
+	<param name="spread"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/10 ozawa
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTM.EXTM0201">
+	<summary>利用者一覧画面Interfaceクラス画面
+ </summary>
+	<remarks>利用者一覧画面の設定を行う
+ <para>作成情報：2015/08/10 ozawa
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.SqlEXTM0104.GetBunruiData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0104)">
+	<summary>
+ 分類を取得するSQLの作成・設定処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTM0104">[IN]利用料マスタメンテ画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>分類取得用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.SqlEXTM0104.GetRyokinData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0104)">
+	<summary>
+ 料金を取得するSQLの作成・設定処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTM0104">[IN]利用料マスタメンテ画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>料金取得用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.SqlEXTM0104.GetBairituData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0104)">
+	<summary>
+ 倍率を取得するSQLの作成・設定処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTM0104">[IN]利用料マスタメンテ画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>倍率取得用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.SqlEXTM0104.GetKikanData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0104)">
+	<summary>
+ 期間を取得するSQLの作成・設定処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTM0104">[IN]利用料マスタメンテ画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>期間取得用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.SqlEXTM0104.InsertBunrui(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0104)">
+	<summary>
+ 分類登録用SQLの作成・設定処理
+ </summary>
+	<param name="Cmd">[IN/OUT]NpgSqlCommandクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTM0104">[IN]利用料マスタメンテ画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>分類登録用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.SqlEXTM0104.UpdataBunrui(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0104)">
+	<summary>
+ 分類更新用SQLの作成・設定処理
+ </summary>
+	<param name="Cmd">[IN/OUT]NpgSqlCommandクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTM0104">[IN]利用料マスタメンテ画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>分類更新用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.SqlEXTM0104.InsertRyokin(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0104)">
+	<summary>
+ 料金登録用SQLの作成・設定処理
+ </summary>
+	<param name="Cmd">[IN/OUT]NpgSqlCommandクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTM0104">[IN]利用料マスタメンテ画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>料金登録用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.SqlEXTM0104.UpdataRyokin(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0104)">
+	<summary>
+ 料金更新用SQLの作成・設定処理
+ </summary>
+	<param name="Cmd">[IN/OUT]NpgSqlCommandクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTM0104">[IN]利用料マスタメンテ画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>料金更新用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.SqlEXTM0104.InsertBairitu(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0104)">
+	<summary>
+ 倍率登録用SQLの作成・設定処理
+ </summary>
+	<param name="Cmd">[IN/OUT]NpgSqlCommandクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTM0104">[IN]利用料マスタメンテ画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>倍率登録用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.SqlEXTM0104.UpdataBairitu(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0104)">
+	<summary>
+ 倍率更新用SQLの作成・設定処理
+ </summary>
+	<param name="Cmd">[IN/OUT]NpgSqlCommandクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTM0104">[IN]利用料マスタメンテ画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>倍率更新用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/19 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTM.SqlEXTM0104.GetSysDate(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0104)">
+	<summary>
+ サーバ日時取得
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="DataEXTM0104">[IN]利用料マスタメンテ画面データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>サーバ日時取得のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.10.16 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTM.SqlEXTM0104">
+	<summary>
+ 利用料マスタメンテナンス
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTM.SqlEXTM0203.SetSearchExasTheOther(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTM.DataEXTM0203)">
+	<summary>
+ EXAS相手先情報取得SQLの作成・設定処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgsqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTM0203">[IN]EXAS相手先一覧画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>EXAS相手先情報取得SQLの作成・設定処理を行う
+ <para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropInitCmbFlg">
+	<summary>
+ プロパティセット【ppInitCmbFlg】
+ </summary>
+	<value></value>
+	<returns>ppInitCmbFlg</returns>
+	<remarks><para>作成情報：2015/08/21 yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropNewEntryBtnFlg">
+	<summary>
+ プロパティセット【ppNewEntryBtnFlg】
+ </summary>
+	<value></value>
+	<returns>ppNewEntryBtnFlg</returns>
+	<remarks><para>作成情報：2015/08/20 yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropDtKariKanzyoCd">
+	<summary>
+ プロパティセット【ppDtKariKanzyoCd】
+ </summary>
+	<value></value>
+	<returns>ppDtKariKanzyoCd</returns>
+	<remarks><para>作成情報：2015/08/20 yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropDtKanzyoCd">
+	<summary>
+ プロパティセット【ppDtKanzyoCd】
+ </summary>
+	<value></value>
+	<returns>ppDtKanzyoCd</returns>
+	<remarks><para>作成情報：2015/08/20 yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropInitFlg">
+	<summary>
+ プロパティセット【ppInitFlg】
+ </summary>
+	<value></value>
+	<returns>ppInitFlg</returns>
+	<remarks><para>作成情報：2015/08/17 yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropDtFinishedFromTo">
+	<summary>
+ プロパティセット【ppDtFinishedFromTo】
+ </summary>
+	<value></value>
+	<returns>ppInitFlg</returns>
+	<remarks><para>作成情報：2015/08/17 yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropYearFrom">
+	<summary>
+ プロパティセット【ppYearFrom】
+ </summary>
+	<value></value>
+	<returns>ppYearFrom</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropMonthFrom">
+	<summary>
+ プロパティセット【ppMonthFrom】
+ </summary>
+	<value></value>
+	<returns>ppMonthFrom</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropYearTo">
+	<summary>
+ プロパティセット【ppYearTo】
+ </summary>
+	<value></value>
+	<returns>ppYearTo</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropMonthTo">
+	<summary>
+ プロパティセット【ppMonthTo】
+ </summary>
+	<value></value>
+	<returns>ppMonthTo</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropFinishedFromTo">
+	<summary>
+ プロパティセット【ppFinishedFromTo】
+ </summary>
+	<value></value>
+	<returns>ppFinishedFromTo</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropNewBtn">
+	<summary>
+ プロパティセット【ppNewBtn】
+ </summary>
+	<value></value>
+	<returns>ppNewBtn</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropFinishedBtn">
+	<summary>
+ プロパティセット【ppFinishedBtn】
+ </summary>
+	<value></value>
+	<returns>ppFinishedBtn</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropTheaterBtn">
+	<summary>
+ プロパティセット【ppTheaterBtn】
+ </summary>
+	<value></value>
+	<returns>ppTheaterBtn</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropStudioBtn">
+	<summary>
+ プロパティセット【ppStudioBtn】
+ </summary>
+	<value></value>
+	<returns>ppStudioBtn</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropDtKamokuMst">
+	<summary>
+ プロパティセット【EXTM科目マスタ】
+ </summary>
+	<value></value>
+	<returns>ppDtKamokuMst</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropDtFbunruiMst">
+	<summary>
+ プロパティセット【EXTM付帯設備分類】
+ </summary>
+	<value></value>
+	<returns>ppDtFbunruiMst</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropDtFutaiMst">
+	<summary>
+ プロパティセット【EXTM付帯設備分類】
+ </summary>
+	<value></value>
+	<returns>ppDtFutaiMst</returns>
+	<remarks><para>作成情報：2015/08/14  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropVwGroupingSheet">
+	<summary>
+ プロパティセット【ppVwGroupingSheet】
+ </summary>
+	<value></value>
+	<returns>ppVwGroupingSheet</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropVwFutaiSheet">
+	<summary>
+ プロパティセット【ppVwFutaiSheet】
+ </summary>
+	<value></value>
+	<returns>ppVwFutaiSheet</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropBackBtn">
+	<summary>
+ プロパティセット【ppBackBtn】
+ </summary>
+	<value></value>
+	<returns>ppBackBtn</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropNewEntryBtn">
+	<summary>
+ プロパティセット【ppNewEntryBtn】
+ </summary>
+	<value></value>
+	<returns>ppNewEntryBtn</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropEntryBtn">
+	<summary>
+ プロパティセット【ppEntryBtn】
+ </summary>
+	<value></value>
+	<returns>ppEntryBtn</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropFromYearUp">
+	<summary>
+ プロパティセット【ppFromYearUp】
+ </summary>
+	<value></value>
+	<returns>ppFromYearUp</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropFromMonthUp">
+	<summary>
+ プロパティセット【ppFromMonthUp】
+ </summary>
+	<value></value>
+	<returns>ppFromMonthUp</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropToYearUp">
+	<summary>
+ プロパティセット【ppToYearUp】
+ </summary>
+	<value></value>
+	<returns>ppToYearUp</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropToMonthUp">
+	<summary>
+ プロパティセット【ppToMonthUp】
+ </summary>
+	<value></value>
+	<returns>ppToMonthUp</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropMaxBunruiCd">
+	<summary>
+ プロパティセット【ppMaxBunruiCd】
+ </summary>
+	<value></value>
+	<returns>ppMaxBunruiCd</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropMaxFutaiBunruiCd">
+	<summary>
+ プロパティセット【ppMaxFutaiBunruiCd】
+ </summary>
+	<value></value>
+	<returns>ppMaxFutaiBunruiCd</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropUpdBunruiCd">
+	<summary>
+ プロパティセット【ppUpdBunruiCd】
+ </summary>
+	<value></value>
+	<returns>ppUpdBunruiCd</returns>
+	<remarks><para>作成情報：2015/08/11  yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropDtFutaiMstDsp">
+	<summary>
+ プロパティセット【EXTM付帯設備分類（表示用）】
+ </summary>
+	<value></value>
+	<returns>ppDtFutaiMstDsp</returns>
+	<remarks><para>作成情報：2015.10.26 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropDtFutaiMstEscp">
+	<summary>
+ プロパティセット【EXTM付帯設備分類（退避用）】
+ </summary>
+	<value></value>
+	<returns>ppDtFutaiMstEscp</returns>
+	<remarks><para>作成情報：2015.10.26 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropBunruiCd">
+	<summary>
+ プロパティセット【ppBunruiCd（表示判定用）】
+ </summary>
+	<value></value>
+	<returns>ppBunruiCd</returns>
+	<remarks><para>作成情報：2015.10.26 h.hagiawara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0102.PropRow">
+	<summary>
+ プロパティセット【ppBunruiCd（表示判定用）】
+ </summary>
+	<value></value>
+	<returns>ppRow</returns>
+	<remarks><para>作成情報：2015.10.26 h.hagiawara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropTxtRiyo_cd">
+	<summary>
+ プロパティセット【利用者番号】
+ </summary>
+	<value></value>
+	<returns>ppTxtRiyo_cd</returns>
+	<remarks><para>作成情報：2015/08/10 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropTxtRiyo_kana">
+	<summary>
+ プロパティセット【利用者カナ】
+ </summary>
+	<value></value>
+	<returns>ppTxtRiyo_kana</returns>
+	<remarks><para>作成情報：2015/08/17 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropTxtRiyo_nm">
+	<summary>
+ プロパティセット【利用者名】
+ </summary>
+	<value></value>
+	<returns>ppTxtRiyo_nm</returns>
+	<remarks><para>作成情報：2015/08/17 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropTxtAite_cd">
+	<summary>
+ プロパティセット【相手先コード】
+ </summary>
+	<value></value>
+	<returns>ppTxtAite_cd</returns>
+	<remarks><para>作成情報：2015/08/17 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropTxtAite_nm">
+	<summary>
+ プロパティセット【相手先名】
+ </summary>
+	<value></value>
+	<returns>ppTxtAite_nm</returns>
+	<remarks><para>作成情報：2015/08/17 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropTxtTel1">
+	<summary>
+ プロパティセット【電話番号①】
+ </summary>
+	<value></value>
+	<returns> ppTxtTel1</returns>
+	<remarks><para>作成情報：2015/08/17 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropTxtTel2">
+	<summary>
+ プロパティセット【電話番号②】
+ </summary>
+	<value></value>
+	<returns> ppTxtTel2</returns>
+	<remarks><para>作成情報：2015/08/17 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropTxtTel3">
+	<summary>
+ プロパティセット【電話番号③】
+ </summary>
+	<value></value>
+	<returns> ppTxtTel3</returns>
+	<remarks><para>作成情報：2015/08/17 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropPnlLevel">
+	<summary>
+ プロパティセット【利用レベル】
+ </summary>
+	<value></value>
+	<returns>ppRdoLevel</returns>
+	<remarks><para>作成情報：2015/08/10 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropRdoTujyo">
+	<summary>
+ プロパティセット【利用レベル（通常）】
+ </summary>
+	<value></value>
+	<returns>ppRdoTujyo</returns>
+	<remarks><para>作成情報：2015/08/10 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropRdoChui">
+	<summary>
+ プロパティセット【利用レベル（要注意）】
+ </summary>
+	<value></value>
+	<returns>ppRdoChui</returns>
+	<remarks><para>作成情報：2015/08/10 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropRdoHuka">
+	<summary>
+ プロパティセット【利用レベル（利用不可）】
+ </summary>
+	<value></value>
+	<returns>ppRdoHuka</returns>
+	<remarks><para>作成情報：2015/08/10 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropVwList">
+	<summary>
+ プロパティセット【一覧シート】
+ </summary>
+	<value></value>
+	<returns>ppVwList</returns>
+	<remarks><para>作成情報：2012/06/15 matsuoka
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropIndex">
+	<summary>
+ プロパティセット【列インデックス】
+ </summary>
+	<value></value>
+	<returns>ppIndex</returns>
+	<remarks><para>作成情報：2015/08/17 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropCheckIndex">
+	<summary>
+ プロパティセット【チェックされた行番号】
+ </summary>
+	<value></value>
+	<returns>CheckIndex</returns>
+	<remarks><para>作成情報：2015/11/30 y.ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamValue">
+	<summary>
+ プロパティセット【呼び出し元画面から渡ってくるパラメータ値】
+ </summary>
+	<value></value>
+	<returns>ppParamValue</returns>
+	<remarks><para>作成情報：2015/08/19 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropStrRiyoKana">
+	<summary>
+ プロパティセット【呼び出し元画面から渡ってくるパラメータ値】
+ </summary>
+	<value></value>
+	<returns>ppParamValue</returns>
+	<remarks><para>作成情報：2015/10/05 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoCd">
+	<summary>
+ プロパティセット【利用者番号（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoCd</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoNm">
+	<summary>
+ プロパティセット【利用者名（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoNm</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoKana">
+	<summary>
+ プロパティセット【利用者名カナ（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoKana</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamDaihyoNm">
+	<summary>
+ プロパティセット【代表者名（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamDaihyoNm</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoTel11">
+	<summary>
+ プロパティセット【利用者電話番号1（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoTel11</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoTel12">
+	<summary>
+ プロパティセット【利用者電話番号2（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoTel12</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoTel13">
+	<summary>
+ プロパティセット【利用者電話番号3（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoTel13</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoNaisen">
+	<summary>
+ プロパティセット【利用者内線番号（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoNaisen</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoFax11">
+	<summary>
+ プロパティセット【利用者FAX1（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoFax11</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoFax12">
+	<summary>
+ プロパティセット【利用者FAX2（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoFax12</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoFax13">
+	<summary>
+ プロパティセット【利用者FAX3（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoFax13</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoYubin1">
+	<summary>
+ プロパティセット【利用者郵便番号1（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoYubin1</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoYubin2">
+	<summary>
+ プロパティセット【利用者郵便番号2（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoYubin2</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoTodo">
+	<summary>
+ プロパティセット【利用者都道府県（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoTodo</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoShiku">
+	<summary>
+ プロパティセット【利用者市区町村（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoShiku</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoBan">
+	<summary>
+ プロパティセット【利用者番地（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoBan</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoBuild">
+	<summary>
+ プロパティセット【利用者ビル名（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoBuild</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamRiyoLvl">
+	<summary>
+ プロパティセット【利用者レベル（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoLvl</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamAiteCd">
+	<summary>
+ プロパティセット【相手先コード（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamAiteCd</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropParamAiteNm">
+	<summary>
+ プロパティセット【相手先名（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamAiteNm</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0201.PropInitDspFlg">
+	<summary>
+ プロパティセット【検索表示フラグ】
+ </summary>
+	<value></value>
+	<returns>ppInitDspFlg</returns>
+	<remarks><para>作成情報：2015.12.03 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0103.EXTM0103_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォーム読み込み時の処理
+ </summary>
+	<remarks>フォームを読み込んだ際に行われる処理
+ <para>作成情報：2015/08/26 hayabuchi
+ </para></remarks>
+</member><member name="M:EXTM.EXTM0103.BtnReg_Click(System.Object,System.EventArgs)">
+	<summary>
+ 登録ボタン押下時処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>登録ボタン押下時処理
+ <para>作成情報：2015/08/26 hayabuchi
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0103.BtnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン押下時の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>前画面へ遷移する
+ <para>作成情報：2015/08/26 hayabuchi
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="T:EXTM.EXTM0103">
+	<summary>
+ EXシアター消費税マスタメンテInterfaceクラス
+ </summary>
+	<remarks>EXシアター消費税マスタメンテの設定を行う
+ <para>作成情報：2015/08/26 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0202.EXTM0202_Load(System.Object,System.EventArgs)">
+	<summary>初期表示時処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>読み込み時に行われる処理
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0202.EXTM0202_Shown(System.Object,System.EventArgs)">
+	<summary>
+ 初期表示時の検索処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>条件に応じて初期検索を行う
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0202.Btn_Update_Click(System.Object,System.EventArgs)">
+	<summary>更新ボタン押下時
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>更新ボタン押下時、利用者情報の更新/新規登録を行う
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0202.Btn_AitesakiSearch_Click(System.Object,System.EventArgs)">
+	<summary>EXAS相手先マスタ検索ボタン押下時
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>EXAS相手先マスタ検索ボタン押下時、利用者とEXAS相手先マスタの紐付けを行う
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0202.Btn_Modoru_Click(System.Object,System.EventArgs)">
+	<summary>戻るボタン押下時処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>戻るボタン押下時、遷移元によって処理を切り替える
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0202.SpreadConfig">
+	<summary>画面プロパティ関数
+ </summary>
+	<remarks>画面のプロパティーを再設定する
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="T:EXTM.EXTM0202">
+	<summary>利用者情報登録/詳細Interfaceクラス
+ </summary>
+	<remarks>利用者情報登録/詳細画面の設定を行う
+ <para>作成情報：2015/08/25 ozawa
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="P:EXTM.DataEXTM0103.PropVwList">
+	<summary>
+ プロパティセット【一覧シート】
+ </summary>
+	<value></value>
+	<returns>ppVwList</returns>
+	<remarks><para>作成情報：2015/08/26 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0103.PropBtnReg">
+	<summary>
+ プロパティセット【フッタ：登録ボタン】
+ </summary>
+	<value></value>
+	<returns>ppBtnReg</returns>
+	<remarks><para>作成情報：2015/08/26 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0103.PropBtnBack">
+	<summary>
+ プロパティセット【フッタ：戻るボタン】
+ </summary>
+	<value></value>
+	<returns>ppBtnBack</returns>
+	<remarks><para>作成情報：2015/08/26 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0103.PropDtExtTaxMasta">
+	<summary>
+ プロパティセット【データテーブル】
+ </summary>
+	<value></value>
+	<returns>ppDtExtTaxMasta</returns>
+	<remarks><para>作成情報：2015/08/26 hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropLblRiyo_cd">
+	<summary>
+ プロパティセット【利用者番号】
+ </summary>
+	<value></value>
+	<returns>ppTxtRiyo_cd</returns>
+	<remarks><para>作成情報：2015/08/10 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropTxtRiyo_kana">
+	<summary>
+ プロパティセット【利用者カナ】
+ </summary>
+	<value></value>
+	<returns>ppTxtRiyo_kana</returns>
+	<remarks><para>作成情報：2015/08/17 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropTxtRiyo_nm">
+	<summary>
+ プロパティセット【利用者名】
+ </summary>
+	<value></value>
+	<returns>ppTxtRiyo_nm</returns>
+	<remarks><para>作成情報：2015/08/17 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropTxtDaihyo_nm">
+	<summary>
+ プロパティセット【代表者名】
+ </summary>
+	<value></value>
+	<returns>ppTxtDaihyo_nm</returns>
+	<remarks><para>作成情報：2015/08/26 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropTxtTel1">
+	<summary>
+ プロパティセット【電話番号①】
+ </summary>
+	<value></value>
+	<returns> ppTxtTel1</returns>
+	<remarks><para>作成情報：2015/08/17 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropTxtTel2">
+	<summary>
+ プロパティセット【電話番号②】
+ </summary>
+	<value></value>
+	<returns> ppTxtTel2</returns>
+	<remarks><para>作成情報：2015/08/17 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropTxtTel3">
+	<summary>
+ プロパティセット【電話番号③】
+ </summary>
+	<value></value>
+	<returns> ppTxtTel3</returns>
+	<remarks><para>作成情報：2015/08/17 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropTxtNaisen">
+	<summary>
+ プロパティセット【内線番号】
+ </summary>
+	<value></value>
+	<returns>ppTxtNaisen</returns>
+	<remarks><para>作成情報：2015/08/26 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropTxtFax1">
+	<summary>
+ プロパティセット【Fax番号1】
+ </summary>
+	<value></value>
+	<returns>ppTxtFax1</returns>
+	<remarks><para>作成情報：2015/08/26 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropTxtFax2">
+	<summary>
+ プロパティセット【Fax番号2】
+ </summary>
+	<value></value>
+	<returns>ppTxtFax1</returns>
+	<remarks><para>作成情報：2015/08/26 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropTxtFax3">
+	<summary>
+ プロパティセット【Fax番号3】
+ </summary>
+	<value></value>
+	<returns>ppTxtFax1</returns>
+	<remarks><para>作成情報：2015/08/26 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropTxtYubin1">
+	<summary>
+ プロパティセット【郵便番号1】
+ </summary>
+	<value></value>
+	<returns>ppTxtYubin1</returns>
+	<remarks><para>作成情報：2015/08/26 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropTxtYubin2">
+	<summary>
+ プロパティセット【郵便番号2】
+ </summary>
+	<value></value>
+	<returns>ppTxtYubin1</returns>
+	<remarks><para>作成情報：2015/08/26 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropCmbTodo">
+	<summary>
+ プロパティセット【都道府県】
+ </summary>
+	<value></value>
+	<returns>ppCmbTodo</returns>
+	<remarks><para>作成情報：2015/08/26 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropTxtShiku">
+	<summary>
+ プロパティセット【市区町村】
+ </summary>
+	<value></value>
+	<returns>ppTxtShiku</returns>
+	<remarks><para>作成情報：2015/08/26 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropTxtBanchi">
+	<summary>
+ プロパティセット【番地】
+ </summary>
+	<value></value>
+	<returns>ppTxtBanchi</returns>
+	<remarks><para>作成情報：2015/08/26 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropTxtBuild">
+	<summary>
+ プロパティセット【ビル名】
+ </summary>
+	<value></value>
+	<returns>ppTxtBuild</returns>
+	<remarks><para>作成情報：2015/08/26 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropTxtCom">
+	<summary>
+ プロパティセット【コメント】
+ </summary>
+	<value></value>
+	<returns>ppTxtCom</returns>
+	<remarks><para>作成情報：2015/08/26 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropPnlLevel">
+	<summary>
+ プロパティセット【利用レベル】
+ </summary>
+	<value></value>
+	<returns>ppRdoLevel</returns>
+	<remarks><para>作成情報：2015/08/10 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropRdoTujyo">
+	<summary>
+ プロパティセット【利用レベル（通常）】
+ </summary>
+	<value></value>
+	<returns>ppRdoTujyo</returns>
+	<remarks><para>作成情報：2015/08/10 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropRdoChui">
+	<summary>
+ プロパティセット【利用レベル（要注意）】
+ </summary>
+	<value></value>
+	<returns>ppRdoChui</returns>
+	<remarks><para>作成情報：2015/08/10 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropRdoHuka">
+	<summary>
+ プロパティセット【利用レベル（利用不可）】
+ </summary>
+	<value></value>
+	<returns>ppRdoHuka</returns>
+	<remarks><para>作成情報：2015/08/10 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropLblAite_cd">
+	<summary>
+ プロパティセット【相手先コード】
+ </summary>
+	<value></value>
+	<returns>ppTxtAite_cd</returns>
+	<remarks><para>作成情報：2015/08/17 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropLblAite_nm">
+	<summary>
+ プロパティセット【相手先名】
+ </summary>
+	<value></value>
+	<returns>ppTxtAite_nm</returns>
+	<remarks><para>作成情報：2015/08/17 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropVwList">
+	<summary>
+ プロパティセット【一覧シート】
+ </summary>
+	<value></value>
+	<returns>ppVwList</returns>
+	<remarks><para>作成情報：2012/06/15 matsuoka
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamRiyoCd">
+	<summary>
+ プロパティセット【利用者番号（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoCd</returns>
+	<remarks><para>作成情報：2015/08/18 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropDtRiyoshaMasta">
+	<summary>
+ プロパティセット【利用者情報を格納するデータテーブル】
+ </summary>
+	<value></value>
+	<returns>ppDtRiyoshaMasta</returns>
+	<remarks><para>作成情報：2015/08/26 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropDtmSysDate">
+	<summary>
+ プロパティセット【サーバー日付】
+ </summary>
+	<value></value>
+	<returns>ppDtmSysDate</returns>
+	<remarks><para>作成情報：2015/08/25 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropNewRiyo_cd">
+	<summary>
+ プロパティセット【新しく取得した利用者番号を格納する】
+ </summary>
+	<value></value>
+	<returns>ppNewRiyo_cd</returns>
+	<remarks><para>作成情報：2015/08/28 ozawa
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamRiyoNm">
+	<summary>
+ プロパティセット【利用者名（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoNm</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamRiyoKana">
+	<summary>
+ プロパティセット【利用者名カナ（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoKana</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamDaihyoNm">
+	<summary>
+ プロパティセット【代表者名（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamDaihyoNm</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamRiyoTel11">
+	<summary>
+ プロパティセット【利用者電話番号1（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoTel11</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamRiyoTel12">
+	<summary>
+ プロパティセット【利用者電話番号2（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoTel12</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamRiyoTel13">
+	<summary>
+ プロパティセット【利用者電話番号3（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoTel13</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamRiyoNaisen">
+	<summary>
+ プロパティセット【利用者内線番号（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoNaisen</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamRiyoFax11">
+	<summary>
+ プロパティセット【利用者FAX1（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoFax11</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamRiyoFax12">
+	<summary>
+ プロパティセット【利用者FAX2（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoFax12</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamRiyoFax13">
+	<summary>
+ プロパティセット【利用者FAX3（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoFax13</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamRiyoYubin1">
+	<summary>
+ プロパティセット【利用者郵便番号1（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoYubin1</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamRiyoYubin2">
+	<summary>
+ プロパティセット【利用者郵便番号2（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoYubin2</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamRiyoTodo">
+	<summary>
+ プロパティセット【利用者都道府県（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoTodo</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamRiyoShiku">
+	<summary>
+ プロパティセット【利用者市区町村（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoShiku</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamRiyoBan">
+	<summary>
+ プロパティセット【利用者番地（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoBan</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0202.PropParamRiyoBuild">
+	<summary>
+ プロパティセット【利用者ビル名（パラメータ）】
+ </summary>
+	<value></value>
+	<returns>ppParamRiyoBuild</returns>
+	<remarks><para>作成情報：2015.10.14 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0104.EXTM0104_Load(System.Object,System.EventArgs)">
+	<summary>
+ 初期表示
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>利用料マスタのデータをDBから取得し、画面にセットする
+ <para>作成情報：2015/08/20 mori
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0104.Rdosumi_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 設定済みの料金を編集するラジオボタンがチェックされた時の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>設定済みの料金を編集するラジオボタンをチェックした時に、期間のコンボボックスと
+ 登録内容を元に新規登録ボタンを活性化する
+ <para>作成情報：2015/08/20 mori
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0104.RadioButton1_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 新規に料金を設定するラジオボタンがチェックされた時の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>新規に料金を設定するラジオボタンをチェックした時に、期間のコンボボックスと
+ 登録内容をもとに新規登録ボタンを非活性にする
+ <para>作成情報：2015/08/20 mori
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0104.FpSpread1_CellClick(System.Object,FarPoint.Win.Spread.CellClickEventArgs)">
+	<summary>
+ 利用料(分類)をクリックした時の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>クリックした行の料金分類コードを条件に利用料(料金)を取得し、画面に設定する
+ <para>作成情報：2015/08/20 mori
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0104.Button2_Click(System.Object,System.EventArgs)">
+	<summary>
+ 登録内容を元に新規登録ボタンが押下した時の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>ラジオボタンを新規に料金を設定するにチェックする、期間のコンボボックスを非活性にする
+ <para>作成情報：2015/08/20 mori
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0104.kikan_comb_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 期間コンボボックスの内容が変化した場合の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>変化した値を元に、利用料(分類)、利用料(倍率)を再取得、画面に表示する
+ <para>作成情報：2015/08/20 mori
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0104.insert_bt_Click(System.Object,System.EventArgs)">
+	<summary>
+ 登録ボタンが押下した時の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>入力チェックし、登録/更新処理を行う
+ <para>作成情報：2015/08/20 mori
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0104.FpSpread1_TextChanged(System.Object,FarPoint.Win.Spread.ChangeEventArgs)">
+	<summary>
+ 利用料(分類)に表示する行数制御
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>表示行数を常にデータ数+５に制御する
+ <para>作成情報：2015/08/20 mori
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0104.ryokin_Change(System.Object,FarPoint.Win.Spread.ChangeEventArgs)">
+	<summary>
+ 利用料(料金)に表示する行数制御
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>表示行数を常にデータ数+５に制御する
+ <para>作成情報：2015/08/20 mori
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0104.bairitu_Change(System.Object,FarPoint.Win.Spread.ChangeEventArgs)">
+	<summary>
+ 利用料(倍率)に表示する行数制御
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>表示行数を常にデータ数+５に制御する
+ <para>作成情報：2015/08/20 mori
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0104.txtkikanfrommonth_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+期間(FROM)月の表示制御
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>期間(FROM)月に入力した数字が1桁の場合は0を前に追加して出力
+ <para>作成情報：2015/08/20 mori
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0104.txtkikantomonth_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+期間(TO)月の表示制御
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>期間(TO)月に入力した数字が1桁の場合は0を前に追加して出力
+ <para>作成情報：2015/08/20 mori
+ <p>改訂情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:EXTM.EXTM0203.ShowDialog">
+	<summary>
+ 画面表示時の処理
+ </summary>
+	<returns>EXAS相手先情報ArrayList</returns>
+	<remarks>画面のポップアップ表示と戻り値の設定を行う
+ <para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0203.EXTM0203_Load(System.Object,System.EventArgs)">
+	<summary>
+ EXAS相手先一覧画面ロード時処理
+ </summary>
+	<remarks>画面ロード時の処理を行う
+ <para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0203.btnSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「検索」ボタン押下時処理
+ </summary>
+	<remarks>「検索」ボタン押下時の処理を行う
+ <para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0203.btnConfirm_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「選択確定」ボタン押下時処理
+ </summary>
+	<remarks>「選択確定」ボタン押下時の処理を行う
+ <para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0203.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「戻る」ボタン押下時処理
+ </summary>
+	<remarks>「戻る」ボタン押下時の処理を行う
+ <para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTM.EXTM0203.vwResult_ButtonClicked(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+	<summary>
+ スプレッドシートクリック時の処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>チェックボックスの制御を行う
+ <para>作成情報：2015/12/01 y.ozawa
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropRdoshinki">
+	<summary>
+ プロパティセット【新規ラジオボタン】
+ </summary>
+	<value></value>
+	<returns>ppRdoshiki</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropRdosumi">
+	<summary>
+ プロパティセット【設定済みラジオボタン】
+ </summary>
+	<value></value>
+	<returns>ppRdosumi</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropDtKikan">
+	<summary>
+ プロパティセット【期間データテーブル】
+ </summary>
+	<value></value>
+	<returns>ppDtKikan</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropCmbKikan">
+	<summary>
+ プロパティセット【期間コンボボックス】
+ </summary>
+	<value></value>
+	<returns>ppCmbKikan</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropTxtKikanFromYear">
+	<summary>
+ プロパティセット【期間FROM年】
+ </summary>
+	<value></value>
+	<returns>ppTxtKikanfromy</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropTxtKikanFromMonth">
+	<summary>
+ プロパティセット【期間FROM月】
+ </summary>
+	<value></value>
+	<returns>ppTxtKikanfrommm</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropTxtKikanToYear">
+	<summary>
+ プロパティセット【期間TO年】
+ </summary>
+	<value></value>
+	<returns>ppTxtKikantoy</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropTxtkikanToMonth">
+	<summary>
+ プロパティセット【期間TO月】
+ </summary>
+	<value></value>
+	<returns>ppTxtKikantom</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropVwBunrui">
+	<summary>
+ プロパティセット【分類スブレット】
+ </summary>
+	<value></value>
+	<returns>ppVwBunrui</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropVwRyokin">
+	<summary>
+ プロパティセット【料金スブレット】
+ </summary>
+	<value></value>
+	<returns>ppVwRyokin</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropVwBairitu">
+	<summary>
+ プロパティセット【倍率スブレット】
+ </summary>
+	<value></value>
+	<returns>ppVwBairitu</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropDtBunrui">
+	<summary>
+ プロパティセット【分類データテーブル】
+ </summary>
+	<value></value>
+	<returns>ppDtBunrui</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropDtRyoukin">
+	<summary>
+ プロパティセット【料金データテーブル】
+ </summary>
+	<value></value>
+	<returns>ppDtRyokin</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropDtBairitu">
+	<summary>
+ プロパティセット【倍率データテーブル】
+ </summary>
+	<value></value>
+	<returns>ppDtBairitu</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropStrBunruicd">
+	<summary>
+ プロパティセット【クリックされた分類CD】
+ </summary>
+	<value></value>
+	<returns>ppStrBunruicd</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropHtKikan">
+	<summary>
+ プロパティセット【期間ハッシュテーブル】
+ </summary>
+	<value></value>
+	<returns>ppHtKikan</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropStrKikan">
+	<summary>
+ プロパティセット【検索用期間】
+ </summary>
+	<value></value>
+	<returns>ppStrkikan</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropStrShisetu">
+	<summary>
+ プロパティセット【インサート用施設区分】
+ </summary>
+	<value></value>
+	<returns>ppStrShisetu</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropStrSort">
+	<summary>
+ プロパティセット【インサート用ソート】
+ </summary>
+	<value></value>
+	<returns>ppStrSort</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropStrKikanFrom">
+	<summary>
+ プロパティセット【インサート用期間FROM】
+ </summary>
+	<value></value>
+	<returns>ppStrKikanfrom</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropStrKikanTo">
+	<summary>
+ プロパティセット【インサート用期間TO】
+ </summary>
+	<value></value>
+	<returns>ppStrKikanto</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropStrSts">
+	<summary>
+ プロパティセット【インサート用ステータス】
+ </summary>
+	<value></value>
+	<returns>ppStrSts</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropStrBunruicdInsert">
+	<summary>
+ プロパティセット【インサート用分類CD】
+ </summary>
+	<value></value>
+	<returns>ppStrBunruicdinsert</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropStrBunruinm">
+	<summary>
+ プロパティセット【インサート用分類名】
+ </summary>
+	<value></value>
+	<returns>ppStrBunruinm</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropStrRyokincd">
+	<summary>
+ プロパティセット【インサート用料金CD】
+ </summary>
+	<value></value>
+	<returns>ppStrRyokincd</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropStrRyokinnm">
+	<summary>
+ プロパティセット【インサート用料金名】
+ </summary>
+	<value></value>
+	<returns>ppStrRyokinnm</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropStrRyokinhour">
+	<summary>
+ プロパティセット【インサート用貸し時間】
+ </summary>
+	<value></value>
+	<returns>ppStrRyokinhour</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropStrRyokin">
+	<summary>
+ プロパティセット【インサート用料金】
+ </summary>
+	<value></value>
+	<returns>ppStrRyokin</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropStrBairitucd">
+	<summary>
+ プロパティセット【インサート用倍率CD】
+ </summary>
+	<value></value>
+	<returns>ppStrBairitucd</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropStrbairitunm">
+	<summary>
+ プロパティセット【期間データテーブル】
+ </summary>
+	<value></value>
+	<returns>ppStrBairitunm</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.propStrBairitu">
+	<summary>
+ プロパティセット【インサート用倍率】
+ </summary>
+	<value></value>
+	<returns>ppStrBairitu</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.propFlg">
+	<summary>
+ プロパティセット【初期表示用フラグ】
+ </summary>
+	<value></value>
+	<returns>ppFlg</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropDtSysDate">
+	<summary>
+ プロパティセット【サーバ日時】
+ </summary>
+	<value></value>
+	<returns>ppDtAddDate</returns>
+	<remarks><para>作成情報：2015.10.16 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropDtRyokinDsp">
+	<summary>
+ プロパティセット【料金データテーブル（表示用）】
+ </summary>
+	<value></value>
+	<returns>ppDtRyokinDsp</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0104.PropDtRyokinEscp">
+	<summary>
+ プロパティセット【料金データテーブル（退避用）】
+ </summary>
+	<value></value>
+	<returns>ppDtRyokinEscp</returns>
+	<remarks><para>作成情報:2015/08/18 mori
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0203.PropTxtExasCode">
+	<summary>
+ プロパティセット【検索条件：EXAS相手先コードテキストボックス】
+ </summary>
+	<value></value>
+	<returns>ppTxtExasCode</returns>
+	<remarks><para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0203.PropTxtExasName">
+	<summary>
+ プロパティセット【検索条件：EXAS相手先名テキストボックス】
+ </summary>
+	<value></value>
+	<returns>ppTxtExasName</returns>
+	<remarks><para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0203.PropVwResult">
+	<summary>
+ プロパティセット【検索結果表示スプレッドシート】
+ </summary>
+	<value></value>
+	<returns>ppVwResult</returns>
+	<remarks><para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0203.PropStrExasCode_Search">
+	<summary>
+ プロパティセット【検索条件：EXAS相手先コード】
+ </summary>
+	<value></value>
+	<returns>ppStrExasCode_Search</returns>
+	<remarks><para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0203.PropStrExasName_Search">
+	<summary>
+ プロパティセット【検索条件：EXAS相手先名】
+ </summary>
+	<value></value>
+	<returns>ppStrExasName_Search</returns>
+	<remarks><para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0203.PropDtResult">
+	<summary>
+ プロパティセット【EXAS相手先検索結果データテーブル】
+ </summary>
+	<value></value>
+	<returns>ppDtResult</returns>
+	<remarks><para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0203.PropIntCheckRow">
+	<summary>
+ プロパティセット【チェックされた行インデックス】
+ </summary>
+	<value></value>
+	<returns>ppIntCheckRow</returns>
+	<remarks><para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTM.DataEXTM0203.PropStrMenuID">
+	<summary>
+ プロパティセット【遷移前の画面ID】
+ </summary>
+	<value></value>
+	<returns>ppStrMenuID</returns>
+	<remarks><para>作成情報：2015/08/26 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member>
+</members>
+</doc>

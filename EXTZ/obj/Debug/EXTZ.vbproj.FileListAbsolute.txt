@@ -1,0 +1,277 @@
+C:\dev\VB_Source\EXTZ\bin\Debug\EXTZ.exe
+C:\dev\VB_Source\EXTZ\bin\Debug\EXTZ.pdb
+C:\dev\VB_Source\EXTZ\bin\Debug\EXTZ.xml
+C:\dev\VB_Source\EXTZ\bin\Debug\Common.dll
+C:\dev\VB_Source\EXTZ\bin\Debug\Npgsql.dll
+C:\dev\VB_Source\EXTZ\bin\Debug\Mono.Security.dll
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.EXTZ0201.resources
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.EXTZ0202.resources
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.EXTZ0210.resources
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.EXTZ0209.resources
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.EXTZ0208.resources
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.EXTZ0207.resources
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.EXTZ0206.resources
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.EXTZ0204.resources
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.EXTZ0205.resources
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.EXTZ0203.resources
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.EXTZ0212.resources
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.EXTZ0211.resources
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.EXTZ0104.resources
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.EXTZ0103.resources
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.EXTZ0213.resources
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.Resources.resources
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.vbproj.GenerateResource.Cache
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.exe.licenses
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.exe
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.xml
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.pdb
+C:\dev\VB_Source\EXTZ\bin\Debug\CommonEXT.dll
+C:\dev\VB_Source\EXTZ\bin\Debug\EXTM.exe
+C:\dev\VB_Source\EXTZ\bin\Debug\CommonEXT.pdb
+C:\dev\VB_Source\EXTZ\bin\Debug\CommonEXT.xml
+C:\dev\VB_Source\EXTZ\bin\Debug\EXTM.pdb
+C:\dev\VB_Source\EXTZ\bin\Debug\EXTM.xml
+C:\dev\VB_Source\EXTZ\obj\Debug\EXTZ.vbprojResolveAssemblyReference.cache
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\EXTZ.exe
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\EXTZ.pdb
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\EXTZ.xml
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\Common.dll
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\CommonEXT.dll
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\EXTM.exe
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\FarPoint.CalcEngine.dll
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\FarPoint.Excel.dll
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\FarPoint.PDF.dll
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\FarPoint.Win.Chart.dll
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\FarPoint.Win.dll
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\FarPoint.Win.SpreadJ.dll
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\GrapeCity.Win.PluginInputMan.dll
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\Npgsql.dll
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\Mono.Security.dll
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\CommonEXT.pdb
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\CommonEXT.xml
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\EXTM.pdb
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\EXTM.xml
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\FarPoint.CalcEngine.xml
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\FarPoint.Excel.xml
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\FarPoint.Win.xml
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\FarPoint.Win.Chart.xml
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\FarPoint.Win.SpreadJ.xml
+C:\dev\VB_Source\EXT\EXTZ\bin\Debug\GrapeCity.Win.PluginInputMan.xml
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.vbprojResolveAssemblyReference.cache
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0201.resources
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0202.resources
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0210.resources
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0209.resources
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0208.resources
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0207.resources
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0206.resources
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0204.resources
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0205.resources
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0203.resources
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0212.resources
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0211.resources
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0104.resources
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0103.resources
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0213.resources
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.Resources.resources
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.vbproj.GenerateResource.Cache
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.exe.licenses
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.exe
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.xml
+C:\dev\VB_Source\EXT\EXTZ\obj\Debug\EXTZ.pdb
+C:\Dev2\EXT\EXTZ\bin\Debug\EXTZ.exe
+C:\Dev2\EXT\EXTZ\bin\Debug\EXTZ.pdb
+C:\Dev2\EXT\EXTZ\bin\Debug\EXTZ.xml
+C:\Dev2\EXT\EXTZ\bin\Debug\Common.dll
+C:\Dev2\EXT\EXTZ\bin\Debug\CommonEXT.dll
+C:\Dev2\EXT\EXTZ\bin\Debug\EXTM.exe
+C:\Dev2\EXT\EXTZ\bin\Debug\FarPoint.CalcEngine.dll
+C:\Dev2\EXT\EXTZ\bin\Debug\FarPoint.Excel.dll
+C:\Dev2\EXT\EXTZ\bin\Debug\FarPoint.PDF.dll
+C:\Dev2\EXT\EXTZ\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+C:\Dev2\EXT\EXTZ\bin\Debug\FarPoint.Win.Chart.dll
+C:\Dev2\EXT\EXTZ\bin\Debug\FarPoint.Win.dll
+C:\Dev2\EXT\EXTZ\bin\Debug\FarPoint.Win.SpreadJ.dll
+C:\Dev2\EXT\EXTZ\bin\Debug\GrapeCity.Win.PluginInputMan.dll
+C:\Dev2\EXT\EXTZ\bin\Debug\Npgsql.dll
+C:\Dev2\EXT\EXTZ\bin\Debug\Mono.Security.dll
+C:\Dev2\EXT\EXTZ\bin\Debug\CommonEXT.pdb
+C:\Dev2\EXT\EXTZ\bin\Debug\CommonEXT.xml
+C:\Dev2\EXT\EXTZ\bin\Debug\EXTM.pdb
+C:\Dev2\EXT\EXTZ\bin\Debug\EXTM.xml
+C:\Dev2\EXT\EXTZ\bin\Debug\FarPoint.CalcEngine.xml
+C:\Dev2\EXT\EXTZ\bin\Debug\FarPoint.Excel.xml
+C:\Dev2\EXT\EXTZ\bin\Debug\FarPoint.Win.xml
+C:\Dev2\EXT\EXTZ\bin\Debug\FarPoint.Win.Chart.xml
+C:\Dev2\EXT\EXTZ\bin\Debug\FarPoint.Win.SpreadJ.xml
+C:\Dev2\EXT\EXTZ\bin\Debug\GrapeCity.Win.PluginInputMan.xml
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.vbprojResolveAssemblyReference.cache
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0201.resources
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0202.resources
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0210.resources
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0209.resources
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0208.resources
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0207.resources
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0206.resources
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0204.resources
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0205.resources
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0203.resources
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0212.resources
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0211.resources
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0104.resources
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0103.resources
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0213.resources
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.Resources.resources
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.vbproj.GenerateResource.Cache
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.exe.licenses
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.exe
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.xml
+C:\Dev2\EXT\EXTZ\obj\Debug\EXTZ.pdb
+C:\dev\EXT\EXTZ\bin\Debug\EXTZ.exe
+C:\dev\EXT\EXTZ\bin\Debug\EXTZ.pdb
+C:\dev\EXT\EXTZ\bin\Debug\EXTZ.xml
+C:\dev\EXT\EXTZ\bin\Debug\Common.dll
+C:\dev\EXT\EXTZ\bin\Debug\CommonEXT.dll
+C:\dev\EXT\EXTZ\bin\Debug\EXTM.exe
+C:\dev\EXT\EXTZ\bin\Debug\FarPoint.CalcEngine.dll
+C:\dev\EXT\EXTZ\bin\Debug\FarPoint.Excel.dll
+C:\dev\EXT\EXTZ\bin\Debug\FarPoint.PDF.dll
+C:\dev\EXT\EXTZ\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+C:\dev\EXT\EXTZ\bin\Debug\FarPoint.Win.Chart.dll
+C:\dev\EXT\EXTZ\bin\Debug\FarPoint.Win.dll
+C:\dev\EXT\EXTZ\bin\Debug\FarPoint.Win.SpreadJ.dll
+C:\dev\EXT\EXTZ\bin\Debug\GrapeCity.Win.PluginInputMan.dll
+C:\dev\EXT\EXTZ\bin\Debug\Npgsql.dll
+C:\dev\EXT\EXTZ\bin\Debug\Mono.Security.dll
+C:\dev\EXT\EXTZ\bin\Debug\CommonEXT.pdb
+C:\dev\EXT\EXTZ\bin\Debug\CommonEXT.xml
+C:\dev\EXT\EXTZ\bin\Debug\EXTM.pdb
+C:\dev\EXT\EXTZ\bin\Debug\EXTM.xml
+C:\dev\EXT\EXTZ\bin\Debug\FarPoint.CalcEngine.xml
+C:\dev\EXT\EXTZ\bin\Debug\FarPoint.Excel.xml
+C:\dev\EXT\EXTZ\bin\Debug\FarPoint.Win.xml
+C:\dev\EXT\EXTZ\bin\Debug\FarPoint.Win.Chart.xml
+C:\dev\EXT\EXTZ\bin\Debug\FarPoint.Win.SpreadJ.xml
+C:\dev\EXT\EXTZ\bin\Debug\GrapeCity.Win.PluginInputMan.xml
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.vbprojResolveAssemblyReference.cache
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0201.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0202.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0210.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0209.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0208.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0207.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0206.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0204.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0205.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0203.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0212.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0211.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0104.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0103.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0213.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0214.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.Resources.resources
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.vbproj.GenerateResource.Cache
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.exe.licenses
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.exe
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.xml
+C:\dev\EXT\EXTZ\obj\Debug\EXTZ.pdb
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\EXTZ.exe
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\EXTZ.pdb
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\EXTZ.xml
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\Common.dll
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\CommonEXT.dll
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\EXTM.exe
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\FarPoint.CalcEngine.dll
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\FarPoint.Excel.dll
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\FarPoint.PDF.dll
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\FarPoint.Win.Chart.dll
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\FarPoint.Win.dll
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\FarPoint.Win.SpreadJ.dll
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\GrapeCity.Win.PluginInputMan.dll
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\Npgsql.dll
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\Mono.Security.dll
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\CommonEXT.pdb
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\CommonEXT.xml
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\EXTM.pdb
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\EXTM.xml
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\FarPoint.CalcEngine.xml
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\FarPoint.Excel.xml
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\FarPoint.Win.xml
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\FarPoint.Win.Chart.xml
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\FarPoint.Win.SpreadJ.xml
+C:\dev\VB Source\EXT\EXTZ\bin\Debug\GrapeCity.Win.PluginInputMan.xml
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.vbprojResolveAssemblyReference.cache
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0201.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0202.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0210.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0209.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0208.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0207.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0206.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0204.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0205.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0203.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0212.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0211.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0104.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0103.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0213.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0214.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.Resources.resources
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.vbproj.GenerateResource.Cache
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.exe.licenses
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.exe
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.xml
+C:\dev\VB Source\EXT\EXTZ\obj\Debug\EXTZ.pdb
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\EXTZ.exe
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\EXTZ.pdb
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\EXTZ.xml
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\Common.dll
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\CommonEXT.dll
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\EXTM.exe
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\FarPoint.CalcEngine.dll
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\FarPoint.Excel.dll
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\FarPoint.PDF.dll
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\FarPoint.Win.Chart.dll
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\FarPoint.Win.dll
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\FarPoint.Win.SpreadJ.dll
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\GrapeCity.Win.PluginInputMan.dll
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\Npgsql.dll
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\Mono.Security.dll
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\CommonEXT.pdb
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\CommonEXT.xml
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\EXTM.pdb
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\EXTM.xml
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\FarPoint.CalcEngine.xml
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\FarPoint.Excel.xml
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\FarPoint.Win.xml
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\FarPoint.Win.Chart.xml
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\FarPoint.Win.SpreadJ.xml
+C:\dev\VB Source\EX\EXT\EXTZ\bin\Debug\GrapeCity.Win.PluginInputMan.xml
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.vbprojResolveAssemblyReference.cache
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0201.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0202.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0210.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0209.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0208.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0207.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0206.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0204.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0205.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0203.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0212.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0211.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0104.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0103.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0213.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.EXTZ0214.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.Resources.resources
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.vbproj.GenerateResource.Cache
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.exe.licenses
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.exe
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.xml
+C:\dev\VB Source\EX\EXT\EXTZ\obj\Debug\EXTZ.pdb

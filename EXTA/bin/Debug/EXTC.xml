@@ -1,0 +1,4169 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EXTC
+</name>
+</assembly>
+<members>
+<member name="M:EXTC.EXTC0102.EXTC0102_Load(System.Object,System.EventArgs)">
+	<summary>
+ 初期処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.SetEnabledSettings">
+	<summary>
+ 画面項目活性判定処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.SetSpreadDataRiyobi(System.Collections.ArrayList)">
+	<summary>
+ 【画面表示用】利用日時リストの値を画面表示するSPREADに設定する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.SetRiyobiSpreadData(System.Collections.ArrayList@)">
+	<summary>
+ 【画面→DB用】Dataに設定する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.chkKashi_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 貸出種別
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.chkStudio_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ スタジオ
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.chkOpe_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 音響オペ
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.chkSendKbn_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 送信区分
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.btnYoyakuAdd_Click(System.Object,System.EventArgs)">
+	<summary>
+ 利用日追加ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.btnYoyakuDel_Click(System.Object,System.EventArgs)">
+	<summary>
+ 利用日削除ボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.btnOfficial_Click(System.Object,System.EventArgs)">
+	<summary>
+ 正式登録ボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.btnRegister_Click(System.Object,System.EventArgs)">
+	<summary>
+ 更新ボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.convertData(EXTC.DataEXTC0102@)">
+	<summary>
+ 画面入力情報をDataに格納
+ </summary>
+	<remarks>画面入力情報をDataに格納
+ <para>作成情報：2015/08/17 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0102.inputCheckMain">
+	<summary>
+ 入力チェック
+ </summary>
+	<returns>boolean エラーコード　true 正常終了　false 異常終了</returns>
+	<remarks>入力・桁数の入力チェックを行う
+ <para>作成情報：2015/08/17 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0102.inputCheckCondition(System.Boolean)">
+	<summary>
+ 入力チェック・条件
+ </summary>
+	<returns>boolean エラーコード　true 正常終了　false 異常終了</returns>
+	<remarks>関連チェックを行う
+ <para>作成情報：2015/08/17 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0102.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ 予約取消ボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.btnRiyoshaAdd_Click(System.Object,System.EventArgs)">
+	<summary>
+ 利用者登録ボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.btnRiyoshaSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ 利用者検索ボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.EXTC0102_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+	<summary>
+ 閉じるボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0102.cmbSekininNm_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>責任者名:コンボボックス選択時処理</summary>
+	<remarks>コンボボックスで選択された責任者のメールアドレス・携帯電話番号を入力する
+ <para>作成情報：2016/11/4 m.hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="T:EXTC.EXTC0102">
+	<summary>
+ EXTC0102
+ </summary>
+	<remarks>仮予約（シアター）画面
+ <para>作成情報：2015/09/20 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.RegYoyakuDetail(EXTC.DataEXTC0102@)">
+	<summary>
+ 各種明細情報登録／更新
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約情報登録
+ <para>作成情報：2015/09/12 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetBillReq(EXTC.DataEXTC0102@)">
+	<summary>
+ 請求取得
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetNyukin(EXTC.DataEXTC0102@)">
+	<summary>
+ 入金情報
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetApproval(EXTC.DataEXTC0102@)">
+	<summary>
+ 確認依頼確認記録情報取得
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetFutai(EXTC.DataEXTC0102@)">
+	<summary>
+ 付帯情報取得
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.UpFutai(EXTC.DataEXTC0102@)">
+	<summary>
+ 付帯情報取得
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.DelFutai(EXTC.DataEXTC0102@)">
+	<summary>
+ 付帯情報削除対象チェック
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetExasRiyoryo(EXTC.DataEXTC0102@)">
+	<summary>
+ EXASプロジェクト情報
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.CalcExasRiyoryo(EXTC.DataEXTC0102@)">
+	<summary>
+ EXASプロジェクト情報
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.RegRirekiKiroku(EXTC.DataEXTC0102@)">
+	<summary>
+ 履歴記録登録・メール送信
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約情報登録
+ <para>作成情報：2015/09/12 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetRiyobi(EXTC.DataEXTC0102@,System.Boolean)">
+	<summary>
+ 日付取得
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.sendMail(System.String,System.String,System.Boolean,System.String)">
+	<summary>
+ メール送信
+ </summary>
+	<param name="StrSubject"></param>
+	<param name="StrBody"></param>
+	<param name="IsShonin"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.setStartEndRiyobi(System.Collections.ArrayList@)">
+	<summary>
+ 利用開始日(0),終了日(1)をArrayで取得
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.SetSendMailAddr(System.Boolean,System.String)">
+	<summary>
+ 送付先アドレス取得
+ </summary>
+	<returns>String アドレス</returns>
+	<remarks>メールアドレス
+ <para>作成情報：2015/08/27 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetRiyoKinTotal(EXTC.DataEXTC0102)">
+	<summary>
+ 初期表示用の請求額(利用料金)を取得する
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetFutairyo(EXTC.DataEXTC0102)">
+	<summary>
+ 初期表示用の請求額(付帯料金)を取得する
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetFutairyoTax(EXTC.DataEXTC0102)">
+	<summary>
+ 初期表示用の請求額(付帯料金)を取得する
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<returns></returns>
+	<para>作成情報：2015.11.11 h.hagiwara</para>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetTaxfirstRiyobi(EXTC.DataEXTC0102)">
+	<summary>
+ 利用日(初日)の消費税を取得
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetTax(System.String)">
+	<summary>
+ 消費税取得処理
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>SYSTEM PROPERTY
+ <para>作成情報：2015/08/28 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.SetSeikyuTitle(EXTC.DataEXTC0102@,System.String@,System.String)">
+	<summary>
+ タイトル1を作成し、設定する
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<param name="title1"></param>
+	<param name="seikyuNaiyo"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.CancellSeikyu(System.Data.DataRow@)">
+	<summary>
+ 請求取消
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.CancellNyukin(System.Data.DataRow@)">
+	<summary>
+ 入金取消
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.OutputUseDetailsMain(EXTC.DataEXTC0103)">
+	<summary>
+ 付帯設備利用明細書出力メイン処理
+ </summary>
+	<param name="dataEXTC0103">[IN]正式予約登録／詳細(スタジオ)画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付帯設備利用明細書を出力する
+ <para>作成情報：2015/09/02 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.OutputUseDetails(EXTC.DataEXTC0103)">
+	<summary>
+ 付帯設備利用明細書出力処理
+ </summary>
+	<param name="dataEXTC0103">[IN]正式予約登録／詳細(スタジオ)画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付帯設備利用明細書を出力する
+ <para>作成情報：2015/09/02 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.SetUseDetailsDataAll(EXTC.DataEXTC0103,FarPoint.Win.Spread.SheetView@)">
+	<summary>
+ 付帯設備利用明細書（合算）作成処理
+ </summary>
+	<param name="dataEXTC0103">[IN]正式予約登録／詳細(スタジオ)画面Dataクラス</param>
+	<param name="vwOutputSheet">[IN/OUT]付帯設備利用明細書スプレッドシート</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付帯設備利用明細書（合算）を作成する
+ <para>作成情報：2015/09/02 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.SetUseDetailsDataOneDay(EXTC.DataEXTC0103,FarPoint.Win.Spread.SheetView@)">
+	<summary>
+ 付帯設備利用明細書（日別）作成処理
+ </summary>
+	<param name="dataEXTC0103">[IN]正式予約登録／詳細(スタジオ)画面Dataクラス</param>
+	<param name="vwOutputSheet">[IN/OUT]付帯設備利用明細書スプレッドシート</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付帯設備利用明細書（日別）を作成する
+ <para>作成情報：2015/09/02 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetUseDetailsAll(EXTC.DataEXTC0103@)">
+	<summary>
+ 付帯設備利用明細（合算）取得処理
+ </summary>
+	<param name="dataEXTC0103">[IN/OUT]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>ＤＢより付帯設備利用明細（合算）を取得する
+ <para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetUseDetailsOneDay(EXTC.DataEXTC0103@)">
+	<summary>
+ 付帯設備利用明細（日別）取得処理
+ </summary>
+	<param name="dataEXTC0103">[IN/OUT]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>ＤＢより付帯設備利用明細（日別）を取得する
+ <para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.OutputStudioData(EXTC.DataEXTC0103@)">
+	<summary>
+ 利用確認書取得処理予定地
+ </summary>
+	<param name="dataEXTC0103">[IN/OUT]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>ＤＢより利用確認書を取得する予定
+ <para>作成情報：2015/08/31 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.SetSqlSelectData(EXTC.DataEXTC0103@)">
+	<summary>
+ 利用確認書取得SQL作成
+ </summary>
+	<param name="dataEXTC0103">[IN/OUT]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>情報を取得するSQLを作成する。
+ <para>作成情報：2015/08/31 yu.satoh
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.SetPrintData(EXTC.DataEXTC0103)">
+	<summary>
+ 利用確認書出力処理
+ </summary>
+	<param name="dataEXTC0103">[IN]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>利用確認書を編集し、印刷する
+ <para>作成情報：2015/08/10 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.WeekDayCheck(System.DateTime@)">
+	<summary>
+ 入金予定日の曜日判定
+ </summary>
+	<param name="CehckDay">[IN/OUT]算出元日付</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>請求日から自動算出した入金予定日が土日祝祭日の場合前営業日にする
+ <para>作成情報：2015.10.24 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetSelectHolidayMst(System.DateTime@)">
+	<summary>
+ 祝祭日マスタの取得準備
+ <paramref name="CehckDay">対象日付</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>サーバ日時取得
+ <para>作成情報：2015.10.24 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetSelectHoliday(Npgsql.NpgsqlConnection,System.DateTime@)">
+	<summary>
+ 祝祭日マスタの取得
+ </summary>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="CehckDay">[IN/OUT]判定対象日付</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>祝祭日を取得する
+ <para>作成情報：2015.10.24 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.Mailsend(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ メール送信処理
+ </summary>
+	<param name="strMailTo">宛先To</param>
+	<param name="strMailCc">宛先Cc</param>
+	<param name="strMailBCc">宛先Bcc</param>
+	<param name="StrSubject">件名</param>
+	<param name="StrBody">本文</param>
+	<param name="strFile">添付ファイル</param>
+	<param name="strFlg">非同期</param>
+	<returns>
+	</returns>
+	<remarks>メールの編集・送信を行なう
+ <para>作成情報：2012/08/20 kudo
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetNotaxflg(EXTC.DataEXTC0103@)">
+	<summary>
+ 消費税率設定判定情報取得処理
+ <paramref name="DataEXTC0103">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>EXAS連携時に消費税率の設定
+ <para>作成情報：2015.11.11 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetNotaxflgInf(Npgsql.NpgsqlDataAdapter,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103@)">
+	<summary>
+ 消費税率設定判定情報取得処理用
+ </summary>
+	<param name="Adapter">[IN]NpgsqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="DataEXTC0103">[IN/OUT]登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>EXAS連携時に消費税率の設定を取得する
+ <para>作成情報：2015.11.11 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetAitesakiInf(EXTC.DataEXTC0103@)">
+	<summary>
+ 相手先情報取得処理
+ <paramref name="dataEXTC0103">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>相手先情報の取得
+ <para>作成情報：2015.11.11 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetAitesaki(Npgsql.NpgsqlDataAdapter,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103@)">
+	<summary>
+ 相手先情報取得処理用
+ </summary>
+	<param name="Adapter">[IN]NpgsqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTC0103">[IN/OUT]登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>EXAS連携時に消費税率の設定を取得する
+ <para>作成情報：2015.11.11 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.RegYoyakuInfo(EXTC.DataEXTC0102@)">
+	<summary>
+ 予約情報の論理削除更新処理
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約情報の論理削除更新
+ <para>作成情報：2015.12.10 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetBillpayFlg(EXTC.DataEXTC0102@)">
+	<summary>
+ 請求情報入力済判定処理
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>請求情報入力済の情報が存在するか判定する
+ <para>作成情報： 2015.12.10 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetRyokinBairituMst(EXTC.DataEXTC0103@)">
+	<summary>
+ 料金マスタ・倍率マスタ情報取得処理
+ <paramref name="dataEXTB0103">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>料金マスタ・倍率マスタ情報の取得
+ <para>作成情報：2015.12.16 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetRyokinMst(Npgsql.NpgsqlDataAdapter,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103@)">
+	<summary>
+ 料金マスタ情報取得処理用
+ </summary>
+	<param name="Adapter">[IN]NpgsqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTC0103">[IN/OUT]登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>料金・倍率選択画面表示前に料金マスタを取得する
+ <para>作成情報：2015.12.16 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GeBairituMst(Npgsql.NpgsqlDataAdapter,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103@)">
+	<summary>
+ 倍率マスタ情報取得処理用
+ </summary>
+	<param name="Adapter">[IN]NpgsqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTC0103">[IN/OUT]登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>料金・倍率選択画面表示前に倍率マスタを取得する
+ <para>作成情報：2015.12.16 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetFutaiSetubiInfMst(EXTC.DataEXTC0103@)">
+	<summary>
+ 付帯設備マスタ情報取得処理
+ <paramref name="dataEXTB0103">[IN/OUT]データクラス</paramref>
+	</summary>
+	<returns>boolean エラーコード    True:正常  False:異常</returns>
+	<remarks>付帯設備マスタ情報の取得
+ <para>作成情報：2015.12.16 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetFutaiSetubiMst(Npgsql.NpgsqlDataAdapter,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103@)">
+	<summary>
+ 付帯設備マスタ情報取得処理用
+ </summary>
+	<param name="Adapter">[IN]NpgsqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgsqlConnectionクラス</param>
+	<param name="dataEXTC0103">[IN/OUT]登録画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付帯設備設定画面表示前に付帯設備マスタを取得する
+ <para>作成情報：2015.12.16 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0103.GetSekininshaMailTel(EXTC.DataEXTC0102)">
+	<summary>
+ 責任者メールアドレス・携帯電話番号取得
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>責任者名のコンボボックス選択時メールアドレス・携帯電話番号取得
+ <para>作成情報：2016/11/4　m.hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0103.EXTC0103_Load(System.Object,System.EventArgs)">
+	<summary>
+ 初期処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.SetSpreadDataRiyobi(System.Collections.ArrayList)">
+	<summary>
+ 【画面表示用】利用日時リストの値を画面表示するSPREADに設定する
+ </summary>
+	<param name="dataList"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.SetRiyobiSpreadData(System.Collections.ArrayList@)">
+	<summary>
+ 【画面→DB用】利用日SPREADをDataに設定する
+ </summary>
+	<param name="dataList"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnYoyakuAdd_Click(System.Object,System.EventArgs)">
+	<summary>
+ 利用日追加ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnYoyakuDel_Click(System.Object,System.EventArgs)">
+	<summary>
+ 利用日削除ボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.ChangeEventHandler(System.Object,FarPoint.Win.Spread.ChangeEventArgs)">
+	<summary>
+ SPREAD利用日時一覧、利用料金自動計算
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnTankaDisp_Click(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+	<summary>
+ スプレッド利用日時一覧のボタンイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.SetSpreadIraiRireki(System.Data.DataTable)">
+	<summary>
+ 【画面表示用】確認依頼履歴の値を画面表示するSPREADに設定する
+ </summary>
+	<param name="table"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.SetSpreadIraiKakunin(System.Data.DataTable)">
+	<summary>
+ 【画面表示用】確認記録リストの値を画面表示するSPREADに設定する
+ </summary>
+	<param name="table"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.SetSpreadFutai(System.Collections.Hashtable)">
+	<summary>
+ 【画面表示用】付帯情報を画面表示するSPREADに設定する
+ </summary>
+	<param name="ht"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnFutai_Click(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+	<summary>
+ SPREAD付帯一覧のボタンイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.SetSpreadBillPay(System.Data.DataTable)">
+	<summary>
+ 【画面表示用】請求情報を画面表示するSPREADに設定する
+ </summary>
+	<param name="table"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.InitBillPay(System.Data.DataTable@)">
+	<summary>
+ 請求情報の初期表示行を作成
+ </summary>
+	<param name="table"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.CalcBillPay(System.Data.DataTable@)">
+	<summary>
+ 請求情報の再計算
+ </summary>
+	<param name="table"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnBillPay_Click(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+	<summary>
+ SPREAD請求一覧のボタンイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnIrai_Click(System.Object,System.EventArgs)">
+	<summary>
+ 依頼追加のボタンイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnShonin_Click(System.Object,System.EventArgs)">
+	<summary>
+ 記録追加のボタンイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.editFlgSetting">
+	<summary>
+ 請求情報変更フラグ設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnSplit_Click(System.Object,System.EventArgs)">
+	<summary>
+ 請求分割
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.prjCopy(System.Data.DataTable)">
+	<summary>
+ PROJECTコピー
+ </summary>
+	<param name="table"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.prjCopy2(System.Data.DataTable,System.Object,System.String@)">
+	<summary>
+ PROJECTコピー(利用料のみ分割した場合の処理）    ' 2015.12.16 ADD h.hagiwara
+ </summary>
+	<param name="table"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnBond_Click(System.Object,System.EventArgs)">
+	<summary>
+ 請求結合
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnRegister_Click(System.Object,System.EventArgs)">
+	<summary>
+ 更新ボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.convertData(EXTC.DataEXTC0102@)">
+	<summary>
+ 画面入力情報をDataに格納
+ </summary>
+	<remarks>画面入力情報をDataに格納
+ <para>作成情報：2015/08/17 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0103.inputCheckMain">
+	<summary>
+ 入力チェック
+ </summary>
+	<returns>boolean エラーコード　true 正常終了　false 異常終了</returns>
+	<remarks>入力・桁数の入力チェックを行う
+ <para>作成情報：2015/08/17 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0103.inputCheckCondition">
+	<summary>
+ 入力チェック・条件
+ </summary>
+	<returns>boolean エラーコード　true 正常終了　false 異常終了</returns>
+	<remarks>関連チェックを行う
+ <para>作成情報：2015/08/17 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0103.timFlashLabel_Tick(System.Object,System.EventArgs)">
+	<summary>
+ ボタン点滅用タイマーイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnBillInfoUpdate_Click(System.Object,System.EventArgs)">
+	<summary>
+ 請求情報更新ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.statusBtnSetting">
+	<summary>
+ 仮予約ボタン活性状態設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.EXTC0103_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ 閉じるButton処理
+ 未更新時無効
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ 予約取消ボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnClaimCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ 請求取消
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnPayCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ 入金取消
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnPrintRiyoShonin_Click(System.Object,System.EventArgs)">
+	<summary>
+ 印刷：利用承認
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnPrintFutaiTotal_Click(System.Object,System.EventArgs)">
+	<summary>
+ 印刷：付帯
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnPrintExas_Click(System.Object,System.EventArgs)">
+	<summary>
+ 出力：EXAS
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.appendHdr(System.Text.StringBuilder@,System.Object)">
+	<summary>
+ StringBuilder[Header]追記
+ </summary>
+	<param name="sb"></param>
+	<param name="addObj"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.appendDtl(System.Text.StringBuilder@,System.Object)">
+	<summary>
+ StringBuilder[Detail]追記
+ </summary>
+	<param name="sb"></param>
+	<param name="addObj"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.append(System.Text.StringBuilder@,System.Object,System.Boolean)">
+	<summary>
+ StringBuilder追記処理
+ </summary>
+	<param name="sb"></param>
+	<param name="addObj"></param>
+	<param name="isDtl"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.btnRiyoshaSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ 利用者検索ボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0103.inputCheckSeikyuInfoInput">
+	<summary>
+ 請求情報入力ボタン入力チェック
+ </summary>
+	<returns>boolean エラーコード　true 正常終了　false 異常終了</returns>
+	<remarks>入力・桁数の入力チェックを行う
+ <para>作成情報：2015/11/13 h.mori
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0103.rdoKashi1_Click(System.Object,System.EventArgs)">
+	<summary></summary>
+	<remarks>貸出種別：一般貸出選択処理
+ <para>作成情報：2015.12.10 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0103.rdoKashi2_Click(System.Object,System.EventArgs)">
+	<summary></summary>
+	<remarks>貸出種別：社内利用選択処理
+ <para>作成情報：2015.12.10 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0103.btnReset_Click(System.Object,System.EventArgs)">
+	<summary></summary>
+	<remarks>請求情報リセット処理
+ <para>作成情報：2015.12.18 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0103.cmbSekininNm_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>責任者名:コンボボックス選択時処理</summary>
+	<remarks>コンボボックスで選択された責任者のメールアドレス・携帯電話番号を入力する
+ <para>作成情報：2016/11/4 m.hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="T:EXTC.EXTC0103">
+	<summary>
+ EXTC0103
+ </summary>
+	<remarks>正式予約（シアター）画面
+ <para>作成情報：2015/08/20 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0104.GetYoyakuData(EXTC.DataEXTC0104@)">
+	<summary>
+ 予約情報取得処理(共通にする)
+ </summary>
+	<param name="dataEXTC0104"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0104.TransData(EXTC.DataEXTC0104@,System.Data.DataTable)">
+	<summary>
+ DB項目値から画面への変換
+ 
+ </summary>
+	<param name="dataEXTC0104"></param>
+	<param name="Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0104.GetRiyobiData(EXTC.DataEXTC0104@)">
+	<summary>
+ 予約日時情報取得(共通にする)
+ </summary>
+	<param name="dataEXTC0104"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0104.TransDataRiyobiList(EXTC.DataEXTC0104@,System.Data.DataTable)">
+	<summary>
+ 予約日時情報をリストにつめる
+ </summary>
+	<param name="dataEXTC0104"></param>
+	<param name="Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0104.RegYoyakuInfo(EXTC.DataEXTC0104@,System.Boolean)">
+	<summary>
+ 予約情報登録／更新
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約情報登録
+ <para>作成情報：2015/08/12 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0104.DeleteYoyakuList(System.String)">
+	<summary>
+ 予約日程表削除
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約日程データを予約Noですべて削除する
+ <para>作成情報：2015/08/12 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0104.InsertYoyakuList(System.String,System.Collections.ArrayList)">
+	<summary>
+ 予約日程表の登録
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約情報登録
+ <para>作成情報：2015/08/12 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0104.DeleteYoyaku(System.String)">
+	<summary>
+ 予約削除
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約データを削除する
+ <para>作成情報：2015/08/17 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0104.GetWakuNo(CommonEXT.CommonDataCancel)">
+	<summary>
+ 予約受付制御登録チェック
+ </summary>
+	<param name="dataRiyobi"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0104.GetSekininshaList(System.String)">
+	<summary>
+ 責任者名取得
+ </summary>
+	<param name="strRiyoshaCd"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0104.GetSekininshaMailTel(EXTC.DataEXTC0104)">
+	<summary>
+ 責任者メールアドレス・携帯電話番号取得
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>責任者名のコンボボックス選択時メールアドレス・携帯電話番号取得
+ <para>作成情報：2016/11/4 m.hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0104.EXTC0104_Load(System.Object,System.EventArgs)">
+	<summary>
+ 初期処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.SetEnabledSettings">
+	<summary>
+ 画面項目活性判定処理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.SetSpreadDataRiyobi(System.Collections.ArrayList)">
+	<summary>
+ 【画面表示用】利用日時リストの値を画面表示するSPREADに設定する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.SetRiyobiSpreadData(System.Collections.ArrayList@)">
+	<summary>
+ 【画面→DB用】Dataに設定する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.chkKashi_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 貸出種別
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.chkStudio_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ スタジオ
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.chkOpe_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 音響オペ
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.btnYoyakuAdd_Click(System.Object,System.EventArgs)">
+	<summary>
+ 利用日追加ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.btnYoyakuDel_Click(System.Object,System.EventArgs)">
+	<summary>
+ 利用日削除ボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.btnKari_Click(System.Object,System.EventArgs)">
+	<summary>
+ 仮登録ボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.btnRegister_Click(System.Object,System.EventArgs)">
+	<summary>
+ 更新ボタン押下処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.convertData(EXTC.DataEXTC0104@)">
+	<summary>
+ 画面入力情報をDataに格納
+ </summary>
+	<remarks>画面入力情報をDataに格納
+ <para>作成情報：2015/08/17 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0104.convertKariData(EXTC.DataEXTC0104@,EXTC.DataEXTC0102@)">
+	<summary>
+ キャンセル待ち登録情報を仮予約情報に変換
+ </summary>
+	<remarks>
+		<para>作成情報：2015/09/10 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0104.inputCheckMain">
+	<summary>
+ 入力チェック
+ </summary>
+	<returns>boolean エラーコード　true 正常終了　false 異常終了</returns>
+	<remarks>入力・桁数の入力チェックを行う
+ <para>作成情報：2015/08/17 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0104.inputCheckCondition(System.Boolean)">
+	<summary>
+ 入力チェック・条件
+ </summary>
+	<returns>boolean エラーコード　true 正常終了　false 異常終了</returns>
+	<remarks>関連チェックを行う
+ <para>作成情報：2015/08/17 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0104.btnCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ キャンセル待ち取消ボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.btnResurrec_Click(System.Object,System.EventArgs)">
+	<summary>
+ キャンセル待ち復活ボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.btnRiyoshaSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ 利用者検索ボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.btnBack_Click(System.Object,System.EventArgs)">
+	<summary>
+ 戻るボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.EXTC0104_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+	<summary>
+ 閉じるボタン処理
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.rdoKibobi_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 希望日有無の変更
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.EXTC0104.cmbSekininNm_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>責任者名:コンボボックス選択時処理</summary>
+	<remarks>コンボボックスで選択された責任者のメールアドレス・携帯電話番号を入力する
+ <para>作成情報：2016/11/4 m.hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="T:EXTC.CommonDeclareEXTC">
+	<summary>
+ EXTCプロジェクトの共通定数
+ </summary>
+	<remarks>
+ EXTCプロジェクト内で共通で使用する定数を定義する。
+ <para>作成情報：2015/09/01 h.endo</para>
+		<p>改訂情報:</p>
+	</remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropTxtYear">
+	<summary>
+ プロパティセット【年】
+ </summary>
+	<value></value>
+	<returns>TxtYear</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropTxtMonth">
+	<summary>
+ プロパティセット【月】
+ </summary>
+	<value></value>
+	<returns>ppTxtMonth</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropStrYear">
+	<summary>
+ プロパティセット【検索条件・年】
+ </summary>
+	<value></value>
+	<returns>ppStrYear</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropStrMonth">
+	<summary>
+ プロパティセット【検索条件・月】
+ </summary>
+	<value></value>
+	<returns>ppStrMonth</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropStrYYMMDD">
+	<summary>
+ プロパティセット【検索条件・年月日】
+ </summary>
+	<value></value>
+	<returns>ppStrYYMMDD</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropStrStudioKbn">
+	<summary>
+ プロパティセット【検索条件・スタジオ区分】
+ </summary>
+	<value></value>
+	<returns>ppStrStudioKbn</returns>
+	<remarks><para>作成情報：2015/09/03 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropvwCalandarFirst">
+	<summary>
+ プロパティセット【カレンダー一覧（前半）】
+ </summary>
+	<value></value>
+	<returns>ppvwCalandarFirst</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropvwCalandarSecond">
+	<summary>
+ プロパティセット【カレンダー一覧（後半）】
+ </summary>
+	<value></value>
+	<returns>ppvwCalandarSecond</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropvwCancelWait">
+	<summary>
+ プロパティセット【キャンセル待ち一覧】
+ </summary>
+	<value></value>
+	<returns>ppvwCancelWait</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropvwCancelDone">
+	<summary>
+ プロパティセット【キャンセル済一覧】
+ </summary>
+	<value></value>
+	<returns>ppvwCancelDone</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropDtShukusaijitsu">
+	<summary>
+ プロパティセット【祝祭日データ】
+ </summary>
+	<value></value>
+	<returns>ppDtShukusaijitsu</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropDtYoyakuList">
+	<summary>
+ プロパティセット【予約一覧データ】
+ </summary>
+	<value></value>
+	<returns>ppDtYoyakuList</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropDtMikakuYoyakuList">
+	<summary>
+ プロパティセット【予約未確定一覧データ】
+ </summary>
+	<value></value>
+	<returns>ppDtMikakuYoyakuList</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropDtDateKakuOnlyCancelWaitList">
+	<summary>
+ プロパティセット【キャンセル待ちデータ（日付確定のみ）】
+ </summary>
+	<value></value>
+	<returns>ppDtDateKakuOnlyCancelWaitList</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropDtAllCancelWaitList">
+	<summary>
+ プロパティセット【キャンセル待ちデータ（全て）】
+ </summary>
+	<value></value>
+	<returns>ppDtNoDateCancelWaitList</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropDtMikakuCancelWaitList">
+	<summary>
+ プロパティセット【キャンセル待ち未確定データ】
+ </summary>
+	<value></value>
+	<returns>ppDtMikakuCancelWaitList</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropDtCancelDoneList">
+	<summary>
+ プロパティセット【キャンセル済データ】
+ </summary>
+	<value></value>
+	<returns>ppDtCancelDoneList</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropDtKyuykanMaiteList">
+	<summary>
+ プロパティセット【休館メンテ一覧データ】
+ </summary>
+	<value></value>
+	<returns>ppDtKyuykanMaiteList</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropDicYoyakuInfo">
+	<summary>
+ プロパティセット【予約情報（カレンダーからのクリック対応に基づく紐付け用）】
+ </summary>
+	<value></value>
+	<returns>ppDicYoyakuInfo</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0101.PropDicCancelInfo">
+	<summary>
+ プロパティセット【キャンセル情報（カレンダーからのクリック対応に基づく紐付け用）】
+ </summary>
+	<value></value>
+	<returns>ppDicCancelInfo</returns>
+	<remarks><para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:EXTC.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="P:EXTC.My.Resources.Resources.calendar">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTC.My.Resources.Resources.マスタ検索">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTC.My.Resources.Resources.ロゴ">
+	<summary>
+  (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTC.My.Resources.Resources.ロゴ1">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTC.My.Resources.Resources.背景">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:EXTC.My.Resources.Resources.背景_検証用">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="T:EXTC.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="P:EXTC.DataEXTC0102.PropStrYoyakuNo">
+	<summary>
+ プロパティセット【予約No】
+ </summary>
+	<value></value>
+	<returns>ppStrYoyakuNo</returns>
+	<remarks><para>作成情報：2015/08/10 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropptrStatusNm">
+	<summary>
+ プロパティセット【STATUS_NAME】
+ </summary>
+	<value></value>
+	<returns>ppStrStatusNm</returns>
+	<remarks><para>作成情報：2015/08/12 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrKariukeDt">
+	<summary>
+ プロパティセット【仮予約受付日】
+ </summary>
+	<value></value>
+	<returns>ppStrKariukeDt</returns>
+	<remarks><para>作成情報：2015/08/10 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrUkeDt">
+	<summary>
+ プロパティセット【受付日】
+ </summary>
+	<value></value>
+	<returns>ppStrUkeDt</returns>
+	<remarks><para>作成情報：2015/08/20 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrKariUsercd">
+	<summary>
+ プロパティセット【仮予約受付ﾕｰｻﾞCD】
+ </summary>
+	<value></value>
+	<returns>ppStrKariUsercd</returns>ppStrKariukeDt
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrKakuteiDt">
+	<summary>
+ プロパティセット【予約確定日】
+ </summary>
+	<value></value>
+	<returns>ppStrKakuteiDt</returns>ppStrKariUsercd
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrKakuUsercd">
+	<summary>
+ プロパティセット【予約確定ﾕｰｻﾞCD】
+ </summary>
+	<value></value>
+	<returns>ppStrKakuUsercd</returns>ppStrKakuteiDt
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrYoyakuSts">
+	<summary>
+ プロパティセット【予約ｽﾃｰﾀｽ】
+ </summary>
+	<value></value>
+	<returns>ppStrYoyakuSts</returns>ppStrKakuUsercd
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrShisetuKbn">
+	<summary>
+ プロパティセット【施設区分】
+ </summary>
+	<value></value>
+	<returns>ppStrShisetuKbn</returns>ppStrYoyakuSts
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrStudioKbn">
+	<summary>
+ プロパティセット【スタジオ区分】
+ </summary>
+	<value></value>
+	<returns>ppStrStudioKbn</returns>ppStrShisetuKbn
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrSaijiNm">
+	<summary>
+ プロパティセット【催事名】
+ </summary>
+	<value></value>
+	<returns>ppStrSaijiNm</returns>ppStrStudioKbn
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrShutsuenNm">
+	<summary>
+ プロパティセット【出演者名】
+ </summary>
+	<value></value>
+	<returns>ppStrShutsuenNm</returns>ppStrSaijiNm
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrKashiKind">
+	<summary>
+ プロパティセット【貸出種別】
+ </summary>
+	<value></value>
+	<returns>ppStrKashiKind</returns>ppStrShutsuenNm
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrOnkyoOpe">
+	<summary>
+ プロパティセット【音響オペレーター】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoOpe</returns>ppStrKashiKind
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoshaCd">
+	<summary>
+ プロパティセット【利用者CD】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoshaCd</returns>ppStrTeiin
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoNm">
+	<summary>
+ プロパティセット【利用者名】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoNm</returns>ppStrRiyoshaCd
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoKana">
+	<summary>
+ プロパティセット【利用者名ｶﾅ】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoKana</returns>ppStrRiyoNm
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrSekininBushoNm">
+	<summary>
+ プロパティセット【責任者部署名】
+ </summary>
+	<value></value>
+	<returns>ppStrSekininBusho_nm</returns>ppStrRiyoKana
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrSekininNm">
+	<summary>
+ プロパティセット【責任者名】
+ </summary>
+	<value></value>
+	<returns>ppStrSekininNm</returns>ppStrSekininBusho_nm
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrSekininMail">
+	<summary>
+ プロパティセット【責任者メールアドレス】
+ </summary>
+	<value></value>
+	<returns>ppStrSekininMail</returns>ppStrSekininNm
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrDaihyoNm">
+	<summary>
+ プロパティセット【代表者名】
+ </summary>
+	<value></value>
+	<returns>ppStrDaihyoNm</returns>ppStrSekininMail
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoTel11">
+	<summary>
+ プロパティセット【利用者電話番号1-1】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoTel11</returns>ppStrDaihyoNm
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoTel12">
+	<summary>
+ プロパティセット【利用者電話番号1-2】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoTel12</returns>ppStrRiyoTel11
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoTel13">
+	<summary>
+ プロパティセット【利用者電話番号1-3】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoTel13</returns>ppStrRiyoTel12
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoTel21">
+	<summary>
+ プロパティセット【利用者電話番号2-1】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoTel21</returns>ppStrRiyoTel13
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoTel22">
+	<summary>
+ プロパティセット【利用者電話番号2-2】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoTel22</returns>ppStrRiyoTel21
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoTel23">
+	<summary>
+ プロパティセット【利用者電話番号2-3】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoTel23</returns>ppStrRiyoTel22
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoNaisen">
+	<summary>
+ プロパティセット【利用者内線番号】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoNaisen</returns>ppStrRiyoTel23
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoFax11">
+	<summary>
+ プロパティセット【利用者FAX1-1】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoFax11</returns>ppStrRiyoNaisen
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoFax12">
+	<summary>
+ プロパティセット【利用者FAX1-2】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoFax12</returns>ppStrRiyoFax11
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoFax13">
+	<summary>
+ プロパティセット【利用者FAX1-3】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoFax13</returns>ppStrRiyoFax12
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoYubin1">
+	<summary>
+ プロパティセット【利用者郵便番号1】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoYubin1</returns>ppStrRiyoFax13
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoYubin2">
+	<summary>
+ プロパティセット【利用者郵便番号2】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoYubin2</returns>ppStrRiyoYubin1
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoTodo">
+	<summary>
+ プロパティセット【利用者都道府県】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoTodo</returns>ppStrRiyoYubin2
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoShiku">
+	<summary>
+ プロパティセット【利用者市区町村】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoShiku</returns>ppStrRiyoTodo
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoBan">
+	<summary>
+ プロパティセット【利用者番地】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoBan</returns>ppStrRiyoShiku
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoBuild">
+	<summary>
+ プロパティセット【利用者ビル名】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoBuild</returns>ppStrRiyoBan
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoLvl">
+	<summary>
+ プロパティセット【利用者ﾚﾍﾞﾙ】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoLvl</returns>ppStrRiyoBuild
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrAiteCd">
+	<summary>
+ プロパティセット【相手先コード】
+ </summary>
+	<value></value>
+	<returns>ppStrAiteCd</returns>
+</member><member name="P:EXTC.DataEXTC0102.PropStrAiteNm">
+	<summary>
+ プロパティセット【相手先名称】
+ </summary>
+	<value></value>
+	<returns>ppStrAiteNm</returns>
+</member><member name="P:EXTC.DataEXTC0102.PropStrSendKbn">
+	<summary>
+ プロパティセット【申込書送付区分】
+ </summary>
+	<value></value>
+	<returns>ppStrSendKbn</returns>
+</member><member name="P:EXTC.DataEXTC0102.PropStrSendSts">
+	<summary>
+ プロパティセット【送付ｽﾃｰﾀｽ】
+ </summary>
+	<value></value>
+	<returns>ppStrSendSts</returns>ppStrSendKbn
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrSendDt">
+	<summary>
+ プロパティセット【送付日】
+ </summary>
+	<value></value>
+	<returns>ppStrSendDt</returns>ppStrSendSts
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrHensoDt">
+	<summary>
+ プロパティセット【返送期日】
+ </summary>
+	<value></value>
+	<returns>ppStrHensoDt</returns>ppStrSendDt
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrBiko">
+	<summary>
+ プロパティセット【備考】
+ </summary>
+	<value></value>
+	<returns>PropBiko</returns>ppStrHensoDt
+
+</member><member name="P:EXTC.DataEXTC0102.PropStrOnkyoNm">
+	<summary>
+ プロパティセット【音響会社名】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoNm</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrOnkyoTantoNm">
+	<summary>
+ プロパティセット【音響会社担当者名】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoTantoNm</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrOnkyoTel11">
+	<summary>
+ プロパティセット【音響会社電話番号1-1】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoTel11</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrOnkyoTel12">
+	<summary>
+ プロパティセット【音響会社電話番号1-2】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoTel12</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrOnkyoTel13">
+	<summary>
+ プロパティセット【音響会社電話番号1-3】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoTel13</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrOnkyoNaisen">
+	<summary>
+ プロパティセット【音響会社内線番号】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoNaisen</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrOnkyoFax11">
+	<summary>
+ プロパティセット【音響会社FAX1-1】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoFax11</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrOnkyoFax12">
+	<summary>
+ プロパティセット【音響会社FAX1-2】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoFax12</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrOnkyoFax13">
+	<summary>
+ プロパティセット【音響会社FAX1-3】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoFax13</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrOnkyoMail">
+	<summary>
+ プロパティセット【音響会社メールアドレス】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoMail</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrTotalRiyoKin">
+	<summary>
+ プロパティセット【施設利用合計金額】
+ </summary>
+	<value></value>
+	<returns>ppStrTotalRiyoKin</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrRiyoCom">
+	<summary>
+ プロパティセット【利用ｺﾒﾝﾄ】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoCom</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrTicketEnterKbn">
+	<summary>
+ プロパティセット【チケット入場料】
+ </summary>
+	<value></value>
+	<returns>ppStrTicketEnterKbn</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrTicketDrinkKbn">
+	<summary>
+ プロパティセット【チケットドリンク代】
+ </summary>
+	<value></value>
+	<returns>ppStrTicketDrinkKbn</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrHpKeisai">
+	<summary>
+ プロパティセット【HP掲載】
+ </summary>
+	<value></value>
+	<returns>ppStrHpKeisai</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrJohoKokaiDt">
+	<summary>
+ プロパティセット【情報公開日】
+ </summary>
+	<value></value>
+	<returns>ppStrJohoKokaiDt</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrJohoKokaiTime">
+	<summary>
+ プロパティセット【情報公開時間】
+ </summary>
+	<value></value>
+	<returns>ppStrJohoKokaiTime</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrKokaiDt">
+	<summary>
+ プロパティセット【公開日】
+ </summary>
+	<value></value>
+	<returns>ppStrKokaiDt</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrKokaiTime">
+	<summary>
+ プロパティセット【公開時間】
+ </summary>
+	<value></value>
+	<returns>ppStrKokaiTime</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrFinputSts">
+	<summary>
+ プロパティセット【付属設備入力ｽﾃｰﾀｽ】
+ </summary>
+	<value></value>
+	<returns>ppStrFinputSts</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrAddDt">
+	<summary>
+ プロパティセット【登録日】
+ </summary>
+	<value></value>
+	<returns>ppStrAddDt</returns>
+</member><member name="P:EXTC.DataEXTC0102.PropStrAddUserCd">
+	<summary>
+ プロパティセット【登録USER_CD】
+ </summary>
+	<value></value>
+	<returns>ppStrAddUserCd</returns>
+</member><member name="P:EXTC.DataEXTC0102.PropStrAddUserNm">
+	<summary>
+ プロパティセット【登録USER_NM】
+ </summary>
+	<value></value>
+	<returns>ppStrAddDt</returns>
+</member><member name="P:EXTC.DataEXTC0102.PropStrUpDt">
+	<summary>
+ プロパティセット【更新日】
+ </summary>
+	<value></value>
+	<returns>ppStrUpDt</returns>
+</member><member name="P:EXTC.DataEXTC0102.PropStrUpUserCd">
+	<summary>
+ プロパティセット【更新USER_CD】
+ </summary>
+	<value></value>
+	<returns>ppStrUpUserCd</returns>
+</member><member name="P:EXTC.DataEXTC0102.PropStrUpUserNm">
+	<summary>
+ プロパティセット【更新USER_NM】
+ </summary>
+	<value></value>
+	<returns>ppStrUpDt</returns>
+</member><member name="P:EXTC.DataEXTC0102.PropListRiyobi">
+	<summary>
+ プロパティセット【利用日リスト(DataRiyobi)】
+ </summary>
+	<value></value>
+	<returns>ppListRiyobi</returns>
+	<remarks><para>作成情報：2015/08/10 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropAryStrRiyoDate">
+	<summary>
+ プロパティセット【利用日リスト(ArrayList String)】
+ </summary>
+	<value></value>
+	<returns>ppAryStrRiyoDate</returns>
+	<remarks><para>作成情報：2015/08/10 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropStrCancelNo">
+	<summary>
+ プロパティセット【キャンセル画面から遷移】
+ </summary>
+	<value></value>
+	<returns>ppStrCancelNo</returns>
+	<remarks><para>作成情報：2015/08/10 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropDsBillReq">
+	<summary>
+ プロパティセット【データセット:請求】
+ 格納テーブル名："BILLPAY_TBL"
+ </summary>
+	<value></value>
+	<returns>ppDsBillReq</returns>
+	<remarks><para>作成情報：2015/08/25 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropHtExasPro">
+	<summary>
+ プロパティセット【HashTable:EXASプロジェクト利用料設定】
+ キー情報：請求依頼番号（存在しない場合は行番号）
+ </summary>
+	<value></value>
+	<returns>ppHtExasPro</returns>
+	<remarks><para>作成情報：2015/09/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropHtExasProFutai">
+	<summary>
+ プロパティセット【HashTable:EXASプロジェクト付帯設備設定】
+ キー情報：請求依頼番号（存在しない場合は行番号）
+ </summary>
+	<value></value>
+	<returns>ppHtExasPro</returns>
+	<remarks><para>作成情報：2015/09/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropDtExasNyukin">
+	<summary>
+ プロパティセット【DATATABLE:EXAS入金】
+ </summary>
+	<value></value>
+	<returns>ppDtExasNyukin</returns>
+	<remarks><para>作成情報：2015/09/02 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropDsApproval">
+	<summary>
+ プロパティセット【データセット:承認依頼／記録】
+ 格納テーブル名："IRAI_RIREKI_TBL","CHECK_RIREKI_TBL"
+ </summary>
+	<value></value>
+	<returns>ppDsApproval</returns>
+	<remarks><para>作成情報：2015/08/25 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropDsTimeSch">
+	<summary>
+ プロパティセット【データセット:タイムスケジュール】
+ 格納テーブル名："TIME_SCHEDULE_TBL"
+ </summary>
+	<value></value>
+	<returns>ppDsTimeSch</returns>
+	<remarks><para>作成情報：2015/08/25 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropDsTicket">
+	<summary>
+ プロパティセット【データセット:Ticket】
+ 格納テーブル名："TICKET_TBL"
+ </summary>
+	<value></value>
+	<returns>ppDsTicket </returns>
+	<remarks><para>作成情報：2015/08/25 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropHtFutai">
+	<summary>
+ プロパティセット【Hashtable:付帯】
+ キー情報：スラッシュ込みの日付文字列10桁
+ </summary>
+	<value></value>
+	<returns>ppDsFutai  </returns>
+	<remarks><para>作成情報：2015/08/25 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropHtFutaiDetail">
+	<summary>
+ プロパティセット【Hashtable:付帯】
+ キー情報：スラッシュ込みの日付文字列10桁
+ </summary>
+	<value></value>
+	<returns>ppDsFutai  </returns>
+	<remarks><para>作成情報：2015/08/25 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.PropDsCashElectro">
+	<summary>
+ プロパティセット【データセット:現金／電子】
+ 格納テーブル名："ALSOK_MEISAI","ALSOK_STORE"
+ </summary>
+	<value></value>
+	<returns>ppDsCashElectro</returns>
+	<remarks><para>作成情報：2015/08/25 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.propIntTtl">
+	<summary>
+ プロパティセット【利用合計】
+ </summary>
+	<value></value>
+	<returns>ppIntTtl</returns>
+	<remarks><para>作成情報：2015/08/28 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0102.propDblTax">
+	<summary>
+ プロパティセット【消費税】
+ </summary>
+	<value></value>
+	<returns>ppDblTax</returns>
+	<remarks><para>作成情報：2015/08/28 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="T:EXTC.DataEXTC0102">
+	<summary>
+ DataEXTC0102
+ </summary>
+	<remarks>予約、正式予約（スタジオ）画面データクラス
+ <para>作成情報：2015/09/21 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0101.setSelectShukusaijitsu(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0101)">
+	<summary>
+ 祝祭日取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0101"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>祝祭日を取得するSQLの作成
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0101.setSelectYoyakuList(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0101,System.String)">
+	<summary>
+ 予約一覧取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0101">データクラス</param>
+	<param name="Mode">利用日検索モード</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>予約一覧を取得するSQLの作成
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0101.setSelectMikakuYoyakuList(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0101,System.String)">
+	<summary>
+ 予約未確定一覧取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0101"></param>
+	<param name="Mode">利用日検索モード</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>予約未確定一覧取得を取得するSQLの作成
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0101.setSelectCancelList(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0101,System.String)">
+	<summary>
+ キャンセル一覧取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0101"></param>
+	<param name="Mode"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>キャンセル一覧を取得するSQLの作成
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0101.setSelectMikakuCancelWaitList(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0101,System.String)">
+	<summary>
+ キャンセル待ち未確定一覧取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0101"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>キャンセル待ち未確定一覧取得を取得するSQLの作成
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0101.setSelectKyukanMainteList(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0101,System.String)">
+	<summary>
+ 休館日、メンテ日一覧取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTB0101"></param>
+	<param name="Mode">休館メンテ日検索モード</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>休館日、メンテ日一覧を取得するSQLの作成
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0101.setDeleteKyukanMainte(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0101)">
+	<summary>
+ 休館・メンテ解除
+ </summary>
+	<param name="cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0101">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>休館メンテマスタ削除を行うSQLの作成
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0101.setJudgeHoliday(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0101)">
+	<summary>
+ 祝祭日登録解除判定
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTB0101">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>祝祭日登録解除を判定するSQLの作成
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0101.setInsertHoliday(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0101)">
+	<summary>
+ 祝祭日登録
+ </summary>
+	<param name="cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTB0101">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>祝祭日登録を行うSQLの作成
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0101.setDeleteHoliday(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0101)">
+	<summary>
+ 祝祭日解除
+ </summary>
+	<param name="cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTB0101">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>祝祭日マスタ削除を行うSQLの作成
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0101.insertYoyakuCtl(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.String,EXTC.DataEXTC0101@)">
+	<summary>
+ 予約受付制御テーブルの登録
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataRiyobi"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015.11.19 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0101.insertCancelYoyakuCtl(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.String,EXTC.DataEXTC0101@)">
+	<summary>
+ キャンセル予約受付制御テーブルの登録
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataRiyobi"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015.11.19 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTC.SqlEXTC0101">
+	<summary>
+ 予約カレンダー（スタジオ）で使用する情報取得・更新SQL作成
+ </summary>
+	<remarks>予約カレンダー（スタジオ）で使用する情報取得・更新のSQLを作成する
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropStrReserveNo">
+	<summary>
+ プロパティセット【帳票：承認番号(予約番号)】
+ </summary>
+	<value></value>
+	<returns>ppStrReserveNo</returns>
+	<remarks><para>作成情報：2015/08/10 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropDtReportData">
+	<summary>
+ プロパティセット【ppDtReportData】
+ </summary>
+	<value></value>
+	<returns>ppDtReportData</returns>
+	<remarks><para>作成情報：2015/08/31 yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropDtUseDetails_Output">
+	<summary>
+ プロパティセット【帳票：利用明細データテーブル】
+ </summary>
+	<value></value>
+	<returns>ppDtUseDetails_Output</returns>
+	<remarks><para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropDtUseDetailsNoTax_Output">
+	<summary>
+ プロパティセット【帳票：利用明細（税込分）データテーブル】
+ </summary>
+	<value></value>
+	<returns>ppDtUseDetailsNoTax_Output</returns>
+	<remarks><para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropBlnSumFlg">
+	<summary>
+ プロパティセット【合算フラグ】
+ </summary>
+	<value></value>
+	<returns>ppBlnSumFlg</returns>
+	<remarks><para>作成情報：2015/08/17 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropStrClickedIncident">
+	<summary>
+ プロパティセット【付帯設備スプレッドシートにてボタンがクリックされた行の日付】
+ </summary>
+	<value></value>
+	<returns>ppStrClickedIncident</returns>
+	<remarks><para>作成情報：2015/08/18 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropBlnGeneralFlg">
+	<summary>
+ プロパティセット【社内社外フラグ】
+ </summary>
+	<value></value>
+	<returns>ppBlnGeneralFlg</returns>
+	<remarks><para>作成情報：2015/09/01 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropBlnNoTaxFlg">
+	<summary>
+ プロパティセット【税無フラグ】
+ </summary>
+	<value></value>
+	<returns>ppBlnNoTaxFlg</returns>
+	<remarks><para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropIntTax">
+	<summary>
+ プロパティセット【消費税】
+ </summary>
+	<value></value>
+	<returns>ppIntTax</returns>
+	<remarks><para>作成情報：2015/09/02 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropLblYoyakuNo">
+	<summary>
+ プロパティセット【ppLblYoyakuNo】
+ </summary>
+	<value></value>
+	<returns>ppLblYoyakuNo</returns>
+	<remarks><para>作成情報：2015/09/01 yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropVwStudioSheet">
+	<summary>
+ プロパティセット【ppVwStudioSheet】
+ </summary>
+	<value></value>
+	<returns>ppVwStudioSheet</returns>
+	<remarks><para>作成情報：2015/09/01 yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropLoginUser">
+	<summary>
+ プロパティセット【ppLoginUser】
+ </summary>
+	<value></value>
+	<returns>ppLoginUser</returns>
+	<remarks><para>作成情報：2015/09/03 yu.satoh
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropStrCalculateDay_Output">
+	<summary>
+ プロパティセット【帳票：税率計算日】
+ </summary>
+	<value></value>
+	<returns>ppStrCalculateDay_Output</returns>
+	<remarks><para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropStrGrpKey">
+	<summary>
+ プロパティセット【EXAS請求情報作成時の消費税率判定用集計キー】
+ </summary>
+	<value></value>
+	<returns>ppStrGrpKey</returns>
+	<remarks><para>作成情報：2015/11/11 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropStrNoTaxFlg">
+	<summary>
+ プロパティセット【EXAS請求情報作成時の消費税率判定用税抜フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrNoTaxFlg</returns>
+	<remarks><para>作成情報：2015/11/11 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropStrAitecd">
+	<summary>
+ プロパティセット【EXAS請求情報用：相手先コード】
+ </summary>
+	<value></value>
+	<returns>ppStrAitecd</returns>
+	<remarks><para>作成情報：2015/11/11 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropStrPostno">
+	<summary>
+ プロパティセット【EXAS請求情報用：郵便番号】
+ </summary>
+	<value></value>
+	<returns>ppStrPostno</returns>
+	<remarks><para>作成情報：2015/11/11 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropStrAddr1">
+	<summary>
+ プロパティセット【EXAS請求情報用：住所１】
+ </summary>
+	<value></value>
+	<returns>ppStrAddr1</returns>
+	<remarks><para>作成情報：2015/11/11 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropStrAddr2">
+	<summary>
+ プロパティセット【EXAS請求情報用：住所２】
+ </summary>
+	<value></value>
+	<returns>ppStrAddr2</returns>
+	<remarks><para>作成情報：2015/11/11 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropStrAitenm">
+	<summary>
+ プロパティセット【EXAS請求情報用：相手先名】
+ </summary>
+	<value></value>
+	<returns>ppStrAitenm</returns>
+	<remarks><para>作成情報：2015/11/11 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0103.PropStrClickedRiyobi">
+	<summary>
+ プロパティセット【利用日時でクリックされた行の日付】
+ </summary>
+	<value></value>
+	<returns>ppStrClickedRiyobi</returns>
+	<remarks><para>作成情報：2015.12.16.h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.CommonLogicEXTC.GetYoyakuSts(System.String)">
+	<summary>
+ ステータス名称取得
+ </summary>
+	<param name="strStatus"></param>
+	<returns>ステータス名称</returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.CommonLogicEXTC.GetYoyakuStsColor(System.String)">
+	<summary>
+ ステータスCOLOR取得
+ </summary>
+	<param name="strStatus"></param>
+	<returns>ステータスCOLOR</returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.CommonLogicEXTC.GetCancelSts(System.String)">
+	<summary>
+ ステータス名称取得
+ </summary>
+	<param name="strStatus"></param>
+	<returns>ステータス名称</returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.SqlEXTC0102.setSelectYoyakuData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ 予約情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="YoyakuNo"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0102.setSelectRiyobiData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ 予約日時情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="YoyakuNo"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0102.registerYoyakuInfo(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0102,System.Boolean)">
+	<summary>
+ 予約情報テーブルの登録
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0102"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/05 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0102.deleteYoyakuList(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ 予約日程表テーブルのデータ削除
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/05 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0102.insertYoyakuList(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,CommonEXT.CommonDataRiyobi,System.String)">
+	<summary>
+ 予約日程表テーブルの登録
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataRiyobi"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/05 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0102.deleteYoyaku(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ 予約テーブルのデータ削除
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/17 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0102.setSelectRiyosha(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ 利用者情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="strRiyoshaKana"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0102.setSelectSekininName(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ 責任者情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="strRiyoshaCd"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0102.GetSqlSekininshaMailTelData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0102)">
+	<summary>
+ 責任者メールアドレス・携帯電話番号情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0102"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>責任者名から責任者メールアドレス・携帯電話番号を取得するSQL作成
+ <para>作成情報：2016/08/08 e.watanabe
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrYoyakuNo">
+	<summary>
+ プロパティセット【予約No】
+ </summary>
+	<value></value>
+	<returns>ppStrCancelNo</returns>
+	<remarks><para>作成情報：2015/08/20 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropAryStrCancelDate">
+	<summary>
+ プロパティセット【利用日リスト(ArrayList Array{String,String})】
+ </summary>
+	<value></value>
+	<returns>ppAryStrCancelDate</returns>
+	<remarks><para>作成情報：2015/08/20 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrStatusNm">
+	<summary>
+ プロパティセット【ステータス名】
+ </summary>
+	<value></value>
+	<returns>ppStrStatusNm</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrCanUkeDt">
+	<summary>
+ プロパティセット【受付日】
+ </summary>
+	<value></value>
+	<returns>ppStrCanUkeDt</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrCanUkeUsercd">
+	<summary>
+ プロパティセット【受付ユーザCD】
+ </summary>
+	<value></value>
+	<returns>ppStrCanUkeUsercd</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrYoyakuSts">
+	<summary>
+ プロパティセット【ステータスCD】
+ </summary>
+	<value></value>
+	<returns>ppStrYoyakuSts</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrShisetuKbn">
+	<summary>
+ プロパティセット【施設区分】
+ </summary>
+	<value></value>
+	<returns>ppStrShisetuKbn</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrStudioKbn">
+	<summary>
+ プロパティセット【スタジオ区分】
+ </summary>
+	<value></value>
+	<returns>ppStrStudioKbn</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrShutsuenNm">
+	<summary>
+ プロパティセット【出演名】
+ </summary>
+	<value></value>
+	<returns>ppStrShutsuenNm</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrKashiKind">
+	<summary>
+ プロパティセット【貸出種別】
+ </summary>
+	<value></value>
+	<returns>ppStrKashiKind</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrOnkyoOpe">
+	<summary>
+ プロパティセット【音響オペレーター】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoOpe</returns>ppStrKashiKind
+
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoshaCd">
+	<summary>
+ プロパティセット【利用者CD】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoshaCd</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoNm">
+	<summary>
+ プロパティセット【利用者名】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoNm</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoKana">
+	<summary>
+ プロパティセット【利用者名カナ】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoKana</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrSekininBushoNm">
+	<summary>
+ プロパティセット【責任者部署名】
+ </summary>
+	<value></value>
+	<returns>ppStrSekininBusho_nm</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrSekininNm">
+	<summary>
+ プロパティセット【責任者名】
+ </summary>
+	<value></value>
+	<returns>ppStrSekininNm</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrSekininMail">
+	<summary>
+ プロパティセット【責任者メールアドレス】
+ </summary>
+	<value></value>
+	<returns>ppStrSekininMail</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrDaihyoNm">
+	<summary>
+ プロパティセット【代表者名】
+ </summary>
+	<value></value>
+	<returns>ppStrDaihyoNm</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoTel11">
+	<summary>
+ プロパティセット【利用者TEL】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoTel11</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoTel12">
+	<summary>
+ プロパティセット【利用者TEL】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoTel12</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoTel13">
+	<summary>
+ プロパティセット【利用者TEL】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoTel13</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoTel21">
+	<summary>
+ プロパティセット【利用者携帯】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoTel21</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoTel22">
+	<summary>
+ プロパティセット【利用者携帯】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoTel22</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoTel23">
+	<summary>
+ プロパティセット【利用者携帯】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoTel23</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoNaisen">
+	<summary>
+ プロパティセット【利用者内戦】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoNaisen</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoFax11">
+	<summary>
+ プロパティセット【利用者FAX】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoFax11</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoFax12">
+	<summary>
+ プロパティセット【利用者FAX】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoFax12</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoFax13">
+	<summary>
+ プロパティセット【利用者FAX】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoFax13</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoYubin1">
+	<summary>
+ プロパティセット【郵便番号】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoYubin1</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoYubin2">
+	<summary>
+ プロパティセット【郵便番号】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoYubin2</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoTodo">
+	<summary>
+ プロパティセット【都道府県】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoTodo</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoShiku">
+	<summary>
+ プロパティセット【市区町村名】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoShiku</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoBan">
+	<summary>
+ プロパティセット【番地】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoBan</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoBuild">
+	<summary>
+ プロパティセット【ビル名】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoBuild</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrRiyoLvl">
+	<summary>
+ プロパティセット【利用者LV】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoLvl</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrAiteCd">
+	<summary>
+ プロパティセット【相手先CD】
+ </summary>
+	<value></value>
+	<returns>ppStrAiteCd</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrAiteNm">
+	<summary>
+ プロパティセット【相手先名】
+ </summary>
+	<value></value>
+	<returns>ppStrAiteNm</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrBiko">
+	<summary>
+ プロパティセット【特記事項】
+ </summary>
+	<value></value>
+	<returns>ppStrBiko</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrOnkyoNm">
+	<summary>
+ プロパティセット【音響会社名】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoNm</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrOnkyoTantoNm">
+	<summary>
+ プロパティセット【音響会社担当者名】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoTantoNm</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrOnkyoTel11">
+	<summary>
+ プロパティセット【音響会社電話番号1-1】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoTel11</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrOnkyoTel12">
+	<summary>
+ プロパティセット【音響会社電話番号1-2】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoTel12</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrOnkyoTel13">
+	<summary>
+ プロパティセット【音響会社電話番号1-3】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoTel13</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrOnkyoNaisen">
+	<summary>
+ プロパティセット【音響会社内線番号】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoNaisen</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrOnkyoFax11">
+	<summary>
+ プロパティセット【音響会社FAX1-1】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoFax11</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrOnkyoFax12">
+	<summary>
+ プロパティセット【音響会社FAX1-2】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoFax12</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrOnkyoFax13">
+	<summary>
+ プロパティセット【音響会社FAX1-3】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoFax13</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrOnkyoMail">
+	<summary>
+ プロパティセット【音響会社メールアドレス】
+ </summary>
+	<value></value>
+	<returns>ppStrOnkyoMail</returns>
+	<remarks><para>作成情報：2015/08/26 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrAddDt">
+	<summary>
+ プロパティセット【更新日時】
+ </summary>
+	<value></value>
+	<returns>ppStrAddDt</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrAddUserCd">
+	<summary>
+ プロパティセット【更新者ID】
+ </summary>
+	<value></value>
+	<returns>ppStrAddUserCd</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrAddUserNm">
+	<summary>
+ プロパティセット【更新者名】
+ </summary>
+	<value></value>
+	<returns>ppStrAddUserNm</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrUpDt">
+	<summary>
+ プロパティセット【作成日時】
+ </summary>
+	<value></value>
+	<returns>ppStrUpDt</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrUpUserCd">
+	<summary>
+ プロパティセット【作成者ID】
+ </summary>
+	<value></value>
+	<returns>ppStrUpUserCd</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropStrUpUserNm">
+	<summary>
+ プロパティセット【作成者名】
+ </summary>
+	<value></value>
+	<returns>ppStrUpUserNm</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:EXTC.DataEXTC0104.PropListRiyobi">
+	<summary>
+ プロパティセット【利用日一覧】
+ </summary>
+	<value></value>
+	<returns>ppListRiyobi</returns>
+	<remarks><para>作成情報：2015/09/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0101.MakeSpread(EXTC.DataEXTC0101@)">
+	<summary>
+ スプレッドの作成
+ </summary>
+	<param name="dataEXTC0101">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>スプレッドを作成する。
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0101.NengetuInputCheck(EXTC.DataEXTC0101)">
+	<summary>
+ 指定年月の入力チェック 
+ </summary>
+	<param name="dataEXTB0101">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>指定年月の入力チェックを行う。
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0101.CheckSelectDateKariyoyaku(EXTC.DataEXTC0101@,System.Collections.ArrayList,System.String)">
+	<summary>
+ 選択日のチェック（仮予約登録時）
+ </summary>
+	<param name="dataEXTB0101">データクラス</param>
+	<param name="DateLst">日付リスト</param>
+	<param name="Mode">オペレーションモード</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>スプレッドへのデータを取得する。
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0101.CheckSelectDateKyukanMainteEigyo(EXTC.DataEXTC0101@,System.Collections.ArrayList,System.String,System.String)">
+	<summary>
+ 選択日のチェック（休館・メンテ・営業日切り替え時）
+ </summary>
+	<param name="dataEXTB0101">データクラス</param>
+	<param name="DateLst">日付リスト</param>
+	<param name="SetMode">設定モード</param>
+	<param name="OpeMode">オペレーションモード</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>スプレッドへのデータを取得する。
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0101.CheckHoliday(EXTC.DataEXTC0101@,System.Collections.ArrayList,System.String)">
+	<summary>
+ 祝祭日マスタチェック
+ </summary>
+	<param name="dataEXTB0101">データクラス</param>
+	<param name="DateLst">日付リスト</param>
+	<param name="Mode">祝日設定モード</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>スプレッドへのデータを取得する。
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0101.CheckCancelWait(EXTC.DataEXTC0101@,System.Collections.ArrayList,System.String)">
+	<summary>
+ キャンセル待ちチェック
+ </summary>
+	<param name="dataEXTB0101">データクラス</param>
+	<param name="DateLst">日付リスト</param>
+	<param name="Mode">オペレーションモード</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>キャンセル待ちチェックを行う
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0101.SetEigyo(EXTC.DataEXTC0101@,System.String)">
+	<summary>
+ 営業日の設定
+ </summary>
+	<param name="dataEXTB0101">データクラス</param>
+	<param name="SelectDate">指定日</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>休館日・営業日への直接設定を行う
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0101.SetHolidayWeekday(EXTC.DataEXTC0101@,System.String,System.String)">
+	<summary>
+ 祝日・平日の設定
+ </summary>
+	<param name="dataEXTB0101">データクラス</param>
+	<param name="SelectDate">指定日</param>
+	<param name="Mode">祝日設定モード</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>祝日・平日の設定
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0101.GetSpreadData(EXTC.DataEXTC0101@)">
+	<summary>
+ スプレッドへのデータ取得
+ </summary>
+	<param name="dataEXTC0101">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>スプレッドへのデータを取得する。
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0101.ViewSpreadData(EXTC.DataEXTC0101@)">
+	<summary>
+ スプレッドへの一覧表示 
+ </summary>
+	<param name="dataEXTB0101">データクラス</param>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>スプレッドへの一覧表示 を行う。
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0101.SetInsertUketukeSeigyo(EXTC.DataEXTC0101@,System.Collections.ArrayList)">
+	<summary>
+ 予約受付制御登録
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約制御情報の登録
+ <para>作成情報：2015.11.19 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0101.SetInsertCancelUketukeSeigyo(EXTC.DataEXTC0101@,System.Collections.ArrayList)">
+	<summary>
+ キャンセル予約受付制御登録
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>キャンセル予約制御情報の登録
+ <para>作成情報：2015.11.19 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="T:EXTC.LogicEXTC0101">
+	<summary>
+ LogicEXTC0101
+ </summary>
+	<remarks>予約カレンダー（スタジオ）で発生する取得・更新処理等を行う
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.selectBillReq(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0102@)">
+	<summary>
+ 請求情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0102"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>請求情報を取得するSQLの作成
+ <para>作成情報：2015/08/25 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.selectNyukin(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0102@,System.String,System.String,System.Int32)">
+	<summary>
+ 入金情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0102"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>入金情報を取得するSQLの作成
+ <para>作成情報：2015/09/02 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.selectApprovalReq(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0102@)">
+	<summary>
+ 承認依頼取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0102"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>請求情報を取得するSQLの作成
+ <para>作成情報：2015/08/25 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.selectApprovalRes(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0102@)">
+	<summary>
+ 承認記録取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0102"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>請求情報を取得するSQLの作成
+ <para>作成情報：2015/08/25 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.selectFutaiHeadder(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0102@)">
+	<summary>
+ 付帯情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0102"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>付帯情報取得するSQLの作成
+ <para>作成情報：2015/08/27 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.selectFutaiDetail(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0102@)">
+	<summary>
+ 付帯情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0102"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>付帯情報取得するSQLの作成
+ <para>作成情報：2015/08/27 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.selectFutaiHeadderUp(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0102@)">
+	<summary>
+ 付帯情報取得(再計算)
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0102"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>付帯情報取得するSQLの作成
+ <para>作成情報：2015/08/27 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.selectFutaiDetailUp(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0102@)">
+	<summary>
+ 付帯情報取得(再計算)
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0102"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>付帯情報取得するSQLの作成
+ <para>作成情報：2015/08/27 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.selecMailTo(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,System.Boolean,System.String)">
+	<summary>
+ メールアドレス取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>メールアドレス
+ <para>作成情報：2015/08/27 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.selectTax(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ 消費税取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>システムプロパティ
+ <para>作成情報：2015/08/28 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.selectExasRiyoryo(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0102@)">
+	<summary>
+ EXASプロジェクト利用料情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0102"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>請求情報を取得するSQLの作成
+ <para>作成情報：2015/09/03 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.selectExasRiyoryoUp(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0102@)">
+	<summary>
+ EXASプロジェクト利用料情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0102"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>請求情報を取得するSQLの作成
+ <para>作成情報：2015/09/03 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.selectExasFutai(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0102@)">
+	<summary>
+ EXASプロジェクト付帯情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>請求情報を取得するSQLの作成
+ <para>作成情報：2015/09/03 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.calcExasFutai(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,System.Collections.Hashtable@,System.Data.DataTable@,System.Double,System.Collections.ArrayList,System.Data.DataRow)">
+	<summary>
+ Exasプロジェクト明細(付帯)の設定を行う
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="htFutaiDetail"></param>
+	<param name="exasFutaitable"></param>
+	<param name="dblTax"></param>
+	<param name="lstRiyobi"></param>
+	<param name="billPayRow"></param>
+	<remarks></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.selectExasFutaiUp(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0102@)">
+	<summary>
+ EXASプロジェクト付帯情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>請求情報を取得するSQLの作成
+ <para>作成情報：2015/09/03 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.selecContents(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,System.String,System.Data.DataRow@)">
+	<summary>
+ プロジェクト(コンテンツ)情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>メールアドレス
+ <para>作成情報：2015/08/27 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.deleteFutai(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.String,System.Collections.ArrayList)">
+	<summary>
+ 付帯表削除(予約番号、notin予約日)
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="YoyakuNo"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/09/17 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.registerFutai(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.Data.DataRow@,System.String)">
+	<summary>
+ 付帯テーブルの登録
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="FutaiRow"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/05 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.deleteFutaiDetail(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ 付帯明細表削除(予約番号)
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="YoyakuNo"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/09/17 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.registerFutaiDetail(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.Data.DataRow@,System.String)">
+	<summary>
+ 付帯明細テーブルの登録
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="FutaiDetailRow"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/05 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.nextValSeikyuIraiNo(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@)">
+	<summary>
+ 請求依頼番号の取得
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/09/05 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.deleteBillPay(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ 請求入金表削除
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="YoyakuNo"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/09/17 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.registerBillPay(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.Data.DataRow@,System.String)">
+	<summary>
+ 請求入金表登録
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="BillPayRow"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/09/17 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.deleteExasProject(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.String,System.String,System.Data.DataTable)">
+	<summary>
+ Exasプロジェクト削除(予約番号,notinSEQ)
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="YoyakuNo"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/09/17 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.registerExasProject(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.String,System.Data.DataRow@)">
+	<summary>
+ Exasプロジェクト登録・更新
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="PrjRow"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/09/17 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.registerIraiRireki(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.Data.DataRow@)">
+	<summary>
+ 依頼履歴登録
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="row"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/09/17 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.registerCheckRireki(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.Data.DataRow@)">
+	<summary>
+ チェック履歴登録
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="row"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/09/17 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.registerYoyakuInfo(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0102)">
+	<summary>
+ 予約情報テーブルの登録
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0102"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/05 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.updateCancellSeikyu(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.Data.DataRow@)">
+	<summary>
+ 請求取消
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="row"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/09/17 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.updateCancellNyukin(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.Data.DataRow@)">
+	<summary>
+ 入金取消
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="row"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/09/17 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.SetSelectCertificateSql(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103)">
+	<summary>
+ 付帯設備利用明細（合算）取得処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTC0103">[IN]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付帯設備利用明細（合算）取得用SQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.SetSelectUseDetailsAllSql(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103)">
+	<summary>
+ 付帯設備利用明細（合算）取得処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTC0103">[IN]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付帯設備利用明細（合算）取得用SQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.SetSelectUseDetailsOneDaySql(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103)">
+	<summary>
+ 付帯設備利用明細（日別）取得処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTC0103">[IN]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付帯設備利用明細（日別）取得用SQLを作成し、アダプタにセットする
+ <para>作成情報：2015/08/14 d.sonoda
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.SetSelectStudioData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103)">
+	<summary>
+ スタジオ利用確認書SQL作成
+ <param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+		<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+		<param name="dataHBKA0101">[IN]データクラス</param>
+	</summary>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>各テーブルから、スタジオ利用確認書のデータを取得する。
+ <para>作成情報：2015/08/11 yu.satoh 
+ </para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.GetHolidayMst(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,System.DateTime)">
+	<summary>
+ 祝祭日マスタを取得するSQLの作成・設定処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="CehckDay">[IN]取得対象日付</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>祝祭日マスタ取得用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.10.24 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.GeSqlNotaxflg(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103)">
+	<summary>
+ 税抜フラグ取得処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTC0103">[IN]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付税抜フラグ取得用SQLを作成し、アダプタにセットする
+ <para>作成情報：2015/11/11 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.GeSqlAitesaki(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103)">
+	<summary>
+ 相手先情報取得処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTC0103">[IN]正式予約登録/詳細画面Dataクラス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>付税抜フラグ取得用SQLを作成し、アダプタにセットする
+ <para>作成情報：2015/11/11 h.hagiwara
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.GeSqlRyokinMst(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103)">
+	<summary>
+ 料金マスタを取得するSQLの作成・設定処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTC0103">[IN]取得対象日付</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>料金マスタ取得用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.12.16 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.GeSqlBairituMst(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103)">
+	<summary>
+ 倍率マスタを取得するSQLの作成・設定処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTC0103">[IN]取得対象日付</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>倍率マスタ取得用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.12.16 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.GeSqlFutaiSetubiMst(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection,EXTC.DataEXTC0103)">
+	<summary>
+ 付帯設備マスタを取得するSQLの作成・設定処理
+ </summary>
+	<param name="Adapter">[IN/OUT]NpgSqlDataAdapterクラス</param>
+	<param name="Cn">[IN]NpgSqlConnectionクラス</param>
+	<param name="dataEXTC0103">[IN]取得対象日付</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>付帯設備マスタ取得用のSQLを作成し、アダプタにセットする
+ <para>作成情報：2015.12.16 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0103.GetSqlSekininshaMailTelData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0102)">
+	<summary>
+ 責任者メールアドレス・携帯電話番号情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0102"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>責任者名から責任者メールアドレス・携帯電話番号を取得するSQL作成
+ <para>作成情報：2016/08/08 e.watanabe
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.EXTC0101_Load(System.Object,System.EventArgs)">
+	<summary>
+ 「予約カレンダー（スタジオ）画面」ロード時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「予約カレンダー（スタジオ）画面」ロード時の処理を行う 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.btnSearch_Click(System.Object,System.EventArgs)">
+	<summary>
+ 表示ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>表示ボタン押下時の処理を行う 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.btnSearchPrevMonth_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「前月を表示」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「前月を表示」ボタン押下時の処理を行う 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.btnSearchNextMonth_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「次月を表示」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「次月を表示」ボタン押下時の処理を行う 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.btnUserList_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「利用者要注意一覧を見る」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「利用者一覧画面」に遷移し、レベルが要注意と利用不可の内容を一覧表示する
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.btnToMenu_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「メニューへ」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「メニューへ」ボタン押下時の処理を行う 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.RegistKariYoyaku(System.Object,System.EventArgs)">
+	<summary>
+ 「スタジオ」行上の右クリックメニュー「この日を仮予約登録する」押下時処理（カレンダー上段） 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>右クリックメニュー「この日を仮予約登録する」押下時の処理（カレンダー上段） 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.RegistKariYoyaku2(System.Object,System.EventArgs)">
+	<summary>
+ 「スタジオ」行上の右クリックメニュー「この日を仮予約登録する」押下時処理（カレンダー下段） 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>右クリックメニュー「この日を仮予約登録する」押下時の処理（カレンダー下段）  
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.ChangeKyukan(System.Object,System.EventArgs)">
+	<summary>
+ 「スタジオ」行上の右クリックメニュー「この日を休館日とする」押下時処理（カレンダー上段） 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>右クリックメニュー「この日を休館日とする」押下時の処理（カレンダー上段） 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.ChangeKyukan2(System.Object,System.EventArgs)">
+	<summary>
+ 「スタジオ」行上の右クリックメニュー「この日を休館日とする」押下時処理（カレンダー下段） 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>右クリックメニュー「この日を休館日とする」押下時の処理（カレンダー下段） 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.ChangeMainte(System.Object,System.EventArgs)">
+	<summary>
+ 「スタジオ」行上の右クリックメニュー「この日をメンテ日とする」押下時処理（カレンダー上段） 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>右クリックメニュー「この日をメンテ日とする」押下時の処理（カレンダー上段） 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.ChangeMainte2(System.Object,System.EventArgs)">
+	<summary>
+ 「スタジオ」行上の右クリックメニュー「この日をメンテ日とする」押下時処理（カレンダー下段） 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>右クリックメニュー「この日をメンテ日とする」押下時の処理（カレンダー下段） 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.ChangeEigyo(System.Object,System.EventArgs)">
+	<summary>
+ 「スタジオ」行上の右クリックメニュー「この日を営業日とする」押下時処理（カレンダー上段） 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>右クリックメニュー「この日を営業日とする」押下時の処理（カレンダー上段） 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.ChangeEigyo2(System.Object,System.EventArgs)">
+	<summary>
+ 「スタジオ」行上の右クリックメニュー「この日を営業日とする」押下時処理（カレンダー下段） 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>右クリックメニュー「この日を営業日とする」押下時の処理（カレンダー下段） 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.ChangeHoliday(System.Object,System.EventArgs)">
+	<summary>
+ 「スタジオ」行上の右クリックメニュー「この日を祝日（休日）とする」押下時処理（カレンダー上段） 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>右クリックメニュー「この日を祝日（休日）とする」押下時の処理（カレンダー上段） 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.ChangeHoliday2(System.Object,System.EventArgs)">
+	<summary>
+ 「スタジオ」行上の右クリックメニュー「この日を祝日（休日）とする」押下時処理（カレンダー下段） 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>右クリックメニュー「この日を祝日（休日）とする」押下時の処理（カレンダー下段） 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.Changeweekday(System.Object,System.EventArgs)">
+	<summary>
+ 「スタジオ」行上の右クリックメニュー「この日を平日とする」押下時処理（カレンダー上段） 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>右クリックメニュー「この日を平日とする」押下時の処理（カレンダー上段） 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.Changeweekday2(System.Object,System.EventArgs)">
+	<summary>
+ 「スタジオ」行上の右クリックメニュー「この日を平日とする」押下時処理（カレンダー下段） 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>右クリックメニュー「この日を平日とする」押下時の処理（カレンダー下段） 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.RegistCancelWait(System.Object,System.EventArgs)">
+	<summary>
+ 「キャンセル」行上の右クリックメニュー「この日のキャンセル待ち（事前）を登録する」押下時処理（カレンダー上段） 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>右クリックメニュー「この日のキャンセル待ち（事前）を登録する」押下時の処理（カレンダー上段） 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.RegistCancelWait2(System.Object,System.EventArgs)">
+	<summary>
+ 「キャンセル」行上の右クリックメニュー「この日のキャンセル待ち（事前）を登録する」押下時処理（カレンダー下段） 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>右クリックメニュー「この日のキャンセル待ち（事前）を登録する」押下時の処理（カレンダー下段） 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.vwCalandarFirst_CellClick(System.Object,FarPoint.Win.Spread.CellClickEventArgs)">
+	<summary>
+ カレンダー（上段）のセル上でマウスをクリックした場合
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>右クリックした場合にメニューを表示する 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.vwCalandarSecond_CellClick(System.Object,FarPoint.Win.Spread.CellClickEventArgs)">
+	<summary>
+ カレンダー（下段）のセル上でマウスをクリックした場合
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>右クリックした場合にメニューを表示する 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.vwCancelWait_ButtonClicked(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+	<summary>
+ キャンセル待ち一覧のセル上のボタンをクリックした場合
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>キャンセル待ち一覧のセル上のボタンをクリックした場合の処理を行う
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.vwCancelDone_ButtonClicked(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+	<summary>
+ キャンセル済一覧のセル上のボタンをクリックした場合
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>キャンセル済一覧のセル上のボタンをクリックした場合の処理を行う
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.btnRegistKariYoyaku_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「選択日を仮予約登録」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「選択日を仮予約登録」ボタン押下時の処理 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.btnRegistCancelWait_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「選択日をキャンセル待ち登録」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「選択日をキャンセル待ち登録」ボタン押下時の処理 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.btnChangeHoliday_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「択日を祝日（休日）とする」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「択日を祝日（休日）とする」ボタン押下時の処理 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.btnChangeWeekday_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「選択日を平日とする」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「選択日を平日とする」ボタン押下時の処理 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.btnChangeKyukanbi_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「選択日を休館日とする」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「選択日を休館日とする」ボタン押下時の処理 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.btnChangeMaintebi_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「選択日をメンテ日とする」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「選択日をメンテ日とする」ボタン押下時の処理 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.EXTC0101.btnChangeEigyobi_Click(System.Object,System.EventArgs)">
+	<summary>
+ 「選択日を営業日とする」ボタン押下時処理 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>「選択日を営業日とする」ボタン押下時の処理 
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:EXTC.EXTC0101">
+	<summary>
+ EXTC0101
+ </summary>
+	<remarks>予約カレンダー（スタジオ）画面
+ <para>作成情報：2015/09/01 h.endo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0102.GetYoyakuData(EXTC.DataEXTC0102@)">
+	<summary>
+ 予約情報取得処理(共通にする)
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0102.TransData(EXTC.DataEXTC0102@,System.Data.DataTable)">
+	<summary>
+ DB項目値から画面への変換
+ 
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<param name="Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0102.GetRiyobiData(EXTC.DataEXTC0102@)">
+	<summary>
+ 予約日時情報取得(共通にする)
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0102.TransDataRiyobiList(EXTC.DataEXTC0102@,System.Data.DataTable)">
+	<summary>
+ 予約日時情報をリストにつめる
+ </summary>
+	<param name="dataEXTC0102"></param>
+	<param name="Table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0102.RegYoyakuInfo(EXTC.DataEXTC0102@,System.Boolean)">
+	<summary>
+ 予約情報登録／更新
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約情報登録
+ <para>作成情報：2015/08/12 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0102.DeleteYoyakuList(System.String)">
+	<summary>
+ 予約日程表削除
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約日程データを予約Noですべて削除する
+ <para>作成情報：2015/08/12 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0102.InsertYoyakuList(System.String,System.Collections.ArrayList)">
+	<summary>
+ 予約日程表の登録
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約情報登録
+ <para>作成情報：2015/08/12 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0102.DeleteYoyaku(System.String)">
+	<summary>
+ 予約削除
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>予約データを削除する
+ <para>作成情報：2015/08/17 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.LogicEXTC0102.ChkRiyoshaRegister(System.String)">
+	<summary>
+ 利用者処理チェック
+ </summary>
+	<param name="strRiyoshaKana"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0102.GetSekininshaList(System.String)">
+	<summary>
+ 責任者名取得
+ </summary>
+	<param name="strRiyoshaCd"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EXTC.LogicEXTC0102.GetSekininshaMailTel(EXTC.DataEXTC0102)">
+	<summary>
+ 責任者メールアドレス・携帯電話番号取得
+ </summary>
+	<returns>boolean エラーコード  true 正常終了　false 異常終了</returns>
+	<remarks>責任者名のコンボボックス選択時メールアドレス・携帯電話番号取得
+ <para>作成情報：2016/11/4 m.hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0104.setSelectYoyakuData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ 予約情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="CancelWaitNo"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0104.setSelectRiyobiData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ 予約日時情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="CancelWaitNo"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0104.registerYoyakuInfo(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0104,System.Boolean)">
+	<summary>
+ 予約情報テーブルの登録
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0104"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/05 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0104.deleteYoyakuList(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ 予約日程表テーブルのデータ削除
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/05 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0104.insertYoyakuList(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,CommonEXT.CommonDataCancel,System.String)">
+	<summary>
+ 予約日程表テーブルの登録
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<param name="dataRiyobi"></param>
+	<param name="CancelWaitNo"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/05 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0104.deleteYoyaku(Npgsql.NpgsqlCommand@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ 予約テーブルのデータ削除
+ </summary>
+	<param name="Cmd"></param>
+	<param name="Cn"></param>
+	<returns></returns>
+	<remarks>
+		<para>作成情報：2015/08/17 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0104.selectWakuNo(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,CommonEXT.CommonDataCancel,System.Int32)">
+	<summary>
+ キャンセル待ち日時情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataRiyobi"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0104.setSelectSekininName(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,System.String)">
+	<summary>
+ 責任者情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="strRiyoshaCd"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>ログインデータを取得するSQLの作成
+ <para>作成情報：2015/08/04 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:EXTC.SqlEXTC0104.GetSqlSekininshaMailTelData(Npgsql.NpgsqlDataAdapter@,Npgsql.NpgsqlConnection@,EXTC.DataEXTC0104)">
+	<summary>
+ 責任者メールアドレス・携帯電話番号情報取得
+ </summary>
+	<param name="Adapter"></param>
+	<param name="Cn"></param>
+	<param name="dataEXTC0104"></param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>責任者名から責任者メールアドレス・携帯電話番号を取得するSQL作成
+ <para>作成情報：2016/11/4 m.hayabuchi
+ <p>改訂情報：</p>
+		</para></remarks>
+</member>
+</members>
+</doc>

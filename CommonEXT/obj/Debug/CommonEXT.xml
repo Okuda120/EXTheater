@@ -1,0 +1,894 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CommonEXT
+</name>
+</assembly>
+<members>
+<member name="P:CommonEXT.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:CommonEXT.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:CommonEXT.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="P:CommonEXT.CommonDataCancel.PropIntSeq">
+	<summary>
+ プロパティセット【SEQ】
+ </summary>
+	<value></value>
+	<returns>ppIntSeq</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataCancel.PropStrShisetuKbn">
+	<summary>
+ プロパティセット【施設区分】
+ </summary>
+	<value></value>
+	<returns>ppStrShisetuKbn</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataCancel.PropStrStudioKbn">
+	<summary>
+ プロパティセット【スタジオ区分】
+ </summary>
+	<value></value>
+	<returns>ppStrStudioKbn</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataCancel.PropStrKibobiKbn">
+	<summary>
+ プロパティセット【未定フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrDateUmu</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataCancel.PropStrCancelYm">
+	<summary>
+ プロパティセット【予約日】
+ </summary>
+	<value></value>
+	<returns>ppStrCancelYm</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataCancel.PropStrCancelDt">
+	<summary>
+ プロパティセット【予約日】
+ </summary>
+	<value></value>
+	<returns>ppStrCancelDt</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataCancel.PropStrCancelDtDisp">
+	<summary>
+ プロパティセット【予約日(表示用)】
+ </summary>
+	<value></value>
+	<returns>ppStrCancelDtDisp</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataCancel.PropStrRiyoKeitai">
+	<summary>
+ プロパティセット【利用形態】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoKeitai</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataCancel.PropStrMiteiFlg">
+	<summary>
+ プロパティセット【未定フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrMiteiFlg</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataCancel.PropStrStartTime">
+	<summary>
+ プロパティセット【開始時間】
+ </summary>
+	<value></value>
+	<returns>ppStrStartTime</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataCancel.PropStrEndTime">
+	<summary>
+ プロパティセット【終了時間】
+ </summary>
+	<value></value>
+	<returns>ppStrEndTime</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataCancel.PropStrMemo">
+	<summary>
+ プロパティセット【Memo】
+ </summary>
+	<value></value>
+	<returns>ppStrMemo</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataCancel.PropStrCancelWaitNo">
+	<summary>
+ プロパティセット【予約番号】
+ </summary>
+	<value></value>
+	<returns>ppStrCancelWaitNo</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataCancel.PropIntWakuNo">
+	<summary>
+ プロパティセット【枠番】
+ </summary>
+	<value>DB登録済データか判定する。</value>
+	<returns>ppIntWakuNo</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataCancel.PropStrRegistFlg">
+	<summary>
+ プロパティセット【登録済フラグ】
+ </summary>
+	<value>DB登録済データか判定する。</value>
+	<returns>ppStrRegistFlg</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="T:CommonEXT.CommonDataEXT">
+	<summary>
+ 共通データクラス
+ </summary>
+	<remarks>
+ 共通データクラス
+ <para>作成情報：2015/08/04 k.machida</para>
+		<p>改訂情報:</p>
+	</remarks>
+</member><member name="P:CommonEXT.CommonDataRiyobi.PropIntSeq">
+	<summary>
+ プロパティセット【SEQ】
+ </summary>
+	<value></value>
+	<returns>ppIntSeq</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataRiyobi.PropStrShisetuKbn">
+	<summary>
+ プロパティセット【施設区分】
+ </summary>
+	<value></value>
+	<returns>ppStrShisetuKbn</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataRiyobi.PropStrStudioKbn">
+	<summary>
+ プロパティセット【スタジオ区分】
+ </summary>
+	<value></value>
+	<returns>ppStrStudioKbn</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataRiyobi.PropStrYoyakuDt">
+	<summary>
+ プロパティセット【予約日】
+ </summary>
+	<value></value>
+	<returns>ppStrYoyakuDt</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataRiyobi.PropStrYoyakuDtDisp">
+	<summary>
+ プロパティセット【予約日(表示用)】
+ </summary>
+	<value></value>
+	<returns>ppStrYoyakuDt</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataRiyobi.PropStrStartTime">
+	<summary>
+ プロパティセット【開始時間】
+ </summary>
+	<value></value>
+	<returns>ppStrStartTime</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataRiyobi.PropStrEndTime">
+	<summary>
+ プロパティセット【終了時間】
+ </summary>
+	<value></value>
+	<returns>ppStrEndTime</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataRiyobi.PropStrYoyakuNo">
+	<summary>
+ プロパティセット【予約番号】
+ </summary>
+	<value></value>
+	<returns>ppStrYoyakuNo</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataRiyobi.PropStrRiyoKeitai">
+	<summary>
+ プロパティセット【利用形態】
+ </summary>
+	<value></value>
+	<returns>ppStrRiyoKeitai</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataRiyobi.PropStrMiteiFlg">
+	<summary>
+ プロパティセット【未定フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrMiteiFlg</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataRiyobi.PropIntTanka">
+	<summary>
+ プロパティセット【単価】
+ </summary>
+	<value></value>
+	<returns>ppIntTanka</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataRiyobi.PropDblBairitu">
+	<summary>
+ プロパティセット【倍率】
+ </summary>
+	<value></value>
+	<returns>ppDblBairitu</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataRiyobi.PropIntSu">
+	<summary>
+ プロパティセット【数】
+ </summary>
+	<value></value>
+	<returns>ppIntSu</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataRiyobi.PropIntRiyoKin">
+	<summary>
+ プロパティセット【利用金額】
+ </summary>
+	<value></value>
+	<returns>ppIntRiyoKin</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataRiyobi.PropStrRegistFlg">
+	<summary>
+ プロパティセット【登録済フラグ】
+ </summary>
+	<value>DB登録済データか判定する。</value>
+	<returns>ppStrRegistFlg</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDataRiyobi.PropBlnSelect">
+	<summary>
+ プロパティセット【選択状態】
+ </summary>
+	<value>選択状態、正式予約のみでしようする</value>
+	<returns>ppBlnSelect</returns>
+	<remarks><para>作成情報：2015/08/07 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropComStrUserId">
+	<summary>
+ プロパティセット【ユーザーID】
+ </summary>
+	<value></value>
+	<returns>ppStrComUserId</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropComStrUserName">
+	<summary>
+ プロパティセット【ユーザー名】
+ </summary>
+	<value></value>
+	<returns>ppStrComUserName</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropStrComMailAddr">
+	<summary>
+ プロパティセット【メールアドレス】
+ </summary>
+	<value></value>
+	<returns>ppStrComMailAddr</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropStrComBusho">
+	<summary>
+ プロパティセット【部署コード】
+ </summary>
+	<value></value>
+	<returns>ppStrComBusho</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropStrComFlgShonin">
+	<summary>
+ プロパティセット【承認フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrComFlgShonin</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropStrComFlgMst">
+	<summary>
+ プロパティセット【マスタフラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrComFlgMst</returns>
+	<remarks><para>作成情報：2015/08/04 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropIntTeiinA">
+	<summary>
+ プロパティセット【シアター定員】
+ </summary>
+	<value></value>
+	<returns>ppIntTeiinA</returns>
+	<remarks><para>作成情報：2015/08/12 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropIntTeiinB">
+	<summary>
+ プロパティセット【シアター定員】
+ </summary>
+	<value></value>
+	<returns>ppIntTeiinB</returns>
+	<remarks><para>作成情報：2015/08/12 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropIntKariJizenTuti">
+	<summary>
+ プロパティセット【仮予約事前通知日】
+ </summary>
+	<value></value>
+	<returns>ppIntKariJizenTuti</returns>
+	<remarks><para>作成情報：2015/08/12 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropGSeikyusaki">
+	<summary>
+ プロパティセット【グループ請求】
+ </summary>
+	<value></value>
+	<returns>ppGSeikyusaki</returns>
+	<remarks><para>作成情報：2016.01.15 y.morooka
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropStrDaikoFlg">
+	<summary>
+ プロパティセット【代行フラグ】
+ </summary>
+	<value></value>
+	<returns>ppStrDaikoFlg</returns>
+	<remarks><para>作成情報：2016.08.12 m.hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropStrDaikoTanto">
+	<summary>
+ プロパティセット【代行担当】
+ </summary>
+	<value></value>
+	<returns>ppStrDaikoTanto</returns>
+	<remarks><para>作成情報：2016.09.20 m.hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropStrDaikoBusho">
+	<summary>
+ プロパティセット【代行部署】
+ </summary>
+	<value></value>
+	<returns>ppStrDaikoBusho</returns>
+	<remarks><para>作成情報：2016.09.20 m.hayabuchi
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropBackColorHONBAN">
+	<summary>
+ プロパティセット【フォーム背景色：白】読み取り専用
+ </summary>
+	<value></value>
+	<returns>PropBackColorWhite</returns>
+	<remarks><para>作成情報： 2015.11.18 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropBackColorKENSHOU">
+	<summary>
+ プロパティセット【フォーム背景色：青】読み取り専用
+ </summary>
+	<value></value>
+	<returns>PropBackColorBlue</returns>
+	<remarks><para>作成情報： 2015.11.18 h.hagiwara
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropConfigrationFlg">
+	<summary>
+ プロパティセット【環境設定フラグ】
+ </summary>
+	<value></value>
+	<returns>ppConfigrationFlg</returns>
+	<remarks><para>作成情報：2015/08/12 k.machida
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropMainDB">
+	<summary>
+ プロパティセット【メインＤＢ】
+ </summary>
+	<value>メインＤＢ</value>
+	<returns>ppMainDB</returns>
+	<remarks><para>作成情報：2015/11/18 e.okamura
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropDummyFilePath1">
+	<summary>
+ プロパティセット【メインＤＢダミーファイルパス１】
+ </summary>
+	<value>メインＤＢダミーファイルパス１</value>
+	<returns>ppDummyFilePath1</returns>
+	<remarks><para>作成情報：2015/11/18 e.okamura
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropDummyFilePath2">
+	<summary>
+ プロパティセット【メインＤＢダミーファイルパス２】
+ </summary>
+	<value>メインＤＢダミーファイルパス２</value>
+	<returns>ppDummyFilePath2</returns>
+	<remarks><para>作成情報：2015/11/18 e.okamura
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropDummyFileName">
+	<summary>
+ プロパティセット【メインＤＢダミーファイル名】
+ </summary>
+	<value>メインＤＢダミーファイル名</value>
+	<returns>ppDummyFileName</returns>
+	<remarks><para>作成情報：2015/11/18 e.okamura
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropDBString1">
+	<summary>
+ プロパティセット【ＤＢ接続文字列１】
+ </summary>
+	<value>ＤＢ接続文字列１</value>
+	<returns>ppDBString1</returns>
+	<remarks><para>作成情報：2015/11/18 e.okamura
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropDBString2">
+	<summary>
+ プロパティセット【ＤＢ接続文字列２】
+ </summary>
+	<value>ＤＢ接続文字列２</value>
+	<returns>ppDBString2</returns>
+	<remarks><para>作成情報：2015/11/18 e.okamura
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropNetUseUserID1">
+	<summary>
+ プロパティセット【NetUseユーザーID１】
+ </summary>
+	<value>NetUseユーザーID１</value>
+	<returns>ppNetUseUserID1</returns>
+	<remarks><para>作成情報：2015/11/18 e.okamura
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropNetUsePassword1">
+	<summary>
+ プロパティセット【NetUseパスワード１】
+ </summary>
+	<value>NetUseパスワード１</value>
+	<returns>ppNetUsePassword1</returns>
+	<remarks><para>作成情報：2015/11/18 e.okamura
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropNetUseUserID2">
+	<summary>
+ プロパティセット【NetUseユーザーID２】
+ </summary>
+	<value>NetUseユーザーID２</value>
+	<returns>ppNetUseUserID2</returns>
+	<remarks><para>作成情報：2015/11/18 e.okamura
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropNetUsePassword2">
+	<summary>
+ プロパティセット【NetUseパスワード２】
+ </summary>
+	<value>NetUseパスワード２</value>
+	<returns>ppNetUsePassword2</returns>
+	<remarks><para>作成情報：2015/11/18 e.okamura
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropDBCheck">
+	<summary>
+ プロパティセット【ＤＢチェック有無】
+ </summary>
+	<value>ＤＢチェック有無</value>
+	<returns>ppDBCheck</returns>
+	<remarks><para>作成情報：2015/11/18 e.okamura
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="P:CommonEXT.CommonDeclareEXT.PropDebugDB">
+	<summary>
+ プロパティセット【Debug用マスタＤＢ】
+ </summary>
+	<value>Debug用マスタＤＢ</value>
+	<returns>ppDebugDB</returns>
+	<remarks><para>作成情報：2015/11/18 e.okamura
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="T:CommonEXT.CommonDeclareEXT">
+	<summary>
+ EXTプロジェクトの共通定数
+ </summary>
+	<remarks>
+ EXTプロジェクト内で共通で使用する定数を定義する。
+ <para>作成情報：2015/08/04 k.machida</para>
+		<p>改訂情報:</p>
+	</remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.convInsNumStr(System.String)">
+	<summary>
+ DB登録値変換処理（数値）
+ </summary>
+	<param name="strVal">対象文字列</param>
+	<returns>boolean  true OK false NG </returns>
+	<remarks>Decimal、DBNull.Valueを返却する
+ <para>作成情報：2015/08/12 k.machida
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.convInsNum(System.Int32)">
+	<summary>
+ DB登録値変換処理（数値）
+ </summary>
+	<param name="intVal"></param>
+	<returns>boolean  true OK false NG </returns>
+	<remarks>Decimal、DBNull.Valueを返却する
+ <para>作成情報：2015/08/12 k.machida
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.convInsStr(System.String)">
+	<summary>
+ DB登録値変換処理（文字列）
+ </summary>
+	<param name="strVal">対象文字列</param>
+	<returns>boolean  true OK false NG </returns>
+	<remarks>文字列、DBNull.Valueを返却する
+ <para>作成情報：2015/08/12 k.machida
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.convInteger(System.Object)">
+	<summary>
+ 数値への変換処理
+ </summary>
+	<param name="Val">数値変換対象の文字列</param>
+	<returns>Double 変換後の値 </returns>
+	<remarks>ObjectからDoubleへの返還を行う。Exceptionが発生した場合は0を返却する。
+ <para>作成情報：2015/09/03 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.convDouble(System.String)">
+	<summary>
+ 文字列から数値の変換処理
+ </summary>
+	<param name="Val">数値変換対象の文字列</param>
+	<returns>Double 変換後の値 </returns>
+	<remarks>StringからDoubleへの返還を行う。Exceptionが発生した場合は0を返却する。
+ <para>作成情報：2015/08/12 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.OpenFileDialog(System.String,System.String,System.String,System.Int32,System.String@)">
+	<summary>
+ ファイル選択ダイアログ表示処理
+ </summary>
+	<param name="strInitFile">[IN]初期表示ファイル名</param>
+	<param name="strInitPath">[IN]初期表示ディレクトリ</param>
+	<param name="strFileType">[IN]選択可能なファイル形式</param>
+	<param name="intSelFileType">[IN]選択ファイル形式</param>
+	<param name="txtFilePath">[OUT]選択したファイルパス</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>ファイル選択ダイアログ表示し、ファイルを選択する
+ <para>作成情報：2013/10/18 m.kato
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.IsDate(System.String)">
+	<summary>
+ 日付チェック処理
+ </summary>
+	<param name="strDate">[IN]チェックする日付yyyy/mm/dd形式</param>
+	<returns>Boolean True:正常終了 False:異常終了</returns>
+	<remarks>正しい日付かどうかチェックする
+ <para>作成情報：2013/10/18 m.kato
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.IsMailAddress(System.String)">
+	<summary>
+ メールアドレス書式チェック処理
+ </summary>
+	<param name="strChkValue">[IN]チェック対象文字列</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>メールアドレスとして正しい書式かチェックする
+ <para>作成情報：2012/06/20 fukuo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.SetFocusOnVwRow(FarPoint.Win.Spread.FpSpread@,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ 一覧行フォーカス設定処理
+ </summary>
+	<param name="vwTarget">[IN/OUT]対象スプレッド</param>
+	<param name="intTargetSheet">[IN]対象スプレッドシート番号</param>
+	<param name="intTargetRow">[IN]フォーカス設定開始行番号</param>
+	<param name="intTargetCol">[IN]フォーカス設定開始列番号</param>
+	<param name="intFocusColCnt">[IN]フォーカス設定行数</param>
+	<param name="intFocusRowCnt">[IN]フォーカス設定列数</param>
+	<returns>boolean エラーコード  true 正常終了  false	異常終了 </returns>
+	<remarks>一覧において入力チェックに引っかかった行にフォーカスを設定する
+ <para>作成情報：2012/06/21 t.fukuo
+ <p>改訂情報:</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.IsFullKana(System.String)">
+	<summary>
+ 全角カナチェック
+ </summary>
+	<param name="argTxt">[IN]チェック対象文字列</param>
+	<returns>Boolean  チェック結果    true  ＯＫ  false  ＮＧ</returns>
+	<remarks>対象文字列が全角カナ文字のみかチェックする
+ <para>作成情報：2015/08/17 k.machida
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.ChangeToHankakuStr(System.String)">
+	<summary>
+ 全角英数字を半角へ変換
+ </summary>
+	<param name="strTarget">変換したい文字列</param>
+	<returns>半角変換後の文字列</returns>
+	<remarks>全角英数字を半角英数字へ変換する
+ <para>作成情報：2012/06/06 t.fukuo
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.MyReplacerHankaku(System.Text.RegularExpressions.Match)">
+	<summary>
+ 半角変換実行
+ </summary>
+	<param name="m">変換したい文字列</param>
+	<returns>変換後の文字列</returns>
+	<remarks>対象文字列を半角に変換する
+ <para>作成情報：2012/06/06 t.fukuo
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.ChangeToLowerCase(System.String)">
+	<summary>
+ 大文字を小文字へ変換
+ </summary>
+	<param name="strTarget">変換したい文字列</param>
+	<returns>小文字変換後の文字列</returns>
+	<remarks>大文字を小文字へ変換する
+ <para>作成情報：2012/06/08 t.fukuo
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.MyReplacerLowerCase(System.Text.RegularExpressions.Match)">
+	<summary>
+ 小文字変換実行
+ </summary>
+	<param name="m">変換したい文字列</param>
+	<returns>小文字変換後の文字列</returns>
+	<remarks>対象文字列を特定の文字列に変換する
+ <para>作成情報：2012/06/08 t.fukuo
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.ChangeToKatakana(System.String)">
+	<summary>
+ ひらがなをカナへ変換
+ </summary>
+	<param name="strTarget">変換したい文字列</param>
+	<returns>カナ変換後の文字列</returns>
+	<remarks>ひらがなを全角カナへ変換する
+ <para>作成情報：2012/06/06 t.fukuo
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.ChangeToZenkakuKana(System.String)">
+	<summary>
+ 半角カナを全角カナに変換
+ </summary>
+	<param name="strTarget">変換したい文字列</param>
+	<returns>全角カナ変換後の文字列</returns>
+	<remarks>半角カナを全角カナへ変換する
+ <para>作成情報：2012/06/06 t.fukuo
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.RemoveSpace(System.String)">
+	<summary>
+ 半角全角スペース除去
+ </summary>
+	<param name="strTarget">スペース除去したい文字列</param>
+	<returns>スペース除去後の文字列</returns>
+	<remarks>対象文字列から半角全角のスペースを除去する
+ <para>作成情報：2012/06/08 t.fukuo
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.RemoveVbCr(System.String)">
+	<summary>
+ 改行コード除去
+ </summary>
+	<param name="strTarget">改行コードを除去したい文字列</param>
+	<returns>改行コード除去後の文字列</returns>
+	<remarks>対象文字列から改行コードを除去する
+ <para>作成情報：2012/06/08 t.fukuo
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.ChangeNothingToStr(FarPoint.Win.Spread.Cell,System.String)">
+	<summary>
+ スプレッドセル：NothingもしくはDBNullの文字列変換
+ </summary>
+	<param name="cellTarget">[IN]変換対象したいセル</param>
+	<param name="strChangeVal">[IN]セルがNothingもしくはDBNullだった場合の変換文字列</param>
+	<returns>DBNullだった場合の変換の文字列</returns>
+	<remarks>対象文字列がNothingもしくはDBNullだった場合、指定された文字列に変換して返す
+ <para>作成情報：2012/06/21 t.fukuo
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.TodohukenLst(System.Windows.Forms.ComboBox@)">
+	<summary>
+ 都道府県リストの設定
+ </summary>
+	<param name="cmbBox"></param>
+	<remarks></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.DbNullToNothing(System.Data.DataRow,System.String)">
+	<summary>
+ DBNULLの値をNothingで返す
+ </summary>
+	<param name="row"></param>
+	<param name="colNm"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.DbNothingToNull(System.Object)">
+	<summary>
+ Nothingの値をDBNullで返す
+ </summary>
+	<param name="val"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.convKingaku(System.Object)">
+	<summary>
+ カンマ編集数値への変換処理
+ </summary>
+	<param name="Val">数値変換対象の文字列</param>
+	<returns>Double 変換後の値 </returns>
+	<remarks>ObjectからDoubleへの返還を行う。Exceptionが発生した場合は0を返却する。
+ <para>作成情報：2015/09/03 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.convYmDateStr(System.String)">
+	<summary>
+ 年月への変換処理
+ </summary>
+	<param name="Val">数値変換対象の文字列</param>
+	<returns>Double 変換後の値 </returns>
+	<remarks>ObjectからDoubleへの返還を行う。Exceptionが発生した場合は0を返却する。
+ <para>作成情報：2015/09/03 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.getRiyoshalvlNm(System.String)">
+	<summary>
+ 利用者レベル名(1-一般 2-要注意 3-利用不可)
+ </summary>
+	<param name="val"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.SetFormBackColor(System.String)">
+	<summary>
+ フォーム背景色設定
+ </summary>
+	<param name="strSystemConfFlg"></param>
+	<returns>フォーム背景色
+          ・環境設定フラグが0（本番機）：白
+          ・環境設定フラグが1（検証機）：青
+ </returns>
+	<remarks>引数（環境設定フラグ）に応じたフォーム背景色を返す
+ <para>作成情報： 2015.11.18 h.hagiwara
+ <p>   改定情報：</p>
+		</para>
+	</remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.CheckDBCondition">
+	<summary>
+ DB接続確認処理
+ </summary>
+	<returns>Boolean True:正常終了 False:異常終了(接続不可)</returns>
+	<remarks>DB接続の確認と設定を行う
+ <para>作成情報：2015/11/18 e.okamura
+ <p>改訂情報 : </p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.NetUseConect(System.String,System.String,System.String)">
+	<summary>
+ NetUse接続処理
+ </summary>
+	<param name="strDummyFilePath">[IN]ダミーファイルパス</param>
+	<param name="strUserID">[IN]ユーザID</param>
+	<param name="strPassword">[IN]パスワード</param>
+	<returns>boolean 終了状況    True:正常  False:異常</returns>
+	<remarks>NetUseで接続する文字列を設定し接続を行う
+ <para>作成情報：2015/11/18 e.okamura
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.NetUseConectDel(System.String)">
+	<summary>
+ NetUse接続削除処理
+ </summary>
+	<param name="strDummyFilePath">[IN]ダミーファイルパス</param>
+	<returns>boolean 終了状況    True:正常  False:異常</returns>
+	<remarks>NetUseで接続した論理ドライブを削除する
+ <para>作成情報：2015/11/18 e.okamura
+ <p>改定情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.convYmDateStr2(System.String)">
+	<summary>
+ 年月への変換処理
+ </summary>
+	<param name="Val">数値変換対象の文字列</param>
+	<returns>Double 変換後の値 </returns>
+	<remarks>ObjectからDoubleへの返還を行う。Exceptionが発生した場合は0を返却する。
+ <para>作成情報：2015/09/03 k.machida
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="M:CommonEXT.CommonLogicEXT.convLong(System.Object)">
+	<summary>
+ 数値への変換処理
+ </summary>
+	<param name="Val">数値変換対象の文字列</param>
+	<returns>Long 変換後の値 </returns>
+	<remarks>ObjectからLongへの返還を行う。Exceptionが発生した場合は0を返却する。
+ <para>作成情報：2015.12.21 h.hagiwara
+ <p>改訂情報：</p>
+		</para></remarks>
+</member><member name="T:CommonEXT.CommonLogicEXT">
+	<summary>
+ CommonLogicEXT
+ </summary>
+	<remarks>EXT内の共通プロシージャ、ファンクションを定義したクラス
+ <para>作成情報：
+ <p>改定情報：</p>
+		</para></remarks>
+</member>
+</members>
+</doc>

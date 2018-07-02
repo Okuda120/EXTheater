@@ -1,0 +1,201 @@
+2016/08/03 11:20:20  TRACE> LogicEXTA0101.GetConfigrationFlg() START
+2016/08/03 11:20:20  TRACE> LogicEXTA0101.GetConfigrationFlg() END
+2016/08/03 11:20:20  TRACE> CommonLogicEXT.SetFormBackColor() START
+2016/08/03 11:20:20  TRACE> CommonLogicEXT.SetFormBackColor() END
+2016/08/03 11:20:28  TRACE> CommonLogicEXT.CheckDBCondition() START
+2016/08/03 11:20:28  TRACE> CommonLogicEXT.NetUseConect() START
+2016/08/03 11:20:29  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/08/03 11:20:29  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/08/03 11:20:29  TRACE> CommonLogicEXT.CheckDBCondition() END
+2016/08/03 11:20:29  TRACE> LogicEXTA0101.LoginInputCheck() START
+2016/08/03 11:20:29  TRACE> LogicEXTA0101.LoginInputCheck() END
+2016/08/03 11:20:29  TRACE> LogicEXTA0101.GetLoginData() START
+2016/08/03 11:20:29  TRACE> SqlEXTA0101.setSelectLoginData() START
+2016/08/03 11:20:29  TRACE> SqlEXTA0101.setSelectLoginData() END
+2016/08/03 11:20:29  DEBUG> LogicEXTA0101.GetLoginData() ログイン情報取得
+■SQL Data :
+   Sql Command > select 
+USER_NM, 
+MAIL, 
+BUSHO_CD, 
+SHONIN_FLG, 
+MST_FLG 
+FROM 
+USER_MST 
+WHERE
+USER_CD = :UserId 
+and PW = :Password 
+and STS = '0' 
+   Parameters Data > 
+      [:UserId] USN001
+      [:Password] password
+2016/08/03 11:20:29  TRACE> LogicEXTA0101.GetLoginData() END
+2016/08/03 11:20:29  TRACE> LogicEXTA0101.DelYoyakuCtlData() START
+2016/08/03 11:20:29  DEBUG> LogicEXTA0101.DelYoyakuCtlData() Login Proc1
+■SQL Data :
+   Sql Command > DELETE 
+FROM 
+YCTL_TBL 
+WHERE
+USER_CD = :UserId 
+   Parameters Data > 
+      [:UserId] USN001
+2016/08/03 11:20:29  DEBUG> LogicEXTA0101.DelYoyakuCtlData() Login Proc2
+■SQL Data :
+   Sql Command > DELETE 
+FROM 
+CCTL_TBL 
+WHERE
+USER_CD = :UserId 
+   Parameters Data > 
+      [:UserId] USN001
+2016/08/03 11:20:29  TRACE> LogicEXTA0101.DelYoyakuCtlData() END
+2016/08/03 11:20:29  TRACE> LogicEXTA0101.SetSystemProperties() START
+2016/08/03 11:20:29  TRACE> SqlEXTA0101.setSelectSystemProperty() START
+2016/08/03 11:20:29  TRACE> SqlEXTA0101.setSelectSystemProperty() END
+2016/08/03 11:20:29  DEBUG> LogicEXTA0101.SetSystemProperties() システムプロパティ取得
+■SQL Data :
+   Sql Command > select 
+TEIIN_A, 
+TEIIN_B, 
+KARI_JIZEN_TUTI, 
+GROUP_SEIKYU 
+FROM 
+SYSTEM_MST 
+   Parameters Data > 
+2016/08/03 11:20:29  TRACE> LogicEXTA0101.SetSystemProperties() END
+2016/08/03 11:20:29  TRACE> EXTA0101.btnLogin_Click() LOGIN:USN001
+2016/08/03 11:20:29  TRACE> CommonLogicEXT.SetFormBackColor() START
+2016/08/03 11:20:29  TRACE> CommonLogicEXT.SetFormBackColor() END
+2016/08/03 11:20:31  TRACE> CommonLogicEXT.CheckDBCondition() START
+2016/08/03 11:20:31  TRACE> CommonLogicEXT.NetUseConect() START
+2016/08/03 11:20:31  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/08/03 11:20:31  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/08/03 11:20:31  TRACE> CommonLogicEXT.CheckDBCondition() END
+2016/08/03 11:20:33  TRACE> CommonLogicEXT.SetFormBackColor() START
+2016/08/03 11:20:33  TRACE> CommonLogicEXT.SetFormBackColor() END
+2016/08/03 11:20:35  TRACE> CommonLogicEXT.CheckDBCondition() START
+2016/08/03 11:20:35  TRACE> CommonLogicEXT.NetUseConect() START
+2016/08/03 11:20:35  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/08/03 11:20:35  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/08/03 11:20:35  TRACE> CommonLogicEXT.CheckDBCondition() END
+2016/08/03 11:20:35  TRACE> LogicEXTZ0208.GetEXASNyukin() START
+2016/08/03 11:20:35  TRACE> SqlEXTZ0208.searchEXASNyukin() START
+2016/08/03 11:20:35  DEBUG> SqlEXTZ0208.searchEXASNyukin() END
+■SQL Data :
+   Sql Command > SELECT 
+    t1.aite_cd, 
+    t2.yoyaku_start_dt, 
+    t2.yoyaku_end_dt, 
+    t1.aite_nm, 
+    t1.yoyaku_no, 
+    CASE t3.shisetu_kbn 
+        WHEN '1' THEN t3.saiji_nm 
+        WHEN '2' THEN t3.shutsuen_nm 
+    End as saiji_nm, 
+    t3.shisetu_kbn, 
+    to_char(to_date(t1.nyukin_yotei_dt, 'yyyyMMdd'),'yyyy/MM/dd') as nyukin_yotei_dt, 
+    to_char(to_date(t1.nyukin_dt, 'yyyyMMdd'),'yyyy/MM/dd') as nyukin_dt, 
+    t1.seikyu_kin, 
+    CASE WHEN TRIM(t1.seikyu_irai_no) = '' 
+           THEN  CASE t5.nyukin_input_flg 
+                    WHEN '0' THEN '' 
+                    WHEN '1' THEN '○' 
+                 END
+           ELSE 
+                 CASE t4.nyukin_input_flg 
+                     WHEN '0' THEN '' 
+                     WHEN '1' THEN '○' 
+                 END
+    END as nyukin_input_flg, 
+    to_char(to_date(t1.seikyu_dt, 'yyyyMMdd'),'yyyy/MM/dd') as seikyu_dt, 
+    to_char(to_date(t1.input_dt, 'yyyyMMdd'),'yyyy/MM/dd') as input_dt, 
+    t1.sekikyu_no, 
+    t1.seikyu_irai_no, 
+    t1.monitor_no, 
+    t1.nyukin_link_no 
+FROM 
+    exas_nyukin_tbl t1 
+    LEFT JOIN 
+        ( 
+            SELECT 
+                MIN(yoyaku_dt) as yoyaku_start_dt, 
+                MAX(yoyaku_dt) as yoyaku_end_dt, 
+                yoyaku_no 
+            FROM 
+                ydt_tbl 
+            GROUP BY yoyaku_no 
+        ) t2 
+    ON  t1.yoyaku_no = t2.yoyaku_no 
+    LEFT JOIN 
+        yoyaku_tbl t3 
+    ON  t1.yoyaku_no = t3.yoyaku_no 
+    LEFT JOIN 
+        billpay_tbl t4 
+    ON  t1.seikyu_irai_no = t4.seikyu_irai_no 
+    LEFT JOIN 
+        billpay_tbl t5 
+    ON  t1.NYUKIN_LINK_NO = t5.NYUKIN_LINK_NO 
+WHERE 1 = 1  ORDER BY nyukin_yotei_dt DESC ,  YOYAKU_NO 
+
+   Parameters Data > 
+2016/08/03 11:20:35  TRACE> SqlEXTZ0208.searchEXASNyukin() END
+2016/08/03 11:20:35  DEBUG> LogicEXTZ0208.GetEXASNyukin() EXAS入金検索
+■SQL Data :
+   Sql Command > SELECT 
+    t1.aite_cd, 
+    t2.yoyaku_start_dt, 
+    t2.yoyaku_end_dt, 
+    t1.aite_nm, 
+    t1.yoyaku_no, 
+    CASE t3.shisetu_kbn 
+        WHEN '1' THEN t3.saiji_nm 
+        WHEN '2' THEN t3.shutsuen_nm 
+    End as saiji_nm, 
+    t3.shisetu_kbn, 
+    to_char(to_date(t1.nyukin_yotei_dt, 'yyyyMMdd'),'yyyy/MM/dd') as nyukin_yotei_dt, 
+    to_char(to_date(t1.nyukin_dt, 'yyyyMMdd'),'yyyy/MM/dd') as nyukin_dt, 
+    t1.seikyu_kin, 
+    CASE WHEN TRIM(t1.seikyu_irai_no) = '' 
+           THEN  CASE t5.nyukin_input_flg 
+                    WHEN '0' THEN '' 
+                    WHEN '1' THEN '○' 
+                 END
+           ELSE 
+                 CASE t4.nyukin_input_flg 
+                     WHEN '0' THEN '' 
+                     WHEN '1' THEN '○' 
+                 END
+    END as nyukin_input_flg, 
+    to_char(to_date(t1.seikyu_dt, 'yyyyMMdd'),'yyyy/MM/dd') as seikyu_dt, 
+    to_char(to_date(t1.input_dt, 'yyyyMMdd'),'yyyy/MM/dd') as input_dt, 
+    t1.sekikyu_no, 
+    t1.seikyu_irai_no, 
+    t1.monitor_no, 
+    t1.nyukin_link_no 
+FROM 
+    exas_nyukin_tbl t1 
+    LEFT JOIN 
+        ( 
+            SELECT 
+                MIN(yoyaku_dt) as yoyaku_start_dt, 
+                MAX(yoyaku_dt) as yoyaku_end_dt, 
+                yoyaku_no 
+            FROM 
+                ydt_tbl 
+            GROUP BY yoyaku_no 
+        ) t2 
+    ON  t1.yoyaku_no = t2.yoyaku_no 
+    LEFT JOIN 
+        yoyaku_tbl t3 
+    ON  t1.yoyaku_no = t3.yoyaku_no 
+    LEFT JOIN 
+        billpay_tbl t4 
+    ON  t1.seikyu_irai_no = t4.seikyu_irai_no 
+    LEFT JOIN 
+        billpay_tbl t5 
+    ON  t1.NYUKIN_LINK_NO = t5.NYUKIN_LINK_NO 
+WHERE 1 = 1  ORDER BY nyukin_yotei_dt DESC ,  YOYAKU_NO 
+
+   Parameters Data > 
+2016/08/03 11:20:35  TRACE> LogicEXTZ0208.GetEXASNyukin() END

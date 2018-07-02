@@ -1,0 +1,31 @@
+2017/01/05 16:28:50  TRACE> LogicEXTA0101.GetConfigrationFlg() START
+2017/01/05 16:28:50  TRACE> LogicEXTA0101.GetConfigrationFlg() END
+2017/01/05 16:28:50  TRACE> CommonLogicEXT.SetFormBackColor() START
+2017/01/05 16:28:50  TRACE> CommonLogicEXT.SetFormBackColor() END
+2017/01/05 16:28:58  TRACE> CommonLogicEXT.CheckDBCondition() START
+2017/01/05 16:28:58  TRACE> CommonLogicEXT.NetUseConect() START
+2017/01/05 16:29:01  TRACE> CommonLogicEXT.NetUseConectDel() START
+2017/01/05 16:29:02  TRACE> CommonLogicEXT.NetUseConectDel() START
+2017/01/05 16:29:02  TRACE> CommonLogicEXT.CheckDBCondition() END
+2017/01/05 16:29:02  TRACE> LogicEXTA0101.LoginInputCheck() START
+2017/01/05 16:29:02  TRACE> LogicEXTA0101.LoginInputCheck() END
+2017/01/05 16:29:02  TRACE> LogicEXTA0101.GetLoginData() START
+2017/01/05 16:29:02  TRACE> SqlEXTA0101.setSelectLoginData() START
+2017/01/05 16:29:02  TRACE> SqlEXTA0101.setSelectLoginData() END
+2017/01/05 16:29:02  DEBUG> LogicEXTA0101.GetLoginData() ƒƒOƒCƒ“î•ñŽæ“¾
+¡SQL Data :
+   Sql Command > select 
+USER_NM, 
+MAIL, 
+BUSHO_CD, 
+SHONIN_FLG, 
+MST_FLG 
+FROM 
+USER_MST 
+WHERE
+USER_CD = :UserId 
+and PW = :Password 
+and STS = '0' 
+   Parameters Data > 
+      [:UserId] admin
+      [:Password] admin

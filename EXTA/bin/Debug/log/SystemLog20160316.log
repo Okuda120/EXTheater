@@ -1,0 +1,76 @@
+2016/03/16 17:04:19  TRACE> LogicEXTA0101.GetConfigrationFlg() START
+2016/03/16 17:04:19  TRACE> LogicEXTA0101.GetConfigrationFlg() END
+2016/03/16 17:04:19  TRACE> CommonLogicEXT.SetFormBackColor() START
+2016/03/16 17:04:19  TRACE> CommonLogicEXT.SetFormBackColor() END
+2016/03/16 17:04:27  TRACE> CommonLogicEXT.CheckDBCondition() START
+2016/03/16 17:04:27  TRACE> CommonLogicEXT.NetUseConect() START
+2016/03/16 17:04:27  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/03/16 17:04:27  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/03/16 17:04:27  TRACE> CommonLogicEXT.CheckDBCondition() END
+2016/03/16 17:04:27  TRACE> LogicEXTA0101.LoginInputCheck() START
+2016/03/16 17:04:27  TRACE> LogicEXTA0101.LoginInputCheck() END
+2016/03/16 17:04:27  TRACE> LogicEXTA0101.GetLoginData() START
+2016/03/16 17:04:27  TRACE> SqlEXTA0101.setSelectLoginData() START
+2016/03/16 17:04:27  TRACE> SqlEXTA0101.setSelectLoginData() END
+2016/03/16 17:04:27  DEBUG> LogicEXTA0101.GetLoginData() ログイン情報取得
+■SQL Data :
+   Sql Command > select 
+USER_NM, 
+MAIL, 
+BUSHO_CD, 
+SHONIN_FLG, 
+MST_FLG 
+FROM 
+USER_MST 
+WHERE
+USER_CD = :UserId 
+and PW = :Password 
+and STS = '0' 
+   Parameters Data > 
+      [:UserId] USN001
+      [:Password] password
+2016/03/16 17:04:27  TRACE> LogicEXTA0101.GetLoginData() END
+2016/03/16 17:04:27  TRACE> LogicEXTA0101.DelYoyakuCtlData() START
+2016/03/16 17:04:27  DEBUG> LogicEXTA0101.DelYoyakuCtlData() Login Proc1
+■SQL Data :
+   Sql Command > DELETE 
+FROM 
+YCTL_TBL 
+WHERE
+USER_CD = :UserId 
+   Parameters Data > 
+      [:UserId] USN001
+2016/03/16 17:04:27  DEBUG> LogicEXTA0101.DelYoyakuCtlData() Login Proc2
+■SQL Data :
+   Sql Command > DELETE 
+FROM 
+CCTL_TBL 
+WHERE
+USER_CD = :UserId 
+   Parameters Data > 
+      [:UserId] USN001
+2016/03/16 17:04:27  TRACE> LogicEXTA0101.DelYoyakuCtlData() END
+2016/03/16 17:04:27  TRACE> LogicEXTA0101.SetSystemProperties() START
+2016/03/16 17:04:27  TRACE> SqlEXTA0101.setSelectSystemProperty() START
+2016/03/16 17:04:27  TRACE> SqlEXTA0101.setSelectSystemProperty() END
+2016/03/16 17:04:27  DEBUG> LogicEXTA0101.SetSystemProperties() システムプロパティ取得
+■SQL Data :
+   Sql Command > select 
+TEIIN_A, 
+TEIIN_B, 
+KARI_JIZEN_TUTI, 
+GROUP_SEIKYU 
+FROM 
+SYSTEM_MST 
+   Parameters Data > 
+2016/03/16 17:04:27  TRACE> LogicEXTA0101.SetSystemProperties() END
+2016/03/16 17:04:27  TRACE> EXTA0101.btnLogin_Click() LOGIN:USN001
+2016/03/16 17:04:27  TRACE> CommonLogicEXT.SetFormBackColor() START
+2016/03/16 17:04:27  TRACE> CommonLogicEXT.SetFormBackColor() END
+2016/03/16 17:04:30  TRACE> CommonLogicEXT.CheckDBCondition() START
+2016/03/16 17:04:30  TRACE> CommonLogicEXT.NetUseConect() START
+2016/03/16 17:04:30  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/03/16 17:04:30  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/03/16 17:04:30  TRACE> CommonLogicEXT.CheckDBCondition() END
+2016/03/16 17:04:31  TRACE> CommonLogicEXT.SetFormBackColor() START
+2016/03/16 17:04:31  TRACE> CommonLogicEXT.SetFormBackColor() END

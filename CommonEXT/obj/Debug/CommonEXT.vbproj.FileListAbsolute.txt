@@ -1,0 +1,89 @@
+C:\dev\VB_Source\CommonEXT\bin\Debug\CommonEXT.dll
+C:\dev\VB_Source\CommonEXT\bin\Debug\CommonEXT.pdb
+C:\dev\VB_Source\CommonEXT\bin\Debug\CommonEXT.xml
+C:\dev\VB_Source\CommonEXT\bin\Debug\Common.dll
+C:\dev\VB_Source\CommonEXT\bin\Debug\Npgsql.dll
+C:\dev\VB_Source\CommonEXT\bin\Debug\Mono.Security.dll
+C:\dev\VB_Source\CommonEXT\obj\Debug\CommonEXT.Resources.resources
+C:\dev\VB_Source\CommonEXT\obj\Debug\CommonEXT.vbproj.GenerateResource.Cache
+C:\dev\VB_Source\CommonEXT\obj\Debug\CommonEXT.dll
+C:\dev\VB_Source\CommonEXT\obj\Debug\CommonEXT.xml
+C:\dev\VB_Source\CommonEXT\obj\Debug\CommonEXT.pdb
+C:\dev\VB_Source\CommonEXT\obj\Debug\CommonEXT.vbprojResolveAssemblyReference.cache
+C:\dev\VB_Source\EXT\CommonEXT\bin\Debug\CommonEXT.dll
+C:\dev\VB_Source\EXT\CommonEXT\bin\Debug\CommonEXT.pdb
+C:\dev\VB_Source\EXT\CommonEXT\bin\Debug\CommonEXT.xml
+C:\dev\VB_Source\EXT\CommonEXT\bin\Debug\Common.dll
+C:\dev\VB_Source\EXT\CommonEXT\bin\Debug\Npgsql.dll
+C:\dev\VB_Source\EXT\CommonEXT\bin\Debug\Mono.Security.dll
+C:\dev\VB_Source\EXT\CommonEXT\obj\Debug\CommonEXT.Resources.resources
+C:\dev\VB_Source\EXT\CommonEXT\obj\Debug\CommonEXT.vbproj.GenerateResource.Cache
+C:\dev\VB_Source\EXT\CommonEXT\obj\Debug\CommonEXT.dll
+C:\dev\VB_Source\EXT\CommonEXT\obj\Debug\CommonEXT.xml
+C:\dev\VB_Source\EXT\CommonEXT\obj\Debug\CommonEXT.pdb
+C:\Dev2\EXT\CommonEXT\bin\Debug\CommonEXT.dll
+C:\Dev2\EXT\CommonEXT\bin\Debug\CommonEXT.pdb
+C:\Dev2\EXT\CommonEXT\bin\Debug\CommonEXT.xml
+C:\Dev2\EXT\CommonEXT\bin\Debug\Common.dll
+C:\Dev2\EXT\CommonEXT\bin\Debug\Npgsql.dll
+C:\Dev2\EXT\CommonEXT\bin\Debug\Mono.Security.dll
+C:\Dev2\EXT\CommonEXT\obj\Debug\CommonEXT.Resources.resources
+C:\Dev2\EXT\CommonEXT\obj\Debug\CommonEXT.vbproj.GenerateResource.Cache
+C:\Dev2\EXT\CommonEXT\obj\Debug\CommonEXT.dll
+C:\Dev2\EXT\CommonEXT\obj\Debug\CommonEXT.xml
+C:\Dev2\EXT\CommonEXT\obj\Debug\CommonEXT.pdb
+C:\Dev2\EXT\CommonEXT\obj\Debug\CommonEXT.vbprojResolveAssemblyReference.cache
+C:\dev\EXT\CommonEXT\bin\Debug\CommonEXT.dll
+C:\dev\EXT\CommonEXT\bin\Debug\CommonEXT.pdb
+C:\dev\EXT\CommonEXT\bin\Debug\CommonEXT.xml
+C:\dev\EXT\CommonEXT\bin\Debug\Common.dll
+C:\dev\EXT\CommonEXT\bin\Debug\FarPoint.CalcEngine.dll
+C:\dev\EXT\CommonEXT\bin\Debug\FarPoint.Excel.dll
+C:\dev\EXT\CommonEXT\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+C:\dev\EXT\CommonEXT\bin\Debug\FarPoint.Win.SpreadJ.dll
+C:\dev\EXT\CommonEXT\bin\Debug\Npgsql.dll
+C:\dev\EXT\CommonEXT\bin\Debug\Mono.Security.dll
+C:\dev\EXT\CommonEXT\bin\Debug\FarPoint.CalcEngine.xml
+C:\dev\EXT\CommonEXT\bin\Debug\FarPoint.Excel.xml
+C:\dev\EXT\CommonEXT\bin\Debug\FarPoint.Win.SpreadJ.xml
+C:\dev\EXT\CommonEXT\obj\Debug\CommonEXT.Resources.resources
+C:\dev\EXT\CommonEXT\obj\Debug\CommonEXT.vbproj.GenerateResource.Cache
+C:\dev\EXT\CommonEXT\obj\Debug\CommonEXT.dll
+C:\dev\EXT\CommonEXT\obj\Debug\CommonEXT.xml
+C:\dev\EXT\CommonEXT\obj\Debug\CommonEXT.pdb
+C:\dev\VB Source\EXT\CommonEXT\bin\Debug\CommonEXT.dll
+C:\dev\VB Source\EXT\CommonEXT\bin\Debug\CommonEXT.pdb
+C:\dev\VB Source\EXT\CommonEXT\bin\Debug\CommonEXT.xml
+C:\dev\VB Source\EXT\CommonEXT\bin\Debug\Common.dll
+C:\dev\VB Source\EXT\CommonEXT\bin\Debug\FarPoint.CalcEngine.dll
+C:\dev\VB Source\EXT\CommonEXT\bin\Debug\FarPoint.Excel.dll
+C:\dev\VB Source\EXT\CommonEXT\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+C:\dev\VB Source\EXT\CommonEXT\bin\Debug\FarPoint.Win.SpreadJ.dll
+C:\dev\VB Source\EXT\CommonEXT\bin\Debug\Npgsql.dll
+C:\dev\VB Source\EXT\CommonEXT\bin\Debug\Mono.Security.dll
+C:\dev\VB Source\EXT\CommonEXT\bin\Debug\FarPoint.CalcEngine.xml
+C:\dev\VB Source\EXT\CommonEXT\bin\Debug\FarPoint.Excel.xml
+C:\dev\VB Source\EXT\CommonEXT\bin\Debug\FarPoint.Win.SpreadJ.xml
+C:\dev\VB Source\EXT\CommonEXT\obj\Debug\CommonEXT.Resources.resources
+C:\dev\VB Source\EXT\CommonEXT\obj\Debug\CommonEXT.vbproj.GenerateResource.Cache
+C:\dev\VB Source\EXT\CommonEXT\obj\Debug\CommonEXT.dll
+C:\dev\VB Source\EXT\CommonEXT\obj\Debug\CommonEXT.xml
+C:\dev\VB Source\EXT\CommonEXT\obj\Debug\CommonEXT.pdb
+C:\dev\VB Source\EX\EXT\CommonEXT\bin\Debug\CommonEXT.dll
+C:\dev\VB Source\EX\EXT\CommonEXT\bin\Debug\CommonEXT.pdb
+C:\dev\VB Source\EX\EXT\CommonEXT\bin\Debug\CommonEXT.xml
+C:\dev\VB Source\EX\EXT\CommonEXT\bin\Debug\Common.dll
+C:\dev\VB Source\EX\EXT\CommonEXT\bin\Debug\FarPoint.CalcEngine.dll
+C:\dev\VB Source\EX\EXT\CommonEXT\bin\Debug\FarPoint.Excel.dll
+C:\dev\VB Source\EX\EXT\CommonEXT\bin\Debug\FarPoint.PluginCalendar.WinForms.dll
+C:\dev\VB Source\EX\EXT\CommonEXT\bin\Debug\FarPoint.Win.SpreadJ.dll
+C:\dev\VB Source\EX\EXT\CommonEXT\bin\Debug\Npgsql.dll
+C:\dev\VB Source\EX\EXT\CommonEXT\bin\Debug\Mono.Security.dll
+C:\dev\VB Source\EX\EXT\CommonEXT\bin\Debug\FarPoint.CalcEngine.xml
+C:\dev\VB Source\EX\EXT\CommonEXT\bin\Debug\FarPoint.Excel.xml
+C:\dev\VB Source\EX\EXT\CommonEXT\bin\Debug\FarPoint.Win.SpreadJ.xml
+C:\dev\VB Source\EX\EXT\CommonEXT\obj\Debug\CommonEXT.Resources.resources
+C:\dev\VB Source\EX\EXT\CommonEXT\obj\Debug\CommonEXT.vbproj.GenerateResource.Cache
+C:\dev\VB Source\EX\EXT\CommonEXT\obj\Debug\CommonEXT.dll
+C:\dev\VB Source\EX\EXT\CommonEXT\obj\Debug\CommonEXT.xml
+C:\dev\VB Source\EX\EXT\CommonEXT\obj\Debug\CommonEXT.pdb

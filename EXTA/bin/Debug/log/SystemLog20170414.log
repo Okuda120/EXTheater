@@ -1,0 +1,58 @@
+2017/04/14 20:25:03  TRACE> LogicEXTA0101.GetConfigrationFlg() START
+2017/04/14 20:25:03  TRACE> LogicEXTA0101.GetConfigrationFlg() END
+2017/04/14 20:25:03  TRACE> CommonLogicEXT.SetFormBackColor() START
+2017/04/14 20:25:03  TRACE> CommonLogicEXT.SetFormBackColor() END
+2017/04/14 20:25:08  TRACE> CommonLogicEXT.CheckDBCondition() START
+2017/04/14 20:25:08  TRACE> CommonLogicEXT.NetUseConect() START
+2017/04/14 20:25:11  TRACE> CommonLogicEXT.NetUseConectDel() START
+2017/04/14 20:25:11  TRACE> CommonLogicEXT.NetUseConectDel() START
+2017/04/14 20:25:11  TRACE> CommonLogicEXT.CheckDBCondition() END
+2017/04/14 20:25:11  TRACE> LogicEXTA0101.LoginInputCheck() START
+2017/04/14 20:25:11  TRACE> LogicEXTA0101.LoginInputCheck() END
+2017/04/14 20:25:11  TRACE> LogicEXTA0101.GetLoginData() START
+2017/04/14 20:25:11  TRACE> SqlEXTA0101.setSelectLoginData() START
+2017/04/14 20:25:11  TRACE> SqlEXTA0101.setSelectLoginData() END
+2017/04/14 20:25:11  DEBUG> LogicEXTA0101.GetLoginData() ログイン情報取得
+■SQL Data :
+   Sql Command > select 
+USER_NM, 
+MAIL, 
+BUSHO_CD, 
+SHONIN_FLG, 
+MST_FLG 
+FROM 
+USER_MST 
+WHERE
+USER_CD = :UserId 
+and PW = :Password 
+and STS = '0' 
+   Parameters Data > 
+      [:UserId] admin
+      [:Password] admin
+2017/04/14 20:25:23  TRACE> CommonLogicEXT.CheckDBCondition() START
+2017/04/14 20:25:23  TRACE> CommonLogicEXT.NetUseConect() START
+2017/04/14 20:25:25  TRACE> CommonLogicEXT.NetUseConectDel() START
+2017/04/14 20:25:25  TRACE> CommonLogicEXT.NetUseConectDel() START
+2017/04/14 20:25:25  TRACE> CommonLogicEXT.CheckDBCondition() END
+2017/04/14 20:25:25  TRACE> LogicEXTA0101.LoginInputCheck() START
+2017/04/14 20:25:25  TRACE> LogicEXTA0101.LoginInputCheck() END
+2017/04/14 20:25:25  TRACE> LogicEXTA0101.GetLoginData() START
+2017/04/14 20:25:25  TRACE> SqlEXTA0101.setSelectLoginData() START
+2017/04/14 20:25:25  TRACE> SqlEXTA0101.setSelectLoginData() END
+2017/04/14 20:25:25  DEBUG> LogicEXTA0101.GetLoginData() ログイン情報取得
+■SQL Data :
+   Sql Command > select 
+USER_NM, 
+MAIL, 
+BUSHO_CD, 
+SHONIN_FLG, 
+MST_FLG 
+FROM 
+USER_MST 
+WHERE
+USER_CD = :UserId 
+and PW = :Password 
+and STS = '0' 
+   Parameters Data > 
+      [:UserId] admin
+      [:Password] 00000

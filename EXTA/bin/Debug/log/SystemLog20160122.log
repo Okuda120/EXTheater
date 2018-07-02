@@ -1,0 +1,129 @@
+2016/01/22 17:04:36  TRACE> LogicEXTA0101.GetConfigrationFlg() START
+2016/01/22 17:04:36  TRACE> LogicEXTA0101.GetConfigrationFlg() END
+2016/01/22 17:04:36  TRACE> CommonLogicEXT.SetFormBackColor() START
+2016/01/22 17:04:36  TRACE> CommonLogicEXT.SetFormBackColor() END
+2016/01/22 17:04:53  TRACE> CommonLogicEXT.CheckDBCondition() START
+2016/01/22 17:04:53  TRACE> CommonLogicEXT.NetUseConect() START
+2016/01/22 17:04:53  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/01/22 17:04:53  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/01/22 17:04:53  TRACE> CommonLogicEXT.CheckDBCondition() END
+2016/01/22 17:04:53  TRACE> LogicEXTA0101.LoginInputCheck() START
+2016/01/22 17:04:53  TRACE> LogicEXTA0101.LoginInputCheck() END
+2016/01/22 17:04:53  TRACE> LogicEXTA0101.GetLoginData() START
+2016/01/22 17:04:53  TRACE> SqlEXTA0101.setSelectLoginData() START
+2016/01/22 17:04:53  TRACE> SqlEXTA0101.setSelectLoginData() END
+2016/01/22 17:04:53  DEBUG> LogicEXTA0101.GetLoginData() ログイン情報取得
+■SQL Data :
+   Sql Command > select 
+USER_NM, 
+MAIL, 
+BUSHO_CD, 
+SHONIN_FLG, 
+MST_FLG 
+FROM 
+USER_MST 
+WHERE
+USER_CD = :UserId 
+and PW = :Password 
+and STS = '0' 
+   Parameters Data > 
+      [:UserId] USN001
+      [:Password] password
+2016/01/22 17:04:53  TRACE> LogicEXTA0101.GetLoginData() END
+2016/01/22 17:04:53  TRACE> LogicEXTA0101.DelYoyakuCtlData() START
+2016/01/22 17:04:53  DEBUG> LogicEXTA0101.DelYoyakuCtlData() Login Proc1
+■SQL Data :
+   Sql Command > DELETE 
+FROM 
+YCTL_TBL 
+WHERE
+USER_CD = :UserId 
+   Parameters Data > 
+      [:UserId] USN001
+2016/01/22 17:04:53  DEBUG> LogicEXTA0101.DelYoyakuCtlData() Login Proc2
+■SQL Data :
+   Sql Command > DELETE 
+FROM 
+CCTL_TBL 
+WHERE
+USER_CD = :UserId 
+   Parameters Data > 
+      [:UserId] USN001
+2016/01/22 17:04:53  TRACE> LogicEXTA0101.DelYoyakuCtlData() END
+2016/01/22 17:04:53  TRACE> LogicEXTA0101.SetSystemProperties() START
+2016/01/22 17:04:53  TRACE> SqlEXTA0101.setSelectSystemProperty() START
+2016/01/22 17:04:53  TRACE> SqlEXTA0101.setSelectSystemProperty() END
+2016/01/22 17:04:53  DEBUG> LogicEXTA0101.SetSystemProperties() システムプロパティ取得
+■SQL Data :
+   Sql Command > select 
+TEIIN_A, 
+TEIIN_B, 
+KARI_JIZEN_TUTI 
+FROM 
+SYSTEM_MST 
+   Parameters Data > 
+2016/01/22 17:04:53  TRACE> LogicEXTA0101.SetSystemProperties() END
+2016/01/22 17:04:53  TRACE> EXTA0101.btnLogin_Click() LOGIN:USN001
+2016/01/22 17:04:53  TRACE> CommonLogicEXT.SetFormBackColor() START
+2016/01/22 17:04:53  TRACE> CommonLogicEXT.SetFormBackColor() END
+2016/01/22 17:04:59  TRACE> CommonLogicEXT.CheckDBCondition() START
+2016/01/22 17:04:59  TRACE> CommonLogicEXT.NetUseConect() START
+2016/01/22 17:04:59  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/01/22 17:04:59  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/01/22 17:04:59  TRACE> CommonLogicEXT.CheckDBCondition() END
+2016/01/22 17:05:00  TRACE> LogicEXTY0101.InitDisplayMain() START
+2016/01/22 17:05:00  TRACE> LogicEXTY0101.GetExasRequestData() START
+2016/01/22 17:05:00  TRACE> LogicEXTY0101.GetExasRequestTheater() START
+2016/01/22 17:05:00  TRACE> SqlEXTY0101.SetExasRequestTheaterSql() START
+2016/01/22 17:05:00  TRACE> SqlEXTY0101.SetExasRequestTheaterSql() END
+2016/01/22 17:05:00  TRACE> LogicEXTY0101.GetExasRequestTheater() END
+2016/01/22 17:05:00  TRACE> LogicEXTY0101.GetExasRequestData() END
+2016/01/22 17:05:00  TRACE> LogicEXTY0101.SetDisplayControl() START
+2016/01/22 17:05:00  TRACE> LogicEXTY0101.SetDisplayControl() END
+2016/01/22 17:05:00  TRACE> LogicEXTY0101.InitDisplayMain() END
+2016/01/22 17:05:00  TRACE> CommonLogicEXT.SetFormBackColor() START
+2016/01/22 17:05:00  TRACE> CommonLogicEXT.SetFormBackColor() END
+2016/01/22 17:05:52  TRACE> CommonLogicEXT.CheckDBCondition() START
+2016/01/22 17:05:52  TRACE> CommonLogicEXT.NetUseConect() START
+2016/01/22 17:05:52  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/01/22 17:05:52  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/01/22 17:05:52  TRACE> CommonLogicEXT.CheckDBCondition() END
+2016/01/22 17:05:52  TRACE> LogicEXTY0101.OutputCsvMain() START
+2016/01/22 17:05:52  TRACE> LogicEXTY0101.InputCheck() START
+2016/01/22 17:05:52  ERROR> LogicEXTY0101.InputCheck() 出力する請求データを一つ以上選択してください。
+2016/01/22 17:06:01  TRACE> CommonLogicEXT.CheckDBCondition() START
+2016/01/22 17:06:01  TRACE> CommonLogicEXT.NetUseConect() START
+2016/01/22 17:06:01  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/01/22 17:06:01  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/01/22 17:06:01  TRACE> CommonLogicEXT.CheckDBCondition() END
+2016/01/22 17:06:01  TRACE> LogicEXTY0101.OutputCsvMain() START
+2016/01/22 17:06:01  TRACE> LogicEXTY0101.InputCheck() START
+2016/01/22 17:06:01  TRACE> LogicEXTY0101.InputCheck() END
+2016/01/22 17:06:01  TRACE> LogicEXTY0101.GetSearchConition() START
+2016/01/22 17:06:20  TRACE> LogicEXTY0101.GetSearchConition() END
+2016/01/22 17:06:24  TRACE> LogicEXTY0101.OutputCsvData() START
+2016/01/22 17:06:28  TRACE> LogicEXTY0101.OutputCsvData() END
+2016/01/22 17:06:32  TRACE> CommonLogicEXT.CheckDBCondition() START
+2016/01/22 17:06:32  TRACE> CommonLogicEXT.NetUseConect() START
+2016/01/22 17:06:32  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/01/22 17:06:32  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/01/22 17:06:32  TRACE> CommonLogicEXT.CheckDBCondition() END
+2016/01/22 17:06:32  TRACE> LogicEXTY0101.InitDisplayMain() START
+2016/01/22 17:06:32  TRACE> LogicEXTY0101.GetExasRequestData() START
+2016/01/22 17:06:32  TRACE> LogicEXTY0101.GetExasRequestStudio() START
+2016/01/22 17:06:32  TRACE> SqlEXTY0101.SetExasRequestStudioSql() START
+2016/01/22 17:06:32  TRACE> SqlEXTY0101.SetExasRequestStudioSql() END
+2016/01/22 17:06:32  TRACE> LogicEXTY0101.GetExasRequestStudio() END
+2016/01/22 17:06:32  TRACE> LogicEXTY0101.GetExasRequestData() END
+2016/01/22 17:06:32  TRACE> LogicEXTY0101.SetDisplayControl() START
+2016/01/22 17:06:32  TRACE> LogicEXTY0101.SetDisplayControl() END
+2016/01/22 17:06:32  TRACE> LogicEXTY0101.InitDisplayMain() END
+2016/01/22 17:06:50  TRACE> CommonLogicEXT.CheckDBCondition() START
+2016/01/22 17:06:50  TRACE> CommonLogicEXT.NetUseConect() START
+2016/01/22 17:06:50  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/01/22 17:06:50  TRACE> CommonLogicEXT.NetUseConectDel() START
+2016/01/22 17:06:50  TRACE> CommonLogicEXT.CheckDBCondition() END
+2016/01/22 17:06:50  TRACE> LogicEXTY0101.OutputCsvMain() START
+2016/01/22 17:06:50  TRACE> LogicEXTY0101.InputCheck() START
+2016/01/22 17:06:50  TRACE> LogicEXTY0101.InputCheck() END
+2016/01/22 17:06:50  TRACE> LogicEXTY0101.GetSearchConition() START
